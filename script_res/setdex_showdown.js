@@ -7860,5 +7860,118 @@ var SETDEX_SHOWDOWN={
         "Hydro Pump"
       ]
     }
+  },
+
+  "Kyogre": {
+    "Common Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 4,
+        "at": 0,
+        "df": 0,
+        "sa": 252,
+        "sd": 0,
+        "sp": 252
+      },
+      "nature": "Modest",
+      "ability": "Drizzle",
+      "item": "Blue Orb",
+      "moves": [
+        "Origin Pulse",
+        "Water Spout",
+        "Ice Beam",
+        "Thunder"
+      ]
+    }
+  },  
+
+  "Groudon": {
+    "Common Physical Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 252,
+        "df": 4,
+        "sa": 0,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Adamant",
+      "ability": "Drought",
+      "item": "Red Orb",
+      "moves": [
+        "Precipice Blades",
+        "Fire Punch",
+        "Rock Slide",
+        "Earthquake"
+      ]
+    },
+    "Common Mixed Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 4,
+        "at": 0,
+        "df": 0,
+        "sa": 252,
+        "sd": 0,
+        "sp": 252
+      },
+      "nature": "Adamant",
+      "ability": "Drought",
+      "item": "Red Orb",
+      "moves": [
+        "Eruption",
+        "Flamethrower",
+        "Earth Power",
+        "Precipice Blades"
+      ]
+    }
+  },
+
+  "Rayquaza": {
+    "Common Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 4,
+        "at": 0,
+        "df": 0,
+        "sa": 252,
+        "sd": 0,
+        "sp": 252
+      },
+      "nature": "Adamant",
+      "ability": "Drought",
+      "item": "Life Orb",
+      "moves": [
+        "Dragon Ascent",
+        "Draco Meteor",
+        "Extremespeed",
+        "Earthquake"
+      ]
+    }
+  },
+
+  "Xerneas": {
+    "Common Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 4,
+        "at": 0,
+        "df": 0,
+        "sa": 252,
+        "sd": 0,
+        "sp": 252
+      },
+      "nature": "Adamant",
+      "ability": "Fairy Aura",
+      "item": "",
+      "moves": [
+        "Moonblast",
+        "Dazzling Gleam",
+        "Grass Knot",
+        "Hidden Power Ground"
+      ]
+    }
   }
+
 };
