@@ -729,9 +729,6 @@ $(".gen").change(function () {
             break;
         default:
             pokedex = POKEDEX_XY;
-            console.log(SETDEX_CUSTOM)
-            console.log(SETDEX_XY)
-
             setdex = SETDEX_XY;
             typeChart = TYPE_CHART_XY;
             moves = MOVES_XY;

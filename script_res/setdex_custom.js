@@ -1,4 +1,9 @@
-var SETDEX_CUSTOM = {};
+if(document.cookie != '')
+	var SETDEX_CUSTOM = JSON.parse(document.cookie);
+else
+	var SETDEX_CUSTOM = {};
+
+console.log(document.cookie)
 var savecustom = function()
 {
 	//first, to parse it all from the PS format
@@ -117,6 +122,8 @@ var savecustom = function()
 
   	SETDEX_CUSTOM[species] = {}
   	SETDEX_CUSTOM[species][spreadName] = customFormat
+    document.cookie = JSON.stringify(SETDEX_CUSTOM)
+	console.log(document.cookie)
     reloadXYScript()
 
 
