@@ -6,7 +6,9 @@ else
 console.log(document.cookie)
 var deletecustom = function()
 {
-	document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+	SETDEX_CUSTOM = {}
+	document.cookie = "";
+    reloadXYScript()
 }
 var savecustom = function()
 {
