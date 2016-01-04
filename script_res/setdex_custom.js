@@ -74,6 +74,8 @@ var savecustom = function()
 			}
 			if(lines[i].indexOf("- ") != -1){ //if there is a move in this line
 				var nextMove = lines[i].substring(lines[i].indexOf(' ') + 1).trim()
+				nextMove = nextMove.replace('[', '')
+				nextMove = nextMove.replace(']', '')
 				moves.push(nextMove)
 			}
 
@@ -125,8 +127,8 @@ var savecustom = function()
   			"item": item,
   			"moves": moves,
   		}
-
-  	SETDEX_CUSTOM[species] = {}
+  	if(SETDEX_CUSTOM[species] == null)
+  		SETDEX_CUSTOM[species] = {}
   	SETDEX_CUSTOM[species][spreadName] = customFormat
     document.cookie = JSON.stringify(SETDEX_CUSTOM)
 	console.log(document.cookie)
