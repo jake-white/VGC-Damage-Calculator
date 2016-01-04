@@ -1,14 +1,38 @@
 var SETDEX_CUSTOM = {};
-if(document.cookie != '')
-	var SETDEX_CUSTOM = JSON.parse(document.cookie);
-
-console.log(document.cookie)
+if(readCookie("custom") != null)
+	var SETDEX_CUSTOM = JSON.parse(readCookie("custom"))
 var deletecustom = function()
 {
 	SETDEX_CUSTOM = {}
-	document.cookie = JSON.stringify(SETDEX_CUSTOM);
+	eraseCookie("custom")
     reloadXYScript()
 }
+
+function createCookie(name,value,days) {
+	if (days) {
+		var date = new Date();
+		date.setTime(date.getTime()+(days*24*60*60*1000));
+		var expires = "; expires="+date.toGMTString();
+	}
+	else var expires = "";
+	document.cookie = name+"="+value+expires+"; path=/";
+}
+
+function readCookie(name) {
+	var nameEQ = name + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0;i < ca.length;i++) {
+		var c = ca[i];
+		while (c.charAt(0)==' ') c = c.substring(1,c.length);
+		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+	}
+	return null;
+}
+
+function eraseCookie(name) {
+	createCookie(name,"",-1);
+}
+
 var savecustom = function()
 {
 	//first, to parse it all from the PS format
@@ -40,10 +64,6 @@ var savecustom = function()
 		item = lines[0].substring(lines[0].indexOf('@')+1).trim(); //item is always after @
 	ability = lines[1].substring(lines[1].indexOf(' ')+1).trim(); //ability is always second
 	level = lines[2].split(' ')[1].trim(); //level is always third
-	console.log(species)
-	console.log(item)
-	console.log(ability)
-	console.log(level)
 	if(lines.length > 3){
 		for(var i = 3; i < lines.length; ++i){
 			if(lines[i].indexOf("EVs") != -1) //if EVs are in this line
@@ -80,9 +100,6 @@ var savecustom = function()
 
 		}
 	}
-	console.log(EVs)
-	console.log(nature)
-	console.log(moves)
 
 	//now, to save it
 	/* Sample Calculator Format:
@@ -129,8 +146,7 @@ var savecustom = function()
   	if(SETDEX_CUSTOM[species] == null)
   		SETDEX_CUSTOM[species] = {}
   	SETDEX_CUSTOM[species][spreadName] = customFormat
-    document.cookie = JSON.stringify(SETDEX_CUSTOM)
-	console.log(document.cookie)
+    document.cookie = "custom="+JSON.stringify(SETDEX_CUSTOM)
     reloadXYScript()
 
 
