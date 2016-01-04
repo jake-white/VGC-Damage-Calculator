@@ -7916,7 +7916,7 @@ var SETDEX_SHOWDOWN={
         "sd": 0,
         "sp": 252
       },
-      "nature": "Adamant",
+      "nature": "Modest",
       "ability": "Drought",
       "item": "Red Orb",
       "moves": [
@@ -7939,7 +7939,7 @@ var SETDEX_SHOWDOWN={
         "sd": 0,
         "sp": 252
       },
-      "nature": "Adamant",
+      "nature": "Jolly",
       "ability": "Drought",
       "item": "Life Orb",
       "moves": [
@@ -7962,7 +7962,7 @@ var SETDEX_SHOWDOWN={
         "sd": 0,
         "sp": 252
       },
-      "nature": "Adamant",
+      "nature": "Timid",
       "ability": "Fairy Aura",
       "item": "",
       "moves": [
@@ -7972,6 +7972,236 @@ var SETDEX_SHOWDOWN={
         "Hidden Power Ground"
       ]
     }
+  },
+
+  "Yveltal": {
+    "Common Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 0,
+        "at": 0,
+        "df": 0,
+        "sa": 252,
+        "sd": 4,
+        "sp": 252
+      },
+      "nature": "Timid",
+      "ability": "Dark Aura",
+      "item": "Life Orb",
+      "moves": [
+        "Oblivion Wing",
+        "Sucker Punch",
+        "Foul Play",
+        "Snarl"
+      ]
+    }
+  },
+
+  "Dialga": {
+    "Common Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 0,
+        "df": 4,
+        "sa": 252,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Modest",
+      "ability": "Pressure",
+      "item": "Adamant Orb",
+      "moves": [
+        "Draco Meteor",
+        "Flash Cannon",
+        "Earth Power",
+        "Fire Blast"
+      ]
+    }
+  },
+
+  "Palkia": {
+    "Common Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 0,
+        "df": 4,
+        "sa": 252,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Modest",
+      "ability": "Pressure",
+      "item": "Lustrous Orb",
+      "moves": [
+        "Draco Meteor",
+        "Hydro Pump",
+        "Earth Power",
+        "Ice Beam"
+      ]
+    }
+  },
+
+  "Giratina": {
+    "Common Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 252,
+        "df": 0,
+        "sa": 0,
+        "sd": 4,
+        "sp": 0
+      },
+      "nature": "Adamant",
+      "ability": "Pressure",
+      "item": "Sitrus Berry",
+      "moves": [
+        "Shadow Force",
+        "Shadow Sneak",
+        "Draco Meteor",
+        "Dragon Claw"
+      ]
+    }    
+  },
+
+  "Giratina-O": {
+    "Common Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 252,
+        "df": 0,
+        "sa": 0,
+        "sd": 4,
+        "sp": 0
+      },
+      "nature": "Adamant",
+      "ability": "Levitate",
+      "item": "Griseous Orb",
+      "moves": [
+        "Shadow Force",
+        "Shadow Sneak",
+        "Draco Meteor",
+        "Dragon Claw"
+      ]
+    }    
+  },  
+
+  "Kyurem-W": {
+    "Common Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 4,
+        "at": 0,
+        "df": 0,
+        "sa": 252,
+        "sd": 0,
+        "sp": 252
+      },
+      "nature": "Modest",
+      "ability": "Turboblaze",
+      "item": "Choice Scarf",
+      "moves": [
+        "Draco Meteor",
+        "Ice Beam",
+        "Fusion Flare",
+        "Earth Power"
+      ]
+    }    
+  },
+
+  "Kyurem-B": {
+    "Common Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 4,
+        "at": 124,
+        "df": 4,
+        "sa": 252,
+        "sd": 0,
+        "sp": 124
+      },
+      "nature": "Rash",
+      "ability": "Teravolt",
+      "item": "Life Orb",
+      "moves": [
+        "Fusion Bolt",
+        "Ice Beam",
+        "Earth Power",
+        "Draco Meteor"
+      ]
+    }    
+  },
+
+  "Ho-Oh": {
+    "Common Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 252,
+        "df": 4,
+        "sa": 0,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Adamant",
+      "ability": "Pressure",
+      "item": "Leftovers",
+      "moves": [
+        "Brave Bird",
+        "Sacred Fire",
+        "Sky Drop",
+        ""
+      ]
+    }    
+  },
+
+  "Lugia": {
+    "Common Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 0,
+        "df": 4,
+        "sa": 252,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Modest",
+      "ability": "Pressure",
+      "item": "Kee Berry",
+      "moves": [
+        "Aeroblast",
+        "Earth Power",
+        "Psychic",
+        "Thunder"
+      ]
+    }    
+  },  
+
+  "Mewtwo": {
+    "Common Showdown Y": {
+      "level": 50,
+      "evs": {
+        "hp": 4,
+        "at": 0,
+        "df": 0,
+        "sa": 252,
+        "sd": 0,
+        "sp": 252
+      },
+      "nature": "Timid",
+      "ability": "Pressure",
+      "item": "Mewtwonite Y",
+      "moves": [
+        "Psystrike",
+        "Ice Beam",
+        "Flamethrower",
+        "Aura Sphere"
+      ]
+    }    
   }
 
 };

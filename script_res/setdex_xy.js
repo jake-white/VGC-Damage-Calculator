@@ -25,7 +25,6 @@ var reloadXYScript = function()
     SETDEX_NUGGETBRIDGE,
     SETDEX_CUSTOM
 ];
-console.log("LOADED SCRIPT!")
 
 for (var i=0; i<components.length; i++) {
     sourceDex = components[i];
