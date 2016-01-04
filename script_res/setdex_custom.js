@@ -1,13 +1,12 @@
+var SETDEX_CUSTOM = {};
 if(document.cookie != '')
 	var SETDEX_CUSTOM = JSON.parse(document.cookie);
-else
-	var SETDEX_CUSTOM = {};
 
 console.log(document.cookie)
 var deletecustom = function()
 {
 	SETDEX_CUSTOM = {}
-	document.cookie = "";
+	document.cookie = JSON.stringify(SETDEX_CUSTOM);
     reloadXYScript()
 }
 var savecustom = function()
