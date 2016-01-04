@@ -148,6 +148,15 @@
                     <input class="move-crit calc-trigger btn-input" type="checkbox" id="critL4" /><label class="btn crit-btn" for="critL4" title="Force this attack to be a critical hit?">Crit</label>
                     <select class="move-hits calc-trigger hide"><option value="2">2 hits</option><option value="3">3 hits</option><option value="4">4 hits</option><option value="5">5 hits</option></select>
                 </div>
+
+                <!--squirrelboy1225's HTML additions are right here-->
+                <p>Please enter your custom spread here.</p>
+                Spread Name: <input type = "text" id = "spreadName" style = "width: 60%">
+                <textarea rows="9" cols="40" id = "customMon"></textarea>
+                <br>
+                <script type="text/javascript" src="script_res/setdex_custom.js"></script>
+                <button type = "button" onclick = "savecustom()">Save</button>
+
             </div>
         </div>
         
@@ -349,13 +358,14 @@
             <p><em>This calculator is based on the work of Honko, gamut, and Zarel. It was optimized for players in the Pokémon Championship Series by Tapin and Firestorm, and edited for VGC 2016 by squirrelboy1225.</em></p></div>
     </div>
 
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
     <script type="text/javascript" src="script_res/select2.min.js"></script>
     <script type="text/javascript" src="script_res/pokedex.js"></script>
     <script type="text/javascript" src="script_res/setdex_showdown.js"></script>
     <script type="text/javascript" src="script_res/setdex_globalLink.js"></script>
     <script type="text/javascript" src="script_res/setdex_nuggetBridge.js"></script>
-    <script type="text/javascript" src="script_res/setdex_xy.js"></script>
+    <script type="text/javascript" src="script_res/setdex_xy.js" id = "XYScript"></script>
     <script type="text/javascript" src="script_res/setdex_bw.js"></script>
     <script type="text/javascript" src="script_res/setdex_dpp.js"></script>
     <script type="text/javascript" src="script_res/setdex_rse.js"></script>
