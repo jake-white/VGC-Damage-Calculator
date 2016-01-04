@@ -4,6 +4,10 @@ else
 	var SETDEX_CUSTOM = {};
 
 console.log(document.cookie)
+var deletecustom = function()
+{
+	document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+}
 var savecustom = function()
 {
 	//first, to parse it all from the PS format
