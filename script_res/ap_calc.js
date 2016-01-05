@@ -131,8 +131,10 @@ $(".percent-hp").keyup(function() {
     calcCurrentHP($(this).parent(), max, percent);
 });
 
+var lastAura = [false, false, false]
 $(".ability").bind("keyup change", function() {
     $(this).closest(".poke-info").find(".move-hits").val($(this).val() === 'Skill Link' ? 5 : 3);
+    autoSetAura()
 });
 
 $("#p1 .ability").bind("keyup change", function() {
@@ -144,6 +146,24 @@ $("#p2 .ability").bind("keyup change", function() {
 
 var lastManualWeather = "";
 var lastAutoWeather = ["", ""];
+function autoSetAura()
+{
+    var ability1 = $("#p1 .ability").val()
+    var ability2 = $("#p2 .ability").val()
+    console.log(ability1 + " vs " + ability2)
+    if(ability1 == "Fairy Aura" || ability2 == "Fairy Aura" )
+        $("input:checkbox[id='fairy-aura']").prop("checked", true)
+    else        
+        $("input:checkbox[id='fairy-aura']").prop("checked", lastAura[0])
+    if(ability1 == "Dark Aura" || ability2 == "Dark Aura")
+        $("input:checkbox[id='dark-aura']").prop("checked", true)
+    else        
+        $("input:checkbox[id='dark-aura']").prop("checked", lastAura[1])
+    if(ability1 == "Aura Break" || ability2 == "Aura Break" )
+        $("input:checkbox[id='aura-break']").prop("checked", true)
+    else        
+        $("input:checkbox[id='aura-break']").prop("checked", lastAura[2])
+}
 function autosetWeather(ability, i) {
     var currentWeather = $("input:radio[name='weather']:checked").val();
     if (lastAutoWeather.indexOf(currentWeather) === -1 || currentWeather === "") {
@@ -186,7 +206,8 @@ function autosetWeather(ability, i) {
     }
 
     if (newWeather === "Strong Winds" || primalWeather.indexOf(newWeather) > -1) {
-        $("input:radio[name='weather']").prop("disabled", true);
+        //$("input:radio[name='weather']").prop("disabled", true);
+        //edited out by squirrelboy1225 for doubles!
         $("input:radio[name='weather'][value='" + newWeather + "']").prop("disabled", false);
     } else if (typeof newWeather != "undefined") {
         for (var k = 0; k < $("input:radio[name='weather']").length; k++) {
@@ -194,7 +215,8 @@ function autosetWeather(ability, i) {
             if (primalWeather.indexOf(val) === -1 && val !== "Strong Winds") {
                 $("input:radio[name='weather']")[k].disabled = false;
             } else {
-                $("input:radio[name='weather']")[k].disabled = true;
+                //$("input:radio[name='weather']")[k].disabled = true;
+                //edited out by squirrelboy1225 for doubles!
             }
         }
     }
@@ -395,7 +417,8 @@ $(".forme").change(function() {
 
     if ($(this).val().indexOf("Mega") === 0 && $(this).val() !== "Mega Rayquaza") {
         container.find(".item").val("").keyup();
-        container.find(".item").prop("disabled", true);
+        //container.find(".item").prop("disabled", true);
+        //edited out by squirrelboy1225 for doubles!
     } else {
         container.find(".item").prop("disabled", false);
     }

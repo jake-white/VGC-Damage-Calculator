@@ -301,10 +301,13 @@ function getDamageResult(attacker, defender, move, field) {
         description.attackerAbility = attacker.ability;
     }
     
-    var isAttackerAura = attacker.ability === (move.type + " Aura");
+
+    var isAttackerAura = (attacker.ability === (move.type + " Aura"))
     var isDefenderAura = defAbility === (move.type + " Aura");
-    if (isAttackerAura || isDefenderAura) {
-        if (attacker.ability === "Aura Break" || defAbility === "Aura Break") {
+    var auraActive = ($("input:checkbox[id='" + move.type.toLowerCase() + "-aura']:checked").val() != undefined)
+    var auraBreak = ($("input:checkbox[id='aura-break']:checked").val() != undefined)
+    if (auraActive) {
+        if (auraBreak) {
             bpMods.push(0xAAA);
             description.attackerAbility = attacker.ability;
             description.defenderAbility = defAbility;
