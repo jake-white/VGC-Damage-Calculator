@@ -150,7 +150,6 @@ function autoSetAura()
 {
     var ability1 = $("#p1 .ability").val()
     var ability2 = $("#p2 .ability").val()
-    console.log(ability1 + " vs " + ability2)
     if(ability1 == "Fairy Aura" || ability2 == "Fairy Aura" )
         $("input:checkbox[id='fairy-aura']").prop("checked", true)
     else        

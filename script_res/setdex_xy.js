@@ -5,7 +5,6 @@ var components = [
     SETDEX_NUGGETBRIDGE,
     SETDEX_CUSTOM
 ];
-console.log("LOADED SCRIPT!")
 
 for (var i=0; i<components.length; i++) {
     var sourceDex = components[i];
