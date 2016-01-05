@@ -44,6 +44,7 @@ var savecustom = function()
 	var ability = ""
 	var level = "50";
 	var EVs = [0,0,0,0,0,0];
+	var IVs = [31,31,31,31,31,31]
 	var nature = "Serious"
 	var moves = []
 
@@ -87,6 +88,27 @@ var savecustom = function()
 				}
 
 			}
+			if(lines[i].indexOf("IVs") != -1) //if EVs are in this line
+			{
+				ivList = lines[i].split(':')[1].split('/'); //splitting it into a list of " # Stat "
+				for(var j = 0; j < ivList.length; ++j){
+					ivList[j] = ivList[j].trim();
+					ivListElements = ivList[j].split(' ');
+					if(ivListElements[1] == "HP")
+						IVs[0] = parseInt(ivListElements[0])
+					else if(ivListElements[1] == "Atk")
+						IVs[1] = parseInt(ivListElements[0])
+					else if(ivListElements[1] == "Def")
+						IVs[2] = parseInt(ivListElements[0])
+					else if(ivListElements[1] == "SpA")
+						IVs[3] = parseInt(ivListElements[0])
+					else if(ivListElements[1] == "SpD")
+						IVs[4] = parseInt(ivListElements[0])
+					else if(ivListElements[1] == "Spe")
+						IVs[5] = parseInt(ivListElements[0])
+				}
+
+			}
 			if(lines[i].indexOf("Nature") != -1) //if nature is in this line
 			{
 				nature = lines[i].split(' ')[0].trim()
@@ -99,6 +121,8 @@ var savecustom = function()
 			}
 
 		}
+		
+			console.log(IVs)
 	}
 
 	//now, to save it
@@ -137,6 +161,14 @@ var savecustom = function()
   				"sa": EVs[3],
   				"sd": EVs[4],
   				"sp": EVs[5],
+  			},
+  			"ivs": {
+  				"hp": IVs[0],
+  				"at": IVs[1],
+  				"df": IVs[2],
+  				"sa": IVs[3],
+  				"sd": IVs[4],
+  				"sp": IVs[5],
   			},
   			"nature": nature,
   			"ability": ability,
