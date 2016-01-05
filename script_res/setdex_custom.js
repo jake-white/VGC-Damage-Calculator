@@ -1,4 +1,20 @@
 var SETDEX_CUSTOM = {};
+var showdownFormes = [["Kyurem-White", "Kyurem-W"],
+["Kyurem-Black", "Kyurem-B"],
+["Rotom-Wash", "Rotom-W"],
+["Rotom-Heat", "Rotom-H"],
+["Rotom-Frost", "Rotom-F"],
+["Rotom-Mow", "Rotom-C"],
+["Rotom-Fan", "Rotom-S"],
+["Giratina-Origin", "Giratina-O"],
+["Landorus-Therian", "Landorus-T"],
+["Thundurus-Therian", "Thundurus-T"],
+["Tornadus-Therian", "Tornadus-T"],
+["Floette-Eternal", "Floette-E"],
+["Pumpkaboo", "Pumpkaboo-Average"],
+["Gourgeist", "Gourgeist-Average"],
+["Wormadan-Sandy", "Wormadan-G"],
+["Wormadan-Trash", "Wormadan-S"]];
 if(readCookie("custom") != null)
 	var SETDEX_CUSTOM = JSON.parse(readCookie("custom"))
 var deletecustom = function()
@@ -61,6 +77,12 @@ var savecustom = function()
 9	- Move Name
 	*/
 	species = lines[0].split(' ')[0].trim(); //species is always first
+	for(var i = 0; i < showdownFormes.length; ++i)
+	{
+		if(species == showdownFormes[i][0])
+			species = showdownFormes[i][1]
+	}
+	
 	if(lines[0].indexOf('@') != -1)
 		item = lines[0].substring(lines[0].indexOf('@')+1).trim(); //item is always after @
 	ability = lines[1].substring(lines[1].indexOf(' ')+1).trim(); //ability is always second
@@ -121,7 +143,7 @@ var savecustom = function()
 			}
 
 		}
-		
+
 			console.log(IVs)
 	}
 
