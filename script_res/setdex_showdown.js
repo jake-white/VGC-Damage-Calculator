@@ -7861,6 +7861,71 @@ var SETDEX_SHOWDOWN={
       ]
     }
   },
+    "Primal Kyogre": {
+    "Common Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 4,
+        "at": 0,
+        "df": 0,
+        "sa": 252,
+        "sd": 0,
+        "sp": 252
+      },
+      "nature": "Modest",
+      "ability": "Drizzle",
+      "item": "Blue Orb",
+      "moves": [
+        "Origin Pulse",
+        "Water Spout",
+        "Ice Beam",
+        "Thunder"
+      ]
+    }
+  },  
+
+  "Primal Groudon": {
+    "Common Physical Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 252,
+        "df": 4,
+        "sa": 0,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Adamant",
+      "ability": "Drought",
+      "item": "Red Orb",
+      "moves": [
+        "Precipice Blades",
+        "Fire Punch",
+        "Rock Slide",
+        "Earthquake"
+      ]
+    },
+    "Common Mixed Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 4,
+        "at": 0,
+        "df": 0,
+        "sa": 252,
+        "sd": 0,
+        "sp": 252
+      },
+      "nature": "Modest",
+      "ability": "Drought",
+      "item": "Red Orb",
+      "moves": [
+        "Eruption",
+        "Flamethrower",
+        "Earth Power",
+        "Precipice Blades"
+      ]
+    }
+  },
 
   "Kyogre": {
     "Common Showdown": {
@@ -7929,13 +7994,13 @@ var SETDEX_SHOWDOWN={
   },
 
   "Rayquaza": {
-    "Common Showdown": {
+    "Common Showdown Physical": {
       "level": 50,
       "evs": {
         "hp": 4,
-        "at": 0,
+        "at": 252,
         "df": 0,
-        "sa": 252,
+        "sa": 0,
         "sd": 0,
         "sp": 252
       },
@@ -7945,7 +8010,28 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Dragon Ascent",
         "Draco Meteor",
-        "Extremespeed",
+        "Extreme Speed",
+        "Earthquake"
+      ]
+    },
+
+    "Common Showdown Mixed": {
+      "level": 50,
+      "evs": {
+        "hp": 0,
+        "at": 252,
+        "df": 0,
+        "sa": 4,
+        "sd": 0,
+        "sp": 252
+      },
+      "nature": "Naive",
+      "ability": "Drought",
+      "item": "Life Orb",
+      "moves": [
+        "Dragon Ascent",
+        "Draco Meteor",
+        "Extreme Speed",
         "Earthquake"
       ]
     }
@@ -8152,8 +8238,8 @@ var SETDEX_SHOWDOWN={
       "moves": [
         "Brave Bird",
         "Sacred Fire",
-        "Sky Drop",
-        ""
+        "Iron Head",
+        "Earth Power"
       ]
     }    
   },
