@@ -76,7 +76,14 @@ var savecustom = function()
 8	- Move Name
 9	- Move Name
 	*/
-	species = lines[0].split(' ')[0].trim(); //species is always first
+	if(lines[0].indexOf('(') != -1)
+	{
+		firstParenth = lines[0].lastIndexOf('(');
+		lastParenth = lines[0].lastIndexOf(')');
+		species = lines[0].substring(firstParenth + 1, lastParenth).trim();
+	}
+	else
+		species = lines[0].split(' ')[0].trim(); //species is always first
 	for(var i = 0; i < showdownFormes.length; ++i)
 	{
 		if(species == showdownFormes[i][0])
