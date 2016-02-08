@@ -160,15 +160,6 @@
                     <select class="move-hits calc-trigger hide"><option value="2">2 hits</option><option value="3">3 hits</option><option value="4">4 hits</option><option value="5">5 hits</option></select>
                 </div>
 
-                <!--squirrelboy1225's HTML additions are right here-->
-                <p>Please enter your custom set here.</p>
-                Spread Name: <input type = "text" id = "spreadName" style = "width: 60%">
-                <textarea rows="9" cols="40" id = "customMon"></textarea>
-                <br>
-                <script type="text/javascript" src="script_res/setdex_custom.js"></script>
-                <button type = "button" onclick = "savecustom()">Save</button> <button type = "button" onclick = "deletecustom()">Delete Custom Sets</button>
-                <p>You may need to refresh the page after deleting your custom sets.  If you encounter a bug, please try deleting your cookies or reporting it!</p>
-
             </div>
         </div>
         
@@ -276,6 +267,15 @@
                         <input class="btn-input calc-trigger" type="checkbox" id="friendGuardR" /><label class="btn btn-xxwide" for="friendGuardR">Friend Guard</label>
                     </div>
                 </div>
+                                <!--squirrelboy1225's HTML additions are right here-->
+                <p>Please enter your custom set here.</p>
+                Spread Name: <input type = "text" id = "spreadName" style = "width: 60%" value = "My Custom Set">
+                <br>
+                <textarea rows="9" cols="40" id = "customMon"></textarea>
+                <br>
+                <script type="text/javascript" src="script_res/setdex_custom.js"></script>
+                <button type = "button" onclick = "savecustom()">Save</button> <button type = "button" onclick = "deletecustom()">Delete Custom Sets</button>
+                <p>You may need to refresh the page after deleting your custom sets.  If you encounter a bug, please try deleting your cookies or reporting it!</p>
             </div>
         </div>
         <div class="panel poke-info" id="p2">

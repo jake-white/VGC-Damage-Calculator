@@ -54,6 +54,8 @@ var savecustom = function()
 	//first, to parse it all from the PS format
 	var string = document.getElementById('customMon').value
 	var spreadName = document.getElementById('spreadName').value
+	if(spreadName == '')
+		spreadName = "My Custom Set";
 	var lines = string.split('\n')
 	var species = "";
 	var item = "";
