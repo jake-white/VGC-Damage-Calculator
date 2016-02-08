@@ -298,7 +298,7 @@ var SETDEX_SHOWDOWN={
         "Freeze-Dry",
         "Hydro Pump",
         "Ice Shard",
-        "Ancient Power"
+        "Sheer Cold"
       ]
     }
   },

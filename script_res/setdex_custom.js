@@ -76,6 +76,18 @@ var savecustom = function()
 8	- Move Name
 9	- Move Name
 	*/
+
+	//geting rid of gender identities (lel)
+	if(lines[0].indexOf('(M)') != -1)
+	{
+		lines[0] = lines[0].substring(0, lines[0].indexOf('(M)') - 1) + 
+		lines[0].substring(lines[0].indexOf('(M)') + 3, lines[0].length);
+	}
+	else if(lines[0].indexOf('(F)') != -1)
+	{
+		lines[0] = lines[0].substring(0, lines[0].indexOf('(F)')) + 
+		lines[0].substring(lines[0].indexOf('(F)') + 3, lines[0].length);
+	}
 	if(lines[0].indexOf('(') != -1)
 	{
 		firstParenth = lines[0].lastIndexOf('(');
@@ -93,9 +105,11 @@ var savecustom = function()
 	if(lines[0].indexOf('@') != -1)
 		item = lines[0].substring(lines[0].indexOf('@')+1).trim(); //item is always after @
 	ability = lines[1].substring(lines[1].indexOf(' ')+1).trim(); //ability is always second
-	level = lines[2].split(' ')[1].trim(); //level is always third
-	if(lines.length > 3){
-		for(var i = 3; i < lines.length; ++i){
+	if(lines.length > 2){
+		for(var i = 2; i < lines.length; ++i){
+			if(lines[i].indexOf("Level") != -1){
+				level = lines[2].split(' ')[1].trim(); //level is sometimes third but uh not always
+			}
 			if(lines[i].indexOf("EVs") != -1) //if EVs are in this line
 			{
 				evList = lines[i].split(':')[1].split('/'); //splitting it into a list of " # Stat "
@@ -150,8 +164,6 @@ var savecustom = function()
 			}
 
 		}
-
-			console.log(IVs)
 	}
 
 	//now, to save it

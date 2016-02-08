@@ -1768,8 +1768,15 @@ var MOVES_XY = $.extend(true, {}, MOVES_BW, {
         isSpread: 'true'
     },
     'Rock Tomb': { bp: 60 },
+    'Sheer Cold': {
+        bp: 0,
+        type: 'Ice',
+        category: 'Special',
+        isSpread: 'false',
+        isMLG: 'true'
+    },
     'Storm Throw': { bp: 60 },
-    'Surf': { bp: 90 },
+    'Surf': { bp: 90 },    
     'Synchronoise': { bp: 120 },
     'Thief': { bp: 60 },
     'Thunder': { bp: 110 },
