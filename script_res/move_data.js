@@ -1787,8 +1787,8 @@ var MOVES_XY = $.extend(true, {}, MOVES_BW, {
         type: 'Water',
         category: 'Physical',
         isMultiHit: true
-    }
-});
+    },'Aurora Beam': {bp: 65,
+        type: 'Ice', category: 'Special'}});
 
 MOVES_XY['Ancient Power'] = MOVES_XY['AncientPower'];
 MOVES_XY['Dynamic Punch'] = MOVES_XY['DynamicPunch'];
