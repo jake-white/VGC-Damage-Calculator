@@ -755,7 +755,7 @@ $(".gen").change(function () {
             calcHP = CALC_HP_ADV;
             calcStat = CALC_STAT_ADV;
             break;
-        default:
+        case 6:
             pokedex = POKEDEX_XY;
             setdex = SETDEX_XY;
             typeChart = TYPE_CHART_XY;
@@ -766,6 +766,18 @@ $(".gen").change(function () {
             calculateAllMoves = CALCULATE_ALL_MOVES_BW;
             calcHP = CALC_HP_ADV;
             calcStat = CALC_STAT_ADV;
+        case 7:
+            pokedex = POKEDEX_SM;
+            setdex = SETDEX_SM;
+            typeChart = TYPE_CHART_XY;
+            moves = MOVES_SM;
+            items = ITEMS_SM;
+            abilities = ABILITIES_SM;
+            STATS = STATS_GSC;
+            calculateAllMoves = CALCULATE_ALL_MOVES_BW;
+            calcHP = CALC_HP_ADV;
+            calcStat = CALC_STAT_ADV;
+            break;
     }
     clearField();
     $(".gen-specific.g" + gen).show();

@@ -1806,3 +1806,14 @@ delete MOVES_XY['Hi Jump Kick'];
 delete MOVES_XY['Selfdestruct'];
 delete MOVES_XY['SolarBeam'];
 delete MOVES_XY['ThunderPunch'];
+
+var MOVES_SM = $.extend(true, {}, MOVES_XY, {
+    'Water Shuriken': {
+        category: 'Special',
+    },
+    'Gigavolt Havoc': {
+        bp: 175,
+        type: 'Water',
+        category: 'Special',
+    }
+});

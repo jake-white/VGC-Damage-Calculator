@@ -174,6 +174,11 @@ ITEMS_XY.splice(ITEMS_XY.indexOf('Steel Gem'), 1);
 ITEMS_XY.splice(ITEMS_XY.indexOf('Water Gem'), 1);
 ITEMS_XY.splice(ITEMS_XY.indexOf('Soul Dew'), 1);
 
+
+var ITEMS_SM = ITEMS_XY.concat([
+    'Electrium-Z'
+]);
+
 function getItemBoostType(item) {
     switch (item) {
         case 'Draco Plate':
@@ -353,4 +358,6 @@ function getNaturalGift(item) {
         return gift;
     }
     return {'t':'Normal','p':1};
+
+
 }

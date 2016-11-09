@@ -105,4 +105,21 @@ var ABILITIES_XY = ABILITIES_BW.concat([
     'Tough Claws'
 ]);
 
+var ABILITIES_SM = ABILITIES_XY.concat([
+    'Electric Surge',
+    'Psychic Surge',
+    'Grassy Surge',
+    'Misty Surge',
+    'Merciless',
+    'Stakeout',
+    'Water Bubble',
+    'Steelworker',
+    'Liquid Voice',
+    'Galvanize',
+    'Fluffy',
+    'RKS System',
+    'Shadow Shield',
+    'Prism Armor'
+]);
+
 ABILITIES_XY.splice(ABILITIES_XY.indexOf('Lightningrod'), 1, 'Lightning Rod');
