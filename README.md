@@ -18,4 +18,4 @@ IVs: # Stat
 
 The calculator also adds manual auras and aura breaks, as well as a completely new list of VGC '16 sets.  More detailed information can be found [in the blog post](http://nuggetbridge.com/blogs/entry/1149-vgc-2016-damage-calculator/).
 
-The calculator is accessible online via http://jake-white.github.io/VGC-2016-Damage-Calculator
+The calculator is accessible online via http://jake-white.github.io/VGC-Damage-Calculator
