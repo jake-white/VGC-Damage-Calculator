@@ -668,6 +668,7 @@ function getMoveDetails(moveInfo) {
         type: moveInfo.find(".move-type").val(),
         category: moveInfo.find(".move-cat").val(),
         isCrit: moveInfo.find(".move-crit").prop("checked"),
+        isZ: moveInfo.find(".move-z").prop("checked"),
         hits: defaultDetails.isMultiHit ? ~~moveInfo.find(".move-hits").val() : defaultDetails.isTwoHit ? 2 : 1
     });
 }

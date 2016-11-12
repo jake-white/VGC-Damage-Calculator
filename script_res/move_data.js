@@ -1812,74 +1812,96 @@ delete MOVES_XY['Selfdestruct'];
 delete MOVES_XY['SolarBeam'];
 delete MOVES_XY['ThunderPunch'];
 
+var ZMOVES_LOOKUP = {
+    'Normal':'Breakneck Blitz','Fire':'Inferno Overdrive','Water':'Hydro Vortex',
+    'Electric':'Gigavolt Havoc','Grass':'Bloom Doom','Ghost':'Never-Ending Nightmare',
+    'Dark':'Black Hole Eclipse','Psychic':'Shattered Psyche','Fighting':'All-Out Pummeling',
+    'Steel':'Corkscrew Crash','Ice':'Subzero Slammer','Ground':'Tectonic Rage',
+    'Rock':'Continental Crush','Bug':'Savage Spin-Out','Fairy':'Twinkle Tackle',
+    'Flying':'Supersonic Skystrike','Dragon':'Devastating Drake','Poison':'Acid Downpour'};
+
 var MOVES_SM = $.extend(true, {}, MOVES_XY, {
     'Water Shuriken': {
         category: 'Special',
+        zp: 100
     },
     'Leech Life': {
         category: 'Physical',
         type: 'Bug',
-        bp: 80
+        bp: 80,
+        zp: 160
     },
     'Zing Zap': {
         category: 'Physical',
         type: 'Electric',
-        bp: 80
+        bp: 80,
+        zp: 160
     },
     'Moongeist Beam': {
         category: 'Special',
         type: 'Ghost',
-        bp: 100
+        bp: 100,
+        zp: 180
     },
     'Sunsteel Strike': {
         category: 'Physical',
         type: 'Steel',
-        bp: 100
+        bp: 100,
+        zp: 180
     },
     'Spectral Thief': {
         category: 'Physical',
         type: 'Ghost',
-        bp: 90
+        bp: 90,
+        zp: 175
     },
     'Prismatic Laser': {
         category: 'Special',
         type: 'Psychic',
-        bp: 160
+        bp: 160,
+        zp: 200
     },
     'Liquidation': {
         category: 'Physical',
         type: 'Water',
-        bp: 85
+        bp: 85,
+        zp: 160
     },
     'Accelerock': {
         category: 'Physical',
         type: 'Rock',
-        bp: 40
+        bp: 40,
+        zp: 100
     },
-    'Shadow Ball': {
+    'Shadow Bone': {
         category: 'Physical',
         type: 'Ghost',
-        bp: 85
+        bp: 85,
+        zp: 160
     },
     'Stomping Tantrum': {
         category: 'Physical',
         type: 'Ground',
-        bp: 75
+        bp: 75,
+        zp: 140
     },
     'Psychic Fangs': {
         category: 'Physical',
         type: 'Psychic',
-        bp: 95
+        bp: 95,
+        zp: 160
     },
     'Fleur Cannon': {
         category: 'Special',
         type: 'Fairy',
-        bp: 130
+        bp: 130,
+        zp: 195
     },
     'Shell Trap': {
         category: 'Special',
         type: 'Fire',
-        bp: 150
+        bp: 150,
+        zp: 200
     },
     'Genesis Supernova': {
         category: 'Special',
@@ -1920,118 +1942,947 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
         category: 'Physical',
         type: 'Dark',
         bp: 60,
-        isSpread: true
+        isSpread: true,
+        zp: 120
     },
     'Dragon Hammer': {
         category: 'Physical',
         type: 'Dragon',
         bp: 90,
+        zp: 175
     },
     'Clinging Scales': {
         category: 'Special',
         type: 'Dragon',
-        bp: 110
+        bp: 110,
+        zp: 185
     },
     'Beak Blast': {
         category: 'Physical',
         type: 'Flying',
-        bp: 100
+        bp: 100,
+        zp: 180
     },
     'Trop Kick': {
         category: 'Physical',
         type: 'Grass',
-        bp: 70
+        bp: 70,
+        zp: 140
     },
     'Core Enforcer': {
         category: 'Special',
         type: 'Dragon',
         bp: 100,
-        isSpread: true
+        isSpread: true,
+        zp: 140
     },
     'Revelation Dance':{
         category: 'Special',
         type: 'Normal',
-        bp: 90
+        bp: 90,
+        zp: 175
     },
     'Smart Strike':{
         category: 'Physical',
         type: 'Steel',
-        bp: 70
+        bp: 70,
+        zp: 140
     },
     'Multi-Attack': {
         category: 'Physical',
         type: 'Normal',
-        bp: 90
+        bp: 90,
+        zp: 185
     },
     'Burn Up': {
         category: 'Special',
         type: 'Fire',
-        bp: 130
+        bp: 130,
+        zp: 195
     },
     'Power Trip': {
         category: 'Physical',
         type: 'Dark',
-        bp: 20
+        bp: 20,
+        zp: 160
     },
     'Fire Lash': {
         category: 'Physical',
         type: 'Fire',
-        bp: 80
+        bp: 80,
+        zp: 160
     },
     'Lunge': {
         category: 'Physical',
         type: 'Bug',
-        bp: 80
+        bp: 80,
+        zp: 160
     },
     'Anchor Shot': {
         category: 'Physical',
         type: 'Steel',
-        bp: 80
+        bp: 80,
+        zp: 160
     },
     'Pollen Puff': {
         category: 'Special',
         type: 'Bug',
-        bp: 90
+        bp: 90,
+        zp: 175
     },
     'Throat Chop': {
         category: 'Physical',
         type: 'Dark',
-        bp: 80
+        bp: 80,
+        zp: 160
     },
     'Solar Blade': {
         category: 'Physical',
         type: 'Grass',
-        bp: 125
+        bp: 125,
+        zp: 190
     },
     'High Horsepower': {
         category: 'Physical',
         type: 'Ground',
-        bp: 95
+        bp: 95,
+        zp: 175
     },
     'Ice Hammer': {
         category: 'Physical',
         type: 'Ice',
-        bp: 100
+        bp: 100,
+        zp: 180
     },
     'Sparkling Aria': {
          category: 'Special',
          type: 'Water',
          bp: 90,
-         isSpread: true
+         isSpread: true,
+         zp: 175
     },
     'Darkest Lariat': {
         category: 'Physical',
         type: 'Dark',
-        bp: 85
+        bp: 85,
+        zp:160
     },
     'Spirit Shackle': {
         category: 'Phyiscal',
         type: 'Ghost',
-        bp: 80
+        bp: 80,
+        zp: 160
     },
     'Catastropika': {
         category: 'Physical',
         type: 'Electric',
         bp: 210
+    },
+    'Breakneck Blitz': {
+        type: 'Normal'
+    },
+    'Inferno Overdrive': {
+        type: 'Fire'
+    },
+    'Subzero Slammer': {
+        type: 'Ice'
+    },
+    'Hydro Vortex': {
+        type: 'Water'
+    },
+    'Gigavolt Havoc': {
+        type: 'Electric'
+    },
+    'All-Out Pummeling': {
+        type: 'Fighting'
+    },
+    'Bloom Doom': {
+        type: 'Grass'
+    },
+    'Shattered Psyche': {
+        type: 'Psychic'
+    },
+    'Savage Spin-Out': {
+        type: 'Bug'
+    },
+    'Acid Downpour': {
+        type: 'Poison'
+    },
+    'Supersonic Skystrike': {
+        type: 'Flying'
+    },
+    'Devastating Drake': {
+        type: 'Dragon'
+    },
+    'Continental Crush': {
+        type: 'Rock'
+    },
+    'Tectonic Rage': {
+        type: 'Ground'
+    },
+    'Corkscrew Crash': {
+        type: 'Steel'
+    },
+    'Twinkle Tackle': {
+        type: 'Fairy'
+    },
+    'Never-Ending Nightmare': {
+        type: 'Ghost'
+    },
+    'Black Hole Eclipse': {
+        type: 'Dark'
+    },
+    'Fire Punch':{
+        zp: 140
+    },
+    'Ice Punch':{
+        zp: 140
+    },
+    'Thunder Punch':{
+        zp: 140
+    },
+    'Double Kick':{
+        zp: 100
+    },
+    'Jump Kick':{
+        zp: 180
+    },
+    'Headbutt':{
+        zp: 140
+    },
+    'Tackle':{
+        bp: 40,
+        zp: 100
+    },
+    'Body Slam':{
+        zp: 160
+    },
+    'Thrash':{
+        zp: 190
+    },
+    'Double-Edge':{
+        zp: 190
+    },
+    'Pin Missile':{
+        zp: 140
+    },
+    'Bite':{
+        zp: 120
+    },
+    'Flamethrower':{
+        zp: 175
+    },
+    'Hydro Pump':{
+        zp: 185
+    },
+    'Surf':{
+        zp: 175
+    },
+    'Ice Beam':{
+        zp: 175
+    },
+    'Blizzard':{
+        zp: 185
+    },
+    'Aurora Beam':{
+        zp: 120
+    },
+    'Hyper Beam':{
+        zp: 200
+    },
+    'Drill Peck':{
+        zp: 160
+    },
+    'Low Kick':{
+        zp: 160
+    },
+    'Seismic Toss':{
+        zp: 100
+    },
+    'Solar Beam':{
+        zp: 190
+    },
+    'Petal Dance':{
+        zp: 190
+    },
+    'Thunderbolt':{
+        zp: 175
+    },
+    'Thunder':{
+        zp: 185
+    },
+    'Earthquake':{
+        zp: 180
+    },
+    'Psychic':{
+        zp: 175
+    },
+    'Quick Attack':{
+        zp: 100
+    },
+    'Night Shade':{
+        zp: 100
+    },
+    'Self-Destruct':{
+        zp: 200
+    },
+    'Fire Blast':{
+        zp: 185
+    },
+    'Waterfall':{
+        zp: 160
+    },
+    'Swift':{
+        zp: 120
+    },
+    'High Jump Kick':{
+        zp: 195
+    },
+    'Sky Attack':{
+        zp: 200
+    },
+    'Crabhammer':{
+        zp: 180
+    },
+    'Explosion':{
+        zp: 200
+    },
+    'Bonemerang':{
+        zp: 100
+    },
+    'Rock Slide':{
+        zp: 140
+    },
+    'Tri Attack':{
+        zp: 160
+    },
+    'Super Fang':{
+        type: "Normal",
+        category: "Physical",
+        zp: 100
+    },
+    'Thief':{
+        zp: 120
+    },
+    'Flame Wheel':{
+        zp: 120
+    },
+    'Flail':{
+        zp: 160
+    },
+    'Aeroblast':{
+        zp: 180
+    },
+    'Reversal':{
+        zp: 160
+    },
+    'Mach Punch':{
+        zp: 100
+    },
+    'Feint Attack':{
+        zp: 120
+    },
+    'Sludge Bomb':{
+        zp: 175
+    },
+    'Icy Wind':{
+        zp: 100
+    },
+    'Outrage':{
+        zp: 190
+    },
+    'Giga Drain':{
+        zp: 140
+    },
+    'Spark':{
+        zp: 120
+    },
+    'Steel Wing':{
+        zp: 140
+    },
+    'Return':{
+        zp: 160
+    },
+    'Frustration':{
+        zp: 160
+    },
+    'Sacred Fire':{
+        zp: 180
+    },
+    'Dynamic Punch':{
+        zp: 180
+    },
+    'Megahorn':{
+        zp: 190
+    },
+    'Pursuit':{
+        zp: 100
+    },
+    'Rapid Spin':{
+        zp: 100
+    },
+    'Iron Tail':{
+        zp: 180
+    },
+    'Hidden Power':{
+        zp: 120
+    },
+    'Cross Chop':{
+        zp: 180
+    },
+    'Crunch':{
+        zp: 160
+    },
+    'Extreme Speed':{
+        zp: 160
+    },
+    'Ancient Power':{
+        zp: 120
+    },
+    'Shadow Ball':{
+        zp: 160
+    },
+    'Rock Smash':{
+        zp: 100
+    },
+    'Fake Out':{
+        zp: 100
+    },
+    'Heat Wave':{
+        zp: 175
+    },
+    'Facade':{
+        zp: 140
+    },
+    'Focus Punch':{
+        zp: 200
+    },
+    'Superpower':{
+        zp: 190
+    },
+    'Revenge':{
+        zp: 120
+    },
+    'Brick Break':{
+        zp: 140
+    },
+    'Knock Off':{
+        zp: 120
+    },
+    'Endeavor':{
+        type: 'Normal',
+        category: 'Physical',
+        zp: 160
+    },
+    'Eruption':{
+        zp: 200
+    },
+    'Arm Thrust':{
+        zp: 100
+    },
+    'Luster Purge':{
+        zp: 140
+    },
+    'Blaze Kick':{
+        zp: 160
+    },
+    'Hyper Voice':{
+        zp: 175
+    },
+    'Poison Fang':{
+        zp: 100
+    },
+    'Meteor Mash':{
+        zp: 175
+    },
+    'Weather Ball':{
+        zp: 160
+    },
+    'Air Cutter':{
+        zp: 120
+    },
+    'Overheat':{
+        zp: 195
+    },
+    'Rock Tomb':{
+        zp: 120
+    },
+    'Water Spout':{
+        zp: 200
+    },
+    'Signal Beam':{
+        zp: 140
+    },
+    'Shadow Punch':{
+        zp: 120
+    },
+    'Extrasensory':{
+        zp: 160
+    },
+    'Sky Uppercut':{
+        zp: 160
+    },
+    'Sheer Cold':{
+        zp: 180
+    },
+    'Muddy Water':{
+        zp: 175
+    },
+    'Bullet Seed':{
+        zp: 140
+    },
+    'Aerial Ace':{
+        zp: 120
+    },
+    'Icicle Spear':{
+        zp: 140
+    },
+    'Dragon Claw':{
+        zp: 160
+    },
+    'Bounce':{
+        zp: 160
+    },
+    'Volt Tackle':{
+        zp: 190
+    },
+    'Leaf Blade':{
+        zp: 175
+    },
+    'Rock Blast':{
+        zp: 140
+    },
+    'Shock Wave':{
+        zp: 120
+    },
+    'Water Pulse':{
+        zp: 120
+    },
+    'Doom Desire':{
+        zp: 200
+    },
+    'Psycho Boost':{
+        zp: 200
+    },
+    'Wake-Up Slap':{
+        zp: 140
+    },
+    'Hammer Arm':{
+        zp: 180
+    },
+    'Gyro Ball':{
+        zp: 160
+    },
+    'Natural Gift':{
+        zp: 160
+    },
+    'Feint':{
+        zp: 100
+    },
+    'Pluck':{
+        zp: 120
+    },
+    'U-turn':{
+        zp: 140
+    },
+    'Close Combat':{
+        zp: 190
+    },
+    'Payback':{
+        zp: 100
+    },
+    'Assurance':{
+        zp: 120
+    },
+    'Fling':{
+        zp: 100
+    },
+    'Punishment':{
+        zp: 160
+    },
+    'Sucker Punch':{
+        bp: 70,
+        zp: 140
+    },
+    'Flare Blitz':{
+        zp: 190
+    },
+    'Force Palm':{
+        zp: 120
+    },
+    'Aura Sphere':{
+        zp: 160
+    },
+    'Poison Jab':{
+        zp: 160
+    },
+    'Dark Pulse':{
+        zp: 160
+    },
+    'Night Slash':{
+        zp: 140
+    },
+    'Aqua Tail':{
+        zp: 175
+    },
+    'Seed Bomb':{
+        zp: 160
+    },
+    'Air Slash':{
+        zp: 140
+    },
+    'X-Scissor':{
+        zp: 160
+    },
+    'Bug Buzz':{
+        zp: 175
+    },
+    'Dragon Pulse':{
+        zp: 160
+    },
+    'Dragon Rush':{
+        zp: 180
+    },
+    'Power Gem':{
+        zp: 160
+    },
+    'Drain Punch':{
+        zp: 140
+    },
+    'Vacuum Wave':{
+        zp: 100
+    },
+    'Focus Blast':{
+        zp: 190
+    },
+    'Energy Ball':{
+        zp: 175
+    },
+    'Brave Bird':{
+        zp: 190
+    },
+    'Earth Power':{
+        zp: 175
+    },
+    'Giga Impact':{
+        zp: 200
+    },
+    'Bullet Punch':{
+        zp: 100
+    },
+    'Avalanche':{
+        zp: 120
+    },
+    'Ice Shard':{
+        zp: 100
+    },
+    'Shadow Claw':{
+        zp: 140
+    },
+    'Thunder Fang':{
+        zp: 120
+    },
+    'Ice Fang':{
+        zp: 120
+    },
+    'Fire Fang':{
+        zp: 120
+    },
+    'Shadow Sneak':{
+        zp: 100
+    },
+    'Mud Bomb':{
+        zp: 120
+    },
+    'Psycho Cut':{
+        zp: 140
+    },
+    'Zen Headbutt':{
+        zp: 160
+    },
+    'Flash Cannon':{
+        zp: 160
+    },
+    'Rock Climb':{
+        zp: 175
+    },
+    'Draco Meteor':{
+        zp: 195
+    },
+    'Discharge':{
+        zp: 160
+    },
+    'Lava Plume':{
+        zp: 160
+    },
+    'Leaf Storm':{
+        zp: 195
+    },
+    'Power Whip':{
+        zp: 190
+    },
+    'Cross Poison':{
+        zp: 140
+    },
+    'Gunk Shot':{
+        zp: 190
+    },
+    'Iron Head':{
+        zp: 160
+    },
+    'Stone Edge':{
+        zp: 180
+    },
+    'Grass Knot':{
+        zp: 160
+    },
+    'Chatter':{
+        zp: 120
+    },
+    'Judgment':{
+        zp: 180
+    },
+    'Bug Bite':{
+        zp: 120
+    },
+    'Charge Beam':{
+        zp: 100
+    },
+    'Wood Hammer':{
+        zp: 190
+    },
+    'Aqua Jet':{
+        zp: 100
+    },
+    'Attack Order':{
+        zp: 175
+    },
+    'Head Smash':{
+        zp: 200
+    },
+    'Double Hit':{
+        zp: 140
+    },
+    'Spacial Rend':{
+        zp: 180
+    },
+    'Magma Storm':{
+        zp: 180
+    },
+    'Seed Flare':{
+        zp: 190
+    },
+    'Shadow Force':{
+        zp: 190
+    },
+    'Psyshock':{
+        zp: 160
+    },
+    'Smack Down':{
+        zp: 100
+    },
+    'Sludge Wave':{
+        zp: 175
+    },
+    'Heavy Slam':{
+        zp: 160
+    },
+    'Synchronoise':{
+        zp: 190
+    },
+    'Electro Ball':{
+        zp: 160
+    },
+    'Flame Charge':{
+        zp: 100
+    },
+    'Low Sweep':{
+        zp: 120
+    },
+    'Acid Spray':{
+        zp: 100
+    },
+    'Foul Play':{
+        zp: 175
+    },
+    'Clear Smog':{
+        zp: 100
+    },
+    'Stored Power':{
+        zp: 160
+    },
+    'Scald':{
+        zp: 160
+    },
+    'Hex':{
+        zp: 160
+    },
+    'Sky Drop':{
+        zp: 120
+    },
+    'Circle Throw':{
+        zp: 120
+    },
+    'Incinerate':{
+        zp: 120
+    },
+    'Acrobatics':{
+        zp: 100
+    },
+    'Retaliate':{
+        zp: 140
+    },
+    'Inferno':{
+        zp: 180
+    },
+    'Water Pledge':{
+        zp: 160
+    },
+    'Fire Pledge':{
+        zp: 160
+    },
+    'Grass Pledge':{
+        zp: 160
+    },
+    'Volt Switch':{
+        zp: 140
+    },
+    'Bulldoze':{
+        zp: 120
+    },
+    'Frost Breath':{
+        zp: 120
+    },
+    'Dragon Tail':{
+        zp: 120
+    },
+    'Wild Charge':{
+        zp: 175
+    },
+    'Drill Run':{
+        zp: 160
+    },
+    'Dual Chop':{
+        zp: 100
+    },
+    'Horn Leech':{
+        zp: 140
+    },
+    'Sacred Sword':{
+        zp: 175
+    },
+    'Razor Shell':{
+        zp: 140
+    },
+    'Night Daze':{
+        zp: 160
+    },
+    'Psystrike':{
+        zp: 180
+    },
+    'Tail Slap':{
+        zp: 140
+    },
+    'Hurricane':{
+        zp: 185
+    },
+    'Head Charge':{
+        zp: 190
+    },
+    'Gear Grind':{
+        zp: 180
+    },
+    'Searing Shot':{
+        zp: 180
+    },
+    'Relic Song':{
+        zp: 140
+    },
+    'Secret Sword':{
+        zp: 160
+    },
+    'Glaciate':{
+        zp: 120
+    },
+    'Fiery Dance':{
+        zp: 160
+    },
+    'Blue Flare':{
+        zp: 195
+    },
+    'Fiery Dance':{
+        zp: 160
+    },
+    'Freeze Shock':{
+        zp: 200
+    },
+    'Snarl':{
+        zp: 100
+    },
+    'Icicle Crash':{
+        zp: 160
+    },
+    'V-create':{
+        zp: 220
+    },
+    'Fusion Flare':{
+        zp: 180
+    },
+    'Fusion Bolt':{
+        zp: 180
+    },
+    'Flying Press':{
+        zp: 170
+    },
+    'Phantom Force':{
+        zp: 175
+    },
+    'Freeze-Dry':{
+        zp: 140
+    },
+    'Draining Kiss':{
+        zp: 100
+    },
+    'Play Rough':{
+        zp: 175
+    },
+    'Moonblast':{
+        zp: 175
+    },
+    'Boomburst':{
+        zp: 200
+    },
+    'Diamond Storm':{
+        zp: 180
+    },
+    'Dazzling Gleam':{
+        zp: 160
+    },
+    'Nuzzle':{
+        category: 'Physical',
+        type: 'Electric',
+        bp: 20,
+        zp: 100
+    },
+    'Power-Up Punch':{
+        zp: 100
+    },
+    'Oblivion Wing':{
+        zp: 160
+    },
+    'Land\'s Wrath':{
+        zp: 185
+    },
+    'Light Of Ruin':{
+        zp: 200
+    },
+    'Origin Pulse':{
+        zp: 185
+    },
+    'Precipice Blades':{
+        zp: 190
+    },
+    'Dragon Ascent':{
+        zp: 190
     }
 });

@@ -12312,7 +12312,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
       "sd": 101,
       "sp": 61
     },
-    "w": 120.0,
+    "w": 999.9,
   },
   "Kartana": {
     "t1": "Grass",
