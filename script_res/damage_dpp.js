@@ -379,7 +379,7 @@ function CALCULATE_DAMAGE_DPP(attacker, defender, move, field) {
     }
     
     var filterMod = 1;
-    if ((defAbility === "Filter" || defAbility === "Solid Rock") && typeEffectiveness > 1) {
+    if ((defAbility === "Filter" || defAbility === "Solid Rock" || defAbility === "Prism Armor") && typeEffectiveness > 1) {
         filterMod = 0.75;
         description.defenderAbility = defAbility;
     }

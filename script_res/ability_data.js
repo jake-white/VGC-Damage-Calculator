@@ -119,7 +119,10 @@ var ABILITIES_SM = ABILITIES_XY.concat([
     'Fluffy',
     'RKS System',
     'Shadow Shield',
-    'Prism Armor'
+    'Prism Armor',
+    'Full Metal Body',
+    'Shadow Shield',
+    'Battery'
 ]);
 
 ABILITIES_XY.splice(ABILITIES_XY.indexOf('Lightningrod'), 1, 'Lightning Rod');

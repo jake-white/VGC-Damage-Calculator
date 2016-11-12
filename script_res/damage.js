@@ -299,6 +299,8 @@ function getDamageResult(attacker, defender, move, field) {
     } else if (attacker.ability === "Tough Claws" && move.makesContact) {
         bpMods.push(0x1547);
         description.attackerAbility = attacker.ability;
+    } else if(defender.ability === "Fluffy" && move.makesContact){
+        bpMods.push(0x800);
     }
     
 
@@ -502,7 +504,7 @@ function getDamageResult(attacker, defender, move, field) {
         finalMods.push(field.format !== "Singles" ? 0xA8F : 0x800);
         description.isLightScreen = true;
     }
-    if (defAbility === "Multiscale" && defender.curHP === defender.maxHP) {
+    if ((defAbility === "Multiscale" || defAbility == "Shadow Shield") && defender.curHP === defender.maxHP) {
         finalMods.push(0x800);
         description.defenderAbility = defAbility;
     }
@@ -534,7 +536,7 @@ function getDamageResult(attacker, defender, move, field) {
         finalMods.push(0x800);
         description.defenderItem = defender.item;
     }
-    if (defAbility === "Fur Coat" && hitsPhysical) {
+    if (defAbility === "Fur Coat" && hitsPhysical){
         finalMods.push(0x800);
         description.defenderAbility = defAbility;
     }
@@ -732,7 +734,7 @@ function checkIntimidate(source, target) {
     if (source.ability === "Intimidate") {
         if (target.ability === "Contrary" || target.ability === "Defiant") {
             target.boosts[AT] = Math.min(6, target.boosts[AT] + 1);
-        } else if (["Clear Body", "White Smoke", "Hyper Cutter"].indexOf(target.ability) !== -1) {
+        } else if (["Clear Body", "White Smoke", "Hyper Cutter", "Full Metal Body"].indexOf(target.ability) !== -1) {
             // no effect
         } else if (target.ability === "Simple") {
             target.boosts[AT] = Math.max(-6, target.boosts[AT] - 2);

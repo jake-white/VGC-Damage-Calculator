@@ -4907,7 +4907,29 @@ var SETDEX_SM={
         "sp": 252
       },
       "nature": "Timid",
-      "ability": "Protean",
+      "ability": "",
+      "item": "Life Orb",
+      "moves": [
+        "Ice Beam",
+        "Dark Pulse",
+        "Scald",
+        "Gunk Shot"
+      ]
+    }
+  },
+  "Ash-Greninja": {
+    "Common Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 4,
+        "at": 0,
+        "df": 0,
+        "sa": 252,
+        "sd": 0,
+        "sp": 252
+      },
+      "nature": "Timid",
+      "ability": "Battle Bond",
       "item": "Life Orb",
       "moves": [
         "Ice Beam",
@@ -5960,7 +5982,7 @@ var SETDEX_SM={
       },
       "nature": "Timid",
       "ability": "Blaze",
-      "item": "Charizardite Y",
+      "item": "",
       "moves": [
         "Heat Wave",
         "Solar Beam",
@@ -8280,7 +8302,7 @@ var SETDEX_SM={
       },
       "nature": "Timid",
       "ability": "Pressure",
-      "item": "Mewtwonite Y",
+      "item": "",
       "moves": [
         "Psystrike",
         "Ice Beam",
@@ -8288,6 +8310,74 @@ var SETDEX_SM={
         "Aura Sphere"
       ]
     }    
-  }
+  },
 
+  "Decidueye": {
+    "Common Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 252,
+        "df": 4,
+        "sa": 0,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Adamant",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Spirit Shackle",
+        "Sucker Punch",
+        "Leaf Blade",
+        "Shadow Ball",
+      ]
+    }    
+  },
+
+  "Incineroar": {
+    "Common Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 252,
+        "df": 4,
+        "sa": 0,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Adamant",
+      "ability": "Intimidate",
+      "item": "",
+      "moves": [
+        "Flare Blitz",
+        "Darkest Lariat",
+        "Fire Fang",
+        "Snarl",
+      ]
+    }    
+  },
+
+  "Primarina": {
+    "Common Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 252,
+        "df": 4,
+        "sa": 0,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Adamant",
+      "ability": "Liquid Voice",
+      "item": "",
+      "moves": [
+        "Hyper Voice",
+        "Sparkling Aria",
+        "Moonblast",
+        "Dazzling Gleam",
+      ]
+    }    
+  }
 };

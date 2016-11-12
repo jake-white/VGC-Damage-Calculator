@@ -9622,6 +9622,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
       "sd": 71,
       "sp": 122
     },
+    "ab": "Protean",
     "w": 40.0
   },
   "Hawlucha": {
@@ -10915,6 +10916,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
   "Sandslash": { "formes": ["Sandslash", "Alolan Sandslash"] },
   "Grimer": { "formes": ["Grimer", "Alolan Grimer"] },
   "Muk": { "formes": ["Muk", "Alolan Muk"] }, 
+  "Greninja": { "formes": ["Greninja", "Ash-Greninja"] },
 
   //abilities
   "Pelipper": { "ab": "Drizzle"},
@@ -10956,7 +10958,25 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
   "Delcatty": { "bs": { "sp": 90 } },
   "Masquerain": { "bs": { "sp": 80, "sa": 100 } }, 
 
+  //alakazam buff because he's a special snowflake
+  "Mega Alakazam": { "bs": { "sd": 105} },
+
   //and here's the dex!
+  "Ash-Greninja": {
+    "t1": "Water",
+    "t2": "Dark",
+    "bs": {
+      "hp": 72,
+      "at": 145,
+      "df": 67,
+      "sa": 153,
+      "sd": 71,
+      "sp": 132
+    },
+    "w": 40.0,
+    "ab": "Battle Bond",
+    "isAlternateForme": true
+  },
   "Alolan Rattata": {
     "t1": "Dark",
     "t2": "Normal",
@@ -11761,6 +11781,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
       "sd": 50,
       "sp": 50
     },
+    "ab": "Fluffy",
     "w": 6.8,
   },
   "Bewear": {
@@ -11774,6 +11795,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
       "sd": 60,
       "sp": 60
     },
+    "ab": "Fluffy",
     "w": 135.0,
   },
   "Bounsweet": {
@@ -12211,6 +12233,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
       "sd": 89,
       "sp": 97
     },
+    "ab": "Full Metal Body",
     "w": 230.0,
   },
   "Lunala": {
@@ -12224,6 +12247,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
       "sd": 107,
       "sp": 97
     },
+    "ab": "Shadow Shield",
     "w": 120.0,
   },
   "Nihilego": {

@@ -1787,8 +1787,13 @@ var MOVES_XY = $.extend(true, {}, MOVES_BW, {
         type: 'Water',
         category: 'Physical',
         isMultiHit: true
-    },'Aurora Beam': {bp: 65,
-        type: 'Ice', category: 'Special'}});
+    },
+    'Aurora Beam': {
+        bp: 65,
+        type: 'Ice', 
+        category: 'Special'
+    }
+});
 
 MOVES_XY['Ancient Power'] = MOVES_XY['AncientPower'];
 MOVES_XY['Dynamic Punch'] = MOVES_XY['DynamicPunch'];
@@ -1811,9 +1816,222 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
     'Water Shuriken': {
         category: 'Special',
     },
-    'Gigavolt Havoc': {
-        bp: 175,
-        type: 'Water',
+    'Leech Life': {
+        category: 'Physical',
+        type: 'Bug',
+        bp: 80
+    },
+    'Zing Zap': {
+        category: 'Physical',
+        type: 'Electric',
+        bp: 80
+    },
+    'Moongeist Beam': {
         category: 'Special',
+        type: 'Ghost',
+        bp: 100
+    },
+    'Sunsteel Strike': {
+        category: 'Physical',
+        type: 'Steel',
+        bp: 100
+    },
+    'Spectral Thief': {
+        category: 'Physical',
+        type: 'Ghost',
+        bp: 90
+    },
+    'Prismatic Laser': {
+        category: 'Special',
+        type: 'Psychic',
+        bp: 160
+    },
+    'Liquidation': {
+        category: 'Physical',
+        type: 'Water',
+        bp: 85
+    },
+    'Accelerock': {
+        category: 'Physical',
+        type: 'Rock',
+        bp: 40
+    },
+    'Shadow Ball': {
+        category: 'Physical',
+        type: 'Ghost',
+        bp: 85
+    },
+    'Stomping Tantrum': {
+        category: 'Physical',
+        type: 'Ground',
+        bp: 75
+    },
+    'Psychic Fangs': {
+        category: 'Physical',
+        type: 'Psychic',
+        bp: 95
+    },
+    'Fleur Cannon': {
+        category: 'Special',
+        type: 'Fairy',
+        bp: 130
+    },
+    'Shell Trap': {
+        category: 'Special',
+        type: 'Fire',
+        bp: 150
+    },
+    'Genesis Supernova': {
+        category: 'Special',
+        type: 'Psychic',
+        bp: 185
+    },
+    'Pulverizing Pancake': {
+        category: 'Physical',
+        type: 'Normal',
+        bp: 210
+    },
+    'Stoked Sparksurfer': {
+        category: 'Special',
+        type: 'Electric',
+        bp: 175
+    },
+    'Soul-Stealing 7-Star Strike': {
+        category: 'Physical',
+        type: 'Ghost',
+        bp: 195
+    },
+    'Oceanic Operetta': {
+        category: 'Special',
+        type: 'Water',
+        bp: 195
+    },
+    'Malicious Moonsault': {
+        category: 'Physical',
+        type: 'Dark',
+        bp: 180
+    },
+    'Sinister Arrow Raid': {
+        category: 'Physical',
+        type: 'Ghost',
+        bp: 180
+    },
+    'Brutal Swing': {
+        category: 'Physical',
+        type: 'Dark',
+        bp: 60,
+        isSpread: true
+    },
+    'Dragon Hammer': {
+        category: 'Physical',
+        type: 'Dragon',
+        bp: 90,
+    },
+    'Clinging Scales': {
+        category: 'Special',
+        type: 'Dragon',
+        bp: 110
+    },
+    'Beak Blast': {
+        category: 'Physical',
+        type: 'Flying',
+        bp: 100
+    },
+    'Trop Kick': {
+        category: 'Physical',
+        type: 'Grass',
+        bp: 70
+    },
+    'Core Enforcer': {
+        category: 'Special',
+        type: 'Dragon',
+        bp: 100,
+        isSpread: true
+    },
+    'Revelation Dance':{
+        category: 'Special',
+        type: 'Normal',
+        bp: 90
+    },
+    'Smart Strike':{
+        category: 'Physical',
+        type: 'Steel',
+        bp: 70
+    },
+    'Multi-Attack': {
+        category: 'Physical',
+        type: 'Normal',
+        bp: 90
+    },
+    'Burn Up': {
+        category: 'Special',
+        type: 'Fire',
+        bp: 130
+    },
+    'Power Trip': {
+        category: 'Physical',
+        type: 'Dark',
+        bp: 20
+    },
+    'Fire Lash': {
+        category: 'Physical',
+        type: 'Fire',
+        bp: 80
+    },
+    'Lunge': {
+        category: 'Physical',
+        type: 'Bug',
+        bp: 80
+    },
+    'Anchor Shot': {
+        category: 'Physical',
+        type: 'Steel',
+        bp: 80
+    },
+    'Pollen Puff': {
+        category: 'Special',
+        type: 'Bug',
+        bp: 90
+    },
+    'Throat Chop': {
+        category: 'Physical',
+        type: 'Dark',
+        bp: 80
+    },
+    'Solar Blade': {
+        category: 'Physical',
+        type: 'Grass',
+        bp: 125
+    },
+    'High Horsepower': {
+        category: 'Physical',
+        type: 'Ground',
+        bp: 95
+    },
+    'Ice Hammer': {
+        category: 'Physical',
+        type: 'Ice',
+        bp: 100
+    },
+    'Sparkling Aria': {
+         category: 'Special',
+         type: 'Water',
+         bp: 90,
+         isSpread: true
+    },
+    'Darkest Lariat': {
+        category: 'Physical',
+        type: 'Dark',
+        bp: 85
+    },
+    'Spirit Shackle': {
+        category: 'Phyiscal',
+        type: 'Ghost',
+        bp: 80
+    },
+    'Catastropika': {
+        category: 'Physical',
+        type: 'Electric',
+        bp: 210
     }
 });

@@ -178,7 +178,7 @@ select.toxic-counter {
     font-size: 0.9em;
 }
 .move-selector {
-    width: 9.5em;
+    width: 9.0em;
 }
 .poke-info input.move-bp {
     width: 2em;
@@ -191,6 +191,13 @@ select.toxic-counter {
     width: 2.5em;
     height: 1em;
     padding: 3px 3px;
+}
+.poke-info .x-btn {
+    font-size: 0.8em;
+    width: 3.5em;
+    height: 1em;
+    padding: 3px 3px;
+    margin-left: 0.3em;
 }
 .poke-info .ev-total {
     font-size: 0.8em;
