@@ -135,6 +135,7 @@ var lastAura = [false, false, false]
 $(".ability").bind("keyup change", function() {
     $(this).closest(".poke-info").find(".move-hits").val($(this).val() === 'Skill Link' ? 5 : 3);
     autoSetAura()
+    autoSetTerrain()
 });
 
 $("#p1 .ability").bind("keyup change", function() {
@@ -144,6 +145,7 @@ $("#p2 .ability").bind("keyup change", function() {
     autosetWeather($(this).val(), 1);
 });
 
+var lastTerrain = "noterrain";
 var lastManualWeather = "";
 var lastAutoWeather = ["", ""];
 function autoSetAura()
@@ -163,6 +165,30 @@ function autoSetAura()
     else        
         $("input:checkbox[id='aura-break']").prop("checked", lastAura[2])
 }
+function autoSetTerrain()
+{
+    var ability1 = $("#p1 .ability").val()
+    var ability2 = $("#p2 .ability").val()
+    if((ability1 == "Electric Surge" || ability2 == "Electric Surge")){
+        $("input:radio[id='electric']").prop("checked", true)
+        lastTerrain = 'electric';
+    }
+    else if((ability1 == "Grassy Surge" || ability2 == "Grassy Surge")){
+        $("input:radio[id='grassy']").prop("checked", true)
+        lastTerrain = 'grassy';
+    }
+    else if((ability1 == "Misty Surge" || ability2 == "Misty Surge")){
+        $("input:radio[id='misty']").prop("checked", true)
+        lastTerrain = 'misty';
+    }
+    else if((ability1 == "Psychic Surge" || ability2 == "Psychic Surge")){
+        $("input:radio[id='psychic']").prop("checked", true)
+        lastTerrain = 'psychic';
+    }
+    else
+        $("input:radio[id='noterrain']").prop("checked", true)
+}
+
 function autosetWeather(ability, i) {
     var currentWeather = $("input:radio[name='weather']:checked").val();
     if (lastAutoWeather.indexOf(currentWeather) === -1 || currentWeather === "") {
@@ -405,6 +431,7 @@ $(".forme").change(function() {
         baseStat.keyup();
     }
 
+    console.log(setName);
     if (abilities.indexOf(altForme.ab) > -1) {
         container.find(".ability").val(altForme.ab);
     } else if (setName !== "Blank Set" && abilities.indexOf(setdex[pokemonName][setName].ability) > -1) {
@@ -658,7 +685,7 @@ function Field() {
         weather = $("input:radio[name='weather']:checked").val();
         spikes = [~~$("input:radio[name='spikesL']:checked").val(), ~~$("input:radio[name='spikesR']:checked").val()];
     }
-    var terrain = ($("input:checkbox[name='terrain']:checked").val()) ? $("input:checkbox[name='terrain']:checked").val() : "";
+    var terrain = ($("input:radio[name='terrain']:checked").val()) ? $("input:radio[name='terrain']:checked").val() : "";
     var isReflect = [$("#reflectL").prop("checked"), $("#reflectR").prop("checked")];
     var isLightScreen = [$("#lightScreenL").prop("checked"), $("#lightScreenR").prop("checked")];
     var isForesight = [$("#foresightL").prop("checked"), $("#foresightR").prop("checked")];
@@ -756,6 +783,7 @@ $(".gen").change(function () {
             calcStat = CALC_STAT_ADV;
             break;
         case 6:
+            console.log("GEN SIX")
             pokedex = POKEDEX_XY;
             setdex = SETDEX_XY;
             typeChart = TYPE_CHART_XY;
@@ -766,7 +794,9 @@ $(".gen").change(function () {
             calculateAllMoves = CALCULATE_ALL_MOVES_BW;
             calcHP = CALC_HP_ADV;
             calcStat = CALC_STAT_ADV;
+            break;
         case 7:
+            console.log("GEN 7")
             pokedex = POKEDEX_SM;
             setdex = SETDEX_SM;
             typeChart = TYPE_CHART_XY;
@@ -777,7 +807,6 @@ $(".gen").change(function () {
             calculateAllMoves = CALCULATE_ALL_MOVES_BW;
             calcHP = CALC_HP_ADV;
             calcStat = CALC_STAT_ADV;
-            break;
     }
     clearField();
     $(".gen-specific.g" + gen).show();
@@ -879,8 +908,8 @@ function getSelectOptions(arr, sort, defaultIdx) {
 }
 
 $(document).ready(function() {
-    $("#gen6").prop("checked", true);
-    $("#gen6").change();
+    $("#gen7").prop("checked", true);
+    $("#gen7").change();
     $(".terrain-trigger").bind("change keyup", getTerrainEffects);
     $(".calc-trigger").bind("change keyup", calculate);
     $(".set-selector").select2({

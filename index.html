@@ -1,5 +1,7 @@
 <html lang="us">
-<link rel="shortcut icon" type="image/png" href="image_res/favicon.ico"/>
+<link rel="icon" type="image/png" href="image_res/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="image_res/favicon-16x16.png" sizes="16x16" />
+
 <!-- <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -167,15 +169,16 @@
         <div class="panel field-info">
             <div class="panel-heading"><h4 class="panel-title">Field</h4></div>
             <div class="panel-body">
-                <div class="gen-specific g3 g4 g5 g6 g7 g7" style="width: 10.6em; margin: 0 auto 5px;" title="Select the battle format.">
+                <div class="gen-specific g3 g4 g5 g6 g7" style="width: 10.6em; margin: 0 auto 5px;" title="Select the battle format.">
                     <input class="btn-input calc-trigger" type="radio" name="format" value="Singles" id="singles" checked="checked" /><label class="btn btn-left" for="singles">Singles</label>
                     <input class="btn-input calc-trigger" type="radio" name="format" value="Doubles" id="doubles" /><label class="btn btn-right" for="doubles">Doubles</label>
                 </div>
-                <div class="gen-specific g6 g7 g7" style="width: 24.3em; margin: 5px auto;" title="Select the current terrain.">
-                    <input class="btn-input terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Electric" id="electric" /><label class="btn btn-small btn-left" for="electric">Electric Terrain</label>
-                    <input class="btn-input terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Grassy" id="grassy" /><label class="btn btn-small btn-mid" for="grassy">Grassy Terrain</label>
-                    <input class="btn-input terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Misty" id="misty" /><label class="btn btn-small btn-mid" for="misty">Misty Terrain</label>
-                    <input class="btn-input terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Psychic" id="psychic" /><label class="btn btn-small btn-right" for="misty">Psychic Terrain</label>
+                <div class="gen-specific g6 g7" style="width: 22.0em; margin: 5px auto;" title="Select the current terrain.">
+                    <input class="btn-input terrain-trigger calc-trigger" type="radio" name="terrain" value="" id="noterrain" checked="checked" /><label class="btn btn-small btn-left" for="noterrain">None</label>
+                    <input class="btn-input terrain-trigger calc-trigger" type="radio" name="terrain" value="Electric" id="electric" /><label class="btn btn-small btn-mid" for="electric">Electric</label>
+                    <input class="btn-input terrain-trigger calc-trigger" type="radio" name="terrain" value="Grassy" id="grassy" /><label class="btn btn-small btn-mid" for="grassy">Grassy</label>
+                    <input class="btn-input terrain-trigger calc-trigger" type="radio" name="terrain" value="Misty" id="misty" /><label class="btn btn-small btn-mid" for="misty">Misty</label>
+                    <input class="btn-input terrain-trigger calc-trigger" type="radio" name="terrain" value="Psychic" id="psychic" /><label class="btn btn-small btn-right" for="psychic">Psychic</label>
                 </div>
                 <hr class="gen-specific g6 g7 g7" />
                 <div class="gen-specific g3 g4 g5 g6 g7 g7" style="width: 22.2em; margin: 5px auto;" title="Select the current weather condition.">

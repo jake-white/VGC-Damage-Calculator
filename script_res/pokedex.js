@@ -8977,96 +8977,6 @@ var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
   }
 });
 
-delete POKEDEX_BW['Bulbasaur'].ab;
-delete POKEDEX_BW['Ivysaur'].ab;
-delete POKEDEX_BW['Venusaur'].ab;
-delete POKEDEX_BW['Charmander'].ab;
-delete POKEDEX_BW['Charmeleon'].ab;
-delete POKEDEX_BW['Charizard'].ab;
-delete POKEDEX_BW['Squirtle'].ab;
-delete POKEDEX_BW['Wartortle'].ab;
-delete POKEDEX_BW['Blastoise'].ab;
-delete POKEDEX_BW['Beedrill'].ab;
-delete POKEDEX_BW['Sandshrew'].ab;
-delete POKEDEX_BW['Sandslash'].ab;
-delete POKEDEX_BW['Vulpix'].ab;
-delete POKEDEX_BW['Ninetales'].ab;
-delete POKEDEX_BW['Oddish'].ab;
-delete POKEDEX_BW['Gloom'].ab;
-delete POKEDEX_BW['Vileplume'].ab;
-delete POKEDEX_BW['Bellsprout'].ab;
-delete POKEDEX_BW['Weepinbell'].ab;
-delete POKEDEX_BW['Victreebel'].ab;
-delete POKEDEX_BW['Exeggcute'].ab;
-delete POKEDEX_BW['Exeggutor'].ab;
-delete POKEDEX_BW['Magikarp'].ab;
-delete POKEDEX_BW['Gyarados'].ab;
-delete POKEDEX_BW['Vaporeon'].ab;
-delete POKEDEX_BW['Jolteon'].ab;
-delete POKEDEX_BW['Flareon'].ab;
-delete POKEDEX_BW['Bellossom'].ab;
-delete POKEDEX_BW['Larvitar'].ab;
-delete POKEDEX_BW['Tyranitar'].ab;
-delete POKEDEX_BW['Treecko'].ab;
-delete POKEDEX_BW['Grovyle'].ab;
-delete POKEDEX_BW['Sceptile'].ab;
-delete POKEDEX_BW['Torchic'].ab;
-delete POKEDEX_BW['Combusken'].ab;
-delete POKEDEX_BW['Blaziken'].ab;
-delete POKEDEX_BW['Mudkip'].ab;
-delete POKEDEX_BW['Marshtomp'].ab;
-delete POKEDEX_BW['Swampert'].ab;
-delete POKEDEX_BW['Beautifly'].ab;
-delete POKEDEX_BW['Taillow'].ab;
-delete POKEDEX_BW['Swellow'].ab;
-delete POKEDEX_BW['Surskit'].ab;
-delete POKEDEX_BW['Masquerain'].ab;
-delete POKEDEX_BW['Whismur'].ab;
-delete POKEDEX_BW['Loudred'].ab;
-delete POKEDEX_BW['Exploud'].ab;
-delete POKEDEX_BW['Meditite'].ab;
-delete POKEDEX_BW['Medicham'].ab;
-delete POKEDEX_BW['Torkoal'].ab;
-delete POKEDEX_BW['Cacnea'].ab;
-delete POKEDEX_BW['Cacturne'].ab;
-delete POKEDEX_BW['Anorith'].ab;
-delete POKEDEX_BW['Armaldo'].ab;
-delete POKEDEX_BW['Feebas'].ab;
-delete POKEDEX_BW['Milotic'].ab;
-delete POKEDEX_BW['Clamperl'].ab;
-delete POKEDEX_BW['Huntail'].ab;
-delete POKEDEX_BW['Gorebyss'].ab;
-delete POKEDEX_BW['Luvdisc'].ab;
-delete POKEDEX_BW['Salamence'].ab;
-delete POKEDEX_BW['Beldum'].ab;
-delete POKEDEX_BW['Metang'].ab;
-delete POKEDEX_BW['Metagross'].ab;
-delete POKEDEX_BW['Turtwig'].ab;
-delete POKEDEX_BW['Grotle'].ab;
-delete POKEDEX_BW['Torterra'].ab;
-delete POKEDEX_BW['Chimchar'].ab;
-delete POKEDEX_BW['Monferno'].ab;
-delete POKEDEX_BW['Infernape'].ab;
-delete POKEDEX_BW['Piplup'].ab;
-delete POKEDEX_BW['Prinplup'].ab;
-delete POKEDEX_BW['Empoleon'].ab;
-delete POKEDEX_BW['Staravia'].ab;
-delete POKEDEX_BW['Staraptor'].ab;
-delete POKEDEX_BW['Kricketune'].ab;
-delete POKEDEX_BW['Mothim'].ab;
-delete POKEDEX_BW['Buizel'].ab;
-delete POKEDEX_BW['Floatzel'].ab;
-delete POKEDEX_BW['Gible'].ab;
-delete POKEDEX_BW['Gabite'].ab;
-delete POKEDEX_BW['Garchomp'].ab;
-delete POKEDEX_BW['Hippopotas'].ab;
-delete POKEDEX_BW['Hippowdon'].ab;
-delete POKEDEX_BW['Snover'].ab;
-delete POKEDEX_BW['Abomasnow'].ab;
-delete POKEDEX_BW['Electivire'].ab;
-delete POKEDEX_BW['Glaceon'].ab;
-delete POKEDEX_BW['Froslass'].ab;
-
 var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
   "Venusaur": { "formes": ["Venusaur", "Mega Venusaur"] },
   "Charizard": { "formes": ["Charizard", "Mega Charizard X", "Mega Charizard Y"] },
@@ -10983,11 +10893,14 @@ delete POKEDEX_XY['Dewott'].ab;
 delete POKEDEX_XY['Samurott'].ab;
 
 var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
+
+
+
+  //alolan forms
   "Rattata": { "formes": ["Rattata", "Alolan Rattata"] },
   "Raticate": { "formes": ["Raticate", "Alolan Raticate"] },
   "Meowth": { "formes": ["Meowth", "Alolan Meowth"] },
   "Persian": { "formes": ["Persian", "Alolan Persian"] },
-  "Pikachu": { "formes": ["Pikachu", "Alolan Pikachu"] },
   "Raichu": { "formes": ["Raichu", "Alolan Raichu"] },
   "Marowak": { "formes": ["Marowak", "Alolan Marowak"] },
   "Geodude": { "formes": ["Geodude", "Alolan Geodude"] },
@@ -11001,7 +10914,298 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
   "Sandshrew": { "formes": ["Sandshrew", "Alolan Sandshrew"] },
   "Sandslash": { "formes": ["Sandslash", "Alolan Sandslash"] },
   "Grimer": { "formes": ["Grimer", "Alolan Grimer"] },
-  "Muk": { "formes": ["Muk", "Alolan Muk"] },  
+  "Muk": { "formes": ["Muk", "Alolan Muk"] }, 
+
+  //abilities
+  "Pelipper": { "ab": "Drizzle"},
+  "Torkoal": {"ab": "Drought"},
+
+  //hp buffs
+  "Magcargo": { "bs": { "hp": 60, "sa": 90 } },
+  "Corsola": { "bs": { "hp": 65, "df": 95, "sd": 95 } },  
+  "Mantine": { "bs": { "hp": 85 } },
+  "Lunatone": { "bs": { "hp": 90 } },
+  "Solrock": { "bs": { "hp": 90 } },
+  "Chimecho": { "bs": { "hp": 75, "df": 80, "sd": 90 } },
+  "Woobat": { "bs": { "hp": 65 } },
+  "Cryogonal": { "bs": { "hp": 80, "df": 50 } },
+
+  //attack buffs
+  "Arbok": { "bs": { "at": 95 } },
+  "Dugtrio": { "bs": { "at": 100 } },
+  "Farfetch\u0027d": { "bs": { "at": 90 } },
+  "Crustle": { "bs": { "at": 105 } },
+  "Beartic": { "bs": { "at": 130 } },
+
+  //defense buffs  
+  "Qwilfish": { "bs": { "df": 85 } },
+  "Volbeat": { "bs": { "df": 75, "sd": 85 } },
+  "Illumise": { "bs": { "df": 75, "sd": 85 } },
+
+  //special attack buffs  
+  "Noctowl": { "bs": { "sa": 86 } },
+  "Swellow": { "bs": { "sa": 75 } },
+
+  //special defense buffs
+  "Exeggutor": {"bs": { "sd": 75 } },
+  "Ariados": { "bs": { "sd": 70 } },
+
+  //speed buffs
+  "Dodrio": { "bs": { "sp": 110 } },
+  "Electrode": { "bs": { "sp": 140 } },
+  "Delcatty": { "bs": { "sp": 90 } },
+  "Masquerain": { "bs": { "sp": 80, "sa": 100 } }, 
+
+  //and here's the dex!
+  "Alolan Rattata": {
+    "t1": "Dark",
+    "t2": "Normal",
+    "bs": {
+      "hp": 30,
+      "at": 56,
+      "df": 35,
+      "sa": 25,
+      "sd": 35,
+      "sp": 72
+    },
+    "w": 3.8,
+    "isAlternateForme": true
+  },
+  "Alolan Raticate": {
+    "t1": "Dark",
+    "t2": "Normal",
+    "bs": {
+      "hp": 75,
+      "at": 71,
+      "df": 70,
+      "sa": 40,
+      "sd": 80,
+      "sp": 77
+    },
+    "w": 25.5,
+    "isAlternateForme": true
+  },
+  "Alolan Meowth": {
+    "t1": "Dark",
+    "bs": {
+      "hp": 40,
+      "at": 35,
+      "df": 35,
+      "sa": 50,
+      "sd": 40,
+      "sp": 90
+    },
+    "w": 4.2,
+    "isAlternateForme": true
+  },
+  "Alolan Persian": {
+    "t1": "Dark",
+    "bs": {
+      "hp": 65,
+      "at": 60,
+      "df": 60,
+      "sa": 75,
+      "sd": 65,
+      "sp": 115
+    },
+    "w": 33.0,
+    "isAlternateForme": true
+  },
+  "Alolan Raichu": {
+    "t1": "Electric",
+    "t2": "Psychic",
+    "bs": {
+      "hp": 60,
+      "at": 85,
+      "df": 50,
+      "sa": 95,
+      "sd": 85,
+      "sp": 110
+    },
+    "w": 21.0,
+    "isAlternateForme": true
+  },
+  "Alolan Marowak": {
+    "t1": "Fire",
+    "t2": "Ghost",
+    "bs": {
+      "hp": 60,
+      "at": 80,
+      "df": 110,
+      "sa": 50,
+      "sd": 80,
+      "sp": 45
+    },
+    "w": 34.0,
+    "isAlternateForme": true
+  },
+  "Alolan Geodude": {
+    "t1": "Rock",
+    "t2": "Electric",
+    "bs": {
+      "hp": 40,
+      "at": 80,
+      "df": 100,
+      "sa": 30,
+      "sd": 30,
+      "sp": 20
+    },
+    "w": 20.3,
+    "isAlternateForme": true
+  },
+  "Alolan Graveler": {
+    "t1": "Rock",
+    "t2": "Electric",
+    "bs": {
+      "hp": 55,
+      "at": 95,
+      "df": 115,
+      "sa": 45,
+      "sd": 45,
+      "sp": 35
+    },
+    "w": 110.0,
+    "isAlternateForme": true
+  },
+  "Alolan Golem": {
+    "t1": "Rock",
+    "t2": "Electric",
+    "bs": {
+      "hp": 80,
+      "at": 120,
+      "df": 130,
+      "sa": 55,
+      "sd": 65,
+      "sp": 45
+    },
+    "w": 316.0,
+    "isAlternateForme": true
+  },
+  "Alolan Exeggutor": {
+    "t1": "Grass",
+    "t2": "Dragon",
+    "bs": {
+      "hp": 95,
+      "at": 105,
+      "df": 85,
+      "sa": 125,
+      "sd": 75,
+      "sp": 45
+    },
+    "w": 415.6,
+    "isAlternateForme": true
+  },
+  "Alolan Diglett": {
+    "t1": "Ground",
+    "t2": "Steel",
+    "bs": {
+      "hp": 10,
+      "at": 55,
+      "df": 30,
+      "sa": 35,
+      "sd": 45,
+      "sp": 90
+    },
+    "w": 1.0,
+    "isAlternateForme": true
+  },
+  "Alolan Dugtrio": {
+    "t1": "Ground",
+    "t2": "Steel",
+    "bs": {
+      "hp": 35,
+      "at": 100,
+      "df": 60,
+      "sa": 50,
+      "sd": 70,
+      "sp": 110
+    },
+    "w": 66.6,
+    "isAlternateForme": true
+  },
+  "Alolan Vulpix": {
+    "t1": "Ice",
+    "bs": {
+      "hp": 38,
+      "at": 41,
+      "df": 40,
+      "sa": 50,
+      "sd": 65,
+      "sp": 65
+    },
+    "w": 9.9,
+    "isAlternateForme": true
+  },
+  "Alolan Ninetales": {
+    "t1": "Ice",
+    "t2": "Fairy",
+    "bs": {
+      "hp": 73,
+      "at": 67,
+      "df": 75,
+      "sa": 81,
+      "sd": 100,
+      "sp": 109
+    },
+    "w": 19.9,
+    "isAlternateForme": true
+  },
+  "Alolan Sandshrew": {
+    "t1": "Ice",
+    "t2": "Steel",
+    "bs": {
+      "hp": 50,
+      "at": 75,
+      "df": 90,
+      "sa": 10,
+      "sd": 35,
+      "sp": 40
+    },
+    "w": 40.0,
+    "isAlternateForme": true
+  },
+  "Alolan Sandslash": {
+    "t1": "Ice",
+    "t2": "Steel",
+    "bs": {
+      "hp": 50,
+      "at": 75,
+      "df": 90,
+      "sa": 10,
+      "sd": 35,
+      "sp": 40
+    },
+    "w": 55.0,
+    "isAlternateForme": true
+  },
+  "Alolan Grimer": {
+    "t1": "Poison",
+    "t2": "Dark",
+    "bs": {
+      "hp": 80,
+      "at": 80,
+      "df": 50,
+      "sa": 40,
+      "sd": 50,
+      "sp": 25
+    },
+    "w": 42.0,
+    "isAlternateForme": true
+  },
+  "Alolan Muk": {
+    "t1": "Poison",
+    "t2": "Dark",
+    "bs": {
+      "hp": 105,
+      "at": 105,
+      "df": 75,
+      "sa": 65,
+      "sd": 100,
+      "sp": 50
+    },
+    "w": 52.0,
+    "isAlternateForme": true
+  },
   "Rowlet": {
     "t1": "Grass",
     "t2": "Flying",
@@ -11926,6 +12130,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
       "sd": 75,
       "sp": 130
     },
+    "ab": "Electric Surge",
     "w": 20.5,
   },
   "Tapu Lele": {
@@ -11939,6 +12144,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
       "sd": 115,
       "sp": 95
     },
+    "ab": "Psychic Surge",
     "w": 18.6,
   },
   "Tapu Bulu": {
@@ -11952,6 +12158,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
       "sd": 95,
       "sp": 75
     },
+    "ab": "Grassy Surge",
     "w": 45.5,
   },
   "Tapu Fini": {
@@ -11965,6 +12172,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
       "sd": 130,
       "sp": 85
     },
+    "ab": "Misty Surge",
     "w": 21.2,
   },
   "Cosmog": {
@@ -12145,4 +12353,10 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     },
     "w": 22.2,
   },
+
 });
+
+delete POKEDEX_XY['Gengar'].ab;
+delete POKEDEX_XY['Raikou'].ab;
+delete POKEDEX_XY['Entei'].ab;
+delete POKEDEX_XY['Suicune'].ab;
