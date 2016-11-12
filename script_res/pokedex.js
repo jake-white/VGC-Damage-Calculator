@@ -11409,6 +11409,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
   },
   "Vikavolt": {
     "t1": "Bug",
+    "t2": "Electric",
     "bs": {
       "hp": 77,
       "at": 70,
@@ -12050,7 +12051,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
       "at": 105,
       "df": 70,
       "sa": 70,
-      "sd": 170,
+      "sd": 70,
       "sp": 92
     },
     "w": 19.0,
@@ -12063,7 +12064,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
       "at": 60,
       "df": 85,
       "sa": 135,
-      "sd": 191,
+      "sd": 91,
       "sp": 36
     },
     "w": 185.0,
