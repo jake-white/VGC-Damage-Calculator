@@ -11096,6 +11096,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
       "sd": 65,
       "sp": 45
     },
+    "ab": "Galvanize",
     "w": 316.0,
     "isAlternateForme": true
   },

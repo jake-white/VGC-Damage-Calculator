@@ -90,6 +90,7 @@ function getDamageResult(attacker, defender, move, field) {
     var isAerilate = attacker.ability === "Aerilate" && move.type === "Normal";
     var isPixilate = attacker.ability === "Pixilate" && move.type === "Normal";
     var isRefrigerate = attacker.ability === "Refrigerate" && move.type === "Normal";
+    var isGalvanize = attacker.ability === "Galvanize" && move.type === "Normal";
     if(!move.isZ){ //Z-Moves don't receive -ate type changes
         if (isAerilate) {
             move.type = "Flying";
@@ -97,13 +98,15 @@ function getDamageResult(attacker, defender, move, field) {
             move.type = "Fairy";
         } else if (isRefrigerate) {
             move.type = "Ice";
+        } else if(isGalvanize) {
+            move.type = "Electric";
         } else if (attacker.ability === "Normalize") {
             move.type = "Normal";
             description.attackerAbility = attacker.ability;
         } else if(attacker.ability === "Liquid Voice" && move.isSound){
             move.type = "Water"
             description.attackerAbility = attacker.ability;
-        }
+        } 
     }
     
     var typeEffect1 = getMoveEffectiveness(move, defender.type1, attacker.ability === "Scrappy" || field.isForesight, field.isGravity);
@@ -310,7 +313,7 @@ function getDamageResult(attacker, defender, move, field) {
         description.isHelpingHand = true;
     }
     
-    if (!move.isZ && (isAerilate || isPixilate || isRefrigerate)) {
+    if (!move.isZ && (isAerilate || isPixilate || isRefrigerate || isGalvanize)) {
         bpMods.push(0x14CD);
         description.attackerAbility = attacker.ability;
     } else if ((attacker.ability === "Mega Launcher" && move.isPulse) ||
