@@ -8363,13 +8363,13 @@ var SETDEX_SM={
       "level": 50,
       "evs": {
         "hp": 252,
-        "at": 252,
+        "at": 0,
         "df": 4,
-        "sa": 0,
+        "sa": 252,
         "sd": 0,
         "sp": 0
       },
-      "nature": "Adamant",
+      "nature": "Modest",
       "ability": "Liquid Voice",
       "item": "",
       "moves": [

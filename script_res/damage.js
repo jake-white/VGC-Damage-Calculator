@@ -41,6 +41,7 @@ function getDamageResult(attacker, defender, move, field) {
         move = moves[ZMOVES_LOOKUP[tempMove.type]];
         move.bp = tempMove.zp;
         move.name = "Z-"+tempMove.name;
+        move.isZ = true;
         move.category = tempMove.category;
         move.type = tempMove.type;
         move.isCrit = tempMove.isCrit;
@@ -89,15 +90,20 @@ function getDamageResult(attacker, defender, move, field) {
     var isAerilate = attacker.ability === "Aerilate" && move.type === "Normal";
     var isPixilate = attacker.ability === "Pixilate" && move.type === "Normal";
     var isRefrigerate = attacker.ability === "Refrigerate" && move.type === "Normal";
-    if (isAerilate) {
-        move.type = "Flying";
-    } else if (isPixilate) {
-        move.type = "Fairy";
-    } else if (isRefrigerate) {
-        move.type = "Ice";
-    } else if (attacker.ability === "Normalize") {
-        move.type = "Normal";
-        description.attackerAbility = attacker.ability;
+    if(!move.isZ){ //Z-Moves don't receive -ate type changes
+        if (isAerilate) {
+            move.type = "Flying";
+        } else if (isPixilate) {
+            move.type = "Fairy";
+        } else if (isRefrigerate) {
+            move.type = "Ice";
+        } else if (attacker.ability === "Normalize") {
+            move.type = "Normal";
+            description.attackerAbility = attacker.ability;
+        } else if(attacker.ability === "Liquid Voice" && move.isSound){
+            move.type = "Water"
+            description.attackerAbility = attacker.ability;
+        }
     }
     
     var typeEffect1 = getMoveEffectiveness(move, defender.type1, attacker.ability === "Scrappy" || field.isForesight, field.isGravity);
@@ -304,7 +310,7 @@ function getDamageResult(attacker, defender, move, field) {
         description.isHelpingHand = true;
     }
     
-    if (isAerilate || isPixilate || isRefrigerate) {
+    if (!move.isZ && (isAerilate || isPixilate || isRefrigerate)) {
         bpMods.push(0x14CD);
         description.attackerAbility = attacker.ability;
     } else if ((attacker.ability === "Mega Launcher" && move.isPulse) ||
@@ -397,7 +403,7 @@ function getDamageResult(attacker, defender, move, field) {
         description.attackerAbility = attacker.ability;
     }
     
-    if ((attacker.item === "Thick Club" && (attacker.name === "Cubone" || attacker.name === "Marowak") && move.category === "Physical") ||
+    if ((attacker.item === "Thick Club" && (attacker.name === "Cubone" || attacker.name === "Marowak" || attacker.name === "Alolan Marowak") && move.category === "Physical") ||
             (attacker.item === "Deep Sea Tooth" && attacker.name === "Clamperl" && move.category === "Special") ||
             (attacker.item === "Light Ball" && attacker.name === "Pikachu")) {
         atMods.push(0x2000);

@@ -2065,7 +2065,8 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
         category: 'Physical',
         type: 'Dark',
         bp: 85,
-        zp:160
+        zp:160,
+        ignoresDefenseBoosts: true
     },
     'Spirit Shackle': {
         category: 'Phyiscal',
