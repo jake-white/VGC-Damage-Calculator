@@ -2069,7 +2069,7 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
         ignoresDefenseBoosts: true
     },
     'Spirit Shackle': {
-        category: 'Phyiscal',
+        category: 'Physical',
         type: 'Ghost',
         bp: 80,
         zp: 160
