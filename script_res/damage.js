@@ -378,7 +378,7 @@ function getDamageResult(attacker, defender, move, field) {
     }
     
     var atMods = [];
-    if (defAbility === "Thick Fat" && (move.type === "Fire" || move.type === "Ice")) {
+    if ((defAbility === "Thick Fat" && (move.type === "Fire" || move.type === "Ice")) || (defAbility === "Water Bubble" && move.type === "Fire")) {
         atMods.push(0x800);
         description.defenderAbility = defAbility;
     }
