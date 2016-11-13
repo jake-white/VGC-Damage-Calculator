@@ -1951,7 +1951,7 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
         bp: 90,
         zp: 175
     },
-    'Clinging Scales': {
+    'Clanging Scales': {
         category: 'Special',
         type: 'Dragon',
         bp: 110,
