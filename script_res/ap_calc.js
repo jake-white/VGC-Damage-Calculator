@@ -431,7 +431,6 @@ $(".forme").change(function() {
         baseStat.keyup();
     }
 
-    console.log(setName);
     if (abilities.indexOf(altForme.ab) > -1) {
         container.find(".ability").val(altForme.ab);
     } else if (setName !== "Blank Set" && abilities.indexOf(setdex[pokemonName][setName].ability) > -1) {
@@ -784,7 +783,6 @@ $(".gen").change(function () {
             calcStat = CALC_STAT_ADV;
             break;
         case 6:
-            console.log("GEN SIX")
             pokedex = POKEDEX_XY;
             setdex = SETDEX_XY;
             typeChart = TYPE_CHART_XY;
@@ -797,7 +795,6 @@ $(".gen").change(function () {
             calcStat = CALC_STAT_ADV;
             break;
         case 7:
-            console.log("GEN 7")
             pokedex = POKEDEX_SM;
             setdex = SETDEX_SM;
             typeChart = TYPE_CHART_XY;
