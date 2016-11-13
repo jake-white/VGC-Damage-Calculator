@@ -11187,12 +11187,12 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     "t1": "Ice",
     "t2": "Steel",
     "bs": {
-      "hp": 50,
-      "at": 75,
-      "df": 90,
-      "sa": 10,
-      "sd": 35,
-      "sp": 40
+      "hp": 75,
+      "at": 100,
+      "df": 120,
+      "sa": 25,
+      "sd": 65,
+      "sp": 65
     },
     "w": 55.0,
     "isAlternateForme": true
