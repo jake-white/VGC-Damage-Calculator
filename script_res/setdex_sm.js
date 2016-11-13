@@ -9150,7 +9150,7 @@ var SETDEX_SM={
         "sd": 0,
         "sp": 0
       },
-      "nature": "Hasty",
+      "nature": "Modest",
       "ability": "Psychic Surge",
       "item": "",
       "moves": [
