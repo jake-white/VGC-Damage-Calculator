@@ -504,7 +504,7 @@ function getDamageResult(attacker, defender, move, field) {
     }
     // the random factor is applied between the crit mod and the stab mod, so don't apply anything below this until we're inside the loop
     var stabMod = 0x1000;
-    if (move.type === attacker.type1 || move.type === attacker.type2) {
+    if (move.type === attacker.type1 || move.type === attacker.type2 || (move.type === "Steel" && attacker.ability === "Steelworker")) {
         if (attacker.ability === "Adaptability") {
             stabMod = 0x2000;
             description.attackerAbility = attacker.ability;

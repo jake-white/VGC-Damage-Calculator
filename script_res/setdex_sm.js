@@ -8313,7 +8313,7 @@ var SETDEX_SM={
   },
 
   "Decidueye": {
-    "Common Showdown": {
+    "Random Meta Guess": {
       "level": 50,
       "evs": {
         "hp": 252,
@@ -8336,7 +8336,7 @@ var SETDEX_SM={
   },
 
   "Incineroar": {
-    "Common Showdown": {
+    "Random Meta Guess": {
       "level": 50,
       "evs": {
         "hp": 252,
@@ -8359,7 +8359,7 @@ var SETDEX_SM={
   },
 
   "Primarina": {
-    "Common Showdown": {
+    "Random Meta Guess": {
       "level": 50,
       "evs": {
         "hp": 252,
@@ -8379,5 +8379,833 @@ var SETDEX_SM={
         "Dazzling Gleam",
       ]
     }    
-  }
+  },
+
+  "Toucannon": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 252,
+        "df": 4,
+        "sa": 0,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Adamant",
+      "ability": "Skill Link",
+      "item": "",
+      "moves": [
+        "Beak Blast",
+        "Rock Blast",
+        "Fury Attack",
+        "Bullet Seed",
+      ]
+    }    
+  },
+
+  "Gumshoos": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 252,
+        "df": 4,
+        "sa": 0,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Adamant",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Super Fang",
+        "Return",
+        "",
+        "",
+      ]
+    }    
+  }, 
+
+  "Vikavolt": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 0,
+        "df": 4,
+        "sa": 252,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Modest",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Bug Buzz",
+        "Thunderbolt",
+        "Hidden Power Ice",
+        "Discharge",
+      ]
+    }    
+  },
+
+  "Crabominable": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 252,
+        "df": 4,
+        "sa": 0,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Adamant",
+      "ability": "Iron Fist",
+      "item": "",
+      "moves": [
+        "Ice Hammer",
+        "Power-Up Punch",
+        "Close Combat",
+        "Ice Punch",
+      ]
+    }    
+  },
+
+  "Oricorio": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 4,
+        "at": 0,
+        "df": 0,
+        "sa": 252,
+        "sd": 0,
+        "sp": 252
+      },
+      "nature": "Modest",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Revelation Dance",
+        "Air Slash",
+        "",
+        "",
+      ]
+    }    
+  },
+
+  "Ribombee": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 4,
+        "at": 0,
+        "df": 0,
+        "sa": 252,
+        "sd": 0,
+        "sp": 252
+      },
+      "nature": "Timid",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Pollen Puff",
+        "Moonblast",
+        "Dazzling Gleam",
+        "Energy Ball",
+      ]
+    }    
+  },
+
+  "Lycanroc-Midday": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 4,
+        "at": 252,
+        "df": 0,
+        "sa": 0,
+        "sd": 0,
+        "sp": 252
+      },
+      "nature": "Jolly",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Rock Slide",
+        "Accelerock",
+        "Stone Edge",
+        "Rock Tomb",
+      ]
+    }    
+  },
+
+  "Lycanroc-Midnight": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 252,
+        "df": 4,
+        "sa": 0,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Adamant",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Rock Slide",
+        "Accelerock",
+        "Stone Edge",
+        "Rock Tomb",
+      ]
+    }    
+  },
+
+  "Wishiwashi": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 4,
+        "df": 0,
+        "sa": 252,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Brave",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Scald",
+        "Ice Beam",
+        "Waterfall",
+        "Earthquake",
+      ]
+    }    
+  },
+
+  "Toxapex": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 0,
+        "df": 252,
+        "sa": 0,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Bold",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Liquidation",
+        "Poison Jab",
+        "",
+        "",
+      ]
+    }
+  },
+
+  "Mudsdale": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 252,
+        "df": 0,
+        "sa": 0,
+        "sd": 4,
+        "sp": 0
+      },
+      "nature": "Adamant",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "High Horsepower",
+        "Earthquake",
+        "Rock Slide",
+        "Superpower",
+      ]
+    }    
+  },
+
+  "Araquanid": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 252,
+        "df": 4,
+        "sa": 0,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Adamant",
+      "ability": "Water Absorb",
+      "item": "",
+      "moves": [
+        "Liquidation",
+        "Leech Life",
+        "Lunge",
+        "",
+      ]
+    }    
+  },
+
+  "Lurantis": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 252,
+        "df": 4,
+        "sa": 0,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Adamant",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Leaf Blade",
+        "Solar Blade",
+        "Leech Life",
+        "",
+      ]
+    }    
+  },
+
+  "Shiinotic": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 0,
+        "df": 0,
+        "sa": 252,
+        "sd": 4,
+        "sp": 0
+      },
+      "nature": "Modest",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Giga Drain",
+        "Grass Knot",
+        "Moonblast",
+        "Dazzling Gleam",
+      ]
+    }    
+  },
+
+  "Salazzle": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 4,
+        "at": 0,
+        "df": 0,
+        "sa": 252,
+        "sd": 0,
+        "sp": 252
+      },
+      "nature": "Jolly",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Fake Out",
+        "Sludge Bomb",
+        "Fire Blast",
+        "Flamethrower",
+      ]
+    }    
+  },
+
+  "Bewear": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 252,
+        "df": 4,
+        "sa": 0,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Adamant",
+      "ability": "Fluffy",
+      "item": "",
+      "moves": [
+        "Return",
+        "Double-Edge",
+        "Superpower",
+        "Rock Slide",
+      ]
+    }    
+  },
+
+  "Tsareena": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 252,
+        "df": 4,
+        "sa": 0,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Adamant",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Trop Kick",
+        "High Jump Kick",
+        "",
+        "",
+      ]
+    }    
+  },
+
+  "Comfey": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 0,
+        "at": 0,
+        "df": 0,
+        "sa": 252,
+        "sd": 0,
+        "sp": 252
+      },
+      "nature": "Timid",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Draining Kiss",
+        "Dazzling Gleam",
+        "",
+        "",
+      ]
+    }    
+  },
+
+  "Oranguru": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 0,
+        "df": 0,
+        "sa": 252,
+        "sd": 4,
+        "sp": 0
+      },
+      "nature": "Adamant",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Psychic",
+        "",
+        "",
+        "",
+      ]
+    }    
+  },
+
+  "Passimian": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 252,
+        "df": 4,
+        "sa": 0,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Adamant",
+      "ability": "Defiant",
+      "item": "",
+      "moves": [
+        "Close Combat",
+        "Earthquake",
+        "Feint",
+        "Iron Head",
+      ]
+    }    
+  },
+
+  "Golisopod": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 252,
+        "df": 4,
+        "sa": 0,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Adamant",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Liquidation",
+        "Leech Life",
+        "Sucker Punch",
+        "First Impression",
+      ]
+    }    
+  },
+
+  "Palossand": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 0,
+        "df": 4,
+        "sa": 252,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Modest",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Earth Power",
+        "Giga Drain",
+        "Shadow Ball",
+        "Energy Ball",
+      ]
+    }    
+  },
+
+  "Silvally": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 4,
+        "at": 252,
+        "df": 4,
+        "sa": 0,
+        "sd": 0,
+        "sp": 252
+      },
+      "nature": "Hasty",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Multi-Attack",
+        "Tri-Attack",
+        "Ice Beam",
+        "Double-Edge",
+      ]
+    }    
+  },
+
+  "Minior": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 252,
+        "df": 4,
+        "sa": 0,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Hasty",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Rock Slide",
+        "Acrobatics",
+        "Explosion",
+        "Power Gem",
+      ]
+    }    
+  },
+
+  "Komala": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 252,
+        "df": 4,
+        "sa": 0,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Adamant",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Return",
+        "Sucker Punch",
+        "Earthquake",
+        "Rock Slide",
+      ]
+    }    
+  },
+
+  "Turtonator": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 0,
+        "df": 4,
+        "sa": 252,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Modest",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Dragon Pulse",
+        "Draco Meteor",
+        "Flamethrower",
+        "Overheat",
+      ]
+    }    
+  },
+
+  "Togedemaru": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 252,
+        "df": 4,
+        "sa": 0,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Adamant",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Fake Out",
+        "Nuzzle",
+        "Zing Zap",
+        "Gyro Ball",
+      ]
+    }    
+  },
+
+  "Mimikyu": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 252,
+        "df": 4,
+        "sa": 0,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Adamant",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Shadow Claw",
+        "Shadow Sneak",
+        "Play Rough",
+        "",
+      ]
+    }    
+  },
+
+  "Bruxish": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 252,
+        "df": 4,
+        "sa": 0,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Adamant",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Waterfall",
+        "Psychic Fangs",
+        "Aqua Jet",
+        "",
+      ]
+    }
+  },
+
+  "Drampa": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 0,
+        "df": 4,
+        "sa": 252,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Modest",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Hyper Voice",
+        "Draco Meteor",
+        "Fire Blast",
+        "Ice Beam",
+      ]
+    }    
+  },
+
+  "Dhelmise": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 252,
+        "df": 4,
+        "sa": 0,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Adamant",
+      "ability": "Steelworker",
+      "item": "",
+      "moves": [
+        "Anchor Shot",
+        "Shadow Claw",
+        "Power Whip",
+        "Phantom Force",
+      ]
+    }    
+  },
+
+  "Kommo-o": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 4,
+        "at": 252,
+        "df": 0,
+        "sa": 252,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Hasty",
+      "ability": "Soundproof",
+      "item": "",
+      "moves": [
+        "Clanging Scales",
+        "Sky Uppercut",
+        "Draco Meteor",
+        "Dragon Claw",
+      ]
+    }    
+  },
+
+  "Tapu Koko": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 0,
+        "at": 252,
+        "df": 0,
+        "sa": 4,
+        "sd": 0,
+        "sp": 252
+      },
+      "nature": "Hasty",
+      "ability": "Electric Surge",
+      "item": "",
+      "moves": [
+        "Wild Charge",
+        "Dazzling Gleam",
+        "Thunderbolt",
+        "",
+      ]
+    }    
+  },
+
+  "Tapu Lele": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 0,
+        "df": 4,
+        "sa": 252,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Hasty",
+      "ability": "Psychic Surge",
+      "item": "",
+      "moves": [
+        "Psychic",
+        "Moonblast",
+        "Dazzling Gleam",
+        "Energy Ball",
+      ]
+    }    
+  },
+
+  "Tapu Bulu": {
+    "NailsOU's Child": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 252,
+        "df": 4,
+        "sa": 0,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Adamant",
+      "ability": "Grassy Surge",
+      "item": "",
+      "moves": [
+        "Wood Hammer",
+        "Superpower",
+        "Megahorn",
+        "Zen Headbutt",
+      ]
+    }    
+  },
+
+  "Tapu Fini": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 0,
+        "df": 4,
+        "sa": 252,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Modest",
+      "ability": "Misty Surge",
+      "item": "",
+      "moves": [
+        "Hydro Pump",
+        "Moonblast",
+        "Ice Beam",
+        "Scald",
+      ]
+    }    
+  },
 };
