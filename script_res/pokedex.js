@@ -12381,7 +12381,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
 
 });
 
-delete POKEDEX_XY['Gengar'].ab;
-delete POKEDEX_XY['Raikou'].ab;
-delete POKEDEX_XY['Entei'].ab;
-delete POKEDEX_XY['Suicune'].ab;
+delete POKEDEX_SM['Gengar'].ab;
+delete POKEDEX_SM['Raikou'].ab;
+delete POKEDEX_SM['Entei'].ab;
+delete POKEDEX_SM['Suicune'].ab;

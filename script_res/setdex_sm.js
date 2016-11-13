@@ -3323,7 +3323,6 @@ var SETDEX_SM={
         "sp": 252
       },
       "nature": "Timid",
-      "ability": "Levitate",
       "item": "",
       "moves": [
         "Sludge Bomb",
