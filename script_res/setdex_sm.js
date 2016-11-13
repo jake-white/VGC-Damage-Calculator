@@ -8713,7 +8713,7 @@ var SETDEX_SM={
         "sd": 0,
         "sp": 252
       },
-      "nature": "Jolly",
+      "nature": "Timid",
       "ability": "",
       "item": "",
       "moves": [
@@ -8805,7 +8805,7 @@ var SETDEX_SM={
         "sd": 4,
         "sp": 0
       },
-      "nature": "Adamant",
+      "nature": "Modest",
       "ability": "",
       "item": "",
       "moves": [
