@@ -34,9 +34,7 @@ function CALCULATE_ALL_MOVES_BW(p1, p2, field) {
 function getDamageResult(attacker, defender, move, field) {
     var moveDescName = move.name;
     if(move.isZ){
-        console.log(move);
         var tempMove = move;
-        console.log(tempMove);
         //turning it into a generic single-target Z-move
         move = moves[ZMOVES_LOOKUP[tempMove.type]];
         move.bp = tempMove.zp;
@@ -46,7 +44,6 @@ function getDamageResult(attacker, defender, move, field) {
         move.type = tempMove.type;
         move.isCrit = tempMove.isCrit;
         move.hits = 1;
-        console.log(move);
         moveDescName = ZMOVES_LOOKUP[tempMove.type] + " (" + tempMove.zp + " BP)";
     }
     var description = {
