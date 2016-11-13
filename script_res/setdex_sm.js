@@ -8634,24 +8634,24 @@ var SETDEX_SM={
   },
 
   "Araquanid": {
-    "Random Meta Guess": {
+    "God-Tier Pokemon": {
       "level": 50,
       "evs": {
         "hp": 252,
         "at": 252,
-        "df": 4,
-        "sa": 0,
+        "df": 0,
+        "sa": 4,
         "sd": 0,
         "sp": 0
       },
-      "nature": "Adamant",
-      "ability": "Water Absorb",
+      "nature": "Brave",
+      "ability": "Water Bubble",
       "item": "",
       "moves": [
         "Liquidation",
         "Leech Life",
         "Lunge",
-        "",
+        "Scald",
       ]
     }    
   },

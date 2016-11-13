@@ -407,7 +407,8 @@ function getDamageResult(attacker, defender, move, field) {
             (attacker.ability === "Slow Start" && move.category === "Physical")) {
         atMods.push(0x800);
         description.attackerAbility = attacker.ability;
-    } else if ((attacker.ability === "Huge Power" || attacker.ability === "Pure Power") && move.category === "Physical") {
+    } else if ((attacker.ability === "Water Bubble" && move.type === "Water") ||
+        ((attacker.ability === "Huge Power" || attacker.ability === "Pure Power") && move.category === "Physical")) {
         atMods.push(0x2000);
         description.attackerAbility = attacker.ability;
     }
