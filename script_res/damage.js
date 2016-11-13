@@ -345,6 +345,10 @@ function getDamageResult(attacker, defender, move, field) {
         }
     }
     
+    if(move.type === "Steel" && attacker.ability === "Steelworker"){
+        bpMods.push(0x1555);
+    }
+    
     basePower = Math.max(1, pokeRound(basePower * chainMods(bpMods) / 0x1000));
     basePower = attacker.isChild ? basePower / 2 : basePower;
     
@@ -509,7 +513,7 @@ function getDamageResult(attacker, defender, move, field) {
     }
     // the random factor is applied between the crit mod and the stab mod, so don't apply anything below this until we're inside the loop
     var stabMod = 0x1000;
-    if (move.type === attacker.type1 || move.type === attacker.type2 || (move.type === "Steel" && attacker.ability === "Steelworker")) {
+    if (move.type === attacker.type1 || move.type === attacker.type2) {
         if (attacker.ability === "Adaptability") {
             stabMod = 0x2000;
             description.attackerAbility = attacker.ability;
