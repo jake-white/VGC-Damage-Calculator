@@ -10907,9 +10907,9 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
   "Geodude": { "formes": ["Geodude", "Alolan Geodude"] },
   "Graveler": { "formes": ["Graveler", "Alolan Graveler"] },
   "Golem": { "formes": ["Golem", "Alolan Golem"] },
-  "Exeggutor": { "formes": ["Exeggutor", "Exeggutor"] },
+  "Exeggutor": { "bs": { "sd": 75 }, "formes": ["Exeggutor", "Alolan Exeggutor"] },
   "Diglett": { "formes": ["Diglett", "Alolan Diglett"] },
-  "Dugtrio": { "formes": ["Dugtrio", "Alolan Dugtrio"] },
+  "Dugtrio": { "bs": { "at": 100 }, "formes": ["Dugtrio", "Alolan Dugtrio"] },
   "Vulpix": { "formes": ["Vulpix", "Alolan Vulpix"] },
   "Ninetales": { "formes": ["Ninetales", "Alolan Ninetales"] },
   "Sandshrew": { "formes": ["Sandshrew", "Alolan Sandshrew"] },
@@ -10934,7 +10934,6 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
 
   //attack buffs
   "Arbok": { "bs": { "at": 95 } },
-  "Dugtrio": { "bs": { "at": 100 } },
   "Farfetch\u0027d": { "bs": { "at": 90 } },
   "Crustle": { "bs": { "at": 105 } },
   "Beartic": { "bs": { "at": 130 } },
@@ -10949,7 +10948,6 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
   "Swellow": { "bs": { "sa": 75 } },
 
   //special defense buffs
-  "Exeggutor": {"bs": { "sd": 75 } },
   "Ariados": { "bs": { "sd": 70 } },
 
   //speed buffs
