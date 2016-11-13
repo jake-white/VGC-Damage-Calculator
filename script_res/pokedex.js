@@ -10919,7 +10919,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
   "Greninja": { "formes": ["Greninja", "Ash-Greninja"] },
 
   //abilities
-  "Pelipper": { "ab": "Drizzle"},
+  "Pelipper": { "bs": { "sa": 95 }, "ab": "Drizzle"},
   "Torkoal": {"ab": "Drought"},
 
   //hp buffs
@@ -10952,7 +10952,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
 
   //speed buffs
   "Dodrio": { "bs": { "sp": 110 } },
-  "Electrode": { "bs": { "sp": 140 } },
+  "Electrode": { "bs": { "sp": 150 } },
   "Delcatty": { "bs": { "sp": 90 } },
   "Masquerain": { "bs": { "sp": 80, "sa": 100 } }, 
 
@@ -11167,6 +11167,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
       "sp": 109
     },
     "w": 19.9,
+    "ab": "Snow Warning",
     "isAlternateForme": true
   },
   "Alolan Sandshrew": {
