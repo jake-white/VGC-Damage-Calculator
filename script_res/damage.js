@@ -381,6 +381,11 @@ function getDamageResult(attacker, defender, move, field) {
         atMods.push(0x800);
         description.defenderAbility = defAbility;
     }
+    if (defAbility === "Fluffy" && move.type === "Fire") {
+        atMods.push(0x2000);
+        description.defenderAbility = defAbility;
+    }
+
     
     if ((attacker.ability === "Guts" && attacker.status !== "Healthy" && move.category === "Physical") ||
             (attacker.ability === "Overgrow" && attacker.curHP <= attacker.maxHP / 3 && move.type === "Grass") ||
