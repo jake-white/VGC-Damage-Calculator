@@ -2054,6 +2054,12 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
         bp: 100,
         zp: 180
     },
+    'First Impression': {
+        category: 'Physical',
+        type: 'Bug',
+        bp: '90',
+        zp: '175',
+    },
     'Sparkling Aria': {
          category: 'Special',
          type: 'Water',

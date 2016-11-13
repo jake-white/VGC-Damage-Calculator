@@ -11692,6 +11692,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
       "sd": 132,
       "sp": 42
     },
+    "ab": "Water Bubble",
     "w": 82.0,
   },
   "Fomantis": {
@@ -12276,7 +12277,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     },
     "w": 333.6,
   },
-  "Pheremosa": {
+  "Pheromosa": {
     "t1": "Bug",
     "t2": "Fighting",
     "bs": {
