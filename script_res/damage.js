@@ -352,7 +352,7 @@ function getDamageResult(attacker, defender, move, field) {
     }
     
     basePower = Math.max(1, pokeRound(basePower * chainMods(bpMods) / 0x1000));
-    basePower = attacker.isChild ? basePower / 2 : basePower;
+    basePower = attacker.isChild ? basePower / 4 : basePower;
     
     ////////////////////////////////
     ////////// (SP)ATTACK //////////
