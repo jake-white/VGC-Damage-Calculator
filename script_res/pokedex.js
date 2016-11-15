@@ -11911,7 +11911,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     },
     "w": 70.0,
   },
-  "Pallosand": {
+  "Palosand": {
     "t1": "Ghost",
     "t2": "Ground",
     "bs": {
