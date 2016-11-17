@@ -553,7 +553,7 @@ function getDamageResult(attacker, defender, move, field) {
         finalMods.push(0x1800);
         description.attackerAbility = attacker.ability;
     }
-    if ((defAbility === "Solid Rock" || defAbility === "Filter") && typeEffectiveness > 1) {
+    if ((defAbility === "Solid Rock" || defAbility === "Filter" || defAbility === "Prism Armor") && typeEffectiveness > 1) {
         finalMods.push(0xC00);
         description.defenderAbility = defAbility;
     }

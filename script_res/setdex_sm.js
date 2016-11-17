@@ -9207,4 +9207,27 @@ var SETDEX_SM={
       ]
     }    
   },
+
+  "Nihilego": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 4,
+        "at": 0,
+        "df": 0,
+        "sa": 252,
+        "sd": 0,
+        "sp": 252
+      },
+      "nature": "Timid",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Power Gem",
+        "Sludge Bomb",
+        "Hidden Power Ice",
+        "Sludge Wave",
+      ]
+    }    
+  }
 };
