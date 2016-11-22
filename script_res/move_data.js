@@ -1888,7 +1888,8 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
     'Psychic Fangs': {
         category: 'Physical',
         type: 'Psychic',
-        bp: 95,
+        makesContact: true,
+        bp: 85,
         zp: 160
     },
     'Fleur Cannon': {
