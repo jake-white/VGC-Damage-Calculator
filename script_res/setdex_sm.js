@@ -6820,9 +6820,9 @@ var SETDEX_SM={
       "item": "Thick Club",
       "moves": [
         "Bonemerang",
-        "Rock Slide",
-        "Low Kick",
-        "Knock Off"
+        "Flare Blitz",
+        "Shadow Bone",
+        "Rock Slide"
       ]
     }
   },
@@ -9229,5 +9229,143 @@ var SETDEX_SM={
         "Sludge Wave",
       ]
     }    
-  }
+  },
+
+  "Buzzwole": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 252,
+        "df": 0,
+        "sa": 0,
+        "sd": 4,
+        "sp": 0
+      },
+      "nature": "Adamant",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Superpower",
+        "Lunge",
+        "Ice Punch",
+        "Fell Stinger",
+      ]
+    }
+  },
+
+  "Pheremosa": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 0,
+        "at": 252,
+        "df": 0,
+        "sa": 4,
+        "sd": 0,
+        "sp": 252
+      },
+      "nature": "Naive",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Bug Buzz",
+        "High Jump Kick",
+        "Lunge",
+        "Ice Beam",
+      ]
+    }
+  },
+
+  "Xurkitree": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 4,
+        "at": 0,
+        "df": 0,
+        "sa": 252,
+        "sd": 0,
+        "sp": 252
+      },
+      "nature": "Modest",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Thunderbolt",
+        "Discharge",
+        "Volt Switch",
+        "Hidden Power Ice",
+      ]
+    }
+  },
+
+  "Celesteela": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 252,
+        "df": 0,
+        "sa": 4,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Brave",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Heavy Slam",
+        "Air Slash",
+        "Iron Head",
+        "Flash Cannon",
+      ]
+    }
+  },
+
+  "Kartana": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 4,
+        "at": 252,
+        "df": 0,
+        "sa": 0,
+        "sd": 0,
+        "sp": 252
+      },
+      "nature": "Jolly",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Smart Strike",
+        "Leaf Blade",
+        "Sacred Sword",
+        "Night Slash",
+      ]
+    }
+  },
+
+  "Guzzlord": {
+    "Random Meta Guess": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 252,
+        "df": 4,
+        "sa": 0,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Brave",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Dragon Claw",
+        "Crunch",
+        "Dark Pulse",
+        "Rock Slide",
+      ]
+    }
+  },
 };
