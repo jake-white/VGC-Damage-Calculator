@@ -1890,7 +1890,8 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
         type: 'Psychic',
         makesContact: true,
         bp: 85,
-        zp: 160
+        zp: 160,
+        isBite: true
     },
     'Fleur Cannon': {
         category: 'Special',
