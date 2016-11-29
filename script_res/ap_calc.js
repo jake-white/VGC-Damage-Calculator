@@ -856,6 +856,16 @@ function getSetOptions() {
         }
     }
     pokeNames.sort();
+    index = pokeNames.length;
+    while(index--){ //forcing alolan forms to show first
+        if(pokeNames[index].includes("-Alola")){
+            var temp = pokeNames[index];
+            pokeNames.splice(index, 1); //deleting alolan entry
+            var regularForm = temp.substring(0, temp.indexOf("-Alola"));
+            var regularIndex = pokeNames.indexOf(regularForm);
+            pokeNames.splice(regularIndex, 0, temp); //re-inserting it right before non-alolan entry
+        }
+    }
     var setOptions = [];
     var idNum = 0;
     for (var i = 0; i < pokeNames.length; i++) {

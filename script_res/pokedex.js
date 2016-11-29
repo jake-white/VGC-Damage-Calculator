@@ -10897,25 +10897,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
 
 
 
-  //alolan forms
-  "Rattata": { "formes": ["Rattata", "Alolan Rattata"] },
-  "Raticate": { "formes": ["Raticate", "Alolan Raticate"] },
-  "Meowth": { "formes": ["Meowth", "Alolan Meowth"] },
-  "Persian": { "formes": ["Persian", "Alolan Persian"] },
-  "Raichu": { "formes": ["Raichu", "Alolan Raichu"] },
-  "Marowak": { "formes": ["Marowak", "Alolan Marowak"] },
-  "Geodude": { "formes": ["Geodude", "Alolan Geodude"] },
-  "Graveler": { "formes": ["Graveler", "Alolan Graveler"] },
-  "Golem": { "formes": ["Golem", "Alolan Golem"] },
-  "Exeggutor": { "bs": { "sd": 75 }, "formes": ["Exeggutor", "Alolan Exeggutor"] },
-  "Diglett": { "formes": ["Diglett", "Alolan Diglett"] },
-  "Dugtrio": { "bs": { "at": 100 }, "formes": ["Dugtrio", "Alolan Dugtrio"] },
-  "Vulpix": { "formes": ["Vulpix", "Alolan Vulpix"] },
-  "Ninetales": { "formes": ["Ninetales", "Alolan Ninetales"] },
-  "Sandshrew": { "formes": ["Sandshrew", "Alolan Sandshrew"] },
-  "Sandslash": { "formes": ["Sandslash", "Alolan Sandslash"] },
-  "Grimer": { "formes": ["Grimer", "Alolan Grimer"] },
-  "Muk": { "formes": ["Muk", "Alolan Muk"] }, 
+  //new forms
   "Greninja": { "formes": ["Greninja", "Ash-Greninja"] },
 
   //abilities
@@ -10933,6 +10915,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
   "Cryogonal": { "bs": { "hp": 80, "df": 50 } },
 
   //attack buffs
+  "Dugtrio": { "bs": { "at": 100 }},
   "Arbok": { "bs": { "at": 95 } },
   "Farfetch\u0027d": { "bs": { "at": 90 } },
   "Crustle": { "bs": { "at": 105 } },
@@ -10948,6 +10931,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
   "Swellow": { "bs": { "sa": 75 } },
 
   //special defense buffs
+  "Exeggutor": { "bs": { "sd": 75 }},
   "Ariados": { "bs": { "sd": 70 } },
 
   //speed buffs
@@ -10975,7 +10959,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     "ab": "Battle Bond",
     "isAlternateForme": true
   },
-  "Alolan Rattata": {
+  "Rattata-Alola": {
     "t1": "Dark",
     "t2": "Normal",
     "bs": {
@@ -10987,9 +10971,8 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
       "sp": 72
     },
     "w": 3.8,
-    "isAlternateForme": true
   },
-  "Alolan Raticate": {
+  "Raticate-Alola": {
     "t1": "Dark",
     "t2": "Normal",
     "bs": {
@@ -11001,9 +10984,8 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
       "sp": 77
     },
     "w": 25.5,
-    "isAlternateForme": true
   },
-  "Alolan Meowth": {
+  "Meowth-Alola": {
     "t1": "Dark",
     "bs": {
       "hp": 40,
@@ -11014,9 +10996,8 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
       "sp": 90
     },
     "w": 4.2,
-    "isAlternateForme": true
   },
-  "Alolan Persian": {
+  "Persian-Alola": {
     "t1": "Dark",
     "bs": {
       "hp": 65,
@@ -11027,9 +11008,8 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
       "sp": 115
     },
     "w": 33.0,
-    "isAlternateForme": true
   },
-  "Alolan Raichu": {
+  "Raichu-Alola": {
     "t1": "Electric",
     "t2": "Psychic",
     "bs": {
@@ -11041,9 +11021,8 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
       "sp": 110
     },
     "w": 21.0,
-    "isAlternateForme": true
   },
-  "Alolan Marowak": {
+  "Marowak-Alola": {
     "t1": "Fire",
     "t2": "Ghost",
     "bs": {
@@ -11055,9 +11034,8 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
       "sp": 45
     },
     "w": 34.0,
-    "isAlternateForme": true
   },
-  "Alolan Geodude": {
+  "Geodude-Alola": {
     "t1": "Rock",
     "t2": "Electric",
     "bs": {
@@ -11069,9 +11047,8 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
       "sp": 20
     },
     "w": 20.3,
-    "isAlternateForme": true
   },
-  "Alolan Graveler": {
+  "Graveler-Alola": {
     "t1": "Rock",
     "t2": "Electric",
     "bs": {
@@ -11083,9 +11060,8 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
       "sp": 35
     },
     "w": 110.0,
-    "isAlternateForme": true
   },
-  "Alolan Golem": {
+  "Golem-Alola": {
     "t1": "Rock",
     "t2": "Electric",
     "bs": {
@@ -11098,9 +11074,8 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     },
     "ab": "Galvanize",
     "w": 316.0,
-    "isAlternateForme": true
   },
-  "Alolan Exeggutor": {
+  "Exeggutor-Alola": {
     "t1": "Grass",
     "t2": "Dragon",
     "bs": {
@@ -11112,9 +11087,8 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
       "sp": 45
     },
     "w": 415.6,
-    "isAlternateForme": true
   },
-  "Alolan Diglett": {
+  "Diglett-Alola": {
     "t1": "Ground",
     "t2": "Steel",
     "bs": {
@@ -11126,9 +11100,8 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
       "sp": 90
     },
     "w": 1.0,
-    "isAlternateForme": true
   },
-  "Alolan Dugtrio": {
+  "Dugtrio-Alola": {
     "t1": "Ground",
     "t2": "Steel",
     "bs": {
@@ -11140,9 +11113,8 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
       "sp": 110
     },
     "w": 66.6,
-    "isAlternateForme": true
   },
-  "Alolan Vulpix": {
+  "Vulpix-Alola": {
     "t1": "Ice",
     "bs": {
       "hp": 38,
@@ -11153,9 +11125,8 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
       "sp": 65
     },
     "w": 9.9,
-    "isAlternateForme": true
   },
-  "Alolan Ninetales": {
+  "Ninetales-Alola": {
     "t1": "Ice",
     "t2": "Fairy",
     "bs": {
@@ -11168,9 +11139,8 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     },
     "w": 19.9,
     "ab": "Snow Warning",
-    "isAlternateForme": true
   },
-  "Alolan Sandshrew": {
+  "Sandshrew-Alola": {
     "t1": "Ice",
     "t2": "Steel",
     "bs": {
@@ -11182,9 +11152,8 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
       "sp": 40
     },
     "w": 40.0,
-    "isAlternateForme": true
   },
-  "Alolan Sandslash": {
+  "Sandslash-Alola": {
     "t1": "Ice",
     "t2": "Steel",
     "bs": {
@@ -11196,9 +11165,8 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
       "sp": 65
     },
     "w": 55.0,
-    "isAlternateForme": true
   },
-  "Alolan Grimer": {
+  "Grimer-Alola": {
     "t1": "Poison",
     "t2": "Dark",
     "bs": {
@@ -11210,9 +11178,8 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
       "sp": 25
     },
     "w": 42.0,
-    "isAlternateForme": true
   },
-  "Alolan Muk": {
+  "Muk-Alola": {
     "t1": "Poison",
     "t2": "Dark",
     "bs": {
@@ -11224,7 +11191,6 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
       "sp": 50
     },
     "w": 52.0,
-    "isAlternateForme": true
   },
   "Rowlet": {
     "t1": "Grass",

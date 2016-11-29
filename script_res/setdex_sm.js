@@ -34,12 +34,12 @@ var SETDEX_SM={
       },
       "nature": "Brave",
       "ability": "Adaptability",
-      "item": "Silk Scarf",
+      "item": "",
       "moves": [
         "Quick Attack",
-        "Return",
-        "Facade",
-        "Frustration"
+        "Last Resort",
+        "Stored Power",
+        "Return"
       ]
     }
   },
@@ -4480,21 +4480,21 @@ var SETDEX_SM={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 4,
-        "at": 252,
+        "hp": 252,
+        "at": 4,
         "df": 0,
-        "sa": 0,
+        "sa": 252,
         "sd": 0,
-        "sp": 252
+        "sp": 0
       },
-      "nature": "Adamant",
+      "nature": "Modest",
       "ability": "Intimidate",
       "item": "Leftovers",
       "moves": [
         "Snarl",
-        "Flare Blitz",
+        "Burn Up",
         "Extreme Speed",
-        "Close Combat"
+        "Flamethrower"
       ]
     }
   },
@@ -6820,9 +6820,9 @@ var SETDEX_SM={
       "item": "Thick Club",
       "moves": [
         "Bonemerang",
-        "Flare Blitz",
-        "Shadow Bone",
-        "Rock Slide"
+        "Rock Slide",
+        "Low Kick",
+        "Knock Off"
       ]
     }
   },
@@ -9117,7 +9117,27 @@ var SETDEX_SM={
   },
 
   "Tapu Koko": {
-    "Random Meta Guess": {
+    "Special Sweeper": {
+      "level": 50,
+      "evs": {
+        "hp": 4,
+        "at": 0,
+        "df": 0,
+        "sa": 252,
+        "sd": 0,
+        "sp": 252
+      },
+      "nature": "Timid",
+      "ability": "Electric Surge",
+      "item": "Life Orb",
+      "moves": [
+        "Thunderbolt",
+        "Dazzling Gleam",
+        "Hidden Power Ice",
+        "Discharge",
+      ]
+    }, 
+    "Mixed Attacker": {
       "level": 50,
       "evs": {
         "hp": 0,
@@ -9129,12 +9149,12 @@ var SETDEX_SM={
       },
       "nature": "Hasty",
       "ability": "Electric Surge",
-      "item": "",
+      "item": "Life Orb",
       "moves": [
         "Wild Charge",
-        "Dazzling Gleam",
         "Thunderbolt",
-        "",
+        "Dazzling Gleam",
+        "Discharge",
       ]
     }    
   },
@@ -9301,7 +9321,7 @@ var SETDEX_SM={
   },
 
   "Celesteela": {
-    "Random Meta Guess": {
+    "Physical/Mixed Attacker": {
       "level": 50,
       "evs": {
         "hp": 252,
@@ -9316,11 +9336,31 @@ var SETDEX_SM={
       "item": "",
       "moves": [
         "Heavy Slam",
-        "Air Slash",
-        "Iron Head",
-        "Flash Cannon",
+        "Seed Bomb",
+        "Flamethrower",
+        "",
       ]
-    }
+    },
+    "Special Attacker": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 0,
+        "df": 4,
+        "sa": 252,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Quiet",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Flash Cannon",
+        "Air Slash",
+        "Flamethrower",
+        "Fire Blast",
+      ]
+    },
   },
 
   "Kartana": {
@@ -9347,7 +9387,28 @@ var SETDEX_SM={
   },
 
   "Guzzlord": {
-    "Random Meta Guess": {
+    "Special Tank": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 0,
+        "df": 4,
+        "sa": 252,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Modest",
+      "ability": "",
+      "item": "Assault Vest",
+      "moves": [
+        "Draco Meteor",
+        "Dark Pulse",
+        "Flamethrower",
+        "Snarl",
+      ]
+    },
+
+    "Physical Attacker": {
       "level": 50,
       "evs": {
         "hp": 252,
@@ -9363,9 +9424,32 @@ var SETDEX_SM={
       "moves": [
         "Dragon Claw",
         "Crunch",
-        "Dark Pulse",
-        "Rock Slide",
+        "Hammer Arm",
+        "Poison Jab",
       ]
     }
   },
+
+  "Marowak-Alola": {
+    "Common Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 252,
+        "df": 4,
+        "sa": 0,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Brave",
+      "ability": "Lightningrod",
+      "item": "Thick Club",
+      "moves": [
+        "Flare Blitz",
+        "Shadow Bone",
+        "Bonemerang",
+        "Rock Slide"
+      ]
+    }
+  }
 };
