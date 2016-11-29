@@ -12032,7 +12032,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     "t2": "Steel",
     "bs": {
       "hp": 65,
-      "at": 95,
+      "at": 98,
       "df": 63,
       "sa": 40,
       "sd": 73,
