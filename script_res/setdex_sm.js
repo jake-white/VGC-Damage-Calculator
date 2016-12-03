@@ -6448,7 +6448,7 @@ var SETDEX_SM={
         "Earthquake",
         "Rock Slide",
         "Dragon Claw",
-        "Iron Head"
+        "Poison Jab"
       ]
     }
   },
