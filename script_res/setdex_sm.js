@@ -9451,5 +9451,28 @@ var SETDEX_SM={
         "Rock Slide"
       ]
     }
-  }
+  },
+
+  "Ninetales-Alola": {
+    "Common Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 4,
+        "at": 0,
+        "df": 0,
+        "sa": 252,
+        "sd": 0,
+        "sp": 252
+      },
+      "nature": "Timid",
+      "ability": "Snow Warning",
+      "item": "",
+      "moves": [
+        "Blizzard",
+        "Ice Beam",
+        "Freeze-Dry",
+        "Moonblast"
+      ]
+    }
+  },
 };

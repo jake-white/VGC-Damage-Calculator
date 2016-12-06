@@ -1027,6 +1027,12 @@ var MOVES_DPP = $.extend(true, {}, MOVES_ADV, {
         makesContact: true,
         hasRecoil: true
     },
+    'Last Resort': {
+        bp: 130,
+        type: 'Normal',
+        category: 'Physical',
+        makesContact: true
+    },
     'Lava Plume': {
         bp: 80,
         type: 'Fire',
@@ -1445,6 +1451,7 @@ var MOVES_BW = $.extend(true, {}, MOVES_DPP, {
         hasSecondaryEffect: true
     },
     'Jump Kick': { bp: 100 },
+    'Last Resort': { bp: 140 },
     'Low Sweep': {
         bp: 60,
         type: 'Fighting',
