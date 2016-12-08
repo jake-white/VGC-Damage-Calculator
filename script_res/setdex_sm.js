@@ -5730,16 +5730,16 @@ var SETDEX_SM={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 4,
-        "at": 252,
-        "df": 0,
+        "hp": 252,
+        "at": 0,
+        "df": 4,
         "sa": 0,
         "sd": 0,
         "sp": 252
       },
-      "nature": "Adamant",
-      "ability": "Technician",
-      "item": "Life Orb",
+      "nature": "Timid",
+      "ability": "Fur Coat",
+      "item": "",
       "moves": [
         "Fake Out",
         "Knock Off",
@@ -8775,14 +8775,14 @@ var SETDEX_SM={
     "Random Meta Guess": {
       "level": 50,
       "evs": {
-        "hp": 0,
+        "hp": 252,
         "at": 0,
-        "df": 0,
+        "df": 4,
         "sa": 252,
         "sd": 0,
-        "sp": 252
+        "sp": 0
       },
-      "nature": "Timid",
+      "nature": "Modest",
       "ability": "",
       "item": "",
       "moves": [
@@ -9274,7 +9274,7 @@ var SETDEX_SM={
     }
   },
 
-  "Pheremosa": {
+  "Pheromosa": {
     "Random Meta Guess": {
       "level": 50,
       "evs": {
@@ -9336,8 +9336,8 @@ var SETDEX_SM={
       "item": "",
       "moves": [
         "Heavy Slam",
-        "Seed Bomb",
         "Flamethrower",
+        "Fire Blast",
         "",
       ]
     },
@@ -9472,6 +9472,29 @@ var SETDEX_SM={
         "Ice Beam",
         "Freeze-Dry",
         "Moonblast"
+      ]
+    }
+  },
+
+  "Persian-Alola": {
+    "Common Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 4,
+        "at": 252,
+        "df": 0,
+        "sa": 0,
+        "sd": 0,
+        "sp": 252
+      },
+      "nature": "Adamant",
+      "ability": "Technician",
+      "item": "Life Orb",
+      "moves": [
+        "Fake Out",
+        "Snarl",
+        "Foul Play",
+        "U-turn"
       ]
     }
   },
