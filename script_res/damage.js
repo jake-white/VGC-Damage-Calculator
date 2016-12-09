@@ -713,6 +713,10 @@ function getMoveEffectiveness(move, type, isGhostRevealed, isGravity) {
         return 2;
     } else if (move.name === "Flying Press") {
         return typeChart["Fighting"][type] * typeChart["Flying"][type];
+    } else if (move.name.includes("Hidden Power")){
+        var n = move.name.split(" ");
+        var hpType = n[n.length - 1];
+        return typeChart[hpType][type];
     } else {
         return typeChart[move.type][type];
     }
