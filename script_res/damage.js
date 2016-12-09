@@ -716,7 +716,8 @@ function getMoveEffectiveness(move, type, isGhostRevealed, isGravity) {
     } else if (move.name.includes("Hidden Power")){
         var n = move.name.split(" ");
         var hpType = n[n.length - 1];
-        return typeChart[hpType][type];
+        if(move.isZ) return typeChart["Normal"][type];
+        else return typeChart[hpType][type];
     } else {
         return typeChart[move.type][type];
     }
