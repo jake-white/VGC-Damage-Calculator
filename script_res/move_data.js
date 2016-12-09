@@ -2340,9 +2340,24 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
     'Iron Tail':{
         zp: 180
     },
-    'Hidden Power':{
-        zp: 120
-    },
+    // Hidden Power needs to have type set to normal for the Z-move lookup to work.
+    // Conversion of regular move to correct type is done in getMoveEffectiveness in damage.js
+    'Hidden Power Bug': { type: 'Normal', zp: 120 },
+    'Hidden Power Dark': { type: 'Normal', zp: 120 },
+    'Hidden Power Dragon': { type: 'Normal', zp: 120 },
+    'Hidden Power Electric': { type: 'Normal', zp: 120 },
+    'Hidden Power Fighting': { type: 'Normal', zp: 120 },
+    'Hidden Power Fire': { type: 'Normal', zp: 120 },
+    'Hidden Power Flying': { type: 'Normal', zp: 120 },
+    'Hidden Power Ghost': { type: 'Normal', zp: 120 },
+    'Hidden Power Grass': { type: 'Normal', zp: 120 },
+    'Hidden Power Ground': { type: 'Normal', zp: 120 },
+    'Hidden Power Ice': { type: 'Normal', zp: 120 },
+    'Hidden Power Poison': { type: 'Normal', zp: 120 },
+    'Hidden Power Psychic': { type: 'Normal', zp: 120 },
+    'Hidden Power Rock': { type: 'Normal', zp: 120 },
+    'Hidden Power Steel': { type: 'Normal', zp: 120 },
+    'Hidden Power Water': { type: 'Normal', zp: 120 },
     'Cross Chop':{
         zp: 180
     },
