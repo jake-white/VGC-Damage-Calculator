@@ -2818,11 +2818,11 @@ var SETDEX_SM={
       },
       "nature": "Modest",
       "ability": "",
-      "item": "Air Balloon",
+      "item": "",
       "moves": [
         "Flash Cannon",
         "Thunderbolt",
-        "Hidden Power Fire",
+        "Discharge",
         "Volt Switch"
       ]
     }
@@ -6743,20 +6743,20 @@ var SETDEX_SM={
       "level": 50,
       "evs": {
         "hp": 4,
-        "at": 252,
+        "at": 0,
         "df": 0,
-        "sa": 0,
+        "sa": 252,
         "sd": 0,
         "sp": 252
       },
-      "nature": "Jolly",
+      "nature": "Timid",
       "ability": "Intimidate",
       "item": "",
       "moves": [
-        "Double-Edge",
-        "Earthquake",
         "Draco Meteor",
-        "Hyper Voice"
+        "Dragon Pulse",
+        "Fire Blast",
+        "Flamethrower"
       ]
     }
   },
