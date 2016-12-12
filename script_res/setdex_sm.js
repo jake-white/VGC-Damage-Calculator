@@ -9498,4 +9498,27 @@ var SETDEX_SM={
       ]
     }
   },
+
+  "Muk-Alola": {
+    "Common Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 252,
+        "df": 0,
+        "sa": 0,
+        "sd": 4,
+        "sp": 0
+      },
+      "nature": "Brave",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Gunk Shot",
+        "Poison Jab",
+        "Knock Off",
+        "Crunch"
+      ]
+    }
+  }
 };
