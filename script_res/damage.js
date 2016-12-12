@@ -41,10 +41,13 @@ function getDamageResult(attacker, defender, move, field) {
         move.name = "Z-"+tempMove.name;
         move.isZ = true;
         move.category = tempMove.category;
-        move.type = tempMove.type;
+        if (move.name.includes("Hidden Power")){
+            move.type = "Normal";
+        }
+        else move.type = tempMove.type;
         move.isCrit = tempMove.isCrit;
         move.hits = 1;
-        moveDescName = ZMOVES_LOOKUP[tempMove.type] + " (" + tempMove.zp + " BP)";
+        moveDescName = ZMOVES_LOOKUP[move.type] + " (" + move.bp + " BP)";
     }
     var description = {
         "attackerName": attacker.name,
@@ -713,11 +716,6 @@ function getMoveEffectiveness(move, type, isGhostRevealed, isGravity) {
         return 2;
     } else if (move.name === "Flying Press") {
         return typeChart["Fighting"][type] * typeChart["Flying"][type];
-    } else if (move.name.includes("Hidden Power")){
-        var n = move.name.split(" ");
-        var hpType = n[n.length - 1];
-        if(move.isZ) return typeChart["Normal"][type];
-        else return typeChart[hpType][type];
     } else {
         return typeChart[move.type][type];
     }
