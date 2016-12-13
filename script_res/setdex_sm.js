@@ -9198,9 +9198,9 @@ var SETDEX_SM={
       "item": "",
       "moves": [
         "Wood Hammer",
+        "Horn Leech",
         "Superpower",
-        "Megahorn",
-        "Zen Headbutt",
+        "Stone Edge",
       ]
     }    
   },
