@@ -13,7 +13,6 @@ function getKOChanceText(damage, move, defender, field, isBadDreams) {
     var hasSitrus = defender.item === 'Sitrus Berry';
     var hasFigy = defender.item === 'Figy Berry';
     var gluttony = defender.ability === "Gluttony";
-    console.log(damage.length);
     if ((damage.length !== 256 || (!hasSitrus && !hasFigy)) && damage[0] >= defender.curHP) {
         return 'guaranteed OHKO';
     } else if (damage.length === 256 && hasSitrus && damage[0] >= defender.curHP + Math.floor(defender.maxHP / 4)) {
