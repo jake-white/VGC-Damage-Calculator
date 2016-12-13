@@ -9511,8 +9511,8 @@ var SETDEX_SM={
         "sp": 0
       },
       "nature": "Brave",
-      "ability": "",
-      "item": "",
+      "ability": "Gluttony",
+      "item": "Figy Berry",
       "moves": [
         "Gunk Shot",
         "Poison Jab",
