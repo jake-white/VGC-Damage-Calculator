@@ -41,6 +41,7 @@ var ABILITIES_DPP = ABILITIES_ADV.concat([
     'Dry Skin',
     'Filter',
     'Flower Gift',
+    'Gluttony',
     'Heatproof',
     'Ice Body',
     'Iron Fist',

@@ -1,6 +1,6 @@
 function getKOChanceText(damage, move, defender, field, isBadDreams) {
     if (isNaN(damage[0])) {
-       return 'something broke; please tell Honko/squirrelboy1225';
+       return 'something broke; please tell squirrelboy1225';
     }
     if (damage[damage.length-1] === 0) {
         if (field.weather === "Harsh Sun" && move.type === "Water") {
@@ -11,9 +11,14 @@ function getKOChanceText(damage, move, defender, field, isBadDreams) {
         return 'aim for the horn next time';
     }
     var hasSitrus = defender.item === 'Sitrus Berry';
-    if ((damage.length !== 256 || !hasSitrus) && damage[0] >= defender.curHP) {
+    var hasFigy = defender.item === 'Figy Berry';
+    var gluttony = defender.ability === "Gluttony";
+    console.log(damage.length);
+    if ((damage.length !== 256 || (!hasSitrus && !hasFigy)) && damage[0] >= defender.curHP) {
         return 'guaranteed OHKO';
     } else if (damage.length === 256 && hasSitrus && damage[0] >= defender.curHP + Math.floor(defender.maxHP / 4)) {
+        return 'guaranteed OHKO';
+    } else if (damage.length === 256 && hasFigy && damage[0] >= defender.curHP + Math.floor(defender.maxHP / 2)) {
         return 'guaranteed OHKO';
     }
 
@@ -136,7 +141,7 @@ function getKOChanceText(damage, move, defender, field, isBadDreams) {
     }
 
     var multihit = damage.length === 256 || move.hits > 1;
-    var c = getKOChance(damage, multihit, defender.curHP - hazards, 0, 1, defender.maxHP, toxicCounter, hasSitrus);
+    var c = getKOChance(damage, multihit, defender.curHP - hazards, 0, 1, defender.maxHP, toxicCounter, hasSitrus, hasFigy, gluttony);
     var afterText = hazardText.length > 0 ? ' after ' + serializeText(hazardText) : '';
     if (c === 1) {
         return 'guaranteed OHKO' + afterText;
@@ -147,10 +152,15 @@ function getKOChanceText(damage, move, defender, field, isBadDreams) {
     if (hasSitrus && move.name !== 'Knock Off') {
         eotText.push('Sitrus Berry recovery');
     }
+
+    if (hasFigy && move.name !== 'Knock Off') {
+        if(gluttony) eotText.push('Gluttony Figy Berry recovery');
+        else eotText.push('Figy Berry recovery');
+    }
     afterText = hazardText.length > 0 || eotText.length > 0 ? ' after ' + serializeText(hazardText.concat(eotText)) : '';
     var i;
     for (i = 2; i <= 4; i++) {
-        c = getKOChance(damage, multihit, defender.curHP - hazards, eot, i, defender.maxHP, toxicCounter, hasSitrus);
+        c = getKOChance(damage, multihit, defender.curHP - hazards, eot, i, defender.maxHP, toxicCounter, hasSitrus, hasFigy, gluttony);
         if (c === 1) {
             return 'guaranteed ' + i + 'HKO' + afterText;
         } else if (c > 0) {
@@ -161,9 +171,9 @@ function getKOChanceText(damage, move, defender, field, isBadDreams) {
     }
 
     for (i = 5; i <= 9; i++) {
-        if (predictTotal(damage[0], eot, i, toxicCounter, defender.curHP - hazards, defender.maxHP, hasSitrus) >= defender.curHP - hazards) {
+        if (predictTotal(damage[0], eot, i, toxicCounter, defender.curHP - hazards, defender.maxHP, hasSitrus, hasFigy, gluttony) >= defender.curHP - hazards) {
             return 'guaranteed ' + i + 'HKO' + afterText;
-        } else if (predictTotal(damage[damage.length-1], eot, i, toxicCounter, defender.curHP - hazards, defender.maxHP, hasSitrus) >= defender.curHP - hazards) {
+        } else if (predictTotal(damage[damage.length-1], eot, i, toxicCounter, defender.curHP - hazards, defender.maxHP, hasSitrus, hasFigy, gluttony) >= defender.curHP - hazards) {
             return 'possible ' + i + 'HKO' + afterText;
         }
     }
@@ -171,7 +181,7 @@ function getKOChanceText(damage, move, defender, field, isBadDreams) {
     return 'possibly the worst move ever';
 }
 
-function getKOChance(damage, multihit, hp, eot, hits, maxHP, toxicCounter, hasSitrus) {
+function getKOChance(damage, multihit, hp, eot, hits, maxHP, toxicCounter, hasSitrus, hasFigy, gluttony) {
     var n = damage.length;
     var minDamage = damage[0];
     var maxDamage = damage[n-1];
@@ -191,9 +201,9 @@ function getKOChance(damage, multihit, hp, eot, hits, maxHP, toxicCounter, hasSi
         }
     }
     /*
-    if (predictTotal(maxDamage, eot, hits, toxicCounter, hp, maxHP, hasSitrus) < hp) {
+    if (predictTotal(maxDamage, eot, hits, toxicCounter, hp, maxHP, hasSitrus, hasFigy, gluttony) < hp) {
         return 0;
-    } else if (predictTotal(minDamage, eot, hits, toxicCounter, hp, maxHP, hasSitrus) >= hp) {
+    } else if (predictTotal(minDamage, eot, hits, toxicCounter, hp, maxHP, hasSitrus, hasFigy, gluttony) >= hp) {
         return 1;
     }*/
     var toxicDamage = 0;
@@ -208,9 +218,13 @@ function getKOChance(damage, multihit, hp, eot, hits, maxHP, toxicCounter, hasSi
             hp += Math.floor(maxHP / 4);
             hasSitrus = false;
         }
+        else if (((hp - damage[i] <= maxHP / 4) && hasFigy && !gluttony) || ((hp - damage[i] <= maxHP / 2) && hasFigy && gluttony)) {
+            hp += Math.floor(maxHP / 2);
+            hasFigy = false;
+        }
         var c;
         if (i === 0 || damage[i] !== damage[i-1]) {
-            c = getKOChance(damage, multihit, hp - damage[i] + eot - toxicDamage, eot, hits - 1, maxHP, toxicCounter, hasSitrus);
+            c = getKOChance(damage, multihit, hp - damage[i] + eot - toxicDamage, eot, hits - 1, maxHP, toxicCounter, hasSitrus, hasFigy, gluttony);
         } else {
             c = lastC;
         }
@@ -225,13 +239,17 @@ function getKOChance(damage, multihit, hp, eot, hits, maxHP, toxicCounter, hasSi
     return sum/n;
 }
 
-function predictTotal(damage, eot, hits, toxicCounter, hp, maxHP, hasSitrus) {
+function predictTotal(damage, eot, hits, toxicCounter, hp, maxHP, hasSitrus, hasFigy, gluttony) {
     var total = 0;
     for (var i = 0; i < hits; i++) {
         total += damage;
         if ((hp - total <= maxHP / 2) && hasSitrus) {
             total -= Math.floor(maxHP / 4);
             hasSitrus = false;
+        }
+        else if (((hp - total <= maxHP / 4) && hasFigy && !gluttony) || ((hp - total <= maxHP / 2) && hasFigy && gluttony)) {
+            hp += Math.floor(maxHP / 2);
+            hasFigy = false;
         }
         if (i < hits - 1) {
             total -= eot;
