@@ -190,11 +190,15 @@ function getKOChance(damage, multihit, hp, eot, hits, maxHP, toxicCounter, hasSi
             return 0;
         } else if (multihit && hasSitrus && maxDamage < hp + Math.floor(maxHP / 4)) {
             return 0;
+        } else if (multihit && hasFigy && maxDamage < hp + Math.floor(maxHP / 2)) {
+            return 0;
         }
         for (i = 0; i < n; i++) {
-            if ((!multihit || !hasSitrus) && damage[i] >= hp) {
+            if ((!multihit || (!hasSitrus && !hasFigy)) && damage[i] >= hp) {
                 return (n-i)/n;
             } else if (multihit && hasSitrus && damage[i] >= hp + Math.floor(maxHP / 4)) {
+                return (n-i)/n;
+            } else if (multihit && hasFigy && damage[i] >= hp + Math.floor(maxHP / 2)) {
                 return (n-i)/n;
             }
         }
