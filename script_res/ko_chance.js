@@ -33,6 +33,7 @@ function getKOChanceText(damage, move, defender, field, isBadDreams) {
         default:
             hasFWMAI = 0
     }
+    var gluttony = defender.ability === "Gluttony";
 
     if ((damage.length !== 256 || !hasSitrus) && damage[0] >= defender.curHP) {
         return 'guaranteed OHKO';
@@ -164,7 +165,7 @@ function getKOChanceText(damage, move, defender, field, isBadDreams) {
 
     // Parental bond no longer works. It's also illegal in VGC17, so we'll deal with that later.
     var multihit = move.hits - 1;
-    var c = getKOChance(damage, multihit, defender.curHP - hazards, 0, 1, defender.maxHP, toxicCounter, hasSitrus, hasFWMAI);
+    var c = getKOChance(damage, multihit, defender.curHP - hazards, 0, 1, defender.maxHP, toxicCounter, hasSitrus, hasFWMAI, gluttony);
     var afterText = hazardText.length > 0 ? ' after ' + serializeText(hazardText) : '';
     if (c === 1) {
         return 'guaranteed OHKO' + afterText;
@@ -175,10 +176,16 @@ function getKOChanceText(damage, move, defender, field, isBadDreams) {
     // This is a bug. The recovery still occurs! There's also a larger bug
     // where multiple knock-off hits will get the boosted damage every time, even though
     // the item was knocked off on the first hit.
+
     if (hasSitrus && move.name !== 'Knock Off') {
         eotText.push('Sitrus Berry recovery');
     }
+
+    // This is misleading, as the message appears whether or not the item is consumed.
     if (hasFWMAI && move.name !== 'Knock Off') {
+    	if (gluttony) {
+    		eotText.push('Gluttony');
+    	}
         switch (hasFWMAI) {
             case 1:
                 eotText.push('Figy Berry recovery');
@@ -204,7 +211,7 @@ function getKOChanceText(damage, move, defender, field, isBadDreams) {
     afterText = hazardText.length > 0 || eotText.length > 0 ? ' after ' + serializeText(hazardText.concat(eotText)) : '';
     var i;
     for (i = 2; i <= 4; i++) {
-        c = getKOChance(damage, multihit, defender.curHP - hazards, eot, i, defender.maxHP, toxicCounter, hasSitrus, hasFWMAI);
+        c = getKOChance(damage, multihit, defender.curHP - hazards, eot, i, defender.maxHP, toxicCounter, hasSitrus, hasFWMAI, gluttony);
         if (c === 1) {
             return 'guaranteed ' + i + 'HKO' + afterText;
         } else if (c > 0) {
@@ -218,9 +225,9 @@ function getKOChanceText(damage, move, defender, field, isBadDreams) {
         damage = squashMultihit(damage, multihit+1);
     }
     for (i = 5; i <= 9; i++) {
-        if (predictTotal(damage[0], eot, i, toxicCounter, defender.curHP - hazards, defender.maxHP, hasSitrus, hasFWMAI) >= defender.curHP - hazards) {
+        if (predictTotal(damage[0], eot, i, toxicCounter, defender.curHP - hazards, defender.maxHP, hasSitrus, hasFWMAI, gluttony) >= defender.curHP - hazards) {
             return 'guaranteed ' + i + 'HKO' + afterText;
-        } else if (predictTotal(damage[damage.length-1], eot, i, toxicCounter, defender.curHP - hazards, defender.maxHP, hasSitrus, hasFWMAI) >= defender.curHP - hazards) {
+        } else if (predictTotal(damage[damage.length-1], eot, i, toxicCounter, defender.curHP - hazards, defender.maxHP, hasSitrus, hasFWMAI, gluttony) >= defender.curHP - hazards) {
             return 'possible ' + i + 'HKO' + afterText;
         }
     }
@@ -228,7 +235,7 @@ function getKOChanceText(damage, move, defender, field, isBadDreams) {
     return 'possibly the worst move ever';
 }
 
-function getKOChance(damage, multihit, hp, eot, hits, maxHP, toxicCounter, hasSitrus, hasFWMAI) {
+function getKOChance(damage, multihit, hp, eot, hits, maxHP, toxicCounter, hasSitrus, hasFWMAI, gluttony) {
     var n = damage.length;
     var minDamage = damage[0];
     var maxDamage = damage[n-1];
@@ -265,13 +272,13 @@ function getKOChance(damage, multihit, hp, eot, hits, maxHP, toxicCounter, hasSi
             hp += Math.floor(maxHP / 4);
             hasSitrus = false;
         }
-        if ((hp - damage[i] <= maxHP / 4) && hasFWMAI) {
+        if (((hp - damage[i] <= maxHP / 4) || (gluttony && hp - damage[i] <= maxHP / 2)) && hasFWMAI) {
             hp += Math.floor(maxHP / 2);
             hasFWMAI = 0;
         }
         var c;
         if (i === 0 || damage[i] !== damage[i-1]) {
-            c = getKOChance(unsquashed, multihit, hp - damage[i] + eot - toxicDamage, eot, hits - 1, maxHP, toxicCounter, hasSitrus, hasFWMAI);
+            c = getKOChance(unsquashed, multihit, hp - damage[i] + eot - toxicDamage, eot, hits - 1, maxHP, toxicCounter, hasSitrus, hasFWMAI, gluttony);
         } else {
             c = lastC;
         }
@@ -306,7 +313,7 @@ function multihitCalc(damage, multihit, hp, maxHP, hasSitrus, hasFWMAI) {
         		tmpHP += Math.floor(maxHP/4);
         		tmpHasSitrus = false;
       		}
-            if (tmpHP <= maxHP/4 && hasFWMAI) {
+            if (hasFWMAI && (tmpHP <= maxHP/4 || (gluttony && tmpHP <= maxHP/2))) {
                 tmpHP += Math.floor(maxHP/2);
                 tmpHasFWMAI = 0;
             }
@@ -318,7 +325,7 @@ function multihitCalc(damage, multihit, hp, maxHP, hasSitrus, hasFWMAI) {
 	return sum/n;
 }
 
-function predictTotal(damage, eot, hits, toxicCounter, hp, maxHP, hasSitrus, hasFWMAI) {
+function predictTotal(damage, eot, hits, toxicCounter, hp, maxHP, hasSitrus, hasFWMAI, gluttony) {
     var total = 0;
     for (var i = 0; i < hits; i++) {
         total += damage;
@@ -326,7 +333,7 @@ function predictTotal(damage, eot, hits, toxicCounter, hp, maxHP, hasSitrus, has
             total -= Math.floor(maxHP / 4);
             hasSitrus = false;
         }
-        if ((hp - total <= maxHP / 4) && hasFWMAI) {
+        if (((hp - total <= maxHP / 4) || ((hp - total <= maxHP / 2) && gluttony)) && hasFWMAI) {
             total -= Math.floor(maxHP / 2);
             hasFWMAI = 0;
         }
