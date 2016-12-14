@@ -158,7 +158,7 @@ function getKOChanceText(damage, move, defender, field, isBadDreams) {
     var qualifier = '';
     if (move.hits > 1) {
         qualifier = 'approx. ';
-        if (!hasFWMAI) {
+        if (!hasFWMAI || gluttony) {
     		damage = squashMultihit(damage, move.hits);
     	}
     }
