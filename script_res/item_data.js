@@ -176,7 +176,11 @@ ITEMS_XY.splice(ITEMS_XY.indexOf('Soul Dew'), 1);
 
 
 var ITEMS_SM = ITEMS_XY.concat([
-    'Figy Berry'
+    'Figy Berry',
+    'Wiki Berry',
+    'Mago Berry',
+    'Aguav Berry',
+    'Iapapa Berry'
 ]);
 
 function getItemBoostType(item) {
@@ -309,6 +313,7 @@ function getFlingPower(item) {
 
 function getNaturalGift(item) {
     var gift = {
+        'Aguav Berry' : {'t':'Dragon','p':80},
         'Apicot Berry' : {'t':'Ground','p':100},
         'Babiri Berry' : {'t':'Steel','p':80},
         'Belue Berry' : {'t':'Electric','p':100},
@@ -321,8 +326,10 @@ function getNaturalGift(item) {
         'Custap Berry' : {'t':'Ghost','p':100},
         'Durin Berry' : {'t':'Water','p':100},
         'Enigma Berry' : {'t':'Bug','p':100},
+        'Figy Berry' : {'t':'Bug','p':80},
         'Ganlon Berry' : {'t':'Ice','p':100},
         'Haban Berry' : {'t':'Dragon','p':80},
+        'Iapapa Berry' : {'t':'Dark','p':80},
         'Jaboca Berry' : {'t':'Dragon','p':100},
         'Kasib Berry' : {'t':'Ghost','p':80},
         'Kebia Berry' : {'t':'Poison','p':80},
@@ -331,6 +338,7 @@ function getNaturalGift(item) {
         'Leppa Berry' : {'t':'Fighting','p':80},
         'Liechi Berry' : {'t':'Grass','p':100},
         'Lum Berry' : {'t':'Flying','p':80},
+        'Mago Berry' : {'t':'Ghost','p':80},
         'Maranga Berry' : {'t':'Dark','p':100},
         'Micle Berry' : {'t':'Rock','p':100},
         'Occa Berry' : {'t':'Fire','p':80},
@@ -349,6 +357,7 @@ function getNaturalGift(item) {
         'Tanga Berry' : {'t':'Bug','p':80},
         'Wacan Berry' : {'t':'Electric','p':80},
         'Watmel Berry' : {'t':'Fire','p':100},
+        'Wiki Berry' : {'t':'Rock','p':100},
         'Yache Berry' : {'t':'Ice','p':80}
     }[item];
     if (gift) {
