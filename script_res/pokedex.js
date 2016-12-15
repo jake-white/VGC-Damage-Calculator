@@ -12018,19 +12018,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
       "sp": 96
     },
     "w": 0.7,
-  },
-  "Mimikyu": {
-    "t1": "Ghost",
-    "t2": "Fairy",
-    "bs": {
-      "hp": 55,
-      "at": 90,
-      "df": 80,
-      "sa": 50,
-      "sd": 105,
-      "sp": 96
-    },
-    "w": 0.7,
+    "ab": "Disguise"
   },
   "Bruxish": {
     "t1": "Water",
