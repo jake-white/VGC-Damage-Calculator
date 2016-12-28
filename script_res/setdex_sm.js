@@ -2897,14 +2897,14 @@ var SETDEX_SM={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 252,
+        "hp": 4,
         "at": 0,
-        "df": 4,
-        "sa": 0,
+        "df": 0,
+        "sa": 252,
         "sd": 0,
         "sp": 252
       },
-      "nature": "Impish",
+      "nature": "Timid",
       "ability": "Intimidate",
       "item": "",
       "moves": [
@@ -8623,7 +8623,7 @@ var SETDEX_SM={
       },
       "nature": "Adamant",
       "ability": "",
-      "item": "",
+      "item": "Assault Vest",
       "moves": [
         "High Horsepower",
         "Earthquake",
@@ -8634,7 +8634,28 @@ var SETDEX_SM={
   },
 
   "Araquanid": {
-    "God-Tier Pokemon": {
+    "Pure Physical Set": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 252,
+        "df": 4,
+        "sa": 0,
+        "sd": 0,
+        "sp": 0
+      },
+      "nature": "Brave",
+      "ability": "Water Bubble",
+      "item": "",
+      "moves": [
+        "Liquidation",
+        "Leech Life",
+        "Lunge",
+        "Poison Jab",
+      ]
+    },
+
+    "Mixed Set": {
       "level": 50,
       "evs": {
         "hp": 252,
@@ -8650,10 +8671,10 @@ var SETDEX_SM={
       "moves": [
         "Liquidation",
         "Leech Life",
-        "Lunge",
+        "Surf",
         "Scald",
       ]
-    }    
+    }
   },
 
   "Lurantis": {
@@ -8887,26 +8908,26 @@ var SETDEX_SM={
   },
 
   "Silvally": {
-    "Random Meta Guess": {
+    "Physical Set": {
       "level": 50,
       "evs": {
         "hp": 4,
         "at": 252,
-        "df": 4,
+        "df": 0,
         "sa": 0,
         "sd": 0,
         "sp": 252
       },
-      "nature": "Hasty",
+      "nature": "Adamant",
       "ability": "",
       "item": "",
       "moves": [
         "Multi-Attack",
-        "Tri-Attack",
-        "Ice Beam",
+        "Explosion",
+        "Tri Attack",
         "Double-Edge",
       ]
-    }    
+    }
   },
 
   "Minior": {
@@ -9472,6 +9493,28 @@ var SETDEX_SM={
         "Ice Beam",
         "Freeze-Dry",
         "Moonblast"
+      ]
+    }
+  },
+  "Raichu-Alola": {
+    "Common Showdown": {
+      "level": 50,
+      "evs": {
+        "hp": 4,
+        "at": 0,
+        "df": 0,
+        "sa": 252,
+        "sd": 0,
+        "sp": 252
+      },
+      "nature": "Timid",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Fake Out",
+        "Thunderbolt",
+        "Hidden Power Ice",
+        "Psychic"
       ]
     }
   },
