@@ -4477,7 +4477,27 @@ var SETDEX_SM={
     }
   },
   "Arcanine": {
-    "Common Showdown": {
+    "Physical Set": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 252,
+        "df": 0,
+        "sa": 0,
+        "sd": 4,
+        "sp": 0
+      },
+      "nature": "Adamant",
+      "ability": "Intimidate",
+      "item": "Sitrus Berry",
+      "moves": [
+        "Flare Blitz",
+        "Extreme Speed",
+        "Wild Charge",
+        "Close Combat"
+      ]
+    },
+    "Special Set": {
       "level": 50,
       "evs": {
         "hp": 252,
@@ -4489,12 +4509,12 @@ var SETDEX_SM={
       },
       "nature": "Modest",
       "ability": "Intimidate",
-      "item": "Leftovers",
+      "item": "Sitrus Berry",
       "moves": [
-        "Snarl",
         "Burn Up",
-        "Extreme Speed",
-        "Flamethrower"
+        "Flamethrower",
+        "Snarl",
+        "Extreme Speed"
       ]
     }
   },
@@ -5016,7 +5036,7 @@ var SETDEX_SM={
         "sp": 252
       },
       "nature": "Timid",
-      "ability": "Cloud Nine",
+      "ability": "Swift Swim",
       "item": "Choice Scarf",
       "moves": [
         "Scald",

@@ -18,10 +18,15 @@ th, td {
 th {
     font-size: 0.8em;
 }
-.title-text {
+.title-text {    
     font-weight: bold;
     font-size: 1.5em;
-    margin: 0.5em 1em 0.5em 0;
+    height: 50px;
+}
+.yeartag {
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    vertical-align:middle
 }
 .big-text {
     font-weight: bold;
