@@ -252,7 +252,7 @@ function getKOChance(damage, multihit, hp, eot, hits, maxHP, toxicCounter, hasSi
 	            } 
         	}
     	 } else {
-    	 	return multihitCalc(damage, multihit, hp, maxHP, hasSitrus, hasFWMAI);
+    	 	return multihitCalc(damage, multihit, hp, maxHP, hasSitrus, hasFWMAI, gluttony);
     	 }
     }
 
@@ -293,7 +293,7 @@ function getKOChance(damage, multihit, hp, eot, hits, maxHP, toxicCounter, hasSi
     return sum/n;
 }
 
-function multihitCalc(damage, multihit, hp, maxHP, hasSitrus, hasFWMAI) {
+function multihitCalc(damage, multihit, hp, maxHP, hasSitrus, hasFWMAI, gluttony) {
 	/*
 	Calculates the probability of OHKO given the parameters for a multihit attack
 	*/
@@ -318,7 +318,7 @@ function multihitCalc(damage, multihit, hp, maxHP, hasSitrus, hasFWMAI) {
                 tmpHasFWMAI = 0;
             }
       		if (multihit) {
-        		sum += multihitCalc(damage, multihit - 1, tmpHP, maxHP, tmpHasSitrus, tmpHasFWMAI);
+        		sum += multihitCalc(damage, multihit - 1, tmpHP, maxHP, tmpHasSitrus, tmpHasFWMAI, gluttony);
       		}
     	}
 	}
