@@ -7007,18 +7007,18 @@ var SETDEX_SM={
         "hp": 252,
         "at": 0,
         "df": 4,
-        "sa": 0,
-        "sd": 252,
+        "sa": 252,
+        "sd": 0,
         "sp": 0
       },
-      "nature": "Calm",
-      "ability": "Rain Dish",
+      "nature": "Modest",
+      "ability": "Drizzle",
       "item": "Safety Goggles",
       "moves": [
         "Scald",
         "Hurricane",
-        "Icy Wind",
-        "Air Slash"
+        "Ice Beam",
+        "Hydro Pump"
       ]
     }
   },
