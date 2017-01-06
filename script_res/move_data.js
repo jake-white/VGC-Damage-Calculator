@@ -651,6 +651,12 @@ var MOVES_ADV = $.extend(true, {}, MOVES_GSC, {
         hasSecondaryEffect: true,
         isSpread: true
     },
+    'Mud Shot': {
+        bp: 55,
+        type: 'Ground',
+        category: 'Special',
+        hasSecondaryEffect: true,
+    },
     'Overheat': {
         bp: 140,
         type: 'Fire',
