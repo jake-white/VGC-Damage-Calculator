@@ -1205,24 +1205,24 @@ var SETDEX_SM={
     }
   },
   "Goodra": {
-    "Common Showdown": {
+    "Till's Goodra": {
       "level": 50,
       "evs": {
-        "hp": 252,
+        "hp": 188,
         "at": 0,
-        "df": 0,
-        "sa": 252,
-        "sd": 4,
+        "df": 164,
+        "sa": 156,
+        "sd": 0,
         "sp": 0
       },
       "nature": "Modest",
       "ability": "Sap Sipper",
       "item": "Assault Vest",
       "moves": [
-        "Ice Beam",
         "Draco Meteor",
         "Dragon Pulse",
-        "Fire Blast"
+        "Sludge Bomb",
+        "Thunderbolt"
       ]
     }
   },
@@ -1384,14 +1384,14 @@ var SETDEX_SM={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 248,
-        "at": 8,
-        "df": 0,
+        "hp": 252,
+        "at": 4,
+        "df": 76,
         "sa": 0,
-        "sd": 252,
+        "sd": 172,
         "sp": 0
       },
-      "nature": "Careful",
+      "nature": "Brave",
       "ability": "",
       "item": "Sitrus Berry",
       "moves": [
@@ -1997,24 +1997,24 @@ var SETDEX_SM={
     }
   },
   "Snorlax": {
-    "Common Showdown": {
+    "TT Snorlax": {
       "level": 50,
       "evs": {
-        "hp": 252,
+        "hp": 68,
         "at": 252,
-        "df": 0,
+        "df": 188,
         "sa": 0,
         "sd": 4,
         "sp": 0
       },
       "nature": "Brave",
-      "ability": "Thick Fat",
-      "item": "Chesto Berry",
+      "ability": "Gluttony",
+      "item": "Figy Berry",
       "moves": [
-        "Self-Destruct",
-        "Crunch",
-        "Earthquake",
-        "Rock Slide"
+        "Return",
+        "Facade",
+        "High Horsepower",
+        "Heavy Slam"
       ]
     }
   },
@@ -3007,16 +3007,16 @@ var SETDEX_SM={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 248,
+        "hp": 28,
         "at": 252,
-        "df": 0,
+        "df": 108,
         "sa": 0,
-        "sd": 8,
+        "sd": 116,
         "sp": 0
       },
-      "nature": "Adamant",
+      "nature": "Brave",
       "ability": "Guts",
-      "item": "Assault Vest",
+      "item": "Flame Orb",
       "moves": [
         "Fake Out",
         "Close Combat",
@@ -3465,24 +3465,24 @@ var SETDEX_SM={
     }
   },
   "Gigalith": {
-    "Common Showdown": {
+    "TT AV Gigalith": {
       "level": 50,
       "evs": {
-        "hp": 248,
-        "at": 252,
-        "df": 0,
+        "hp": 228,
+        "at": 228,
+        "df": 52,
         "sa": 0,
-        "sd": 8,
+        "sd": 0,
         "sp": 0
       },
       "nature": "Brave",
-      "ability": "",
+      "ability": "Sand Stream",
       "item": "Assault Vest",
       "moves": [
         "Rock Slide",
         "Earthquake",
-        "Explosion",
-        "Iron Head"
+        "Stone Edge",
+        "Heavy Slam"
       ]
     }
   },
@@ -4335,6 +4335,26 @@ var SETDEX_SM={
       },
       "nature": "Bold",
       "ability": "",
+      "item": "",
+      "moves": [
+        "Scald",
+        "Ice Beam",
+        "Icy Wind",
+        "Hydro Pump"
+      ]
+    },
+    "Yuree's Milotic": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 0,
+        "df": 44,
+        "sa": 20,
+        "sd": 52,
+        "sp": 140
+      },
+      "nature": "Calm",
+      "ability": "",
       "item": "Leftovers",
       "moves": [
         "Scald",
@@ -4530,6 +4550,27 @@ var SETDEX_SM={
         "sp": 252
       },
       "nature": "Timid",
+      "ability": "Drizzle",
+      "item": "Sitrus Berry",
+      "moves": [
+        "Scald",
+        "Ice Beam",
+        "Icy Wind",
+        "Hydro Pump"
+      ]
+    },
+
+    "Wolfe's Politoed": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 0,
+        "df": 108,
+        "sa": 4,
+        "sd": 76,
+        "sp": 68
+      },
+      "nature": "Calm",
       "ability": "Drizzle",
       "item": "Sitrus Berry",
       "moves": [
@@ -4786,11 +4827,11 @@ var SETDEX_SM={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 252,
+        "hp": 244,
         "at": 0,
-        "df": 156,
-        "sa": 20,
-        "sd": 76,
+        "df": 92,
+        "sa": 28,
+        "sd": 140,
         "sp": 0
       },
       "nature": "Sassy",
@@ -5040,9 +5081,9 @@ var SETDEX_SM={
       "item": "Choice Scarf",
       "moves": [
         "Scald",
+        "Hydro Pump",
         "Ice Beam",
-        "Psychic",
-        "Icy Wind"
+        "Psychic"
       ]
     }
   },
@@ -6470,6 +6511,27 @@ var SETDEX_SM={
         "Dragon Claw",
         "Poison Jab"
       ]
+    },
+
+    "TT AV Garchomp": {
+      "level": 50,
+      "evs": {
+        "hp": 28,
+        "at": 172,
+        "df": 4,
+        "sa": 0,
+        "sd": 52,
+        "sp": 252
+      },
+      "nature": "Jolly",
+      "ability": "",
+      "item": "Assault Vest",
+      "moves": [
+        "Earthquake",
+        "Rock Slide",
+        "Dragon Claw",
+        "Poison Jab"
+      ]
     }
   },
   "Scrafty": {
@@ -6935,23 +6997,23 @@ var SETDEX_SM={
     }
   },
   "Metagross": {
-    "Common Showdown": {
+    "TT AV Metagross": {
       "level": 50,
       "evs": {
-        "hp": 4,
+        "hp": 220,
         "at": 252,
-        "df": 0,
+        "df": 36,
         "sa": 0,
         "sd": 0,
-        "sp": 252
+        "sp": 0
       },
-      "nature": "Jolly",
+      "nature": "Adamant",
       "ability": "Clear Body",
-      "item": "",
+      "item": "Assault Vest",
       "moves": [
         "Zen Headbutt",
         "Iron Head",
-        "Ice Punch",
+        "Earthquake",
         "Bullet Punch"
       ]
     }
@@ -7543,10 +7605,30 @@ var SETDEX_SM={
       "ability": "Storm Drain",
       "item": "Leftovers",
       "moves": [
-        "Earth Power",
-        "Ice Beam",
         "Scald",
-        "Muddy Water"
+        "Ice Beam",
+        "Muddy Water",
+        "Hidden Power Ground"
+      ]
+    },
+    "Till's Gastrodon": {
+      "level": 50,
+      "evs": {
+        "hp": 228,
+        "at": 0,  
+        "df": 220,
+        "sa": 0,
+        "sd": 60,
+        "sp": 0
+      },
+      "nature": "Bold",
+      "ability": "Storm Drain",
+      "item": "",
+      "moves": [
+        "Scald",
+        "Ice Beam",
+        "Muddy Water",
+        "Hidden Power Ground"
       ]
     }
   },
@@ -8355,26 +8437,46 @@ var SETDEX_SM={
   },
 
   "Incineroar": {
-    "Random Meta Guess": {
+    "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 252,
+        "hp": 4,
         "at": 252,
         "df": 4,
         "sa": 0,
         "sd": 0,
-        "sp": 0
+        "sp": 252
       },
       "nature": "Adamant",
-      "ability": "Intimidate",
+      "ability": "",
       "item": "",
       "moves": [
         "Flare Blitz",
         "Darkest Lariat",
-        "Fire Fang",
+        "Fake Out",
+        "Malicious Moonsault",
+      ]
+    },
+    "TT AV Incineroar": {
+      "level": 50,
+      "evs": {
+        "hp": 220,
+        "at": 252,
+        "df": 4,
+        "sa": 0,
+        "sd": 12,
+        "sp": 20
+      },
+      "nature": "Adamant",
+      "ability": "",
+      "item": "Assault Vest",
+      "moves": [
+        "Flare Blitz",
+        "Darkest Lariat",
+        "Fake Out",
         "Snarl",
       ]
-    }    
+    }
   },
 
   "Primarina": {
@@ -8466,7 +8568,28 @@ var SETDEX_SM={
         "Hidden Power Ice",
         "Discharge",
       ]
-    }    
+    },
+
+    "Sam's Vikavolt": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 0,
+        "df": 68,
+        "sa": 28,
+        "sd": 156,
+        "sp": 4
+      },
+      "nature": "Modest",
+      "ability": "",
+      "item": "Figy Berry",
+      "moves": [
+        "Bug Buzz",
+        "Thunderbolt",
+        "Hidden Power Ice",
+        "Discharge",
+      ]
+    } 
   },
 
   "Crabominable": {
@@ -8588,23 +8711,23 @@ var SETDEX_SM={
     "Random Meta Guess": {
       "level": 50,
       "evs": {
-        "hp": 252,
-        "at": 4,
+        "hp": 236,
+        "at": 0,
         "df": 0,
-        "sa": 252,
-        "sd": 0,
+        "sa": 212,
+        "sd": 60,
         "sp": 0
       },
-      "nature": "Brave",
+      "nature": "Quiet",
       "ability": "",
-      "item": "",
+      "item": "Sitrus Berry",
       "moves": [
         "Scald",
         "Ice Beam",
-        "Waterfall",
-        "Earthquake",
+        "Muddy Water",
+        "Surf",
       ]
-    }    
+    }
   },
 
   "Toxapex": {
@@ -8836,19 +8959,19 @@ var SETDEX_SM={
   },
 
   "Oranguru": {
-    "Random Meta Guess": {
+    "TT Oranguru": {
       "level": 50,
       "evs": {
         "hp": 252,
         "at": 0,
-        "df": 0,
-        "sa": 252,
-        "sd": 4,
+        "df": 140,
+        "sa": 20,
+        "sd": 92,
         "sp": 0
       },
-      "nature": "Modest",
+      "nature": "Sassy",
       "ability": "",
-      "item": "",
+      "item": "Sitrus Berry",
       "moves": [
         "Psychic",
         "",
@@ -9089,42 +9212,42 @@ var SETDEX_SM={
   },
 
   "Drampa": {
-    "Random Meta Guess": {
+    "TT Drampa": {
       "level": 50,
       "evs": {
-        "hp": 252,
+        "hp": 196,
         "at": 0,
-        "df": 4,
+        "df": 60,
         "sa": 252,
         "sd": 0,
         "sp": 0
       },
-      "nature": "Modest",
+      "nature": "Quiet",
       "ability": "",
-      "item": "",
+      "item": "Life Orb",
       "moves": [
         "Hyper Voice",
         "Draco Meteor",
         "Fire Blast",
-        "Ice Beam",
+        "Flamethrower",
       ]
     }    
   },
 
   "Dhelmise": {
-    "Random Meta Guess": {
+    "TT Dhelmise": {
       "level": 50,
       "evs": {
-        "hp": 252,
+        "hp": 188,
         "at": 252,
-        "df": 4,
+        "df": 12,
         "sa": 0,
-        "sd": 0,
+        "sd": 52,
         "sp": 0
       },
-      "nature": "Adamant",
+      "nature": "Brave",
       "ability": "Steelworker",
-      "item": "",
+      "item": "Life Orb",
       "moves": [
         "Anchor Shot",
         "Shadow Claw",
@@ -9197,16 +9320,37 @@ var SETDEX_SM={
         "Dazzling Gleam",
         "Discharge",
       ]
-    }    
+    },
+    "TT AV Koko": {
+      "level": 50,
+      "evs": {
+        "hp": 236,
+        "at": 0,
+        "df": 4,
+        "sa": 20,
+        "sd": 132,
+        "sp": 100
+      },
+      "nature": "Timid",
+      "ability": "Electric Surge",
+      "item": "Assault Vest",
+      "moves": [
+        "Thunderbolt",
+        "Dazzling Gleam",
+        "Volt Switch",
+        "Discharge",
+      ]
+    }, 
+
   },
 
   "Tapu Lele": {
-    "Random Meta Guess": {
+    "TT Lele": {
       "level": 50,
       "evs": {
-        "hp": 252,
+        "hp": 164,
         "at": 0,
-        "df": 4,
+        "df": 92,
         "sa": 252,
         "sd": 0,
         "sp": 0
@@ -9220,7 +9364,7 @@ var SETDEX_SM={
         "Dazzling Gleam",
         "Energy Ball",
       ]
-    }    
+    },
   },
 
   "Tapu Bulu": {
@@ -9236,6 +9380,27 @@ var SETDEX_SM={
       },
       "nature": "Adamant",
       "ability": "Grassy Surge",
+      "item": "Meadow Plate",
+      "moves": [
+        "Wood Hammer",
+        "Horn Leech",
+        "Superpower",
+        "Stone Edge",
+      ]
+    },
+
+    "Wolfe's Bulu": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 36,
+        "df": 60,
+        "sa": 0,
+        "sd": 140,
+        "sp": 20
+      },
+      "nature": "Adamant",
+      "ability": "Grassy Surge",
       "item": "",
       "moves": [
         "Wood Hammer",
@@ -9243,30 +9408,51 @@ var SETDEX_SM={
         "Superpower",
         "Stone Edge",
       ]
-    }    
+    }
   },
 
   "Tapu Fini": {
-    "Random Meta Guess": {
+    "Specs Fini": {
       "level": 50,
       "evs": {
         "hp": 252,
         "at": 0,
-        "df": 4,
-        "sa": 252,
-        "sd": 0,
-        "sp": 0
+        "df": 20,
+        "sa": 164,
+        "sd": 44,
+        "sp": 28
       },
       "nature": "Modest",
       "ability": "Misty Surge",
-      "item": "",
+      "item": "Choice Specs",
       "moves": [
         "Hydro Pump",
         "Moonblast",
-        "Ice Beam",
+        "Muddy Water",
+        "Dazzling Gleam",
+      ]
+    },
+
+    "CM Fini": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 0,
+        "df": 100,
+        "sa": 84,
+        "sd": 44,
+        "sp": 28  
+      },
+      "nature": "Calm",
+      "ability": "Misty Surge",
+      "item": "Leftovers",
+      "moves": [
+        "Hydro Pump",
+        "Moonblast",
+        "Muddy Water",
         "Scald",
       ]
-    }    
+    }
   },
 
   "Nihilego": {
@@ -9316,7 +9502,7 @@ var SETDEX_SM={
   },
 
   "Pheromosa": {
-    "Random Meta Guess": {
+    "TT Pheromosa": {
       "level": 50,
       "evs": {
         "hp": 0,
@@ -9326,13 +9512,13 @@ var SETDEX_SM={
         "sd": 0,
         "sp": 252
       },
-      "nature": "Naive",
+      "nature": "Lonely",
       "ability": "",
       "item": "",
       "moves": [
-        "Bug Buzz",
-        "High Jump Kick",
         "Lunge",
+        "High Jump Kick",
+        "Poison Jab",
         "Ice Beam",
       ]
     }
@@ -9358,6 +9544,27 @@ var SETDEX_SM={
         "Volt Switch",
         "Hidden Power Ice",
       ]
+    },
+
+    "Tail Glow Xurk": {
+      "level": 50,
+      "evs": {
+        "hp": 236,
+        "at": 0,
+        "df": 4,
+        "sa": 4,
+        "sd": 12,
+        "sp": 252
+      },
+      "nature": "Timid",
+      "ability": "",
+      "item": "Sitrus",
+      "moves": [
+        "Thunderbolt",
+        "Discharge",
+        "Volt Switch",
+        "Hidden Power Ice",
+      ]
     }
   },
 
@@ -9365,21 +9572,21 @@ var SETDEX_SM={
     "Physical/Mixed Attacker": {
       "level": 50,
       "evs": {
-        "hp": 252,
-        "at": 252,
+        "hp": 180,
+        "at": 180,
         "df": 0,
         "sa": 4,
-        "sd": 0,
+        "sd": 148,
         "sp": 0
       },
-      "nature": "Brave",
+      "nature": "Careful",
       "ability": "",
-      "item": "",
+      "item": "Leftovers",
       "moves": [
         "Heavy Slam",
         "Flamethrower",
-        "Fire Blast",
-        "",
+        "Seed Bomb",
+        "Earthquake",
       ]
     },
     "Special Attacker": {
@@ -9394,7 +9601,7 @@ var SETDEX_SM={
       },
       "nature": "Quiet",
       "ability": "",
-      "item": "",
+      "item": "Leftovers",
       "moves": [
         "Flash Cannon",
         "Air Slash",
@@ -9418,6 +9625,27 @@ var SETDEX_SM={
       "nature": "Jolly",
       "ability": "",
       "item": "",
+      "moves": [
+        "Smart Strike",
+        "Leaf Blade",
+        "Sacred Sword",
+        "Night Slash",
+      ]
+    },
+
+    "TT AV Kartana": {
+      "level": 50,
+      "evs": {
+        "hp": 84,
+        "at": 4,
+        "df": 4,
+        "sa": 0,
+        "sd": 164,
+        "sp": 252
+      },
+      "nature": "Jolly",
+      "ability": "",
+      "item": "Assault Vest",
       "moves": [
         "Smart Strike",
         "Leaf Blade",
@@ -9491,6 +9719,50 @@ var SETDEX_SM={
         "Bonemerang",
         "Rock Slide"
       ]
+    },
+
+    "Till's Marowak": {
+      "level": 50,
+      "evs": {
+        "hp": 252,
+        "at": 76,
+        "df": 84,
+        "sa": 0,
+        "sd": 92,
+        "sp": 0
+      },
+      "nature": "Brave",
+      "ability": "Lightningrod",
+      "item": "Thick Club",
+      "moves": [
+        "Flare Blitz",
+        "Shadow Bone",
+        "Bonemerang",
+        "Rock Slide"
+      ]
+    }
+  },
+
+  "Golem-Alola": {
+    "TT Golem": {
+      "level": 50,
+      "evs": {
+        "hp": 188,
+        "at": 252,
+        "df": 4,
+        "sa": 0,
+        "sd": 68,
+        "sp": 0
+      },
+      "nature": "Brave",
+      "ability": "Galvanize",
+      "item": "Life Orb",
+      "moves": [
+        "Double-Edge",
+        "Return",
+        "Stone Edge",
+        "Explosion"
+      ]
     }
   },
 
@@ -9513,6 +9785,29 @@ var SETDEX_SM={
         "Ice Beam",
         "Freeze-Dry",
         "Moonblast"
+      ]
+    }
+  },
+
+  "Sandslash-Alola": {
+    "TT Sandslash": {
+      "level": 50,
+      "evs": {
+        "hp": 68,
+        "at": 252,
+        "df": 4,
+        "sa": 0,
+        "sd": 60,
+        "sp": 124
+      },
+      "nature": "Adamant",
+      "ability": "Slush Rush",
+      "item": "Life Orb",
+      "moves": [
+        "Iron Head",
+        "Icicle Crash",
+        "Rock Slide",
+        "Earthquake"
       ]
     }
   },
@@ -9540,24 +9835,24 @@ var SETDEX_SM={
   },
 
   "Persian-Alola": {
-    "Common Showdown": {
+    "TT Persian": {
       "level": 50,
       "evs": {
         "hp": 4,
-        "at": 252,
-        "df": 0,
-        "sa": 0,
-        "sd": 0,
-        "sp": 252
+        "at": 0,
+        "df": 20,
+        "sa": 44,
+        "sd": 204,
+        "sp": 236
       },
       "nature": "Adamant",
       "ability": "Technician",
       "item": "Life Orb",
       "moves": [
         "Fake Out",
+        "Dark Pulse",
         "Snarl",
-        "Foul Play",
-        "U-turn"
+        "Foul Play"
       ]
     }
   },
@@ -9573,15 +9868,37 @@ var SETDEX_SM={
         "sd": 4,
         "sp": 0
       },
-      "nature": "Brave",
+      "nature": "Adamant",
       "ability": "Gluttony",
       "item": "Figy Berry",
       "moves": [
         "Gunk Shot",
         "Poison Jab",
         "Knock Off",
-        "Crunch"
+        "Shadow Sneak"
+      ]
+    },
+
+    "PokeAlex's Muk": {
+      "level": 50,
+      "evs": {
+        "hp": 188,
+        "at": 244,
+        "df": 44,
+        "sa": 0,
+        "sd": 20,
+        "sp": 12
+      },
+      "nature": "Adamant",
+      "ability": "Gluttony",
+      "item": "Figy Berry",
+      "moves": [
+        "Gunk Shot",
+        "Poison Jab",
+        "Knock Off",
+        "Shadow Sneak"
       ]
     }
-  }
+  },
+
 };

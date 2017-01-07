@@ -4340,8 +4340,7 @@ var POKEDEX_ADV = $.extend(true, {}, POKEDEX_GSC, {
       "sd": 125,
       "sp": 81
     },
-    "w": 162.0,
-    "ab": "Marvel Scale"
+    "w": 162.0
   },
   "Minun": {
     "t1": "Electric",
