@@ -9321,13 +9321,13 @@ var SETDEX_SM={
         "Discharge",
       ]
     },
-    "TT AV Koko": {
+    "AV Koko": {
       "level": 50,
       "evs": {
         "hp": 236,
         "at": 0,
-        "df": 4,
-        "sa": 20,
+        "df": 12,
+        "sa": 28,
         "sd": 132,
         "sp": 100
       },
