@@ -17,8 +17,9 @@ var showdownFormes = [["Kyurem-White", "Kyurem-W"],
 ["Wormadan-Trash", "Wormadan-S"],
 ["Groudon-Primal", "Groudon"],
 ["Kyogre-Primal", "Kyogre"]];
-if(readCookie("custom") != null)
+if(readCookie("custom") != null){
 	var SETDEX_CUSTOM = JSON.parse(readCookie("custom"))
+}
 var deletecustom = function()
 {
 	SETDEX_CUSTOM = {}
