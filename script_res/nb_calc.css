@@ -5,17 +5,30 @@ body, html {
     font-family: Open Sans;
 }
 
+#notice{
+    font-size: 30pt;
+    color: #e64946;
+}
+#smallnotice{
+    font-size: 15pt;
+    color: #e64946;
+}
+
+#notice a{
+    color: #1e3864;
+}
+
 .header{
     margin:0 0 20px 0;
     color: #ffffff;
-    background:#333333;
-    border-bottom:1px solid #ffba00;
+    background:#1e3864;
+    border-bottom: 5px solid #e64946;
     box-shadow:inset 1px 1px 0 rgba(255,255,255,.6),0px 2px 2px rgba(0,0,0,.15);
     min-height:50px;
 }
 
 .header a {
-    color: #ffba00;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -39,7 +52,6 @@ body, html {
 .nav{
     padding:15px 6px 15px 6px;
 }
-
 
 
 .button{
@@ -98,9 +110,9 @@ body, html {
   padding: 15px;
 }
 .panel-heading {
-  background-color: #333333;
+  background-color: #1e3864;
   padding: 10px 15px;
-  border-bottom: 1px solid transparent;
+  border-bottom: 5px solid #e64946;
   border-top-right-radius: 2px;
   border-top-left-radius: 2px;
 }
@@ -109,7 +121,7 @@ body, html {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 15px;
-  color: #ffba00;
+  color: #fff;
 }
 
 .banner {
@@ -130,6 +142,6 @@ h1 {
 }
 
 h1 a {
-    color: #ffba00;
+    color: #fff;
     text-decoration: none;
 }

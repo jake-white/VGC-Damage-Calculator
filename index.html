@@ -1,6 +1,13 @@
+﻿<!doctype HTML>
 <html lang="us">
-<link rel="icon" type="image/png" href="image_res/favicon-32x32.png" sizes="32x32" />
-<link rel="icon" type="image/png" href="image_res/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="image_res/favicon.ico">
+
+    <link rel="image_src" href="http://trainertower.com/damagecalc/image_res/rhydon.png" />
+    <html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:og="http://ogp.me/ns#">
+    <meta property="og:title" content="Trainer Tower Damage Calculator" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://trainertower.com/damagecalc/image_res/rhydon.png" />
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -8,14 +15,14 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-71936684-1', 'auto');
+  ga('create', 'UA-86401070-1', 'auto');
   ga('send', 'pageview');
 
 </script>
 
 <head>
     <meta charset="UTF-8" />
-    <title>Nugget Bridge Pokémon Damage Calculator</title>
+    <title>Pokémon Damage Calculator</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link type="text/css" rel="stylesheet" href="script_res/select2.css" />
     <link type="text/css" rel="stylesheet" href="script_res/ap_calc.css" />
@@ -23,13 +30,13 @@
 </head>
 <body>
     <div class="header"><div class="wrapper">
-            <span class="header-logo"><a href="http://nuggetbridge.com"><img src="image_res/nugget.png" alt="Nugget Bridge" height="50px" /></a></span><span class="nav"><a href="http://nuggetbridge.com">Home</a> | <a href="http://nuggetbridge.com/forums/">Forums</a> | <a href="http://play.pokemonshowdown.com/vgc">Showdown</a> | <a href="https://docs.google.com/spreadsheets/d/1-z-OdB2fUe39-2y9D9xue7VSJo2v8Z36sMRVCfww2lk/">2017 Speed Tiers</a> | <a href="https://github.com/jake-white/VGC-2016-Damage-Calculator">GitHub Page</a> | <a href="https://lilymaniac.github.io/calc/">한국어 계산기 (Korean Version)</a> | <a href="https://jake-white.github.io/VGC-Usage/">Usage Stats</a></span>
+            <span class="header-logo"><a href="http://trainertower.com"><img src="image_res/trainertower.png" alt="Trainer Tower" height="50px" /></a></span><span class="nav"><a href="http://trainertower.com">Home</a> | <a href="http://play.pokemonshowdown.com/vgc">Showdown</a> | <a href="http://www.trainertower.com/vgc-2017-speed-tiers/">2017 Speed Tiers</a> | <a href="https://github.com/jake-white/VGC-Damage-Calculator">GitHub Page</a> | <a href="https://lilymaniac.github.io/calc/">한국어 계산기 (Korean Version)</a> | <a href="http://trainertower.com/usage-stats">Usage Stats</a></span>
             <div style="clear:both"></div>
 
     </div></div>
     <div class="wrapper">
         <div>
-            <span class="title-text">Nugget Bridge Pokémon Damage Calculator <img  class = "yeartag" src="image_res/frozen2.png" title="10% Freeze Chance bois" height="35px" /></a></span>
+            <span class="title-text">Pokémon Damage Calculator - VGC 2017 Edition</span>
             <span  class="generations" title="Select the generation.">
                 <input class="gen btn-input" type="radio" name="gen" value="1" id="gen1" /><label class="btn btn-small btn-left" for="gen1">RBY</label>
                 <input class="gen btn-input" type="radio" name="gen" value="2" id="gen2" /><label class="btn btn-small btn-mid" for="gen2">GSC</label>
@@ -41,11 +48,14 @@
             </span>
         </div>
         <hr />
+    <p id="notice">WE HAVE MOVED! Come visit us at <a href="http://trainertower.com/damagecalc">Trainer Tower</a>!</p>
+    <p id="smallnotice">(Update your bookmarks! This site will start being outdated.)</p>
     <p>Sun/Moon calculator by <a href="https://twitter.com/squirrelboyVGC">@squirrelboyVGC</a></p>
-    <p>Navigate to Alolan Formes by typing the Pokemon e.g. <b>Marowak-Alola</b></p>
-    <p>BTW Pelipper is a <b>duck</b>.</p>
     <!--<p>Healthy reminder to <span style="color: #4099FF">#draftsquirrelboyforNPA</span></p> --><!-- official twitter color for effect -->
 
+
+    <!-- OLD NUGGETBRIDGE ADS -->
+    <!-- TRAINER TOWER ADS GO HERE :) -->
     <!-- <div class="banner"><script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
     <!-- Damage Calc Header -->
     <!-- <ins class="adsbygoogle"
@@ -407,16 +417,17 @@
             </div>
         </div>
         <div class="footer">
-            <p><em>This calculator is based on the work of Honko, gamut, and Zarel. It was optimized for players in the Pokémon Championship Series by Tapin, Firestorm, and squirrelboy1225.</em></p></div>
+            <p><em>This calculator is based on the work of Honko, gamut, and Zarel. It was optimized for players in the Pokémon Championship Series by Tapin, Firestorm, and squirrelboy1225. Huge thanks to NuggetBridge for hosting this calculator in the past.</em></p></div>
     </div>
 
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="script_res/select2.min.js"></script>
     <script type="text/javascript" src="script_res/pokedex.js"></script>
     <script type="text/javascript" src="script_res/setdex_showdown.js"></script>
     <script type="text/javascript" src="script_res/setdex_globalLink.js"></script>
     <script type="text/javascript" src="script_res/setdex_nuggetBridge.js"></script>
+    <script type="text/javascript" src="script_res/setdex_tt2017.js" id = "TTScript"></script>
     <script type="text/javascript" src="script_res/setdex_xy.js" id = "XYScript"></script>
     <script type="text/javascript" src="script_res/setdex_sm.js" id = "SMScript"></script>
     <script type="text/javascript" src="script_res/setdex_bw.js"></script>

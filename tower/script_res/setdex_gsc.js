@@ -1,1 +1,0 @@
-var SETDEX_GSC={};

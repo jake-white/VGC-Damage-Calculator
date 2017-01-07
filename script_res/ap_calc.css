@@ -46,6 +46,9 @@ th {
 .field-info {
     width: 28em;
 }
+.generations {
+    padding-left: 1em;
+}
 
 /* general button styling */
 .btn {
@@ -243,7 +246,7 @@ select.toxic-counter {
 
 #autolevel {
     float: right;
-    color: #ffba00;
+    color: #fff;
     text-decoration: none;
 }
 .onoffswitch {
@@ -272,7 +275,7 @@ select.toxic-counter {
 .onoffswitch-inner:before {
     content: "50";
     padding-left: 10px;
-    background-color: #333333; color: #FFBA00;
+    background-color: #1e3864; color: #fff;
 }
 .onoffswitch-inner:after {
     content: "100";
