@@ -1381,7 +1381,7 @@ var SETDEX_SM={
     }
   },
   "Trevenant": {
-    "Common Showdown": {
+    "TT Trevenant": {
       "level": 50,
       "evs": {
         "hp": 252,
@@ -4355,7 +4355,7 @@ var SETDEX_SM={
       },
       "nature": "Calm",
       "ability": "",
-      "item": "Leftovers",
+      "item": "",
       "moves": [
         "Scald",
         "Ice Beam",
@@ -8561,7 +8561,7 @@ var SETDEX_SM={
       },
       "nature": "Modest",
       "ability": "",
-      "item": "",
+      "item": "Figy Berry",
       "moves": [
         "Bug Buzz",
         "Thunderbolt",
