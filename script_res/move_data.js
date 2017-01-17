@@ -1834,6 +1834,9 @@ var ZMOVES_LOOKUP = {
     'Flying':'Supersonic Skystrike','Dragon':'Devastating Drake','Poison':'Acid Downpour'};
 
 var MOVES_SM = $.extend(true, {}, MOVES_XY, {
+    'Mud Shot': {
+        zp: 100
+    },
     'Water Shuriken': {
         category: 'Special',
         zp: 100
@@ -1915,6 +1918,7 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
     'Shell Trap': {
         category: 'Special',
         type: 'Fire',
+        isSpread: true,
         bp: 150,
         zp: 200
     },
