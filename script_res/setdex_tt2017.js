@@ -5082,7 +5082,7 @@ var SETDEX_TT2017={
         "sd": 4,
         "sp": 252
       },
-      "nature": "Timid",
+      "nature": "Modest",
       "ability": "Swift Swim",
       "item": "Choice Scarf",
       "moves": [
@@ -7018,7 +7018,7 @@ var SETDEX_TT2017={
       "item": "Assault Vest",
       "moves": [
         "Zen Headbutt",
-        "Iron Head",
+        "Meteor Mash",
         "Earthquake",
         "Bullet Punch"
       ]
