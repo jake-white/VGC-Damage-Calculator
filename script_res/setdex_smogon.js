@@ -22,29 +22,6 @@ var SETDEX_SMOGON={
     }
   },
 
-  "Garchomp": {
-    "Smogon AV Chomp": {
-      "level": 50,
-      "evs": {
-        "hp": 28,
-        "at": 172,
-        "df": 4,
-        "sa": 0,
-        "sd": 52,
-        "sp": 252
-      },
-      "nature": "Jolly",
-      "ability": "",
-      "item": "Assault Vest",
-      "moves": [
-        "Earthquake",
-        "Dragon Claw",
-        "Poison Jab",
-        "Fire Fang"
-      ]
-    }
-  },
-
   "Milotic": {
     "Smogon Milotic": {
       "level": 50,
