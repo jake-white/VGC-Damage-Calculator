@@ -7081,7 +7081,7 @@ var SETDEX_TT2017={
       },
       "nature": "Modest",
       "ability": "Drizzle",
-      "item": "Safety Goggles",
+      "item": "",
       "moves": [
         "Scald",
         "Hurricane",
@@ -9264,24 +9264,24 @@ var SETDEX_TT2017={
   },
 
   "Kommo-o": {
-    "Random Meta Guess": {
+    "Smogon Kommo-o": {
       "level": 50,
       "evs": {
-        "hp": 4,
-        "at": 252,
+        "hp": 244,
+        "at": 0,
         "df": 0,
         "sa": 252,
         "sd": 0,
-        "sp": 0
+        "sp": 12
       },
-      "nature": "Hasty",
-      "ability": "Soundproof",
+      "nature": "Modest",
+      "ability": "Overcoat",
       "item": "",
       "moves": [
+        "Focus Blast",
         "Clanging Scales",
-        "Sky Uppercut",
-        "Draco Meteor",
-        "Dragon Claw",
+        "Flamethrower",
+        "Protect",
       ]
     }    
   },
@@ -9788,8 +9788,8 @@ var SETDEX_TT2017={
       "item": "",
       "moves": [
         "Blizzard",
-        "Ice Beam",
         "Freeze-Dry",
+        "Icy Wind",
         "Moonblast"
       ]
     }
