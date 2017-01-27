@@ -95,6 +95,10 @@ function getHPDVs(poke) {
 }
 
 function calcStats(poke) {
+
+    if (!poke.find(".nature").val())
+        return;
+
     for (var i = 0; i < STATS.length; i++) {
         calcStat(poke, STATS[i]);
     }
@@ -307,6 +311,10 @@ $(".move-selector").change(function() {
 // auto-update set details on select
 $(".set-selector").change(function() {
     var fullSetName = $(this).val();
+    if (!fullSetName)
+        return
+
+
     var pokemonName, setName;
     var DOU = !$('#douswitch').is(":checked");
     pokemonName = fullSetName.substring(0, fullSetName.indexOf(" ("));
@@ -420,10 +428,9 @@ function setSelectValueIfValid(select, value, fallback) {
 $(".forme").change(function() {
     var altForme = pokedex[$(this).val()],
         container = $(this).closest(".info-group").siblings(),
-        fullSetName = container.find(".select2-chosen").first().text(),
+        fullSetName = container.find(".select2-selection__rendered").first().text(),
         pokemonName = fullSetName.substring(0, fullSetName.indexOf(" (")),
         setName = fullSetName.substring(fullSetName.indexOf("(") + 1, fullSetName.lastIndexOf(")"));
-
     $(this).parent().siblings().find(".type1").val(altForme.t1);
     $(this).parent().siblings().find(".type2").val(typeof altForme.t2 != "undefined" ? altForme.t2 : "");
     $(this).parent().siblings().find(".weight").val(altForme.w);
@@ -512,6 +519,9 @@ function calculate() {
     var p1 = new Pokemon($("#p1"));
     var p2 = new Pokemon($("#p2"));
     var field = new Field();
+    if (!p1 || !p2 || Object.keys(p1).length === 0 || Object.keys(p2).length === 0 || !p2.nature || !p1.nature )
+        return;
+
     damageResults = calculateAllMoves(p1, p2, field);
     var result, minDamage, maxDamage, minPercent, maxPercent, percentText;
     var highestMaxPercent = -1;
@@ -625,7 +635,8 @@ function findDamageResult(resultMoveObj) {
 }
 
 function Pokemon(pokeInfo) {
-    var setName = pokeInfo.find("input.set-selector").val();
+    var setName = pokeInfo.find("select.set-selector").val();
+
     if (setName.indexOf("(") === -1) {
         this.name = setName;
     } else {
@@ -663,6 +674,8 @@ function Pokemon(pokeInfo) {
 
 function getMoveDetails(moveInfo) {
     var moveName = moveInfo.find("select.move-selector").val();
+    if (!moveName)
+        return;
     var defaultDetails = moves[moveName];
     return $.extend({}, defaultDetails, {
         name: moveName,
@@ -925,37 +938,29 @@ $(document).ready(function() {
     $("#gen7").change();
     $(".terrain-trigger").bind("change keyup", getTerrainEffects);
     $(".calc-trigger").bind("change keyup", calculate);
+
     $(".set-selector").select2({
-        formatResult: function(object) {
-            return object.set ? ("&nbsp;&nbsp;&nbsp;" + object.set) : ("<b>" + object.text + "</b>");
-        },
-        query: function(query) {
-            var setOptions = getSetOptions();
-            var pageSize = 30;
-            var results = [];
-            for (var i = 0; i < setOptions.length; i++) {
-                var pokeName = setOptions[i].pokemon.toUpperCase();
-                if (!query.term || pokeName.indexOf(query.term.toUpperCase()) === 0) {
-                    results.push(setOptions[i]);
-                }
-            }
-            query.callback({
-                results: results.slice((query.page - 1) * pageSize, query.page * pageSize),
-                more: results.length >= query.page * pageSize
-            });
-        },
-        initSelection: function(element, callback) {
-            var data = getSetOptions()[gen > 3 ? 1 : gen === 1 ? 5 : 3];
-            callback(data);
+        data: getSetOptions(),
+        templateResult: function (object) {
+            if (object.loading) return object.text;
+            var content = object.set ? ("&nbsp;&nbsp;&nbsp;" + object.set) : ("<b>" + object.text + "</b>");
+            var $state = $(
+                '<span>' + content +  '</span>'
+            );
+            return $state;
+
         }
     });
-    $(".move-selector").select2({
-        dropdownAutoWidth:true,
-        matcher: function(term, text) {
-            // 2nd condition is for Hidden Power
-            return text.toUpperCase().indexOf(term.toUpperCase()) === 0 || text.toUpperCase().indexOf(" " + term.toUpperCase()) >= 0;
-        }
+
+    $.fn.select2.amd.require(['select2/compat/matcher'], function (oldMatcher) {
+        $(".move-selector").select2({
+            dropdownAutoWidth:true,
+            matcher: oldMatcher(function(term, text) {
+                // 2nd condition is for Hidden Power
+                return text.toUpperCase().indexOf(term.toUpperCase()) === 0 || text.toUpperCase().indexOf(" " + term.toUpperCase()) >= 0;
+            })
+        });
     });
-    $(".set-selector").val(getSetOptions()[gen > 3 ? 1 : gen === 1 ? 5 : 3].id);
-    $(".set-selector").change();
+    $(".set-selector").val(getSetOptions()[gen > 3 ? 1 : gen === 1 ? 5 : 3].id).trigger("change");
+
 });
