@@ -3,7 +3,6 @@ body {
     font: 10pt Verdana, sans-serif;
     background-color: #bbeedd;
     padding: 0 1em;
-    min-width: 100em;
 }
 fieldset {
     float: left;
@@ -35,6 +34,13 @@ th {
 }
 .small-text {
     font-size: 0.8em;
+}
+
+.panels {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 .panel {
     float: left;
@@ -137,14 +143,19 @@ th {
 
 /* header */
 .move-result-group {
-    max-width: 80em;
-    min-width: 50em;
-    margin: 1em 0 11.5em;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
+
+
 .move-result-subgroup {
-    float: left;
-    width: 50%;
+    min-width: 200px;
 }
+
+
 .move-result-group .btn {
     margin-right: 1em;
 }
@@ -162,10 +173,18 @@ th {
     display: inline-block;
     width: 6em;
 }
-.poke-info input:not([type]), .poke-info input[type="text"], .poke-info span :not(.select2-chosen) {
+.poke-info input:not([type]), .poke-info input[type="text"], .poke-info span {
     display: inline-block;
     width: 2.5em;
 }
+
+.poke-info span.selection,
+.poke-info span.selection .select2-selection,
+.poke-info span.selection .select2-selection__rendered{
+    width: 100%;
+    display: inline-block;
+}
+
 .poke-info input[type="number"] {
     display: inline-block;
     width: 3em;
@@ -251,7 +270,6 @@ select.toxic-counter {
 }
 .onoffswitch {
   float: right;
-    position: relative; width: 70px;
     -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
     display: inline-block;
 
