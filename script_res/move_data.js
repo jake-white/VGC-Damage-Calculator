@@ -1837,6 +1837,7 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
     'Mud Shot': {
         zp: 100
     },
+    'Last Resort': { zp: 200 },
     'Water Shuriken': {
         category: 'Special',
         zp: 100

@@ -318,9 +318,9 @@ var SETDEX_TT2017={
       "item": "Choice Scarf",
       "moves": [
         "Earthquake",
+        "Crunch",
         "Rock Slide",
-        "Knock Off",
-        "Superpower"
+        "Power Trip"
       ]
     }
   },
@@ -1106,13 +1106,13 @@ var SETDEX_TT2017={
         "sp": 0
       },
       "nature": "Quiet",
-      "ability": "White Smoke",
+      "ability": "Charcoal",
       "item": "",
       "moves": [
-        "Earth Power",
+        "Eruption",
         "Heat Wave",
-        "Clear Smog",
-        "Eruption"
+        "Solar Beam",
+        "Flamethrower"
       ]
     }
   },
@@ -3242,7 +3242,7 @@ var SETDEX_TT2017={
       "item": "",
       "moves": [
         "Moonblast",
-        "Giga Drain",
+        "Nature Power",
         "Dazzling Gleam",
         "Energy Ball"
       ]

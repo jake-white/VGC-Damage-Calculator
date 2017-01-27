@@ -13,6 +13,7 @@ function CALCULATE_ALL_MOVES_BW(p1, p2, field) {
     p2.stats[SP] = getFinalSpeed(p2, field.getWeather());
     checkIntimidate(p1, p2);
     checkIntimidate(p2, p1);
+    checkEvo(p1, p2);
     checkDownload(p1, p2);
     checkDownload(p2, p1);
     p1.stats[AT] = getModifiedStat(p1.rawStats[AT], p1.boosts[AT]);
@@ -34,6 +35,10 @@ function CALCULATE_ALL_MOVES_BW(p1, p2, field) {
 function getDamageResult(attacker, defender, move, field) {
     var moveDescName = move.name;
     if(move.isZ){
+        if (move.name === "Nature Power") {
+            move.zp = (field.terrain === "Electric" || field.terrain === "Grassy" || field.terrain === "Psychic" || field.terrain === "Misty") ? 175 : 160;
+            move.type = field.terrain === "Electric" ? "Electric" : field.terrain === "Grassy" ? "Grass" : field.terrain === "Misty" ? "Fairy" : move.type = field.terrain === "Psychic" ? "Psychic" : "Normal";
+        }
         var tempMove = move;
         //turning it into a generic single-target Z-move
         move = moves[ZMOVES_LOOKUP[tempMove.type]];
@@ -86,7 +91,7 @@ function getDamageResult(attacker, defender, move, field) {
         description.moveBP = move.bp;
         description.moveType = move.type;
     } else if (move.name === "Nature Power") {
-        move.type = field.terrain === "Electric" ? "Electric" : field.terrain === "Grassy" ? "Grass" : field.terrain === "Misty" ? "Fairy" : "Normal";
+        move.type = field.terrain === "Electric" ? "Electric" : field.terrain === "Grassy" ? "Grass" : field.terrain === "Misty" ? "Fairy" : move.type = field.terrain === "Psychic" ? "Psychic" : "Normal";
     }
     
     var isAerilate = attacker.ability === "Aerilate" && move.type === "Normal";
@@ -238,7 +243,7 @@ function getDamageResult(attacker, defender, move, field) {
             description.terrain = field.terrain;
             break;
         case "Nature Power":
-            basePower = (field.terrain === "Electric" || field.terrain === "Grassy") ? 90 : (field.terrain === "Misty") ? 95 : 80;
+            basePower = (field.terrain === "Electric" || field.terrain === "Grassy" || field.terrain === "Psychic") ? 90 : (field.terrain === "Misty") ? 95 : 80;
             break;
         default:
             basePower = move.bp;
@@ -262,6 +267,11 @@ function getDamageResult(attacker, defender, move, field) {
             (attacker.ability === "Iron Fist" && move.isPunch)) {
         bpMods.push(0x1333);
         description.attackerAbility = attacker.ability;
+    }
+
+    if (field.isBattery && move.category === "Special") {
+        bpMods.push(0x14CD);
+        description.isBattery = true;
     }
     
     if (defAbility === "Heatproof" && move.type === "Fire") {
@@ -634,12 +644,16 @@ function buildDescription(description) {
     output = appendIfSet(output, description.attackEVs);
     output = appendIfSet(output, description.attackerItem);
     output = appendIfSet(output, description.attackerAbility);
+
     if (description.isBurned) {
         output += "burned ";
     }
     output += description.attackerName + " ";
     if (description.isHelpingHand) {
         output += "Helping Hand ";
+    }
+    if (description.isBattery) {
+        output += "Battery ";
     }
     output += description.moveName + " ";
     if (description.moveBP && description.moveType) {
@@ -679,6 +693,10 @@ function buildDescription(description) {
     if (description.isCritical) {
         output += " on a critical hit";
     }
+    if (description.isFriendGuard) {
+        output += " with Friend Guard";
+    }
+
     return output;
 }
 
@@ -780,6 +798,24 @@ function checkIntimidate(source, target) {
         }
     }
 }
+function checkEvo(p1, p2){
+    if($('#evoL').prop("checked")){
+        p1.boosts[AT] = Math.min(6, p1.boosts[AT] + 2);
+        p1.boosts[DF] = Math.min(6, p1.boosts[DF] + 2);
+        p1.boosts[SA] = Math.min(6, p1.boosts[SA] + 2);
+        p1.boosts[SD] = Math.min(6, p1.boosts[SD] + 2);
+        p1.boosts[SP] = Math.min(6, p1.boosts[SP] + 2);
+    }
+    if($('#evoR').prop("checked")){
+        p2.boosts[AT] = Math.min(6, p2.boosts[AT] + 2);
+        p2.boosts[DF] = Math.min(6, p2.boosts[DF] + 2);
+        p2.boosts[SA] = Math.min(6, p2.boosts[SA] + 2);
+        p2.boosts[SD] = Math.min(6, p2.boosts[SD] + 2);
+        p2.boosts[SP] = Math.min(6, p2.boosts[SP] + 2);
+    }
+
+}
+
 function checkDownload(source, target) {
     if (source.ability === "Download") {
         if (target.stats[SD] <= target.stats[DF]) {
