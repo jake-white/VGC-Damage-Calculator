@@ -4,6 +4,10 @@ body {
     background-color: #bbeedd;
     padding: 0 1em;
 }
+
+hr {
+    width: 100%;
+}
 fieldset {
     float: left;
     background-color: #ddffee;
@@ -151,8 +155,10 @@ th {
 }
 
 
+
 .move-result-subgroup {
     min-width: 200px;
+    margin: 0 1em 1em 1em;
 }
 
 
