@@ -275,6 +275,8 @@ select.toxic-counter {
 
 /* field info */
 .field-info .btn {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
     font-size: 0.8em;
 }
 
