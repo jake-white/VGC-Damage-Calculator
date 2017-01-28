@@ -92,8 +92,18 @@ body, html {
 
 .wrapper{
     padding:0 1em;
-    /*max-width:1247px;*/
     margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.headline {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .panel {

@@ -39,7 +39,7 @@ th {
 .panels {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .panel {
@@ -47,10 +47,10 @@ th {
     display: inline-block;
 }
 .poke-info {
-    width: 28em;
+    width: auto;
 }
 .field-info {
-    width: 28em;
+    width: auto;
 }
 .generations {
     padding-left: 1em;
@@ -146,7 +146,7 @@ th {
     margin-top: 1em;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -170,27 +170,46 @@ th {
 
 /* pokemon info */
 .poke-info label {
-    display: inline-block;
-    width: 6em;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
 }
 .poke-info input:not([type]), .poke-info input[type="text"], .poke-info span {
-    display: inline-block;
-    width: 2.5em;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
 }
 
 .poke-info span.selection,
+.poke-info span.selection .select2,
+.poke-info span.selection .select2-container,
 .poke-info span.selection .select2-selection,
 .poke-info span.selection .select2-selection__rendered{
-    width: 100%;
-    display: inline-block;
+    width: auto;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
 }
 
 .poke-info input[type="number"] {
-    display: inline-block;
-    width: 3em;
+    width: auto;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
 }
 .info-group {
     margin: 1em 0;
+}
+
+.info-group table {
+    width: 100%;
+}
+
+.info-group table td {
+    width:1px;
+    white-space:nowrap;
 }
 .set-selector {
     width: 28em;
@@ -215,14 +234,12 @@ select.toxic-counter {
 }
 .poke-info .crit-btn {
     font-size: 0.8em;
-    width: 2.5em;
-    height: 1em;
+    width: auto;
     padding: 3px 3px;
 }
 .poke-info .x-btn {
     font-size: 0.8em;
-    width: 3.5em;
-    height: 1em;
+    width: auto;
     padding: 3px 3px;
     margin-left: 0.3em;
 }
@@ -236,6 +253,18 @@ select.toxic-counter {
 
 .poke-info .overLimit {
     color: #CC0000;
+}
+
+.info-group.hp-group,
+.move1,
+.move2,
+.move3,
+.move4,
+.info-group div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /* field info */
@@ -270,6 +299,7 @@ select.toxic-counter {
 }
 .onoffswitch {
   float: right;
+    position: relative; width: 70px;
     -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
     display: inline-block;
 
@@ -314,4 +344,26 @@ select.toxic-counter {
 }
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
     right: 0px; 
+}
+
+.field-info .panel-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.field-info .panel-body hr{
+    width: 100%;
+}
+
+.field-info .custom-set {
+    display: none;
+}
+
+@media (min-device-width: 600px) {
+    .field-info .custom-set {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
