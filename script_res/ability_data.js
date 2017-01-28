@@ -122,7 +122,8 @@ var ABILITIES_SM = ABILITIES_XY.concat([
     'Shadow Shield',
     'Prism Armor',
     'Full Metal Body',
-    'Shadow Shield'
+    'Shadow Shield',
+    'Disguise'
    // 'Battery'
 ]);
 
