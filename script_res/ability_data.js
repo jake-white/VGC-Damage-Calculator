@@ -122,8 +122,9 @@ var ABILITIES_SM = ABILITIES_XY.concat([
     'Shadow Shield',
     'Prism Armor',
     'Full Metal Body',
-    'Shadow Shield'
-   // 'Battery'
+    'Shadow Shield',
+    'Slush Rush',
+    'Surge Surfer'
 ]);
 
 ABILITIES_XY.splice(ABILITIES_XY.indexOf('Lightningrod'), 1, 'Lightning Rod');

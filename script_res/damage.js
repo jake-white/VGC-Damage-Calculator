@@ -746,7 +746,7 @@ function getModifiedStat(stat, mod) {
             : stat;
 }
 
-function getFinalSpeed(pokemon, weather) {
+function getFinalSpeed(pokemon, weather, terrain) {
     var speed = getModifiedStat(pokemon.rawStats[SP], pokemon.boosts[SP]);
     if (pokemon.item === "Choice Scarf") {
         speed = Math.floor(speed * 1.5);
@@ -755,7 +755,9 @@ function getFinalSpeed(pokemon, weather) {
     }
     if ((pokemon.ability === "Chlorophyll" && weather.indexOf("Sun") > -1) ||
             (pokemon.ability === "Sand Rush" && weather === "Sand") ||
-            (pokemon.ability === "Swift Swim" && weather.indexOf("Rain") > -1)) {
+            (pokemon.ability === "Swift Swim" && weather.indexOf("Rain") > -1) ||
+            (pokemon.ability === "Slush Rush" && weather.indexOf("Hail") > -1) ||
+            (pokemon.ability === "Surge Surfer" && terrain === "Electric")) {
         speed *= 2;
     }
     return speed;

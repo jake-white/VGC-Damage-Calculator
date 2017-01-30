@@ -1686,6 +1686,11 @@ var MOVES_XY = $.extend(true, {}, MOVES_BW, {
         hasSecondaryEffect: true
     },
     'Frost Breath': { bp: 60 },
+    'Future Sight': { 
+        bp: 120,
+        type: 'Psychic',
+        category: 'Special'
+    },
     'Heat Wave': { bp: 95 },
     'Hex': { bp: 65 },
     'Hidden Power Bug': { bp: 60 },
@@ -1834,6 +1839,8 @@ var ZMOVES_LOOKUP = {
     'Flying':'Supersonic Skystrike','Dragon':'Devastating Drake','Poison':'Acid Downpour'};
 
 var MOVES_SM = $.extend(true, {}, MOVES_XY, {
+
+    'Future Sight': { zp: 190 },
     'Mud Shot': {
         zp: 100
     },
