@@ -33,7 +33,7 @@ body, html {
 }
 
 .header-inner {
-    max-width:960px;
+    /*max-width:960px;*/
     margin:0 auto;
 }
 
@@ -92,13 +92,20 @@ body, html {
 
 .wrapper{
     padding:0 1em;
-    max-width:1247px;
     margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.set-selector {
-    width: 26em;
+.headline {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
+
 .panel {
   margin: 5px;
   background-color: #ffffff;
