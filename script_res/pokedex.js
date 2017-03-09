@@ -11403,6 +11403,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
       "sd": 75,
       "sp": 43
     },
+    "ab": "Levitate",
     "w": 45.0
   },
   "Crabrawler": {

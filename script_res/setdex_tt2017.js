@@ -9511,14 +9511,14 @@ var SETDEX_TT2017={
     "TT Pheromosa": {
       "level": 50,
       "evs": {
-        "hp": 0,
+        "hp": 4,
         "at": 252,
         "df": 0,
-        "sa": 4,
+        "sa": 0,
         "sd": 0,
         "sp": 252
       },
-      "nature": "Lonely",
+      "nature": "Adamant",
       "ability": "",
       "item": "",
       "moves": [

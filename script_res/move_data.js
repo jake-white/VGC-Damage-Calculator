@@ -940,6 +940,11 @@ var MOVES_DPP = $.extend(true, {}, MOVES_ADV, {
         type: 'Dark',
         category: 'Physical'
     },
+    'Fly':{
+        bp: 90,
+        type: 'Flying',
+        category: 'Physical'
+    },
     'Focus Blast': {
         bp: 120,
         type: 'Fighting',
@@ -1495,6 +1500,12 @@ var MOVES_BW = $.extend(true, {}, MOVES_DPP, {
         type: 'Psychic',
         category: 'Special',
         dealsPhysicalDamage: true
+    },    
+    'Razor Leaf': {
+        bp: 55,
+        type: 'Grass',
+        category: 'Physical',
+        isSpread: true
     },
     'Razor Shell': {
         bp: 75,
@@ -2166,6 +2177,12 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
     },
     'Black Hole Eclipse': {
         type: 'Dark'
+    },
+    'Razor Leaf':{
+        zp: 100
+    },
+    'Fly':{
+        zp: 175
     },
     'Fire Punch':{
         zp: 140

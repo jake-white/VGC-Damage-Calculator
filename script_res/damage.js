@@ -34,6 +34,7 @@ function CALCULATE_ALL_MOVES_BW(p1, p2, field) {
 
 function getDamageResult(attacker, defender, move, field) {
     var moveDescName = move.name;
+    var isQuarteredByProtect = false;
     if(move.isZ){
         if (move.name === "Nature Power") {
             move.zp = (field.terrain === "Electric" || field.terrain === "Grassy" || field.terrain === "Psychic" || field.terrain === "Misty") ? 175 : 160;
@@ -53,6 +54,9 @@ function getDamageResult(attacker, defender, move, field) {
         move.isCrit = tempMove.isCrit;
         move.hits = 1;
         moveDescName = ZMOVES_LOOKUP[move.type] + " (" + move.bp + " BP)";
+        if(field.isProtect){
+            isQuarteredByProtect = true;
+        }
     }
     var description = {
         "attackerName": attacker.name,
@@ -587,6 +591,10 @@ function getDamageResult(attacker, defender, move, field) {
         finalMods.push(0x800);
         description.defenderAbility = defAbility;
     }
+    if(isQuarteredByProtect){
+        finalMods.push(0x400);
+        description.isQuarteredByProtect = true;
+    }
     var finalMod = chainMods(finalMods);
     
     var damage = [], pbDamage = [];
@@ -695,6 +703,9 @@ function buildDescription(description) {
     }
     if (description.isFriendGuard) {
         output += " with Friend Guard";
+    }
+    if(description.isQuarteredByProtect) {
+        output += " through Protect";
     }
 
     return output;

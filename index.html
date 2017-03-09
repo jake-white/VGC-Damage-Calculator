@@ -27,6 +27,7 @@
     <link type="text/css" rel="stylesheet" href="script_res/select2.css" />
     <link type="text/css" rel="stylesheet" href="script_res/ap_calc.css" />
     <link type="text/css" rel="stylesheet" href="script_res/nb_calc.css" />
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 </head>
 <body>
     <div class="header"><div class="wrapper">
@@ -60,8 +61,9 @@
     </div>
     <p id="notice">WE HAVE MOVED! Come visit us at <a href="http://trainertower.com/damagecalc">Trainer Tower</a>!</p>
     <p id="smallnotice">(Update your bookmarks! This site will start being outdated.)</p>
-    <p>Sun/Moon calculator by <a href="https://twitter.com/squirrelboyVGC">@squirrelboyVGC</a></p>
-    <p>Healthy reminder to <span style="color: #4099FF">#draftsquirrelboyforNPA</span></p> <!-- official twitter color for effect -->
+    <p>Sun/Moon calculator by <a href="https://twitter.com/squirrelboyVGC">@squirrelboyVGC</a>. Submit bug/feature reports/requests through <a href="https://github.com/jake-white/VGC-Damage-Calculator/issues">Github</a> or <a href="http://www.trainertower.com/forums/threads/damage-calculator-bug-reports.62/">this thread</a>, not through Twitter please :)</p>
+    <p>Note: Z-moves through protect <i>should</i> be 25% of the original random damage roll, but it's not 100% confirmed where it applies the modifier (I'm like 95% sure the current implementation is correct, but this is a disclaimer).</p>
+    <p>Healthy reminder to <span style="color: #4099FF">#draftsquirrelboyforNPA</span>... for midseason? <i class="em em-eyes"></i></p> <!-- official twitter color for effect -->
 
 
     <!-- OLD NUGGETBRIDGE ADS -->
@@ -254,6 +256,15 @@
                     <input class="btn-input calc-trigger" type="checkbox" id="gravity" /><label class="btn" for="gravity">Gravity</label>
                 </div>
                 <hr class="gen-specific g2 g3 g4 g5 g6 g7 g7" />
+
+                <div class="btn-group gen-specific g7">
+                    <div class="left" title="Is this Pokemon protecting?">
+                        <input class="btn-input calc-trigger" type="checkbox" id="protectL" /><label class="btn btn-xwide" for="protectL">Protect</label>
+                    </div>
+                    <div class="right" title="Is this Pokemon protecting?">
+                        <input class="btn-input calc-trigger" type="checkbox" id="protectR" /><label class="btn btn-xwide" for="protectR">Protect</label>
+                    </div>
+                </div>
                 <div class="btn-group gen-specific g4 g5 g6 g7 g7">
                     <div class="left" title="Is Stealth Rock affecting this side of the field?">
                         <input class="btn-input calc-trigger" type="checkbox" id="srL" /><label class="btn btn-xwide" for="srL">Stealth Rock</label>
@@ -477,6 +488,7 @@
     <script type="text/javascript" src="script_res/damage_gsc.js"></script>
     <script type="text/javascript" src="script_res/damage_rby.js"></script>
     <script type="text/javascript" src="script_res/ko_chance.js"></script>
+
 
 </body>
 </html>
