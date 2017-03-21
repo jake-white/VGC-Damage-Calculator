@@ -6,7 +6,7 @@ $( document ).ready(function() {
     if($('body').prop("loaded")){
     	notloadedyet = false;
     }
-    if(month == 3 && day == 21 && notloadedyet){
+    if(month == 4 && day == 1 && notloadedyet){
     	//it's april fools motherfuckers
    		//buckle up
    		$('body').empty();
