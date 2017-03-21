@@ -80,7 +80,7 @@ var SETDEX_SMOGON={
         "sp": 4
       },
       "nature": "Adamant",
-      "ability": "Lightningrod",
+      "ability": "Lightning Rod",
       "item": "Thick Club",
       "moves": [
         "Flare Blitz",

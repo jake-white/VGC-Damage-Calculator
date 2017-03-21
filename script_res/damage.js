@@ -6,6 +6,8 @@ function CALCULATE_ALL_MOVES_BW(p1, p2, field) {
     checkKlutz(p1);
     checkKlutz(p2);
     checkEvo(p1, p2);
+    checkSeeds(p1, field);
+    checkSeeds(p2, field);
     p1.stats[DF] = getModifiedStat(p1.rawStats[DF], p1.boosts[DF]);
     p1.stats[SD] = getModifiedStat(p1.rawStats[SD], p1.boosts[SD]);
     p1.stats[SP] = getFinalSpeed(p1, field.getWeather());
@@ -131,7 +133,7 @@ function getDamageResult(attacker, defender, move, field) {
             (move.type === "Grass" && defAbility === "Sap Sipper") ||
             (move.type === "Fire" && defAbility.indexOf("Flash Fire") !== -1) ||
             (move.type === "Water" && ["Dry Skin", "Storm Drain", "Water Absorb"].indexOf(defAbility) !== -1) ||
-            (move.type === "Electric" && ["Lightning Rod", "Lightningrod", "Motor Drive", "Volt Absorb"].indexOf(defAbility) !== -1) ||
+            (move.type === "Electric" && ["Lightning Rod", "Lightning Rod", "Motor Drive", "Volt Absorb"].indexOf(defAbility) !== -1) ||
             (move.type === "Ground" && !field.isGravity && defAbility === "Levitate") ||
             (move.isBullet && defAbility === "Bulletproof") ||
             (move.isSound && defAbility === "Soundproof")) {
@@ -796,6 +798,15 @@ function checkForecast(pokemon, weather) {
 function checkKlutz(pokemon) {
     if (pokemon.ability === "Klutz") {
         pokemon.item = "";
+    }
+}
+
+function checkSeeds(pokemon, field){
+    if(pokemon.item ==="Psychic Seed" || pokemon.item === "Misty Seed"){
+        pokemon.boosts[SD] = Math.min(6, pokemon.boosts[SD] + 1);
+    }
+    else if(pokemon.item ==="Electric Seed" || pokemon.item === "Grassy Seed"){
+        pokemon.boosts[DF] = Math.min(6, pokemon.boosts[DF] + 1);
     }
 }
 function checkIntimidate(source, target) {

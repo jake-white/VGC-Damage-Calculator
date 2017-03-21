@@ -2024,6 +2024,7 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
     'Smart Strike':{
         category: 'Physical',
         type: 'Steel',
+        makesContact: true,
         bp: 70,
         zp: 140
     },

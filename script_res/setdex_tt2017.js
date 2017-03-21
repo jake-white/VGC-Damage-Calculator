@@ -1029,24 +1029,24 @@ var SETDEX_TT2017={
     }
   },
   "Drifblim": {
-    "Common Showdown": {
+    "SHADEViera's Drifblim": {
       "level": 50,
       "evs": {
-        "hp": 0,
+        "hp": 4,
         "at": 0,
-        "df": 0,
-        "sa": 196,
-        "sd": 252,
-        "sp": 60
+        "df": 132,
+        "sa": 204,
+        "sd": 4,
+        "sp": 164
       },
       "nature": "Modest",
       "ability": "",
-      "item": "Sitrus Berry",
+      "item": "Psychic Seed",
       "moves": [
         "Shadow Ball",
-        "Clear Smog",
         "Acrobatics",
-        "Knock Off"
+        "",
+        ""
       ]
     }
   },
@@ -1205,7 +1205,7 @@ var SETDEX_TT2017={
     }
   },
   "Goodra": {
-    "Till's Goodra": {
+    "Dark_Psiana's Goodra": {
       "level": 50,
       "evs": {
         "hp": 188,
@@ -1223,6 +1223,27 @@ var SETDEX_TT2017={
         "Dragon Pulse",
         "Sludge Bomb",
         "Thunderbolt"
+      ]
+    },
+
+    "Sejun's Goodra": {
+      "level": 50,
+      "evs": {
+        "hp": 160,
+        "at": 0,
+        "df": 164,
+        "sa": 76,
+        "sd": 0,
+        "sp": 108
+      },
+      "nature": "Modest",
+      "ability": "Sap Sipper",
+      "item": "Assault Vest",
+      "moves": [
+        "Dragon Pulse",
+        "Flamethrower",
+        "Sludge Bomb",
+        "Bulldoze"
       ]
     }
   },
@@ -1450,24 +1471,24 @@ var SETDEX_TT2017={
     }
   },
   "Pikachu": {
-    "Common Showdown": {
+    "JHufself's Pikachu": {
       "level": 50,
       "evs": {
         "hp": 4,
-        "at": 252,
+        "at": 0,
         "df": 0,
-        "sa": 0,
-        "sd": 0,
-        "sp": 252
+        "sa": 236,
+        "sd": 28,
+        "sp": 236
       },
-      "nature": "Jolly",
+      "nature": "Timid",
       "ability": "Lightning Rod",
       "item": "Light Ball",
       "moves": [
         "Fake Out",
-        "Volt Tackle",
         "Thunderbolt",
-        "Knock Off"
+        "Hidden Power Ice",
+        ""
       ]
     }
   },
@@ -4503,7 +4524,7 @@ var SETDEX_TT2017={
     }
   },
   "Arcanine": {
-    "Physical Set": {
+    "Physical Arcanine": {
       "level": 50,
       "evs": {
         "hp": 252,
@@ -4515,7 +4536,7 @@ var SETDEX_TT2017={
       },
       "nature": "Adamant",
       "ability": "Intimidate",
-      "item": "Sitrus Berry",
+      "item": "Figy Berry",
       "moves": [
         "Flare Blitz",
         "Extreme Speed",
@@ -4523,7 +4544,27 @@ var SETDEX_TT2017={
         "Close Combat"
       ]
     },
-    "Special Set": {
+    "Specially Defensive Arcanine": {
+      "level": 50,
+      "evs": {
+        "hp": 244,
+        "at": 52,
+        "df": 20,
+        "sa": 0,
+        "sd": 164,
+        "sp": 28
+      },
+      "nature": "Careful",
+      "ability": "Intimidate",
+      "item": "Figy Berry",
+      "moves": [
+        "Flare Blitz",
+        "Extreme Speed",
+        "Wild Charge",
+        "Snarl"
+      ]
+    },
+    "Special Arcanine": {
       "level": 50,
       "evs": {
         "hp": 252,
@@ -4535,7 +4576,7 @@ var SETDEX_TT2017={
       },
       "nature": "Modest",
       "ability": "Intimidate",
-      "item": "Sitrus Berry",
+      "item": "Figy Berry",
       "moves": [
         "Burn Up",
         "Flamethrower",
@@ -7086,7 +7127,7 @@ var SETDEX_TT2017={
         "Scald",
         "Hurricane",
         "Ice Beam",
-        "Hydro Pump"
+        "Brine"
       ]
     }
   },
@@ -7509,24 +7550,24 @@ var SETDEX_TT2017={
     }
   },
   "Electivire": {
-    "Common Showdown": {
+    "JHufself's Electivire": {
       "level": 50,
       "evs": {
         "hp": 4,
-        "at": 252,
-        "df": 0,
+        "at": 212,
+        "df": 124,
         "sa": 0,
-        "sd": 0,
-        "sp": 252
+        "sd": 4,
+        "sp": 164
       },
       "nature": "Adamant",
       "ability": "Motor Drive",
-      "item": "Air Balloon",
+      "item": "",
       "moves": [
-        "Ice Punch",
-        "Thunder Punch",
+        "Earthquake",
         "Wild Charge",
-        "Earthquake"
+        "Ice Punch",
+        ""
       ]
     }
   },
@@ -7617,7 +7658,7 @@ var SETDEX_TT2017={
         "Hidden Power Ground"
       ]
     },
-    "Till's Gastrodon": {
+    "Dark_Psiana's Gastrodon": {
       "level": 50,
       "evs": {
         "hp": 228,
@@ -9371,6 +9412,27 @@ var SETDEX_TT2017={
         "Energy Ball",
       ]
     },
+
+    "SHADEViera's Specs Lele": {
+      "level": 50,
+      "evs": {
+        "hp": 236,
+        "at": 0,
+        "df": 212,
+        "sa": 36,
+        "sd": 4,
+        "sp": 20
+      },
+      "nature": "Modest",
+      "ability": "Psychic Surge",
+      "item": "Choice Specs",
+      "moves": [
+        "Psychic",
+        "Moonblast",
+        "Dazzling Gleam",
+        "Thunderbolt",
+      ]
+    }
   },
 
   "Tapu Bulu": {
@@ -9508,7 +9570,7 @@ var SETDEX_TT2017={
   },
 
   "Pheromosa": {
-    "TT Pheromosa": {
+    "Mixed Pheromosa": {
       "level": 50,
       "evs": {
         "hp": 4,
@@ -9526,6 +9588,26 @@ var SETDEX_TT2017={
         "High Jump Kick",
         "Poison Jab",
         "Ice Beam",
+      ]
+    },    
+    "Special Pheromosa": {
+      "level": 50,
+      "evs": {
+        "hp": 0,
+        "at": 0,
+        "df": 0,
+        "sa": 252,
+        "sd": 4,
+        "sp": 252
+      },
+      "nature": "Modest",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Focus Blast",
+        "Bug Buzz",
+        "Ice Beam",
+        "U-Turn",
       ]
     }
   },
@@ -9658,7 +9740,49 @@ var SETDEX_TT2017={
         "Sacred Sword",
         "Night Slash",
       ]
-    }
+    },
+
+    "Enosh's Kartana": {
+      "level": 50,
+      "evs": {
+        "hp": 52,
+        "at": 124,
+        "df": 4,
+        "sa": 0,
+        "sd": 76,
+        "sp": 252
+      },
+      "nature": "Jolly",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Smart Strike",
+        "Leaf Blade",
+        "Sacred Sword",
+        "Night Slash",
+      ]
+    },
+
+    "JHufself's Kartana": {
+      "level": 50,
+      "evs": {
+        "hp": 12,
+        "at": 116,
+        "df": 4,
+        "sa": 0,
+        "sd": 124,
+        "sp": 252
+      },
+      "nature": "Jolly",
+      "ability": "",
+      "item": "",
+      "moves": [
+        "Leaf Blade",
+        "Sacred Sword",
+        "Smart Strike",
+        "Night Slash",
+      ]
+    },
   },
 
   "Guzzlord": {
@@ -9717,7 +9841,7 @@ var SETDEX_TT2017={
         "sp": 0
       },
       "nature": "Brave",
-      "ability": "Lightningrod",
+      "ability": "Lightning Rod",
       "item": "Thick Club",
       "moves": [
         "Flare Blitz",
@@ -9727,7 +9851,7 @@ var SETDEX_TT2017={
       ]
     },
 
-    "Till's Marowak": {
+    "Dark_Psiana's Marowak": {
       "level": 50,
       "evs": {
         "hp": 252,
@@ -9738,7 +9862,7 @@ var SETDEX_TT2017={
         "sp": 0
       },
       "nature": "Brave",
-      "ability": "Lightningrod",
+      "ability": "Lightning Rod",
       "item": "Thick Club",
       "moves": [
         "Flare Blitz",
@@ -9859,6 +9983,27 @@ var SETDEX_TT2017={
         "Dark Pulse",
         "Snarl",
         "Foul Play"
+      ]
+    },
+
+    "ApplePie's Persian": {
+      "level": 50,
+      "evs": {
+        "hp": 4,
+        "at": 0,
+        "df": 68,
+        "sa": 4,
+        "sd": 204,
+        "sp": 228
+      },
+      "nature": "Timid",
+      "ability": "Fur Coat",
+      "item": "Figy Berry",
+      "moves": [
+        "Fake Out",
+        "Foul Play",
+        "",
+        ""
       ]
     }
   },

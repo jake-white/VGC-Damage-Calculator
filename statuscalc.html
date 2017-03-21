@@ -1,35 +1,3 @@
-<!doctype HTML>
-<html lang="us">
-<link rel="icon" type="image/png" href="image_res/favicon.ico">
-
-    <link rel="image_src" href="http://trainertower.com/damagecalc/image_res/rhydon.png" />
-    <html xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:og="http://ogp.me/ns#">
-    <meta property="og:title" content="Trainer Tower Damage Calculator" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="http://trainertower.com/damagecalc/image_res/rhydon.png" />
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-86401070-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-<head>
-    <meta charset="UTF-8" />
-    <title>Pokémon Damage Calculator</title>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link type="text/css" rel="stylesheet" href="script_res/select2.css" />
-    <link type="text/css" rel="stylesheet" href="script_res/ap_calc.css" />
-    <link type="text/css" rel="stylesheet" href="script_res/nb_calc.css" />
-    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-</head>
-<body>
     <div class="header"><div class="wrapper">
             <span class="header-logo"><a href="http://trainertower.com"><img src="image_res/trainertower.png" alt="Trainer Tower" height="50px" /></a></span><span class="nav"><a href="http://trainertower.com">Home</a> | <a href="http://trainertower.com/forums">Forums</a> | <a href="http://play.pokemonshowdown.com/vgc">Showdown</a> | <a href="http://www.trainertower.com/vgc-2017-speed-tiers/">2017 Speed Tiers</a> | <a href="https://github.com/jake-white/VGC-Damage-Calculator">GitHub Page</a> | <a href="https://lilymaniac.github.io/calc/">한국어 계산기 (Korean Version)</a> | <a href="http://trainertower.com/usage-stats">Showdown Stats</a> | <a href="http://www.trainertower.com/WCS-battle-spot-usage/">Battlespot Stats</a></span>
             <div style="clear:both"></div>
@@ -37,14 +5,8 @@
     </div></div>
     <div class="wrapper">
         <div>
-            <span class="title-text">Pokémon Damage Calculator - VGC 2017 Edition</span>
+            <span class="title-text">Pokémon Status Calculator - April Fool's Edition</span>
             <span  class="generations" title="Select the generation.">
-                <input class="gen btn-input" type="radio" name="gen" value="1" id="gen1" /><label class="btn btn-small btn-left" for="gen1">RBY</label>
-                <input class="gen btn-input" type="radio" name="gen" value="2" id="gen2" /><label class="btn btn-small btn-mid" for="gen2">GSC</label>
-                <input class="gen btn-input" type="radio" name="gen" value="3" id="gen3" /><label class="btn btn-small btn-mid" for="gen3">ADV</label>
-                <input class="gen btn-input" type="radio" name="gen" value="4" id="gen4" /><label class="btn btn-small btn-mid" for="gen4">DPP</label>
-                <input class="gen btn-input" type="radio" name="gen" value="5" id="gen5" /><label class="btn btn-small btn-mid" for="gen5">B/W</label>
-                <input class="gen btn-input" type="radio" name="gen" value="6" id="gen6" /><label class="btn btn-small btn-mid" for="gen6">ORAS</label>
                 <input class="gen btn-input" type="radio" name="gen" value="7" id="gen7" checked="checked" /><label class="btn btn-small btn-right" for="gen7">S/M</label>
             </span>
         </div>
@@ -59,9 +21,9 @@
     (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
     </div>
-    <p>Sun/Moon calculator by <a href="https://twitter.com/squirrelboyVGC">@squirrelboyVGC</a>. Submit bug/feature reports/requests through <a href="https://github.com/jake-white/VGC-Damage-Calculator/issues">Github</a> or <a href="http://www.trainertower.com/forums/threads/damage-calculator-bug-reports.62/">this thread</a>, not through Twitter please :)</p>
-    <p>Note: Z-moves through protect <i>should</i> be 25% of the original random damage roll, but it's not 100% confirmed where it applies the modifier (I'm like 95% sure the current implementation is correct, but this is a disclaimer).</p>
-    <p>Healthy reminder to <span style="color: #4099FF">#draftsquirrelboyforNPA</span>... for midseason? <i class="em em-eyes"></i></p> <!-- official twitter color for effect -->
+    <p style="font-size: 20px"><b>Presenting <a href="https://twitter.com/squirrelboyVGC">@squirrelboyVGC</a>'s all new status calculator!</b></p>
+    <p>Ever complained about Dark Void or Swords Dance not being in the damage calculator? No more! Now, you too can see how much damage status attacks do!</p>
+    <p>Here at Trainer Tower we've got you started with some sample sets of our own! And remember, aim for the horn.</p>
 
 
     <!-- OLD NUGGETBRIDGE ADS -->
@@ -211,13 +173,11 @@
             </div>
             <div class="panel-body">
             <div class="gen-specific g7" style="width: 3.0em; margin: 0 auto 5px;">
-                <a href = "https://www.youtube.com/watch?v=pi7g9LbBv8A">
-                <img align = "middle" src="image_res/mimikyu.png" alt="Mimikyu da yo" height="42" width="42" >
-                </a>
+                <img align = "middle" src="image_res/rhydon.png" title="Pikachu! The horn!" height="60" id="reverse">
                 </div>
                 <div class="gen-specific g3 g4 g5 g6 g7" style="width: 10.6em; margin: 0 auto 5px;" title="Select the battle format.">
-                    <input class="btn-input calc-trigger" type="radio" name="format" value="Singles" id="singles" checked="checked" /><label class="btn btn-left" for="singles">Singles</label>
-                    <input class="btn-input calc-trigger" type="radio" name="format" value="Doubles" id="doubles" /><label class="btn btn-right" for="doubles">Doubles</label>
+                    <input class="btn-input calc-trigger" type="radio" name="format" value="Singles" id="singles" checked="checked" /><label class="btn btn-left" for="singles">Rotation</label>
+                    <input class="btn-input calc-trigger" type="radio" name="format" value="Doubles" id="doubles" /><label class="btn btn-right" for="doubles">Triples</label>
                 </div>
                 <div class="gen-specific g6 g7" style="width: 22.0em; margin: 5px auto;" title="Select the current terrain.">
                     <input class="btn-input terrain-trigger calc-trigger" type="radio" name="terrain" value="" id="noterrain" checked="checked" /><label class="btn btn-small btn-left" for="noterrain">None</label>
@@ -456,37 +416,14 @@
         <div class="footer">
             <p><em>This calculator is based on the work of Honko, gamut, and Zarel. It was optimized for players in the Pokémon Championship Series by Tapin, Firestorm, and squirrelboy1225. Huge thanks to NuggetBridge for hosting this calculator in the past.</em></p></div>
     </div>
-
-
-    <script src="jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="script_res/select2.min.js"></script>
     <script type="text/javascript" src="script_res/pokedex.js"></script>
-    <script type="text/javascript" src="script_res/setdex_showdown.js"></script>
-    <script type="text/javascript" src="script_res/setdex_globalLink.js"></script>
-    <script type="text/javascript" src="script_res/setdex_nuggetBridge.js"></script>
-    <script type="text/javascript" src="script_res/setdex_tt2017.js" id = "TTScript"></script>
-    <script type="text/javascript" src="script_res/setdex_smogon.js" id = "SmogScript"></script>
-    <script type="text/javascript" src="script_res/setdex_xy.js" id = "XYScript"></script>
-    <script type="text/javascript" src="script_res/setdex_sm.js" id = "SMScript"></script>
-    <script type="text/javascript" src="script_res/setdex_bw.js"></script>
-    <script type="text/javascript" src="script_res/setdex_dpp.js"></script>
-    <script type="text/javascript" src="script_res/setdex_rse.js"></script>
-    <script type="text/javascript" src="script_res/setdex_gsc.js"></script>
-    <script type="text/javascript" src="script_res/setdex_rby.js"></script>
+    <script type="text/javascript" src="script_res/status_setdex_sm.js" id = "SMScript"></script>
     <script type="text/javascript" src="script_res/stat_data.js"></script>
     <script type="text/javascript" src="script_res/type_data.js"></script>
     <script type="text/javascript" src="script_res/nature_data.js"></script>
     <script type="text/javascript" src="script_res/ability_data.js"></script>
-    <script type="text/javascript" src="script_res/item_data.js"></script>
-    <script type="text/javascript" src="script_res/move_data.js"></script>
+    <script type="text/javascript" src="script_res/status_item_data.js"></script>
+    <script type="text/javascript" src="script_res/status_move_data.js"></script>
     <script type="text/javascript" src="script_res/ap_calc.js"></script>
     <script type="text/javascript" src="script_res/damage.js"></script>
-    <script type="text/javascript" src="script_res/damage_dpp.js"></script>
-    <script type="text/javascript" src="script_res/damage_rse.js"></script>
-    <script type="text/javascript" src="script_res/damage_gsc.js"></script>
-    <script type="text/javascript" src="script_res/damage_rby.js"></script>
     <script type="text/javascript" src="script_res/ko_chance.js"></script>
-
-
-</body>
-</html>
