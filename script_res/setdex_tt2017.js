@@ -9448,7 +9448,7 @@ var SETDEX_TT2017={
       },
       "nature": "Adamant",
       "ability": "Grassy Surge",
-      "item": "Meadow Plate",
+      "item": "",
       "moves": [
         "Wood Hammer",
         "Horn Leech",
