@@ -100,7 +100,7 @@ var savecustom = function()
 		species = lines[0].substring(firstParenth + 1, lastParenth).trim();
 	}
 	else
-		species = lines[0].split(' ')[0].trim(); //species is always first
+		species = lines[0].split('@')[0].trim(); //species is always first
 	for(var i = 0; i < showdownFormes.length; ++i)
 	{
 		if(species == showdownFormes[i][0])
