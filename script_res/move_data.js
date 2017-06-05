@@ -816,6 +816,11 @@ var MOVES_DPP = $.extend(true, {}, MOVES_ADV, {
         makesContact: true,
         hasRecoil: true
     },
+    'Brine': {
+        bp: 65,
+        type: 'Water',
+        category: 'Special',
+    },
     'Bug Bite': {
         bp: 60,
         type: 'Bug',

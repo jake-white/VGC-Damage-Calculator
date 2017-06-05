@@ -204,6 +204,10 @@ function getDamageResult(attacker, defender, move, field) {
             basePower = move.bp * (defender.status !== "Healthy" ? 2 : 1);
             description.moveBP = basePower;
             break;
+        case "Brine":
+            basePower = move.bp * (defender.hp/defender.maxHP <= 0.5 ? 2: 1);
+            description.moveBP = basePower;
+            break;
         case "Heavy Slam":
         case "Heat Crash":
             var wr = attacker.weight / defender.weight;

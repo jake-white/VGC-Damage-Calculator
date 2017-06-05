@@ -2957,7 +2957,7 @@ var SETDEX_TT2017={
         "Waterfall",
         "Earthquake",
         "Ice Fang",
-        "Crunch"
+        "Bounce"
       ]
     }
   },
@@ -4888,7 +4888,7 @@ var SETDEX_TT2017={
         "Ice Beam",
         "Tri Attack",
         "Thunderbolt",
-        "Shadow Ball"
+        "Return"
       ]
     }
   },
@@ -9344,7 +9344,7 @@ var SETDEX_TT2017={
       "moves": [
         "Thunderbolt",
         "Dazzling Gleam",
-        "Hidden Power Ice",
+        "Volt Switch",
         "Discharge",
       ]
     }, 
@@ -9409,7 +9409,7 @@ var SETDEX_TT2017={
         "Psychic",
         "Moonblast",
         "Dazzling Gleam",
-        "Energy Ball",
+        "Thunderbolt",
       ]
     },
 
@@ -9564,7 +9564,7 @@ var SETDEX_TT2017={
         "Superpower",
         "Lunge",
         "Ice Punch",
-        "Fell Stinger",
+        "Poison Jab"
       ]
     }
   },
