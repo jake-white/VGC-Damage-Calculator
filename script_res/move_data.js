@@ -1,4 +1,9 @@
 var MOVES_RBY = {
+    'Struggle': {
+        bp:50,
+        type: 'Normal',
+        category: 'Physical'
+    },
     '(No Move)': {
         bp: 0,
         type: 'Normal',
@@ -247,6 +252,9 @@ var MOVES_RBY = {
 };
 
 var MOVES_GSC = $.extend(true, {}, MOVES_RBY, {
+    'Struggle': {
+        type: 'Typeless'
+    },
     'Aeroblast': {
         bp: 100,
         type: 'Flying',
@@ -655,7 +663,7 @@ var MOVES_ADV = $.extend(true, {}, MOVES_GSC, {
         bp: 55,
         type: 'Ground',
         category: 'Special',
-        hasSecondaryEffect: true,
+        hasSecondaryEffect: true
     },
     'Overheat': {
         bp: 140,
@@ -1558,7 +1566,7 @@ var MOVES_BW = $.extend(true, {}, MOVES_DPP, {
         bp: 60,
         type: 'Flying',
         category: 'Physical',
-        makesContact: true,
+        makesContact: true
     },
     'Sludge Wave': {
         bp: 95,
@@ -1678,7 +1686,7 @@ var MOVES_XY = $.extend(true, {}, MOVES_BW, {
         bp: 50,
         type: 'Fairy',
         category: 'Special',
-        makesContact: true,
+        makesContact: true
     },
     'Energy Ball': { bp: 90 },
     'Facade': { ignoresBurn: true },
@@ -1850,7 +1858,7 @@ var ZMOVES_LOOKUP = {
     'Flying':'Supersonic Skystrike','Dragon':'Devastating Drake','Poison':'Acid Downpour'};
 
 var MOVES_SM = $.extend(true, {}, MOVES_XY, {
-
+    'Bolt Strike': {zp: 195 },
     'Future Sight': { zp: 190 },
     'Mud Shot': {
         zp: 100
@@ -1863,12 +1871,14 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
     'Leech Life': {
         category: 'Physical',
         type: 'Bug',
+        makesContact: true,
         bp: 80,
         zp: 160
     },
     'Zing Zap': {
         category: 'Physical',
         type: 'Electric',
+        makesContact: true,
         bp: 80,
         zp: 160
     },
@@ -1881,12 +1891,14 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
     'Sunsteel Strike': {
         category: 'Physical',
         type: 'Steel',
+        makesContact: true,
         bp: 100,
         zp: 180
     },
     'Spectral Thief': {
         category: 'Physical',
         type: 'Ghost',
+        makesContact: true,
         bp: 90,
         zp: 175
     },
@@ -1899,12 +1911,14 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
     'Liquidation': {
         category: 'Physical',
         type: 'Water',
+        makesContact: true,
         bp: 85,
         zp: 160
     },
     'Accelerock': {
         category: 'Physical',
         type: 'Rock',
+        makesContact: true,
         bp: 40,
         zp: 100
     },
@@ -1917,6 +1931,7 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
     'Stomping Tantrum': {
         category: 'Physical',
         type: 'Ground',
+        makesContact: true,
         bp: 75,
         zp: 140
     },
@@ -1949,6 +1964,7 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
     'Pulverizing Pancake': {
         category: 'Physical',
         type: 'Normal',
+        makesContact: true,
         bp: 210
     },
     'Stoked Sparksurfer': {
@@ -1959,6 +1975,7 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
     'Soul-Stealing 7-Star Strike': {
         category: 'Physical',
         type: 'Ghost',
+        makesContact: true,
         bp: 195
     },
     'Oceanic Operetta': {
@@ -1979,6 +1996,7 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
     'Brutal Swing': {
         category: 'Physical',
         type: 'Dark',
+        makesContact: true,
         bp: 60,
         isSpread: true,
         zp: 120
@@ -1986,6 +2004,7 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
     'Dragon Hammer': {
         category: 'Physical',
         type: 'Dragon',
+        makesContact: true,
         bp: 90,
         zp: 175
     },
@@ -2005,6 +2024,7 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
     'Trop Kick': {
         category: 'Physical',
         type: 'Grass',
+        makesContact: true,
         bp: 70,
         zp: 140
     },
@@ -2031,6 +2051,7 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
     'Multi-Attack': {
         category: 'Physical',
         type: 'Normal',
+        makesContact: true,
         bp: 90,
         zp: 185
     },
@@ -2043,24 +2064,28 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
     'Power Trip': {
         category: 'Physical',
         type: 'Dark',
+        makesContact: true,
         bp: 20,
         zp: 160
     },
     'Fire Lash': {
         category: 'Physical',
         type: 'Fire',
+        makesContact: true,
         bp: 80,
         zp: 160
     },
     'Lunge': {
         category: 'Physical',
         type: 'Bug',
+        makesContact: true,
         bp: 80,
         zp: 160
     },
     'Anchor Shot': {
         category: 'Physical',
         type: 'Steel',
+        makesContact: true,
         bp: 80,
         zp: 160
     },
@@ -2073,32 +2098,37 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
     'Throat Chop': {
         category: 'Physical',
         type: 'Dark',
+        makesContact: true,
         bp: 80,
         zp: 160
     },
     'Solar Blade': {
         category: 'Physical',
         type: 'Grass',
+        makesContact: true,
         bp: 125,
         zp: 190
     },
     'High Horsepower': {
         category: 'Physical',
         type: 'Ground',
+        makesContact: true,
         bp: 95,
         zp: 175
     },
     'Ice Hammer': {
         category: 'Physical',
         type: 'Ice',
+        makesContact: true,
         bp: 100,
         zp: 180
     },
     'First Impression': {
         category: 'Physical',
         type: 'Bug',
+        makesContact: true,
         bp: '90',
-        zp: '175',
+        zp: '175'
     },
     'Sparkling Aria': {
          category: 'Special',
@@ -2110,6 +2140,7 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
     'Darkest Lariat': {
         category: 'Physical',
         type: 'Dark',
+        makesContact: true,
         bp: 85,
         zp:160,
         ignoresDefenseBoosts: true
@@ -2123,6 +2154,7 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
     'Catastropika': {
         category: 'Physical',
         type: 'Electric',
+        makesContact: true,
         bp: 210
     },
     'Breakneck Blitz': {

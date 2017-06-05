@@ -1039,7 +1039,7 @@ var SETDEX_TT2017={
         "sd": 4,
         "sp": 164
       },
-      "nature": "Modest",
+      "nature": "Timid",
       "ability": "",
       "item": "Psychic Seed",
       "moves": [
@@ -9953,7 +9953,7 @@ var SETDEX_TT2017={
         "sp": 252
       },
       "nature": "Timid",
-      "ability": "",
+      "ability": "Surge Surfer",
       "item": "",
       "moves": [
         "Fake Out",

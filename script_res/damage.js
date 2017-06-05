@@ -10,10 +10,10 @@ function CALCULATE_ALL_MOVES_BW(p1, p2, field) {
     checkSeeds(p2, field);
     p1.stats[DF] = getModifiedStat(p1.rawStats[DF], p1.boosts[DF]);
     p1.stats[SD] = getModifiedStat(p1.rawStats[SD], p1.boosts[SD]);
-    p1.stats[SP] = getFinalSpeed(p1, field.getWeather());
+    p1.stats[SP] = getFinalSpeed(p1, field.getWeather(), field.getTerrain());
     p2.stats[DF] = getModifiedStat(p2.rawStats[DF], p2.boosts[DF]);
     p2.stats[SD] = getModifiedStat(p2.rawStats[SD], p2.boosts[SD]);
-    p2.stats[SP] = getFinalSpeed(p2, field.getWeather());
+    p2.stats[SP] = getFinalSpeed(p2, field.getWeather(), field.getTerrain());
     checkIntimidate(p1, p2);
     checkIntimidate(p2, p1);
     checkDownload(p1, p2);

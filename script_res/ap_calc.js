@@ -671,7 +671,7 @@ function getMoveDetails(moveInfo) {
         category: moveInfo.find(".move-cat").val(),
         isCrit: moveInfo.find(".move-crit").prop("checked"),
         isZ: moveInfo.find(".move-z").prop("checked"),
-        hits: (defaultDetails.isMultiHit && !moveInfo.find(".move-z").prop("checked")) ? ~~moveInfo.find(".move-hits").val() : defaultDetails.isTwoHit ? 2 : 1
+        hits: (defaultDetails.isMultiHit && !moveInfo.find(".move-z").prop("checked")) ? ~~moveInfo.find(".move-hits").val() : (defaultDetails.isTwoHit && !moveInfo.find(".move-z").prop("checked")) ? 2 : 1
     });
 }
 
@@ -699,6 +699,9 @@ function Field() {
 
     this.getWeather = function() {
         return weather;
+    };
+    this.getTerrain = function() {
+        return terrain;
     };
     this.clearWeather = function() {
         weather = "";
