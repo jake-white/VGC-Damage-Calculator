@@ -6928,7 +6928,27 @@ var SETDEX_TT2017 = {
         }
     },
     "Salamence": {
-        "Common Showdown": {
+        "Agati's Physical Mence": {
+            "level": 50,
+            "evs": {
+                "hp": 0,
+                "at": 252,
+                "df": 0,
+                "sa": 0,
+                "sd": 20,
+                "sp": 236
+            },
+            "nature": "Adamant",
+            "ability": "Intimidate",
+            "item": "",
+            "moves": [
+                "Fly",
+                "Earthquake",
+                "",
+                ""
+            ]
+        },
+        "Special Mence": {
             "level": 50,
             "evs": {
                 "hp": 4,
