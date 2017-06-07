@@ -725,7 +725,7 @@ var SETDEX_TT2017 = {
             "level": 50,
             "evs": {
                 "hp": 4,
-                "at": 252,
+                "at": 252,
                 "df": 252,
                 "sa": 0,
                 "sd": 0,
@@ -9472,6 +9472,26 @@ var SETDEX_TT2017 = {
     },
 
     "Tapu Lele": {
+        "Common Lele": {
+            "level": 50,
+            "evs": {
+                "hp": 4,
+                "at": 0,
+                "df": 0,
+                "sa": 252,
+                "sd": 0,
+                "sp": 252
+            },
+            "nature": "Modest",
+            "ability": "Psychic Surge",
+            "item": "",
+            "moves": [
+                 "Psychic",
+                 "Moonblast",
+                 "Dazzling Gleam",
+                 "Thunderbolt"
+            ]
+        },
         "TT Lele": {
             "level": 50,
             "evs": {
