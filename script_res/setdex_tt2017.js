@@ -1,6 +1,6 @@
 var SETDEX_TT2017 = {
     "Swellow": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -22,15 +22,15 @@ var SETDEX_TT2017 = {
         }
     },
     "Eevee": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
-                "hp": 252,
+                "hp": 4,
                 "at": 252,
-                "df": 4,
+                "df": 0,
                 "sa": 0,
                 "sd": 0,
-                "sp": 0
+                "sp": 252
             },
             "nature": "Brave",
             "ability": "Adaptability",
@@ -44,7 +44,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Poliwrath": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -66,7 +66,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Emolga": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -88,7 +88,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Butterfree": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -110,7 +110,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Tornadus": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -132,7 +132,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Wobbuffet": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -149,7 +149,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Cresselia": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 220,
@@ -171,7 +171,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Tangela": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -193,7 +193,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Absol": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -215,7 +215,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Sceptile": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -237,7 +237,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Linoone": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -259,7 +259,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Landorus-T": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -281,7 +281,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Lapras": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 228,
@@ -303,7 +303,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Krookodile": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 28,
@@ -325,7 +325,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Mawile": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -347,7 +347,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Gothorita": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -369,7 +369,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Mantyke": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -391,7 +391,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Aggron": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -413,7 +413,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Slowbro": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -435,7 +435,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Ampharos": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -457,7 +457,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Omastar": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -479,7 +479,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Walrein": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -501,7 +501,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Heliolisk": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -523,7 +523,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Durant": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -545,7 +545,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Regirock": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -567,7 +567,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Piloswine": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 100,
@@ -589,7 +589,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Crawdaunt": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -611,7 +611,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Crobat": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -633,7 +633,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Noivern": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -655,7 +655,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Bibarel": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -677,7 +677,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Gothitelle": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -699,7 +699,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Exploud": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -721,7 +721,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Seismitoad": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -743,7 +743,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Gliscor": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -765,7 +765,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Lanturn": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -787,7 +787,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Maractus": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -809,7 +809,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Zebstrika": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -831,7 +831,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Empoleon": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -853,7 +853,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Alakazam": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -875,7 +875,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Dragalge": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -897,7 +897,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Cherrim": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -919,7 +919,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Carbink": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -941,7 +941,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Darmanitan": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -963,7 +963,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Reuniclus": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -985,7 +985,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Druddigon": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -1007,7 +1007,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Breloom": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -1051,7 +1051,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Alomomola": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -1073,7 +1073,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Rotom-C": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -1095,7 +1095,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Torkoal": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -1117,7 +1117,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Victreebel": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -1139,7 +1139,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Regigigas": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -1161,7 +1161,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Tentacruel": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -1183,7 +1183,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Lickilicky": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -1248,7 +1248,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Trapinch": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -1270,7 +1270,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Aegislash": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -1292,7 +1292,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Floatzel": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -1314,7 +1314,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Electrode": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -1336,7 +1336,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Gourgeist": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -1358,7 +1358,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Solrock": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -1380,7 +1380,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Gourgeist-Small": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -1427,7 +1427,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Octillery": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -1449,7 +1449,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Electabuzz": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -1493,7 +1493,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Zoroark": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -1515,7 +1515,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Jynx": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -1537,7 +1537,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Galvantula": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -1559,7 +1559,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Hitmonchan": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -1581,7 +1581,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Clefable": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -1603,7 +1603,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Sigilyph": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -1625,7 +1625,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Qwilfish": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -1647,7 +1647,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Latios": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -1669,7 +1669,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Claydol": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -1691,7 +1691,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Sudowoodo": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -1713,7 +1713,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Starmie": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -1735,7 +1735,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Tangrowth": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -1757,7 +1757,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Ninetales": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -1779,7 +1779,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Azumarill": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 196,
@@ -1801,7 +1801,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Glalie": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -1823,7 +1823,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Camerupt": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -1845,7 +1845,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Hydreigon": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -1867,7 +1867,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Carracosta": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -1889,7 +1889,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Eelektrik": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -1911,7 +1911,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Gallade": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -1933,7 +1933,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Weezing": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -1955,7 +1955,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Swoobat": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -1977,7 +1977,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Spiritomb": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -1999,7 +1999,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Liepard": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -2038,12 +2038,12 @@ var SETDEX_TT2017 = {
                 "Return",
                 "Facade",
                 "High Horsepower",
-                "Heavy Slam"
+                "Wild Charge"
             ]
         }
     },
     "Kangaskhan": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -2065,7 +2065,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Tropius": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -2087,7 +2087,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Aron": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 84,
@@ -2109,7 +2109,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Machamp": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -2131,7 +2131,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Exeggutor": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -2153,7 +2153,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Parasect": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 188,
@@ -2175,7 +2175,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Cobalion": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -2197,7 +2197,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Minun": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -2219,7 +2219,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Ditto": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -2236,7 +2236,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Eelektross": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -2258,7 +2258,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Sharpedo": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -2280,7 +2280,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Mesprit": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -2302,7 +2302,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Bisharp": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -2324,7 +2324,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Zangoose": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -2346,7 +2346,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Florges": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 244,
@@ -2368,7 +2368,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Nidoqueen": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -2390,7 +2390,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Altaria": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -2412,7 +2412,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Togekiss": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 236,
@@ -2434,7 +2434,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Venusaur": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -2456,7 +2456,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Blastoise": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -2478,7 +2478,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Pachirisu": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -2500,7 +2500,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Klefki": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -2522,7 +2522,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Jigglypuff": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -2544,7 +2544,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Kecleon": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -2566,7 +2566,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Throh": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -2588,7 +2588,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Wigglytuff": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -2610,7 +2610,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Dusknoir": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -2632,7 +2632,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Girafarig": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -2654,7 +2654,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Granbull": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -2676,7 +2676,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Kabutops": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -2698,7 +2698,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Sylveon": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -2720,7 +2720,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Steelix": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -2742,7 +2742,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Dedenne": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -2764,7 +2764,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Slaking": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -2786,7 +2786,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Scyther": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -2808,7 +2808,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Honchkrow": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -2830,14 +2830,14 @@ var SETDEX_TT2017 = {
         }
     },
     "Magnezone": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
-                "hp": 248,
+                "hp": 252,
                 "at": 0,
                 "df": 0,
                 "sa": 252,
-                "sd": 8,
+                "sd": 4,
                 "sp": 0
             },
             "nature": "Modest",
@@ -2846,13 +2846,13 @@ var SETDEX_TT2017 = {
             "moves": [
                 "Flash Cannon",
                 "Thunderbolt",
-                "Discharge",
+                "Hidden Power Ice",
                 "Volt Switch"
             ]
         }
     },
     "Togetic": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -2874,7 +2874,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Houndoom": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -2896,7 +2896,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Quagsire": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -2918,7 +2918,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Masquerain": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -2940,7 +2940,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Gyarados": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -2950,7 +2950,7 @@ var SETDEX_TT2017 = {
                 "sd": 4,
                 "sp": 252
             },
-            "nature": "Adamant",
+            "nature": "Jolly",
             "ability": "Intimidate",
             "item": "",
             "moves": [
@@ -2962,7 +2962,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Spinda": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -2984,7 +2984,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Heatran": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -3006,7 +3006,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Pangoro": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -3028,7 +3028,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Hariyama": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 28,
@@ -3050,7 +3050,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Whiscash": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 130,
@@ -3072,7 +3072,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Slowking": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -3094,7 +3094,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Lopunny": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -3116,15 +3116,15 @@ var SETDEX_TT2017 = {
         }
     },
     "Vanilluxe": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
-                "hp": 248,
+                "hp": 4,
                 "at": 0,
                 "df": 0,
                 "sa": 252,
-                "sd": 8,
-                "sp": 0
+                "sd": 0,
+                "sp": 252
             },
             "nature": "Modest",
             "ability": "Ice Body",
@@ -3138,7 +3138,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Furfrou": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -3160,7 +3160,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Braviary": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -3176,13 +3176,13 @@ var SETDEX_TT2017 = {
             "moves": [
                 "Brave Bird",
                 "Superpower",
-                "Rock Slide",
+                "Return",
                 "U-turn"
             ]
         }
     },
     "Venomoth": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -3204,7 +3204,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Hawlucha": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -3226,14 +3226,14 @@ var SETDEX_TT2017 = {
         }
     },
     "Smeargle": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
-                "hp": 248,
+                "hp": 252,
                 "at": 0,
                 "df": 0,
                 "sa": 0,
-                "sd": 8,
+                "sd": 4,
                 "sp": 252
             },
             "nature": "Timid",
@@ -3248,7 +3248,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Whimsicott": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -3270,7 +3270,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Medicham": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -3292,7 +3292,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Rotom-F": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -3314,7 +3314,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Golbat": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -3336,7 +3336,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Gengar": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -3357,7 +3357,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Pyroar": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -3379,7 +3379,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Lumineon": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -3401,7 +3401,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Rotom-S": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -3423,7 +3423,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Crustle": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -3445,7 +3445,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Weavile": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -3467,7 +3467,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Furret": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -3489,6 +3489,29 @@ var SETDEX_TT2017 = {
         }
     },
     "Gigalith": {
+        "Common Gigalith": {
+            "level": 50,
+            "evs": {
+                "hp": 252,
+                "at": 252,
+                "df": 0,
+                "sa": 0,
+                "sd": 4,
+                "sp": 0
+            },
+            "ivs": {
+                "sp": 0
+            },
+            "nature": "Brave",
+            "ability": "Sand Stream",
+            "item": "",
+            "moves": [
+                "Rock Slide",
+                "Earthquake",
+                "Stone Edge",
+                "Heavy Slam"
+            ]
+        },
         "TT AV Gigalith": {
             "level": 50,
             "evs": {
@@ -3514,7 +3537,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Manectric": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -3536,7 +3559,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Illumise": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -3558,7 +3581,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Registeel": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -3580,7 +3603,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Xatu": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -3602,7 +3625,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Azelf": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -3624,7 +3647,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Shuckle": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 228,
@@ -3646,7 +3669,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Seaking": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -3668,7 +3691,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Torterra": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -3690,7 +3713,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Clawitzer": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -3712,7 +3735,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Rotom-H": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -3734,7 +3757,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Malamar": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -3756,7 +3779,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Entei": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -3778,7 +3801,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Beheeyem": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -3800,7 +3823,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Dunsparce": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -3822,7 +3845,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Murkrow": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -3844,7 +3867,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Dusclops": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -3866,7 +3889,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Yanmega": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -3888,7 +3911,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Sunflora": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -3910,7 +3933,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Porygon-Z": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -3932,7 +3955,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Mandibuzz": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 244,
@@ -3954,7 +3977,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Volcarona": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -3976,7 +3999,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Swampert": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -3998,7 +4021,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Stoutland": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -4020,7 +4043,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Purugly": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -4042,7 +4065,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Uxie": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -4064,7 +4087,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Beedrill": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -4086,7 +4109,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Ambipom": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -4108,7 +4131,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Hitmonlee": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -4130,7 +4153,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Gorebyss": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -4152,7 +4175,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Cacturne": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -4174,7 +4197,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Raichu": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -4196,7 +4219,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Musharna": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -4218,7 +4241,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Emboar": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 112,
@@ -4240,7 +4263,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Blaziken": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -4262,7 +4285,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Rhydon": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -4284,7 +4307,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Heatmor": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -4306,7 +4329,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Slurpuff": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -4328,7 +4351,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Ferrothorn": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -4350,7 +4373,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Milotic": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -4392,7 +4415,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Aerodactyl": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -4414,7 +4437,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Plusle": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 100,
@@ -4436,7 +4459,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Aurorus": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -4458,7 +4481,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Mantine": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -4480,7 +4503,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Doublade": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -4502,7 +4525,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Leafeon": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -4626,7 +4649,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Politoed": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -4669,7 +4692,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Cofagrigus": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -4691,7 +4714,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Sandslash": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 44,
@@ -4713,7 +4736,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Articuno": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 212,
@@ -4735,7 +4758,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Rhyperior": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 68,
@@ -4757,7 +4780,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Golem": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -4779,7 +4802,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Pinsir": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 20,
@@ -4801,7 +4824,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Meowstic": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -4823,7 +4846,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Banette": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -4845,7 +4868,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Tauros": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -4867,7 +4890,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Raikou": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -4889,7 +4912,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Arbok": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -4911,7 +4934,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Porygon2": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 244,
@@ -4933,7 +4956,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Mamoswine": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -4955,7 +4978,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Chansey": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -4977,7 +5000,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Infernape": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -4999,7 +5022,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Mismagius": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -5021,7 +5044,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Primeape": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -5043,7 +5066,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Greninja": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -5065,7 +5088,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Ash-Greninja": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -5087,7 +5110,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Sawsbuck": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -5109,7 +5132,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Amoonguss": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -5131,7 +5154,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Jolteon": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -5153,7 +5176,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Golduck": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -5195,7 +5218,7 @@ var SETDEX_TT2017 = {
         },
     },
     "Rotom-W": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -5217,7 +5240,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Chesnaught": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 224,
@@ -5239,7 +5262,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Umbreon": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -5261,7 +5284,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Heracross": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -5283,7 +5306,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Feraligatr": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -5305,7 +5328,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Toxicroak": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -5327,7 +5350,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Dragonite": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -5349,7 +5372,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Lileep": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -5371,7 +5394,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Vaporeon": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 148,
@@ -5393,7 +5416,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Virizion": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -5415,7 +5438,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Froslass": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -5437,7 +5460,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Klinklang": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 156,
@@ -5459,7 +5482,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Terrakion": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -5481,7 +5504,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Conkeldurr": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -5503,7 +5526,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Hypno": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -5525,7 +5548,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Porygon": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -5547,7 +5570,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Audino": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -5569,7 +5592,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Jumpluff": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -5591,7 +5614,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Drapion": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 76,
@@ -5613,7 +5636,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Probopass": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -5635,7 +5658,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Excadrill": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -5657,7 +5680,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Solosis": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 84,
@@ -5676,7 +5699,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Sawk": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -5698,7 +5721,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Samurott": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -5720,7 +5743,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Thundurus": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -5742,7 +5765,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Spritzee": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 84,
@@ -5763,7 +5786,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Sableye": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -5785,7 +5808,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Dugtrio": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -5807,7 +5830,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Typhlosion": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -5829,7 +5852,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Golurk": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -5851,7 +5874,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Bastiodon": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -5873,7 +5896,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Scizor": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -5895,7 +5918,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Persian": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -5917,7 +5940,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Nidoking": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -5939,7 +5962,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Zapdos": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -5961,7 +5984,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Ninjask": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -5983,7 +6006,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Vivillon": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -6005,7 +6028,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Grumpig": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 80,
@@ -6027,7 +6050,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Moltres": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -6049,7 +6072,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Flareon": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 212,
@@ -6071,7 +6094,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Tornadus-T": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -6093,7 +6116,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Chatot": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -6115,7 +6138,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Stantler": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -6137,7 +6160,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Charizard": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -6159,7 +6182,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Magmortar": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 196,
@@ -6181,7 +6204,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Abomasnow": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -6203,7 +6226,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Luxray": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -6225,7 +6248,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Jellicent": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -6247,7 +6270,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Mienshao": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -6269,7 +6292,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Gogoat": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -6291,7 +6314,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Flygon": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -6313,7 +6336,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Escavalier": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -6335,7 +6358,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Bouffalant": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -6357,7 +6380,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Landorus": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -6379,7 +6402,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Vileplume": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -6401,7 +6424,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Clefairy": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -6416,14 +6439,14 @@ var SETDEX_TT2017 = {
             "item": "Eviolite",
             "moves": [
                 "Moonblast",
-                "Icy Wind",
+                "Flamethrower",
                 "Dazzling Gleam",
                 "Ice Beam"
             ]
         }
     },
     "Magneton": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -6445,7 +6468,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Forretress": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -6467,7 +6490,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Skarmory": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -6489,7 +6512,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Volbeat": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -6511,7 +6534,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Archeops": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -6533,7 +6556,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Bronzong": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 244,
@@ -6555,7 +6578,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Mightyena": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 156,
@@ -6577,7 +6600,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Diggersby": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -6599,7 +6622,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Garchomp": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -6615,7 +6638,7 @@ var SETDEX_TT2017 = {
             "moves": [
                 "Earthquake",
                 "Rock Slide",
-                "Dragon Claw",
+                "Fire Fang",
                 "Poison Jab"
             ]
         },
@@ -6642,7 +6665,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Scrafty": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -6664,29 +6687,29 @@ var SETDEX_TT2017 = {
         }
     },
     "Lilligant": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
-                "hp": 240,
+                "hp": 4,
                 "at": 0,
-                "df": 156,
-                "sa": 12,
-                "sd": 48,
-                "sp": 48
+                "df": 0,
+                "sa": 252,
+                "sd": 0,
+                "sp": 252
             },
             "nature": "Modest",
-            "ability": "",
+            "ability": "Chlorophyll",
             "item": "",
             "moves": [
+                "Leaf Storm",
+                "Hidden Power Fire",
                 "Giga Drain",
-                "Petal Dance",
-                "Solar Beam",
                 "Energy Ball"
             ]
         }
     },
     "Latias": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -6708,7 +6731,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Magmar": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 244,
@@ -6730,7 +6753,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Lucario": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -6752,7 +6775,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Rampardos": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -6774,7 +6797,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Cinccino": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -6796,7 +6819,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Charmeleon": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -6818,7 +6841,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Scolipede": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -6840,7 +6863,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Serperior": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -6862,7 +6885,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Staraptor": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -6884,7 +6907,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Ludicolo": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -6906,7 +6929,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Cloyster": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -6970,7 +6993,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Haxorus": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -6992,7 +7015,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Garbodor": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -7014,7 +7037,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Marowak": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -7036,7 +7059,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Glaceon": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -7058,7 +7081,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Hippowdon": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -7080,7 +7103,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Bellossom": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -7102,7 +7125,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Blissey": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -7124,6 +7147,26 @@ var SETDEX_TT2017 = {
         }
     },
     "Metagross": {
+        "Common Metagross": {
+            "level": 50,
+            "evs": {
+                "hp": 252,
+                "at": 252,
+                "df": 0,
+                "sa": 0,
+                "sd": 4,
+                "sp": 0
+            },
+            "nature": "Adamant",
+            "ability": "Clear Body",
+            "item": "",
+            "moves": [
+                "Zen Headbutt",
+                "Meteor Mash",
+                "Earthquake",
+                "Bullet Punch"
+            ]
+        },
         "TT AV Metagross": {
             "level": 50,
             "evs": {
@@ -7146,7 +7189,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Misdreavus": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -7168,7 +7211,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Delphox": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -7212,7 +7255,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Avalugg": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 84,
@@ -7234,7 +7277,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Talonflame": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -7256,7 +7299,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Meganium": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -7278,7 +7321,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Mr. Mime": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -7300,7 +7343,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Barbaracle": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -7322,7 +7365,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Wailord": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -7344,7 +7387,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Chandelure": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -7366,7 +7409,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Ursaring": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -7388,7 +7431,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Tyrantrum": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -7410,7 +7453,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Gardevoir": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -7432,7 +7475,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Stunfisk": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -7454,7 +7497,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Aromatisse": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -7476,7 +7519,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Castform": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -7498,7 +7541,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Cradily": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -7520,7 +7563,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Pidgeot": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -7542,7 +7585,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Kingler": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -7564,7 +7607,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Lunatone": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -7586,7 +7629,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Roserade": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -7608,7 +7651,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Rapidash": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -7652,7 +7695,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Suicune": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -7674,7 +7717,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Gourgeist-Super": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -7696,7 +7739,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Donphan": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -7718,7 +7761,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Gastrodon": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 244,
@@ -7760,7 +7803,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Thundurus-T": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -7782,7 +7825,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Tyranitar": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -7804,7 +7847,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Miltank": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 140,
@@ -7826,7 +7869,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Accelgor": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -7848,7 +7891,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Dewgong": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -7870,7 +7913,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Muk": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 248,
@@ -7892,7 +7935,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Shiftry": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -7914,7 +7957,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Cryogonal": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -7936,7 +7979,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Beartic": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -7958,7 +8001,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Regice": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -7980,7 +8023,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Armaldo": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -8002,7 +8045,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Espeon": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -8018,13 +8061,13 @@ var SETDEX_TT2017 = {
             "moves": [
                 "Psychic",
                 "Dazzling Gleam",
-                "Psyshock",
+                "Stored Power",
                 "Shadow Ball"
             ]
         }
     },
     "Shedinja": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -8046,7 +8089,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Sneasel": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -8068,7 +8111,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Hitmontop": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -8090,7 +8133,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Kingdra": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -8112,7 +8155,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Primal Kyogre": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -8178,7 +8221,7 @@ var SETDEX_TT2017 = {
     },
 
     "Kyogre": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -8244,7 +8287,7 @@ var SETDEX_TT2017 = {
     },
 
     "Rayquaza": {
-        "Common Showdown Physical": {
+        "Default Set Physical": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -8265,7 +8308,7 @@ var SETDEX_TT2017 = {
             ]
         },
 
-        "Common Showdown Mixed": {
+        "Default Set Mixed": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -8288,7 +8331,7 @@ var SETDEX_TT2017 = {
     },
 
     "Xerneas": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -8311,7 +8354,7 @@ var SETDEX_TT2017 = {
     },
 
     "Yveltal": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -8334,7 +8377,7 @@ var SETDEX_TT2017 = {
     },
 
     "Dialga": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -8357,7 +8400,7 @@ var SETDEX_TT2017 = {
     },
 
     "Palkia": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -8380,7 +8423,7 @@ var SETDEX_TT2017 = {
     },
 
     "Giratina": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -8403,7 +8446,7 @@ var SETDEX_TT2017 = {
     },
 
     "Giratina-O": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -8426,7 +8469,7 @@ var SETDEX_TT2017 = {
     },
 
     "Kyurem-W": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -8449,7 +8492,7 @@ var SETDEX_TT2017 = {
     },
 
     "Kyurem-B": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -8472,7 +8515,7 @@ var SETDEX_TT2017 = {
     },
 
     "Ho-Oh": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -8495,7 +8538,7 @@ var SETDEX_TT2017 = {
     },
 
     "Lugia": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -8518,7 +8561,7 @@ var SETDEX_TT2017 = {
     },
 
     "Mewtwo": {
-        "Common Showdown Y": {
+        "Default Set Y": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -8541,7 +8584,7 @@ var SETDEX_TT2017 = {
     },
 
     "Decidueye": {
-        "Random Meta Guess": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -8564,7 +8607,7 @@ var SETDEX_TT2017 = {
     },
 
     "Incineroar": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -8607,7 +8650,7 @@ var SETDEX_TT2017 = {
     },
 
     "Primarina": {
-        "Random Meta Guess": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -8630,7 +8673,7 @@ var SETDEX_TT2017 = {
     },
 
     "Toucannon": {
-        "Random Meta Guess": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -8653,7 +8696,7 @@ var SETDEX_TT2017 = {
     },
 
     "Gumshoos": {
-        "Random Meta Guess": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -8676,7 +8719,7 @@ var SETDEX_TT2017 = {
     },
 
     "Vikavolt": {
-        "Random Meta Guess": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -8720,7 +8763,7 @@ var SETDEX_TT2017 = {
     },
 
     "Crabominable": {
-        "Random Meta Guess": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -8743,7 +8786,7 @@ var SETDEX_TT2017 = {
     },
 
     "Oricorio": {
-        "Random Meta Guess": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -8766,7 +8809,7 @@ var SETDEX_TT2017 = {
     },
 
     "Ribombee": {
-        "Random Meta Guess": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -8789,7 +8832,7 @@ var SETDEX_TT2017 = {
     },
 
     "Lycanroc-Midday": {
-        "Random Meta Guess": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -8812,15 +8855,15 @@ var SETDEX_TT2017 = {
     },
 
     "Lycanroc-Midnight": {
-        "Random Meta Guess": {
+        "Default Set": {
             "level": 50,
             "evs": {
-                "hp": 252,
+                "hp": 4,
                 "at": 252,
                 "df": 4,
                 "sa": 0,
                 "sd": 0,
-                "sp": 0
+                "sp": 252
             },
             "nature": "Adamant",
             "ability": "",
@@ -8835,7 +8878,7 @@ var SETDEX_TT2017 = {
     },
 
     "Wishiwashi": {
-        "Random Meta Guess": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 236,
@@ -8858,7 +8901,7 @@ var SETDEX_TT2017 = {
     },
 
     "Toxapex": {
-        "Random Meta Guess": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -8881,7 +8924,7 @@ var SETDEX_TT2017 = {
     },
 
     "Mudsdale": {
-        "Random Meta Guess": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -8897,7 +8940,7 @@ var SETDEX_TT2017 = {
             "moves": [
                 "High Horsepower",
                 "Earthquake",
-                "Rock Slide",
+                "Heavy Slam",
                 "Superpower"
             ]
         }
@@ -8920,7 +8963,7 @@ var SETDEX_TT2017 = {
             "moves": [
                 "Liquidation",
                 "Leech Life",
-                "Lunge",
+                "Bug Bite",
                 "Poison Jab"
             ]
         },
@@ -8948,7 +8991,7 @@ var SETDEX_TT2017 = {
     },
 
     "Lurantis": {
-        "Random Meta Guess": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -8971,7 +9014,7 @@ var SETDEX_TT2017 = {
     },
 
     "Shiinotic": {
-        "Random Meta Guess": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -8994,7 +9037,7 @@ var SETDEX_TT2017 = {
     },
 
     "Salazzle": {
-        "Random Meta Guess": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -9017,7 +9060,7 @@ var SETDEX_TT2017 = {
     },
 
     "Bewear": {
-        "Random Meta Guess": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -9040,7 +9083,7 @@ var SETDEX_TT2017 = {
     },
 
     "Tsareena": {
-        "Random Meta Guess": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -9063,7 +9106,7 @@ var SETDEX_TT2017 = {
     },
 
     "Comfey": {
-        "Random Meta Guess": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -9109,7 +9152,7 @@ var SETDEX_TT2017 = {
     },
 
     "Passimian": {
-        "Random Meta Guess": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -9132,7 +9175,7 @@ var SETDEX_TT2017 = {
     },
 
     "Golisopod": {
-        "Random Meta Guess": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -9155,7 +9198,7 @@ var SETDEX_TT2017 = {
     },
 
     "Palossand": {
-        "Random Meta Guess": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -9201,7 +9244,7 @@ var SETDEX_TT2017 = {
     },
 
     "Minior": {
-        "Random Meta Guess": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -9224,7 +9267,7 @@ var SETDEX_TT2017 = {
     },
 
     "Komala": {
-        "Random Meta Guess": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -9247,7 +9290,7 @@ var SETDEX_TT2017 = {
     },
 
     "Turtonator": {
-        "Random Meta Guess": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -9270,15 +9313,15 @@ var SETDEX_TT2017 = {
     },
 
     "Togedemaru": {
-        "Random Meta Guess": {
+        "Default Set": {
             "level": 50,
             "evs": {
-                "hp": 252,
+                "hp": 4,
                 "at": 252,
-                "df": 4,
+                "df": 0,
                 "sa": 0,
                 "sd": 0,
-                "sp": 0
+                "sp": 252
             },
             "nature": "Adamant",
             "ability": "",
@@ -9293,30 +9336,30 @@ var SETDEX_TT2017 = {
     },
 
     "Mimikyu": {
-        "Random Meta Guess": {
+        "Default Set": {
             "level": 50,
             "evs": {
-                "hp": 252,
+                "hp": 4,
                 "at": 252,
-                "df": 4,
+                "df": 0,
                 "sa": 0,
                 "sd": 0,
-                "sp": 0
+                "sp": 252
             },
-            "nature": "Adamant",
+            "nature": "Jolly",
             "ability": "",
             "item": "",
             "moves": [
                 "Shadow Claw",
                 "Shadow Sneak",
                 "Play Rough",
-                ""
+                "Wood Hammer"
             ]
         }
     },
 
     "Bruxish": {
-        "Random Meta Guess": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -9428,6 +9471,26 @@ var SETDEX_TT2017 = {
                 "Discharge"
             ]
         },
+        "Specs Koko": {
+            "level": 50,
+            "evs": {
+                "hp": 4,
+                "at": 0,
+                "df": 0,
+                "sa": 252,
+                "sd": 0,
+                "sp": 252
+            },
+            "nature": "Timid",
+            "ability": "Electric Surge",
+            "item": "Choice Specs",
+            "moves": [
+                "Thunderbolt",
+                "Dazzling Gleam",
+                "Volt Switch",
+                "Discharge"
+            ]
+        },
         "Mixed Attacker": {
             "level": 50,
             "evs": {
@@ -9472,7 +9535,7 @@ var SETDEX_TT2017 = {
     },
 
     "Tapu Lele": {
-        "Common Lele": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -9624,7 +9687,7 @@ var SETDEX_TT2017 = {
     },
 
     "Nihilego": {
-        "Random Meta Guess": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -9636,7 +9699,7 @@ var SETDEX_TT2017 = {
             },
             "nature": "Timid",
             "ability": "",
-            "item": "",
+            "item": "Life Orb",
             "moves": [
                 "Power Gem",
                 "Sludge Bomb",
@@ -9647,7 +9710,7 @@ var SETDEX_TT2017 = {
     },
 
     "Buzzwole": {
-        "Random Meta Guess": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -9663,6 +9726,26 @@ var SETDEX_TT2017 = {
             "moves": [
                 "Superpower",
                 "Lunge",
+                "Ice Punch",
+                "Poison Jab"
+            ]
+        },
+        "Tman's Buzzwole": {
+            "level": 50,
+            "evs": {
+                "hp": 20,
+                "at": 84,
+                "df": 4,
+                "sa": 0,
+                "sd": 252,
+                "sp": 148
+            },
+            "nature": "Adamant",
+            "ability": "",
+            "item": "Assault Vest",
+            "moves": [
+                "Superpower",
+                "Leech Life",
                 "Ice Punch",
                 "Poison Jab"
             ]
@@ -9713,7 +9796,7 @@ var SETDEX_TT2017 = {
     },
 
     "Xurkitree": {
-        "Random Meta Guess": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -9777,21 +9860,21 @@ var SETDEX_TT2017 = {
                 "Earthquake"
             ]
         },
-        "Mixed Attacker": {
+        "Special Attacker": {
             "level": 50,
             "evs": {
                 "hp": 252,
-                "at": 252,
+                "at": 0,
                 "df": 0,
-                "sa": 4,
-                "sd": 0,
+                "sa": 252,
+                "sd": 4,
                 "sp": 0
             },
-            "nature": "Brave",
+            "nature": "Modest",
             "ability": "",
             "item": "Leftovers",
             "moves": [
-                "Heavy Slam",
+                "Flash Cannon",
                 "Flamethrower",
                 "Giga Drain",
                 "Air Slash"
@@ -9800,7 +9883,7 @@ var SETDEX_TT2017 = {
     },
 
     "Kartana": {
-        "Random Meta Guess": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -9930,7 +10013,7 @@ var SETDEX_TT2017 = {
     },
 
     "Marowak-Alola": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -9997,7 +10080,7 @@ var SETDEX_TT2017 = {
     },
 
     "Ninetales-Alola": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -10042,7 +10125,7 @@ var SETDEX_TT2017 = {
         }
     },
     "Raichu-Alola": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -10109,7 +10192,7 @@ var SETDEX_TT2017 = {
     },
 
     "Muk-Alola": {
-        "Common Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,

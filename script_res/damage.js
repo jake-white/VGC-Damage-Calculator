@@ -355,10 +355,10 @@ function getDamageResult(attacker, defender, move, field) {
     }
     
 
-    var isAttackerAura = (attacker.ability === (move.type + " Aura"))
+    var isAttackerAura = (attacker.ability === (move.type + " Aura"));
     var isDefenderAura = defAbility === (move.type + " Aura");
-    var auraActive = ($("input:checkbox[id='" + move.type.toLowerCase() + "-aura']:checked").val() != undefined)
-    var auraBreak = ($("input:checkbox[id='aura-break']:checked").val() != undefined)
+    var auraActive = ($("input:checkbox[id='" + move.type.toLowerCase() + "-aura']:checked").val() != undefined);
+    var auraBreak = ($("input:checkbox[id='aura-break']:checked").val() != undefined);
     if (auraActive) {
         if (auraBreak) {
             bpMods.push(0x0C00);
