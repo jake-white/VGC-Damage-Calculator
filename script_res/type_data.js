@@ -373,6 +373,8 @@ var TYPE_CHART_GSC = $.extend(true, {}, TYPE_CHART_RBY, {
         Psychic: 1,
         Ghost: 1,
         Dragon: 1,
+        Dark: 1,
+        Steel: 1
     },
 
     Typeless: {
