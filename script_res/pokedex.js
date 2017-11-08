@@ -12357,7 +12357,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     },
     "w": 1.8,
   },
-  "Naganade": {
+  "Naganadel": {
     "t1": "Poison",
     "t2": "Dragon",
     "bs": {

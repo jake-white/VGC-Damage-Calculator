@@ -10232,7 +10232,73 @@ var SETDEX_TT2017 = {
                 "Knock Off",
                 "Shadow Sneak"
             ]
-        }
+        },
+    },
+    "Stakataka" : {
+      "Default Set": {
+          "level": 50,
+          "evs": {
+              "hp": 252,
+              "at": 252,
+              "df": 0,
+              "sa": 0,
+              "sd": 4,
+              "sp": 0
+          },
+          "nature": "Adamant",
+          "ability": "",
+          "item": "",
+          "moves": [
+              "Gyro Ball",
+              "Stone Edge",
+              "Rock Slide",
+              "Superpower"
+          ]
+      },
+    },
+    "Blacephalon" : {
+      "Default Set": {
+          "level": 50,
+          "evs": {
+              "hp": 4,
+              "at": 0,
+              "df": 0,
+              "sa": 252,
+              "sd": 0,
+              "sp": 252
+          },
+          "nature": "Timid",
+          "ability": "",
+          "item": "",
+          "moves": [
+              "Mind Blown",
+              "Shadow Ball",
+              "Flamethrower",
+              "Hidden Power Ice"
+          ]
+      },
+    },
+    "Naganadel" : {
+      "Default Set": {
+          "level": 50,
+          "evs": {
+              "hp": 4,
+              "at": 0,
+              "df": 0,
+              "sa": 252,
+              "sd": 0,
+              "sp": 252
+          },
+          "nature": "Timid",
+          "ability": "",
+          "item": "",
+          "moves": [
+              "Draco Meteor",
+              "Dragon Pulse",
+              "Sludge Bomb",
+              "Flamethrower"
+          ]
+      },
     },
 
 };

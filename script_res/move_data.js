@@ -2993,17 +2993,20 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
     },
     'Mind Blown': {
         bp: 150,
+        zp: 200,
         type: 'Fire',
         category: 'Special',
         isSpread: true
     },
     'Plasma Fists': {
         bp: 100,
+        zp: 180,
         type: 'Electric',
         category: 'Physical',
     },
     'Photon Geyser': {
         bp: 100,
+        zp: 180,
         type: 'Psychic',
         category: 'Special',
     },
