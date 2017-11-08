@@ -818,6 +818,7 @@ var MOVES_DPP = $.extend(true, {}, MOVES_ADV, {
     },
     'Brine': {
         bp: 65,
+        zp: 120,
         type: 'Water',
         category: 'Special',
     },
