@@ -1513,7 +1513,7 @@ var MOVES_BW = $.extend(true, {}, MOVES_DPP, {
         type: 'Psychic',
         category: 'Special',
         dealsPhysicalDamage: true
-    },    
+    },
     'Razor Leaf': {
         bp: 55,
         type: 'Grass',
@@ -1710,7 +1710,7 @@ var MOVES_XY = $.extend(true, {}, MOVES_BW, {
         hasSecondaryEffect: true
     },
     'Frost Breath': { bp: 60 },
-    'Future Sight': { 
+    'Future Sight': {
         bp: 120,
         type: 'Psychic',
         category: 'Special'
@@ -1818,7 +1818,7 @@ var MOVES_XY = $.extend(true, {}, MOVES_BW, {
         isMLG: 'true'
     },
     'Storm Throw': { bp: 60 },
-    'Surf': { bp: 90 },    
+    'Surf': { bp: 90 },
     'Synchronoise': { bp: 120 },
     'Thief': { bp: 60 },
     'Thunder': { bp: 110 },
@@ -1832,7 +1832,7 @@ var MOVES_XY = $.extend(true, {}, MOVES_BW, {
     },
     'Aurora Beam': {
         bp: 65,
-        type: 'Ice', 
+        type: 'Ice',
         category: 'Special'
     }
 });
@@ -2013,7 +2013,7 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
         bp: 90,
         zp: 175
     },
-    'Clanging Scales': {        
+    'Clanging Scales': {
         category: 'Special',
         type: 'Dragon',
         bp: 110,
@@ -2989,5 +2989,52 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
     },
     'Dragon Ascent':{
         zp: 190
-    }
+    },
+    'Mind Blown': {
+        bp: 150,
+        type: 'Fire',
+        category: 'Special',
+        isSpread: true
+    },
+    'Plasma Fists': {
+        bp: 100,
+        type: 'Electric',
+        category: 'Physical',
+    },
+    'Photon Geyser': {
+        bp: 100,
+        type: 'Psychic',
+        category: 'Special',
+    },
+    'Light That Burns the Sky': {
+        bp: 200,
+        type: 'Psychic',
+        category: 'Special',
+    },
+    'Searing Sunraze Smash': {
+        bp: 200,
+        type: 'Steel',
+        category: 'Physical',
+    },
+    'Menacing Moonraze Maelstrom': {
+        bp: 200,
+        type: 'Ghost',
+        category: 'Special',
+    },
+    'Let\'s Snuggle Forever': {
+        bp: 190,
+        type: 'Fairy',
+        category: 'Physical',
+    },
+    'Splintered Stormshards': {
+        bp: 190,
+        type: 'Rock',
+        category: 'Physical',
+    },
+    'Clangorous Soulblaze': {
+        bp: 185,
+        type: 'Dragon',
+        category: 'Special',
+        isSpread: true
+    },
 });
