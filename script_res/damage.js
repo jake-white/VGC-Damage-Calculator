@@ -68,7 +68,7 @@ function getDamageResult(attacker, defender, move, field) {
     if (move.bp === 0) {
         return {"damage":[0], "description":buildDescription(description)};
     }
-    
+
     var defAbility = defender.ability;
     if (["Mold Breaker", "Teravolt", "Turboblaze"].indexOf(attacker.ability) !== -1) {
         defAbility = "";
@@ -76,9 +76,9 @@ function getDamageResult(attacker, defender, move, field) {
     }
     else if(move.name === "Moongeist Beam" || move.name === "Sunsteel Strike")
         defAbility = ""; //works as a mold breaker
-    
+
     var isCritical = move.isCrit && ["Battle Armor", "Shell Armor"].indexOf(defAbility) === -1;
-    
+
     if (move.name === "Weather Ball") {
         move.type = field.weather.indexOf("Sun") > -1 ? "Fire"
                 : field.weather.indexOf("Rain") > -1 ? "Water"
@@ -99,7 +99,7 @@ function getDamageResult(attacker, defender, move, field) {
     } else if (move.name === "Nature Power") {
         move.type = field.terrain === "Electric" ? "Electric" : field.terrain === "Grassy" ? "Grass" : field.terrain === "Misty" ? "Fairy" : move.type = field.terrain === "Psychic" ? "Psychic" : "Normal";
     }
-    
+
     var isAerilate = attacker.ability === "Aerilate" && move.type === "Normal";
     var isPixilate = attacker.ability === "Pixilate" && move.type === "Normal";
     var isRefrigerate = attacker.ability === "Refrigerate" && move.type === "Normal";
@@ -119,13 +119,13 @@ function getDamageResult(attacker, defender, move, field) {
         } else if(attacker.ability === "Liquid Voice" && move.isSound){
             move.type = "Water"
             description.attackerAbility = attacker.ability;
-        } 
+        }
     }
-    
+
     var typeEffect1 = getMoveEffectiveness(move, defender.type1, attacker.ability === "Scrappy" || field.isForesight, field.isGravity);
     var typeEffect2 = defender.type2 ? getMoveEffectiveness(move, defender.type2, attacker.ability === "Scrappy" || field.isForesight, field.isGravity) : 1;
     var typeEffectiveness = typeEffect1 * typeEffect2;
-    
+
     if (typeEffectiveness === 0) {
         return {"damage":[0], "description":buildDescription(description)};
     }
@@ -156,9 +156,9 @@ function getDamageResult(attacker, defender, move, field) {
             [defender.type1, defender.type2].indexOf(attacker.type1) === -1 && [defender.type1, defender.type2].indexOf(attacker.type2) === -1) {
         return {"damage": [0], "description": buildDescription(description)};
     }
-    
+
     description.HPEVs = defender.HPEVs + " HP";
-    
+
     if (move.name === "Seismic Toss" || move.name === "Night Shade") {
         var lv = attacker.level;
         if (attacker.ability === "Parental Bond") {
@@ -166,12 +166,12 @@ function getDamageResult(attacker, defender, move, field) {
         }
         return {"damage":[lv], "description":buildDescription(description)};
     }
-    
+
     if (move.hits > 1) {
         description.hits = move.hits;
     }
     var turnOrder = attacker.stats[SP] > defender.stats[SP] ? "FIRST" : "LAST";
-    
+
     ////////////////////////////////
     ////////// BASE POWER //////////
     ////////////////////////////////
@@ -258,7 +258,7 @@ function getDamageResult(attacker, defender, move, field) {
         default:
             basePower = move.bp;
     }
-    
+
     var bpMods = [];
     if ((attacker.ability === "Technician" && basePower <= 60) ||
             (attacker.ability === "Flare Boost" && attacker.status === "Burned" && move.category === "Special") ||
@@ -283,7 +283,7 @@ function getDamageResult(attacker, defender, move, field) {
         bpMods.push(0x14CD);
         description.isBattery = true;
     }
-    
+
     if (defAbility === "Heatproof" && move.type === "Fire") {
         bpMods.push(0x800);
         description.defenderAbility = defAbility;
@@ -291,12 +291,12 @@ function getDamageResult(attacker, defender, move, field) {
         bpMods.push(0x1400);
         description.defenderAbility = defAbility;
     }
-    
+
     if (attacker.ability === "Sheer Force" && move.hasSecondaryEffect) {
         bpMods.push(0x14CD);
         description.attackerAbility = attacker.ability;
     }
-    
+
     if (getItemBoostType(attacker.item) === move.type) {
         bpMods.push(0x1333);
         description.attackerItem = attacker.item;
@@ -314,7 +314,7 @@ function getDamageResult(attacker, defender, move, field) {
         bpMods.push(gen >= 6 ? 0x14CD : 0x1800);
         description.attackerItem = attacker.item;
     }
-    
+
     if ((move.name === "Facade" && ["Burned","Paralyzed","Poisoned","Badly Poisoned"].indexOf(attacker.status) !== -1) ||
             (move.name === "Brine" && defender.curHP <= defender.maxHP / 2) ||
             (move.name === "Venoshock" && (defender.status === "Poisoned" || defender.status === "Badly Poisoned"))) {
@@ -330,7 +330,7 @@ function getDamageResult(attacker, defender, move, field) {
         bpMods.push(0x1800);
         description.moveBP = move.bp * 1.5;
     }
-    
+
     if (field.isHelpingHand) {
         bpMods.push(0x1800);
         description.isHelpingHand = true;
@@ -353,7 +353,7 @@ function getDamageResult(attacker, defender, move, field) {
     } else if(defender.ability === "Fluffy" && move.makesContact){
         bpMods.push(0x800);
     }
-    
+
 
     var isAttackerAura = (attacker.ability === (move.type + " Aura"));
     var isDefenderAura = defAbility === (move.type + " Aura");
@@ -374,21 +374,25 @@ function getDamageResult(attacker, defender, move, field) {
             }
         }
     }
-    
+
     if(move.type === "Steel" && attacker.ability === "Steelworker"){
         bpMods.push(0x1800);
     }
-    
+
     basePower = Math.max(1, pokeRound(basePower * chainMods(bpMods) / 0x1000));
     if(gen==6) basePower = attacker.isChild ? basePower / 2 : basePower;
     else if(gen==7) basePower = attacker.isChild ? basePower / 4 : basePower;
-    
+
     ////////////////////////////////
     ////////// (SP)ATTACK //////////
     ////////////////////////////////
+
+    var necrozmaMove = move.name == "Photon Geyser" || move.name == "Light That Burns the Sky";
     var attack;
     var attackSource = move.name === "Foul Play" ? defender : attacker;
-    var attackStat = move.category === "Physical" ? AT : SA;
+    var usesPhysicalAttackStat = move.category === "Physical" || (necrozmaMove && attacker.stats[AT] >= attacker.stats[SA]);
+    console.log(move.name + " " + usesPhysicalAttackStat);
+    var attackStat = usesPhysicalAttackStat ? AT : SA;
     description.attackEVs = attacker.evs[attackStat] +
             (NATURES[attacker.nature][0] === attackStat ? "+" : NATURES[attacker.nature][1] === attackStat ? "-" : "") + " " +
             toSmogonStat(attackStat);
@@ -401,13 +405,13 @@ function getDamageResult(attacker, defender, move, field) {
         attack = attackSource.stats[attackStat];
         description.attackBoost = attackSource.boosts[attackStat];
     }
-    
+
     // unlike all other attack modifiers, Hustle gets applied directly
     if (attacker.ability === "Hustle" && move.category === "Physical") {
         attack = pokeRound(attack * 3/2);
         description.attackerAbility = attacker.ability;
     }
-    
+
     var atMods = [];
     if ((defAbility === "Thick Fat" && (move.type === "Fire" || move.type === "Ice")) || (defAbility === "Water Bubble" && move.type === "Fire")) {
         atMods.push(0x800);
@@ -418,7 +422,7 @@ function getDamageResult(attacker, defender, move, field) {
         description.defenderAbility = defAbility;
     }
 
-    
+
     if ((attacker.ability === "Guts" && attacker.status !== "Healthy" && move.category === "Physical") ||
             (attacker.ability === "Overgrow" && attacker.curHP <= attacker.maxHP / 3 && move.type === "Grass") ||
             (attacker.ability === "Blaze" && attacker.curHP <= attacker.maxHP / 3 && move.type === "Fire") ||
@@ -443,7 +447,7 @@ function getDamageResult(attacker, defender, move, field) {
         atMods.push(0x2000);
         description.attackerAbility = attacker.ability;
     }
-    
+
     if ((attacker.item === "Thick Club" && (attacker.name === "Cubone" || attacker.name === "Marowak" || attacker.name === "Marowak-Alola") && move.category === "Physical") ||
             (attacker.item === "Deep Sea Tooth" && attacker.name === "Clamperl" && move.category === "Special") ||
             (attacker.item === "Light Ball" && attacker.name === "Pikachu")) {
@@ -455,9 +459,9 @@ function getDamageResult(attacker, defender, move, field) {
         atMods.push(0x1800);
         description.attackerItem = attacker.item;
     }
-    
+
     attack = Math.max(1, pokeRound(attack * chainMods(atMods) / 0x1000));
-    
+
     ////////////////////////////////
     ///////// (SP)DEFENSE //////////
     ////////////////////////////////
@@ -476,13 +480,13 @@ function getDamageResult(attacker, defender, move, field) {
         defense = defender.stats[defenseStat];
         description.defenseBoost = defender.boosts[defenseStat];
     }
-    
+
     // unlike all other defense modifiers, Sandstorm SpD boost gets applied directly
     if (field.weather === "Sand" && (defender.type1 === "Rock" || defender.type2 === "Rock") && !hitsPhysical) {
         defense = pokeRound(defense * 3/2);
         description.weather = field.weather;
     }
-    
+
     var dfMods = [];
     if (defAbility === "Marvel Scale" && defender.status !== "Healthy" && hitsPhysical) {
         dfMods.push(0x1800);
@@ -492,7 +496,7 @@ function getDamageResult(attacker, defender, move, field) {
         description.defenderAbility = defAbility;
         description.weather = field.weather;
     }
-    
+
     if ((defender.item === "Deep Sea Scale" && defender.name === "Clamperl" && !hitsPhysical) ||
             (defender.item === "Metal Powder" && defender.name === "Ditto") ||
             (defender.item === "Soul Dew" && (defender.name === "Latios" || defender.name === "Latias") && !hitsPhysical) ||
@@ -500,9 +504,9 @@ function getDamageResult(attacker, defender, move, field) {
         dfMods.push(0x1800);
         description.defenderItem = defender.item;
     }
-    
+
     defense = Math.max(1, pokeRound(defense * chainMods(dfMods) / 0x1000));
-    
+
     ////////////////////////////////
     //////////// DAMAGE ////////////
     ////////////////////////////////
@@ -607,7 +611,7 @@ function getDamageResult(attacker, defender, move, field) {
         description.isQuarteredByProtect = true;
     }
     var finalMod = chainMods(finalMods);
-    
+
     var damage = [], pbDamage = [];
     var child, childDamage, j;
     if (attacker.ability === "Parental Bond" && move.hits === 1 && (field.format === "Singles" || !move.isSpread)) {
