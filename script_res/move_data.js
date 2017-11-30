@@ -2938,6 +2938,7 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
         zp: 180
     },
     'Flying Press':{
+        bp: 100,
         zp: 170
     },
     'Phantom Force':{
