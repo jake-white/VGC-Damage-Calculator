@@ -5,6 +5,12 @@ body, html {
     font-family: Open Sans;
 }
 
+#wideguard {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 0.5em;
+}
+
 #notice{
     font-size: 30pt;
     color: #e64946;

@@ -31,13 +31,13 @@
 </head>
 <body>
     <div class="header"><div class="wrapper">
-            <span class="header-logo"><a href="http://trainertower.com"><img src="image_res/trainertower.png" alt="Trainer Tower" height="50px" /></a></span><span class="nav"><a href="http://trainertower.com">Home</a> | <a href="http://trainertower.com/forums">Forums</a> | <a href="http://play.pokemonshowdown.com/vgc">Showdown</a> | <a href="http://www.trainertower.com/vgc-2017-speed-tiers/">2017 Speed Tiers</a> | <a href="https://github.com/jake-white/VGC-Damage-Calculator">GitHub Page</a> | <a href="https://lilymaniac.github.io/calc/">한국어 계산기 (Korean Version)</a> | <a href="http://trainertower.com/usage-stats">Showdown Stats</a> | <a href="http://www.trainertower.com/WCS-battle-spot-usage/">Battlespot Stats</a> | <a href="http://www.trainertower.com/survivalcalc/">Survival Calc</a></span>
+            <span class="header-logo"><a href="http://trainertower.com"><img src="image_res/trainertower.png" alt="Trainer Tower" height="50px" /></a></span><span class="nav"><a href="http://trainertower.com">Home</a> | <a href="http://trainertower.com/forums">Forums</a> | <a href="http://play.pokemonshowdown.com/vgc">Showdown</a> | <a href="http://www.trainertower.com/vgc-2018-speed-tiers/">2018 Speed Tiers</a> | <a href="https://github.com/jake-white/VGC-Damage-Calculator">GitHub Page</a> | <a href="https://lilymaniac.github.io/calc/">한국어 계산기 (Korean Version)</a> | <a href="http://trainertower.com/usage-stats">Showdown Stats</a> | <a href="http://www.trainertower.com/WCS-battle-spot-usage/">Battlespot Stats</a> | <a href="http://www.trainertower.com/survivalcalc/">Survival Calc</a></span>
             <div style="clear:both"></div>
 
     </div></div>
     <div class="wrapper">
         <div>
-            <span class="title-text">Pokémon Damage Calculator - VGC 2017 Edition</span>
+            <span class="title-text">Pokémon Damage Calculator - VGC 2018 Edition</span>
             <span  class="generations" title="Select the generation.">
                 <input class="gen btn-input" type="radio" name="gen" value="1" id="gen1" /><label class="btn btn-small btn-left" for="gen1">RBY</label>
                 <input class="gen btn-input" type="radio" name="gen" value="2" id="gen2" /><label class="btn btn-small btn-mid" for="gen2">GSC</label>
@@ -60,7 +60,6 @@
     </script>
     </div>
     <p>Ultra Sun & Ultra Moon VGC calculator by Jake White (<a href="https://twitter.com/squirrelboyVGC">@squirrelboyVGC</a>). Submit bug/feature reports/requests through <a href="https://github.com/jake-white/VGC-Damage-Calculator/issues">Github</a> or <a href="http://www.trainertower.com/forums/threads/damage-calculator-bug-reports.62/">this thread</a>, not through Twitter please :)</p>
-    <p>USUM details are implemented according to my best knowledge! No promises ;)</p>
 
     <!-- OLD NUGGETBRIDGE ADS -->
     <!-- TRAINER TOWER ADS GO HERE :) -->
@@ -208,11 +207,7 @@
                 </h4>
             </div>
             <div class="panel-body">
-            <div class="gen-specific g7" style="width: 3.0em; margin: 0 auto 5px;">
-                <a href = "https://www.youtube.com/watch?v=pi7g9LbBv8A">
-                <img align = "middle" src="image_res/mimikyu.png" alt="Mimikyu da yo" height="42" width="42" >
-                </a>
-                </div>
+                <img id="wideguard" align = "middle" src="image_res/wideguard.png" alt="Mimikyu da yo">
                 <div class="gen-specific g3 g4 g5 g6 g7" style="width: 10.6em; margin: 0 auto 5px;" title="Select the battle format.">
                     <input class="btn-input calc-trigger" type="radio" name="format" value="Singles" id="singles" checked="checked" /><label class="btn btn-left" for="singles">Singles</label>
                     <input class="btn-input calc-trigger" type="radio" name="format" value="Doubles" id="doubles" /><label class="btn btn-right" for="doubles">Doubles</label>
@@ -334,6 +329,14 @@
                     </div>
                 </div>
 
+                <div class="btn-group gen-specific g7">
+                    <div class="left" title="Has this Pokemon used Clangorous Soulblaze?">
+                        <input class="btn-input calc-trigger" type="checkbox" id="clangL" /><label class="btn btn-xwide" for="clangL"><img src="image_res/784.png"><br>Clangorous Soulblaze</label>
+                    </div>
+                    <div class="right" title="Has this Pokemon used Clangorous Soulblaze?">
+                        <input class="btn-input calc-trigger" type="checkbox" id="clangR" /><label class="btn btn-xwide" for="clangR"><img src="image_res/784.png"><br>Clangorous Soulblaze</label>
+                    </div>
+                </div>
 
                 <div class="btn-group gen-specific g7">
                     <div class="left" title="Has this Pokemon used Extreme Evoboost?">
@@ -343,7 +346,10 @@
                         <input class="btn-input calc-trigger" type="checkbox" id="evoR" /><label class="btn btn-xwide" for="evoR"><img src="image_res/133.png"><br>Extreme Evoboost</label>
                     </div>
                 </div>
-                                <!--squirrelboy1225's HTML additions are right here-->
+
+                <!--squirrelboy1225's HTML additions are right here-->
+
+                <!--...two years later, my HTML additions are fucking everywhere. they spread like cancer-->
                 <p>Please enter your custom set here.</p>
                 Spread Name: <input type = "text" id = "spreadName" style = "width: 60%" value = "My Custom Set">
                 <br>
@@ -464,6 +470,7 @@
     <script type="text/javascript" src="script_res/setdex_globalLink.js"></script>
     <script type="text/javascript" src="script_res/setdex_nuggetBridge.js"></script>
     <script type="text/javascript" src="script_res/setdex_tt2017.js" id = "TTScript"></script>
+    <script type="text/javascript" src="script_res/setdex_tt2018.js" id = "TTScript"></script>
     <script type="text/javascript" src="script_res/setdex_smogon.js" id = "SmogScript"></script>
     <script type="text/javascript" src="script_res/setdex_xy.js" id = "XYScript"></script>
     <script type="text/javascript" src="script_res/setdex_sm.js" id = "SMScript"></script>
