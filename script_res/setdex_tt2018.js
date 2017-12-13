@@ -240,16 +240,16 @@ var SETDEX_TT2018 = {
         "Default Set": {
             "level": 50,
             "evs": {
-                "hp": 252,
-                "at": 0,
-                "df": 4,
+                "hp": 4,
+                "at": 252,
+                "df": 0,
                 "sa": 0,
                 "sd": 0,
                 "sp": 252
             },
-            "nature": "Timid",
-            "ability": "",
-            "item": "",
+            "nature": "Jolly",
+            "ability": "Gluttony",
+            "item": "Figy Berry",
             "moves": [
                 "Extreme Speed",
                 "Shadow Claw",
@@ -7150,14 +7150,14 @@ var SETDEX_TT2018 = {
         "Common Metagross": {
             "level": 50,
             "evs": {
-                "hp": 252,
+                "hp": 4,
                 "at": 252,
                 "df": 0,
                 "sa": 0,
-                "sd": 4,
-                "sp": 0
+                "sd": 0,
+                "sp": 252
             },
-            "nature": "Adamant",
+            "nature": "Jolly",
             "ability": "Clear Body",
             "item": "Metagrossite",
             "moves": [
