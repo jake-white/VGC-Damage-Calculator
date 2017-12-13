@@ -106,8 +106,15 @@ function calcEvTotal(poke) {
 
     var newClass = total > 510 ? 'overLimit' : 'underLimit';
 
+    var left = 510-total;
+
+    var newClassLeft = left < 0 ? 'overLimit' : 'underLimit';
+
     var evTotal = poke.find('.ev-total');
     evTotal.removeClass('underLimit overLimit').text(total).addClass(newClass);
+
+    var evLeft = poke.find('.ev-left');
+    evLeft.removeClass('underLimit overLimit').text(left).addClass(newClassLeft);
 }
 
 function calcCurrentHP(poke, max, percent) {
@@ -154,15 +161,15 @@ function autoSetAura()
     var ability2 = $("#p2 .ability").val()
     if(ability1 == "Fairy Aura" || ability2 == "Fairy Aura" )
         $("input:checkbox[id='fairy-aura']").prop("checked", true)
-    else        
+    else
         $("input:checkbox[id='fairy-aura']").prop("checked", lastAura[0])
     if(ability1 == "Dark Aura" || ability2 == "Dark Aura")
         $("input:checkbox[id='dark-aura']").prop("checked", true)
-    else        
+    else
         $("input:checkbox[id='dark-aura']").prop("checked", lastAura[1])
     if(ability1 == "Aura Break" || ability2 == "Aura Break" )
         $("input:checkbox[id='aura-break']").prop("checked", true)
-    else        
+    else
         $("input:checkbox[id='aura-break']").prop("checked", lastAura[2])
 }
 function autoSetTerrain()
@@ -534,7 +541,7 @@ function calculate() {
             highestMaxPercent = maxPercent;
             bestResult = $(resultLocations[0][i].move);
         }
-        
+
         result = damageResults[1][i];
         minDamage = result.damage[0] * p2.moves[i].hits;
         maxDamage = result.damage[result.damage.length-1] * p2.moves[i].hits;
@@ -570,7 +577,7 @@ $(".result-move").change(function() {
         if (result) {
             $("#mainResult").html(result.description + ": " + result.damageText + " -- " + result.koChanceText);
             if (result.parentDamage) {
-                $("#damageValues").text("(First hit: " + result.parentDamage.join(", ") + 
+                $("#damageValues").text("(First hit: " + result.parentDamage.join(", ") +
                     "; Second hit: " + result.childDamage.join(", ") + ")");
             } else {
                 $("#damageValues").text("(" + result.damage.join(", ") + ")");
@@ -828,7 +835,7 @@ $(".gen").change(function () {
     $("select.ability").find("option").remove().end().append("<option value=\"\">(other)</option>" + abilityOptions);
     var itemOptions = getSelectOptions(items, true);
     $("select.item").find("option").remove().end().append("<option value=\"\">(none)</option>" + itemOptions);
-    
+
     $(".set-selector").val(getSetOptions()[gen > 3 ? 1 : gen === 1 ? 5 : 3].id);
     $(".set-selector").change();
 });

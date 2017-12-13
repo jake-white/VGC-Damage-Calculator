@@ -18,7 +18,7 @@ th, td {
 th {
     font-size: 0.8em;
 }
-.title-text {    
+.title-text {
     font-weight: bold;
     font-size: 1.5em;
     height: 50px;
@@ -207,7 +207,7 @@ select.toxic-counter {
     padding: 3px 3px;
     margin-left: 0.3em;
 }
-.poke-info .ev-total {
+.poke-info .ev-total, .poke-info .ev-left {
     font-size: 0.8em;
 }
 
@@ -289,11 +289,11 @@ select.toxic-counter {
     position: absolute; top: 0; bottom: 0;
     right: 46px;
     border: 2px solid #999999; border-radius: 8px;
-    transition: all 0.3s ease-in 0s; 
+    transition: all 0.3s ease-in 0s;
 }
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
     margin-left: 0;
 }
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
-    right: 0px; 
+    right: 0px;
 }
