@@ -18,6 +18,7 @@ th, td {
 th {
     font-size: 0.8em;
 }
+
 .title-text {
     font-weight: bold;
     font-size: 1.5em;
@@ -29,6 +30,7 @@ th {
     vertical-align:middle
 }
 .big-text {
+    display: inline-block;
     font-weight: bold;
     font-size: 1.1em;
     margin: 0.5em 0;
@@ -139,7 +141,7 @@ th {
 .move-result-group {
     max-width: 80em;
     min-width: 50em;
-    margin: 1em 0 11.5em;
+    margin: 1em 0 12em;
 }
 .move-result-subgroup {
     float: left;

@@ -7164,7 +7164,7 @@ var SETDEX_TT2018 = {
                 "Iron Head",
                 "Zen Headbutt",
                 "Ice Punch",
-                "Hammer Arm"
+                "Stomping Tantrum"
             ]
         },
     },
@@ -9408,24 +9408,24 @@ var SETDEX_TT2018 = {
     },
 
     "Kommo-o": {
-        "Smogon Kommo-o": {
+        "Default Set": {
             "level": 50,
             "evs": {
-                "hp": 244,
+                "hp": 4,
                 "at": 0,
                 "df": 0,
                 "sa": 252,
                 "sd": 0,
-                "sp": 12
+                "sp": 252
             },
-            "nature": "Modest",
-            "ability": "Overcoat",
+            "nature": "Rash",
+            "ability": "Soundproof",
             "item": "",
             "moves": [
-                "Focus Blast",
+                "Clangorous Soulblaze",
                 "Clanging Scales",
                 "Flamethrower",
-                "Protect"
+                "Close Combat"
             ]
         }
     },

@@ -2018,6 +2018,7 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
         category: 'Special',
         type: 'Dragon',
         bp: 110,
+        isSound: true,
         isSpread: true,
         zp: 185
     },
@@ -3040,6 +3041,7 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
         bp: 185,
         type: 'Dragon',
         category: 'Special',
+        isSound: true,
         isSpread: true
     },
 });
