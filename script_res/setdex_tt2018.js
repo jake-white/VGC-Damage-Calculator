@@ -9418,7 +9418,7 @@ var SETDEX_TT2018 = {
                 "sd": 0,
                 "sp": 252
             },
-            "nature": "Rash",
+            "nature": "Modest",
             "ability": "Soundproof",
             "item": "",
             "moves": [
