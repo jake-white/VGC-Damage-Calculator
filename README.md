@@ -1,4 +1,4 @@
-# VGC 2016 Damage Calculator
+# VGC 2018 Damage Calculator
 Originally the official Nuggetbridge damage calculator 2015-2016, adapted for Trainer Tower in 2017.
 
 Credits and license
