@@ -309,6 +309,7 @@ $(".move-selector").change(function() {
     } else {
         moveGroupObj.children(".move-hits").hide();
     }
+    moveGroupObj.children(".move-z").prop("checked", false);
 });
 
 // auto-update set details on select
