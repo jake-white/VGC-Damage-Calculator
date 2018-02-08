@@ -39,6 +39,9 @@ function getDamageResult(attacker, defender, move, field) {
     var isQuarteredByProtect = false;
     if(move.isSignatureZ){
       move.isZ = true;
+      if(field.isProtect){
+          isQuarteredByProtect = true;
+      }
     }
     if(move.isZ && !move.isSignatureZ){
         if (move.name === "Nature Power") {
