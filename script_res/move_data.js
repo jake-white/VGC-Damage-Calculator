@@ -1277,6 +1277,13 @@ delete MOVES_DPP['Twineedle'];
 delete MOVES_DPP['Zap Cannon'];
 
 var MOVES_BW = $.extend(true, {}, MOVES_DPP, {
+    'Electroweb': {
+        bp: 55,
+        type: "Electric",
+        category: "Special",
+        isSpread: "True",
+        hasSecondaryEffect: "True"
+    },
     'Acid Spray': {
         bp: 40,
         type: 'Poison',
@@ -1918,6 +1925,7 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
         category: 'Physical',
         type: 'Water',
         makesContact: true,
+        hasSecondaryEffect: true,
         bp: 85,
         zp: 160
     },
@@ -1965,39 +1973,46 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
     'Genesis Supernova': {
         category: 'Special',
         type: 'Psychic',
-        bp: 185
+        bp: 185,
+        isSignatureZ: true,
     },
     'Pulverizing Pancake': {
         category: 'Physical',
         type: 'Normal',
         makesContact: true,
-        bp: 210
+        bp: 210,
+        isSignatureZ: true,
     },
     'Stoked Sparksurfer': {
         category: 'Special',
         type: 'Electric',
-        bp: 175
+        bp: 175,
+        isSignatureZ: true,
     },
     'Soul-Stealing 7-Star Strike': {
         category: 'Physical',
         type: 'Ghost',
         makesContact: true,
-        bp: 195
+        bp: 195,
+        isSignatureZ: true,
     },
     'Oceanic Operetta': {
         category: 'Special',
         type: 'Water',
-        bp: 195
+        bp: 195,
+        isSignatureZ: true,
     },
     'Malicious Moonsault': {
         category: 'Physical',
         type: 'Dark',
-        bp: 180
+        bp: 180,
+        isSignatureZ: true,
     },
     'Sinister Arrow Raid': {
         category: 'Physical',
         type: 'Ghost',
-        bp: 180
+        bp: 180,
+        isSignatureZ: true,
     },
     'Brutal Swing': {
         category: 'Physical',
@@ -2162,7 +2177,8 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
         category: 'Physical',
         type: 'Electric',
         makesContact: true,
-        bp: 210
+        bp: 210,
+        isSignatureZ: true,
     },
     'Breakneck Blitz': {
         type: 'Normal'
@@ -2993,6 +3009,9 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
     'Dragon Ascent':{
         zp: 190
     },
+    'Electroweb':{
+        zp: 100
+    },
     'Mind Blown': {
         bp: 150,
         zp: 200,
@@ -3016,32 +3035,38 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
         bp: 200,
         type: 'Psychic',
         category: 'Special',
+        isSignatureZ: true,
     },
     'Searing Sunraze Smash': {
         bp: 200,
         type: 'Steel',
         category: 'Physical',
+        isSignatureZ: true,
     },
     'Menacing Moonraze Maelstrom': {
         bp: 200,
         type: 'Ghost',
         category: 'Special',
+        isSignatureZ: true,
     },
     'Let\'s Snuggle Forever': {
         bp: 190,
         type: 'Fairy',
         category: 'Physical',
+        isSignatureZ: true,
     },
     'Splintered Stormshards': {
         bp: 190,
         type: 'Rock',
         category: 'Physical',
+        isSignatureZ: true,
     },
     'Clangorous Soulblaze': {
         bp: 185,
         type: 'Dragon',
         category: 'Special',
         isSound: true,
-        isSpread: true
+        isSpread: true,
+        isSignatureZ: true,
     },
 });

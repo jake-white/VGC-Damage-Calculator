@@ -37,7 +37,10 @@ function CALCULATE_ALL_MOVES_BW(p1, p2, field) {
 function getDamageResult(attacker, defender, move, field) {
     var moveDescName = move.name;
     var isQuarteredByProtect = false;
-    if(move.isZ){
+    if(move.isSignatureZ){
+      move.isZ = true;
+    }
+    if(move.isZ && !move.isSignatureZ){
         if (move.name === "Nature Power") {
             move.zp = (field.terrain === "Electric" || field.terrain === "Grassy" || field.terrain === "Psychic" || field.terrain === "Misty") ? 175 : 160;
             move.type = field.terrain === "Electric" ? "Electric" : field.terrain === "Grassy" ? "Grass" : field.terrain === "Misty" ? "Fairy" : move.type = field.terrain === "Psychic" ? "Psychic" : "Normal";
