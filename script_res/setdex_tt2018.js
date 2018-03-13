@@ -8598,7 +8598,7 @@ var SETDEX_TT2018 = {
                 "sp": 252
             },
             "nature": "Adamant",
-            "ability": "",
+            "ability": "Intimidate",
             "item": "",
             "moves": [
                 "Flare Blitz",
@@ -8618,7 +8618,7 @@ var SETDEX_TT2018 = {
                 "sp": 20
             },
             "nature": "Adamant",
-            "ability": "",
+            "ability": "Intimidate",
             "item": "Assault Vest",
             "moves": [
                 "Flare Blitz",
