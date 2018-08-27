@@ -1,7 +1,7 @@
 var SETDEX_SM = {};
 
 var components = [
-    SETDEX_TT2018
+    SETDEX_TT2019
 ];
 
 for (var i=0; i<components.length; i++) {

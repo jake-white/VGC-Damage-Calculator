@@ -12409,7 +12409,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     "w": 25.0,
     "ab": "Tough Claws",
   },
-  "Necrozma-Lunala": {
+  "Dawn Wings Necrozma": {
     "t1": "Psychic",
     "t2": "Ghost",
     "bs": {
@@ -12423,7 +12423,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     "w": 350.0,
     "ab": "Prism Armor",
   },
-  "Necrozma-Solgaleo": {
+  "Dusk Mane Necrozma": {
     "t1": "Psychic",
     "t2": "Steel",
     "bs": {
@@ -12437,7 +12437,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     "w": 460.0,
     "ab": "Prism Armor",
   },
-  "Necrozma-Ultra": {
+  "Ultra Necrozma": {
     "t1": "Psychic",
     "t2": "Dragon",
     "bs": {

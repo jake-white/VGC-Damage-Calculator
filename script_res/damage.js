@@ -76,12 +76,14 @@ function getDamageResult(attacker, defender, move, field) {
     }
 
     var defAbility = defender.ability;
-    if (["Mold Breaker", "Teravolt", "Turboblaze"].indexOf(attacker.ability) !== -1) {
-        defAbility = "";
-        description.attackerAbility = attacker.ability;
+    if(defAbility != "Shadow Shield" && defAbility != "Full Metal Body" && defAbility != "Prism Armor") {
+        if (["Mold Breaker", "Teravolt", "Turboblaze"].indexOf(attacker.ability) !== -1) {
+            defAbility = "";
+            description.attackerAbility = attacker.ability;
+        }
+        else if(move.name === "Moongeist Beam" || move.name === "Sunsteel Strike")
+            defAbility = ""; //works as a mold breaker
     }
-    else if(move.name === "Moongeist Beam" || move.name === "Sunsteel Strike")
-        defAbility = ""; //works as a mold breaker
 
     var isCritical = move.isCrit && ["Battle Armor", "Shell Armor"].indexOf(defAbility) === -1;
 
@@ -471,7 +473,7 @@ function getDamageResult(attacker, defender, move, field) {
     ///////// (SP)DEFENSE //////////
     ////////////////////////////////
     var defense;
-    var hitsPhysical = move.category === "Physical" || move.dealsPhysicalDamage;
+    var hitsPhysical = move.category === "Physical" || move.dealsPhysicalDamage || (necrozmaMove && attacker.stats[AT] >= attacker.stats[SA]);
     var defenseStat = hitsPhysical ? DF : SD;
     description.defenseEVs = defender.evs[defenseStat] +
             (NATURES[defender.nature][0] === defenseStat ? "+" : NATURES[defender.nature][1] === defenseStat ? "-" : "") + " " +
