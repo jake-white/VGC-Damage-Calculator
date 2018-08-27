@@ -8476,20 +8476,66 @@ var SETDEX_TT2019 = {
             "level": 50,
             "evs": {
                 "hp": 4,
-                "at": 124,
-                "df": 4,
-                "sa": 252,
+                "at": 252,
+                "df": 0,
+                "sa": 0,
                 "sd": 0,
-                "sp": 124
+                "sp": 252
             },
-            "nature": "Rash",
+            "nature": "Adamant",
             "ability": "Teravolt",
-            "item": "Life Orb",
+            "item": "",
             "moves": [
                 "Fusion Bolt",
                 "Ice Beam",
                 "Earth Power",
                 "Draco Meteor"
+            ]
+        }
+    },
+
+    "Zekrom": {
+        "Default Set": {
+            "level": 50,
+            "evs": {
+                "hp": 4,
+                "at": 0,
+                "df": 0,
+                "sa": 252,
+                "sd": 0,
+                "sp": 252
+            },
+            "nature": "Adamant",
+            "ability": "Teravolt",
+            "item": "",
+            "moves": [
+                "Fusion Bolt",
+                "Bolt Strike",
+                "Dragon Claw",
+                "Rock Slide"
+            ]
+        }
+    },
+
+    "Reshiram": {
+        "Default Set": {
+            "level": 50,
+            "evs": {
+                "hp": 4,
+                "at": 0,
+                "df": 0,
+                "sa": 252,
+                "sd": 0,
+                "sp": 252
+            },
+            "nature": "Modest",
+            "ability": "Turboblaze",
+            "item": "",
+            "moves": [
+                "Fusion Flare",
+                "Blue Flare",
+                "Draco Meteor",
+                "Heat Wave"
             ]
         }
     },
