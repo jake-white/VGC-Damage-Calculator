@@ -9094,7 +9094,6 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     },
     "w": 53.0,
     "ab": "Stance Change",
-    "isAlternateForme": true
   },
   "Aegislash-Shield": {
     "t1": "Steel",
@@ -10877,7 +10876,53 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
       "sp": 95
     },
     "w": 305.0,
-    "ab": "Aura Break"
+    "ab": "Aura Break",
+    "formes": ["Zygarde 50%", "Zygarde 10%", "Zygarde Complete"]
+  },
+  "Zygarde 50%": {
+    "t1": "Dragon",
+    "t2": "Ground",
+    "bs": {
+      "hp": 108,
+      "at": 100,
+      "df": 121,
+      "sa": 81,
+      "sd": 95,
+      "sp": 95
+    },
+    "w": 305.0,
+    "ab": "Aura Break",
+    "isAlternateForme": true
+  },
+  "Zygarde 10%": {
+    "t1": "Dragon",
+    "t2": "Ground",
+    "bs": {
+      "hp": 54,
+      "at": 100,
+      "df": 71,
+      "sa": 61,
+      "sd": 85,
+      "sp": 115
+    },
+    "w": 33.5,
+    "ab": "",
+    "isAlternateForme": true
+  },
+  "Zygarde Complete": {
+    "t1": "Dragon",
+    "t2": "Ground",
+    "bs": {
+      "hp": 216,
+      "at": 100,
+      "df": 121,
+      "sa": 91,
+      "sd": 95,
+      "sp": 85
+    },
+    "w": 610.0,
+    "ab": "",
+    "isAlternateForme": true
   }
 });
 

@@ -205,7 +205,7 @@ var SETDEX_TT2019 = {
             },
             "nature": "Jolly",
             "ability": "",
-            "item": "Absolite",
+            "item": "",
             "moves": [
                 "Sucker Punch",
                 "Play Rough",
@@ -227,7 +227,7 @@ var SETDEX_TT2019 = {
             },
             "nature": "Timid",
             "ability": "Overgrow",
-            "item": "Sceptilite",
+            "item": "",
             "moves": [
                 "Dragon Pulse",
                 "Leaf Storm",
@@ -337,7 +337,7 @@ var SETDEX_TT2019 = {
             },
             "nature": "Adamant",
             "ability": "Intimidate",
-            "item": "Mawilite",
+            "item": "",
             "moves": [
                 "Play Rough",
                 "Sucker Punch",
@@ -403,7 +403,7 @@ var SETDEX_TT2019 = {
             },
             "nature": "Adamant",
             "ability": "",
-            "item": "Aggronite",
+            "item": "",
             "moves": [
                 "Iron Head",
                 "Earthquake",
@@ -425,7 +425,7 @@ var SETDEX_TT2019 = {
             },
             "nature": "Bold",
             "ability": "",
-            "item": "Slowbronite",
+            "item": "",
             "moves": [
                 "Scald",
                 "Ice Beam",
@@ -447,7 +447,7 @@ var SETDEX_TT2019 = {
             },
             "nature": "Modest",
             "ability": "",
-            "item": "Ampharosite",
+            "item": "",
             "moves": [
                 "Dragon Pulse",
                 "Thunderbolt",
@@ -865,7 +865,7 @@ var SETDEX_TT2019 = {
             },
             "nature": "Timid",
             "ability": "Magic Guard",
-            "item": "Alakazite",
+            "item": "",
             "moves": [
                 "Psychic",
                 "Dazzling Gleam",
@@ -1813,7 +1813,7 @@ var SETDEX_TT2019 = {
             },
             "nature": "Jolly",
             "ability": "",
-            "item": "Glalitite",
+            "item": "",
             "moves": [
                 "Explosion",
                 "Return",
@@ -1835,7 +1835,7 @@ var SETDEX_TT2019 = {
             },
             "nature": "Quiet",
             "ability": "Solid Rock",
-            "item": "Cameruptite",
+            "item": "",
             "moves": [
                 "Earth Power",
                 "Heat Wave",
@@ -1923,7 +1923,7 @@ var SETDEX_TT2019 = {
             },
             "nature": "Jolly",
             "ability": "",
-            "item": "Galladite",
+            "item": "",
             "moves": [
                 "Close Combat",
                 "Psycho Cut",
@@ -2055,7 +2055,7 @@ var SETDEX_TT2019 = {
             },
             "nature": "Adamant",
             "ability": "Scrappy",
-            "item": "Kangaskhanite",
+            "item": "",
             "moves": [
                 "Sucker Punch",
                 "Fake Out",
@@ -2270,7 +2270,7 @@ var SETDEX_TT2019 = {
             },
             "nature": "Adamant",
             "ability": "",
-            "item": "Sharpedonite",
+            "item": "",
             "moves": [
                 "Crunch",
                 "Waterfall",
@@ -2402,7 +2402,7 @@ var SETDEX_TT2019 = {
             },
             "nature": "Modest",
             "ability": "Cloud Nine",
-            "item": "Altarianite",
+            "item": "",
             "moves": [
                 "Hyper Voice",
                 "Fire Blast",
@@ -2446,7 +2446,7 @@ var SETDEX_TT2019 = {
             },
             "nature": "Bold",
             "ability": "Chlorophyll",
-            "item": "Venusaurite",
+            "item": "",
             "moves": [
                 "Sludge Bomb",
                 "Giga Drain",
@@ -2468,7 +2468,7 @@ var SETDEX_TT2019 = {
             },
             "nature": "Modest",
             "ability": "Torrent",
-            "item": "Blastoisinite",
+            "item": "",
             "moves": [
                 "Aura Sphere",
                 "Ice Beam",
@@ -2732,7 +2732,7 @@ var SETDEX_TT2019 = {
             },
             "nature": "Brave",
             "ability": "",
-            "item": "Steelixite",
+            "item": "",
             "moves": [
                 "Earthquake",
                 "Rock Slide",
@@ -2886,7 +2886,7 @@ var SETDEX_TT2019 = {
             },
             "nature": "Timid",
             "ability": "Flash Fire",
-            "item": "Houndoominite",
+            "item": "",
             "moves": [
                 "Dark Pulse",
                 "Heat Wave",
@@ -2952,7 +2952,7 @@ var SETDEX_TT2019 = {
             },
             "nature": "Jolly",
             "ability": "Intimidate",
-            "item": "Gyaradosite",
+            "item": "",
             "moves": [
                 "Waterfall",
                 "Earthquake",
@@ -3106,7 +3106,7 @@ var SETDEX_TT2019 = {
             },
             "nature": "Jolly",
             "ability": "",
-            "item": "Lopunnite",
+            "item": "",
             "moves": [
                 "Fake Out",
                 "Return",
@@ -3347,7 +3347,7 @@ var SETDEX_TT2019 = {
                 "sp": 252
             },
             "nature": "Timid",
-            "item": "Gengarite",
+            "item": "",
             "moves": [
                 "Sludge Bomb",
                 "Shadow Ball",
@@ -3549,7 +3549,7 @@ var SETDEX_TT2019 = {
             },
             "nature": "Timid",
             "ability": "Lightning Rod",
-            "item": "Manectite",
+            "item": "",
             "moves": [
                 "Hidden Power Ice",
                 "Thunderbolt",
@@ -4011,7 +4011,7 @@ var SETDEX_TT2019 = {
             },
             "nature": "Adamant",
             "ability": "Torrent",
-            "item": "Swampertite",
+            "item": "",
             "moves": [
                 "Waterfall",
                 "Earthquake",
@@ -4099,7 +4099,7 @@ var SETDEX_TT2019 = {
             },
             "nature": "Jolly",
             "ability": "Swarm",
-            "item": "Beedrillite",
+            "item": "",
             "moves": [
                 "Poison Jab",
                 "Drill Run",
@@ -4814,7 +4814,7 @@ var SETDEX_TT2019 = {
             },
             "nature": "Jolly",
             "ability": "Hyper Cutter",
-            "item": "Pinsirite",
+            "item": "",
             "moves": [
                 "Return",
                 "Feint",
@@ -4858,7 +4858,7 @@ var SETDEX_TT2019 = {
             },
             "nature": "Calm",
             "ability": "",
-            "item": "Banettite",
+            "item": "",
             "moves": [
                 "Shadow Claw",
                 "Phantom Force",
@@ -5296,7 +5296,7 @@ var SETDEX_TT2019 = {
             },
             "nature": "Jolly",
             "ability": "",
-            "item": "Heracronite",
+            "item": "",
             "moves": [
                 "Pin Missile",
                 "Rock Blast",
@@ -5582,7 +5582,7 @@ var SETDEX_TT2019 = {
             },
             "nature": "Bold",
             "ability": "",
-            "item": "Audinite",
+            "item": "",
             "moves": [
                 "Dazzling Gleam",
                 "Ice Beam",
@@ -6172,7 +6172,7 @@ var SETDEX_TT2019 = {
             },
             "nature": "Timid",
             "ability": "Blaze",
-            "item": "Charizardite Y",
+            "item": "",
             "moves": [
                 "Heat Wave",
                 "Solar Beam",
@@ -6236,7 +6236,7 @@ var SETDEX_TT2019 = {
             },
             "nature": "Quiet",
             "ability": "Snow Warning",
-            "item": "Abomasite",
+            "item": "",
             "moves": [
                 "Blizzard",
                 "Ice Shard",
@@ -6741,7 +6741,7 @@ var SETDEX_TT2019 = {
             },
             "nature": "Timid",
             "ability": "Levitate",
-            "item": "Latiasite",
+            "item": "",
             "moves": [
                 "Draco Meteor",
                 "Psychic",
@@ -6785,7 +6785,7 @@ var SETDEX_TT2019 = {
             },
             "nature": "Jolly",
             "ability": "",
-            "item": "Lucarionite",
+            "item": "",
             "moves": [
                 "Close Combat",
                 "Bullet Punch",
@@ -6983,7 +6983,7 @@ var SETDEX_TT2019 = {
             },
             "nature": "Naive",
             "ability": "Intimidate",
-            "item": "Salamencite",
+            "item": "",
             "moves": [
                 "Hyper Voice",
                 "Double-Edge",
@@ -7159,7 +7159,7 @@ var SETDEX_TT2019 = {
             },
             "nature": "Jolly",
             "ability": "Clear Body",
-            "item": "Metagrossite",
+            "item": "",
             "moves": [
                 "Iron Head",
                 "Zen Headbutt",
@@ -7445,7 +7445,7 @@ var SETDEX_TT2019 = {
             },
             "nature": "Timid",
             "ability": "",
-            "item": "Gardevoirite",
+            "item": "",
             "moves": [
                 "Hyper Voice",
                 "Psychic",
@@ -7555,7 +7555,7 @@ var SETDEX_TT2019 = {
             },
             "nature": "Timid",
             "ability": "",
-            "item": "Pidgeotite",
+            "item": "",
             "moves": [
                 "Hurricane",
                 "Heat Wave",
@@ -8267,47 +8267,26 @@ var SETDEX_TT2019 = {
     },
 
     "Rayquaza": {
-        "Default Set Physical": {
-            "level": 50,
-            "evs": {
-                "hp": 4,
-                "at": 252,
-                "df": 0,
-                "sa": 0,
-                "sd": 0,
-                "sp": 252
-            },
-            "nature": "Jolly",
-            "ability": "Drought",
-            "item": "Life Orb",
-            "moves": [
-                "Dragon Ascent",
-                "Draco Meteor",
-                "Extreme Speed",
-                "Earthquake"
-            ]
-        },
-
-        "Default Set Mixed": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 0,
-                "at": 252,
+                "at": 4,
                 "df": 0,
-                "sa": 4,
+                "sa": 252,
                 "sd": 0,
                 "sp": 252
             },
             "nature": "Naive",
-            "ability": "Drought",
+            "ability": "Air Lock",
             "item": "Life Orb",
             "moves": [
-                "Dragon Ascent",
+                "Earth Power",
                 "Draco Meteor",
                 "Extreme Speed",
-                "Earthquake"
+                "Flamethrower"
             ]
-        }
+        },
     },
 
     "Xerneas": {
@@ -8499,9 +8478,9 @@ var SETDEX_TT2019 = {
             "level": 50,
             "evs": {
                 "hp": 4,
-                "at": 0,
+                "at": 252,
                 "df": 0,
-                "sa": 252,
+                "sa": 0,
                 "sd": 0,
                 "sp": 252
             },

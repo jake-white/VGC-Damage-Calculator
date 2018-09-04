@@ -19,9 +19,8 @@ var reloadXYScript = function()
 {
   console.log(SETDEX_CUSTOM);
     components = [
-    SETDEX_TT2017,
+    SETDEX_TT2019,
     SETDEX_CUSTOM,
-    SETDEX_SMOGON
 ];
 
 for (var i=0; i<components.length; i++) {
