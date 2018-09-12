@@ -435,10 +435,11 @@ $(".forme").change(function() {
     $(this).parent().siblings().find(".type1").val(altForme.t1);
     $(this).parent().siblings().find(".type2").val(typeof altForme.t2 != "undefined" ? altForme.t2 : "");
     $(this).parent().siblings().find(".weight").val(altForme.w);
-
-    for (var i = 0; i < STATS.length; i++) {
-        var baseStat = container.find("." + STATS[i]).find(".base");
-        baseStat.val(altForme.bs[STATS[i]]);
+    var STATS_WITH_HP = ["hp", "at", "df","sa","sd","sp"];
+    for (var i = 0; i <STATS_WITH_HP.length; i++) {
+        console.log(STATS_WITH_HP);
+        var baseStat = container.find("." + STATS_WITH_HP[i]).find(".base");
+        baseStat.val(altForme.bs[STATS_WITH_HP[i]]);
         baseStat.keyup();
     }
 
