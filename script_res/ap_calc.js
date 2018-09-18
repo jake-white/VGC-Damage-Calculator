@@ -437,7 +437,6 @@ $(".forme").change(function() {
     $(this).parent().siblings().find(".weight").val(altForme.w);
     var STATS_WITH_HP = ["hp", "at", "df","sa","sd","sp"];
     for (var i = 0; i <STATS_WITH_HP.length; i++) {
-        console.log(STATS_WITH_HP);
         var baseStat = container.find("." + STATS_WITH_HP[i]).find(".base");
         baseStat.val(altForme.bs[STATS_WITH_HP[i]]);
         baseStat.keyup();

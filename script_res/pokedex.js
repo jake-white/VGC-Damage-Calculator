@@ -10906,7 +10906,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
       "sp": 115
     },
     "w": 33.5,
-    "ab": "",
+    "ab": "Power Construct",
     "isAlternateForme": true
   },
   "Zygarde Complete": {
@@ -10921,7 +10921,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
       "sp": 85
     },
     "w": 610.0,
-    "ab": "",
+    "ab": "Power Construct",
     "isAlternateForme": true
   }
 });

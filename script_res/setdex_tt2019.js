@@ -10416,5 +10416,27 @@ var SETDEX_TT2019 = {
           ]
       },
     },
+    "Zygarde" : {
+      "Default Set": {
+          "level": 50,
+          "evs": {
+              "hp": 252,
+              "at": 252,
+              "df": 0,
+              "sa": 0,
+              "sd": 4,
+              "sp": 0
+          },
+          "nature": "Adamant",
+          "ability": "Aura Break",
+          "item": "",
+          "moves": [
+              "Thousand Arrows",
+              "Thousand Waves",
+              "",
+              ""
+          ]
+      },
+    },
 
 };
