@@ -2437,20 +2437,20 @@ var SETDEX_TT2019 = {
         "Default Set": {
             "level": 50,
             "evs": {
-                "hp": 252,
+                "hp": 4,
                 "at": 0,
-                "df": 124,
-                "sa": 76,
-                "sd": 52,
-                "sp": 4
+                "df": 0,
+                "sa": 252,
+                "sd": 0,
+                "sp": 252
             },
-            "nature": "Bold",
+            "nature": "Modest",
             "ability": "Chlorophyll",
             "item": "",
             "moves": [
                 "Sludge Bomb",
-                "Giga Drain",
-                "Hidden Power Ice",
+                "Grass Knot",
+                "Hidden Power Fire",
                 "Hidden Power Ground"
             ]
         }
@@ -4355,13 +4355,16 @@ var SETDEX_TT2019 = {
             "level": 50,
             "evs": {
                 "hp": 252,
-                "at": 204,
+                "at": 220,
                 "df": 0,
                 "sa": 0,
-                "sd": 52,
+                "sd": 36,
                 "sp": 0
             },
-            "nature": "Brave",
+            "ivs": {
+                "sp": 0
+            },
+            "nature": "Sassy",
             "ability": "",
             "item": "",
             "moves": [
@@ -5331,21 +5334,21 @@ var SETDEX_TT2019 = {
         "Default Set": {
             "level": 50,
             "evs": {
-                "hp": 0,
-                "at": 252,
-                "df": 0,
+                "hp": 148,
+                "at": 108,
+                "df": 4,
                 "sa": 0,
-                "sd": 4,
-                "sp": 252
+                "sd": 244,
+                "sp": 4
             },
-            "nature": "Jolly",
+            "nature": "Adamant",
             "ability": "Dry Skin",
-            "item": "Black Sludge",
+            "item": "Assault Vest",
             "moves": [
-                "Drain Punch",
+                "Poison Jab",
+                "Low Kick",
                 "Fake Out",
-                "Gunk Shot",
-                "Sucker Punch"
+                "Feint"
             ]
         }
     },
@@ -8615,6 +8618,26 @@ var SETDEX_TT2019 = {
         "Default Set": {
             "level": 50,
             "evs": {
+                "hp": 236,
+                "at": 4,
+                "df": 4,
+                "sa": 0,
+                "sd": 236,
+                "sp": 28
+            },
+            "nature": "Adamant",
+            "ability": "Intimidate",
+            "item": "",
+            "moves": [
+                "Flare Blitz",
+                "Knock Off",
+                "Fake Out",
+                "U-turn"
+            ]
+        },
+        "Offensive": {
+            "level": 50,
+            "evs": {
                 "hp": 4,
                 "at": 252,
                 "df": 4,
@@ -8631,7 +8654,7 @@ var SETDEX_TT2019 = {
                 "Fake Out",
                 "Malicious Moonsault"
             ]
-        },
+        },        
         "TT AV Incineroar": {
             "level": 50,
             "evs": {
@@ -9922,10 +9945,10 @@ var SETDEX_TT2019 = {
             "ability": "",
             "item": "",
             "moves": [
-                "Smart Strike",
                 "Leaf Blade",
                 "Sacred Sword",
-                "Night Slash"
+                "Smart Strike",
+                "Knock Off"
             ]
         },
 
@@ -9943,10 +9966,10 @@ var SETDEX_TT2019 = {
             "ability": "",
             "item": "Assault Vest",
             "moves": [
-                "Smart Strike",
                 "Leaf Blade",
                 "Sacred Sword",
-                "Night Slash"
+                "Smart Strike",
+                "Knock Off"
             ]
         },
 
@@ -10344,9 +10367,9 @@ var SETDEX_TT2019 = {
           "item": "",
           "moves": [
               "Moongeist Beam",
-              "",
-              "",
-              ""
+              "Psyshock",
+              "Focus Blast",
+              "Moonblast"
           ]
       },
     },
@@ -10366,9 +10389,9 @@ var SETDEX_TT2019 = {
           "item": "",
           "moves": [
               "Sunsteel Strike",
+              "Superpower",
               "Zen Headbutt",
-              "",
-              ""
+              "Wild Charge"
           ]
       },
     },
@@ -10428,13 +10451,13 @@ var SETDEX_TT2019 = {
               "sp": 0
           },
           "nature": "Adamant",
-          "ability": "Aura Break",
+          "ability": "Power Construct",
           "item": "",
           "moves": [
               "Thousand Arrows",
               "Thousand Waves",
-              "",
-              ""
+              "Extreme Speed",
+              "Iron Tail"
           ]
       },
     },
