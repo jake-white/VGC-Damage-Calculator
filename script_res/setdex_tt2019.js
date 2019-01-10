@@ -3003,7 +3003,7 @@ var SETDEX_TT2019 = {
                 "Flash Cannon",
                 "Overheat"
             ]
-        }
+        },
         "Shuca Berry": {
             "level": 50,
             "evs": {
