@@ -359,8 +359,8 @@ function getDamageResult(attacker, defender, move, field) {
         bpMods.push(0x14CD);
         description.attackerAbility = attacker.ability;
     } else if (attacker.ability === "Neuroforce" && typeEffectiveness > 1) {
-		bpMods.push(0x1400);
-		description.attackerAbility = attacker.ability;
+	bpMods.push(0x1400);
+	description.attackerAbility = attacker.ability;
     } else if(defender.ability === "Fluffy" && move.makesContact){
         bpMods.push(0x800);
     }
