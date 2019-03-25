@@ -574,10 +574,10 @@ function getDamageResult(attacker, defender, move, field) {
     description.isBurned = applyBurn;
     var finalMods = [];
     if (field.isReflect && move.category === "Physical" && !isCritical) {
-        finalMods.push(field.format !== "Singles" ? 0xA8F : 0x800);
+        finalMods.push(field.format !== "Singles" ? gen >= 6 ? 0xAAC : 0xA8F : 0x800);
         description.isReflect = true;
     } else if (field.isLightScreen && move.category === "Special" && !isCritical) {
-        finalMods.push(field.format !== "Singles" ? 0xA8F : 0x800);
+        finalMods.push(field.format !== "Singles" ? gen >= 6 ? 0xAAC : 0xA8F : 0x800);
         description.isLightScreen = true;
     }
     if ((defAbility === "Multiscale" || defAbility == "Shadow Shield") && defender.curHP === defender.maxHP) {
