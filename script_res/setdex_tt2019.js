@@ -2057,10 +2057,10 @@ var SETDEX_TT2019 = {
             "ability": "Scrappy",
             "item": "",
             "moves": [
-                "Sucker Punch",
-                "Fake Out",
                 "Double-Edge",
-                "Low Kick"
+                "Fake Out",
+                "Crunch",
+                "Sucker Punch"
             ]
         }
     },
@@ -8432,7 +8432,27 @@ var SETDEX_TT2019 = {
                 "Grass Knot",
                 "Hidden Power Ground"
             ]
-        }
+        },
+        "Bulky Xerneas": {
+            "level": 50,
+            "evs": {
+                "hp": 252,
+                "at": 0,
+                "df": 140,
+                "sa": 84,
+                "sd": 4,
+                "sp": 28
+            },
+            "nature": "Modest",
+            "ability": "Fairy Aura",
+            "item": "",
+            "moves": [
+                "Moonblast",
+                "Dazzling Gleam",
+                "Grass Knot",
+                "Hidden Power Ground"
+            ]
+        },
     },
 
     "Yveltal": {
@@ -8770,20 +8790,20 @@ var SETDEX_TT2019 = {
             "item": "",
             "moves": [
                 "Flare Blitz",
-                "Knock Off",
+                "Throat Chop",
                 "Fake Out",
                 "U-turn"
             ]
         },
-        "Offensive": {
+        "Z-move Incineroar": {
             "level": 50,
             "evs": {
-                "hp": 4,
-                "at": 252,
+                "hp": 252,
+                "at": 180,
                 "df": 4,
                 "sa": 0,
-                "sd": 0,
-                "sp": 252
+                "sd": 44,
+                "sp": 28
             },
             "nature": "Adamant",
             "ability": "Intimidate",
@@ -8795,24 +8815,24 @@ var SETDEX_TT2019 = {
                 "Malicious Moonsault"
             ]
         },        
-        "TT AV Incineroar": {
+        "2019 AV Incineroar": {
             "level": 50,
             "evs": {
-                "hp": 220,
-                "at": 252,
-                "df": 4,
+                "hp": 244,
+                "at": 4,
+                "df": 92,
                 "sa": 0,
-                "sd": 12,
-                "sp": 20
+                "sd": 140,
+                "sp": 28
             },
-            "nature": "Adamant",
+            "nature": "Careful",
             "ability": "Intimidate",
             "item": "Assault Vest",
             "moves": [
                 "Flare Blitz",
-                "Darkest Lariat",
+                "Snarl",
                 "Fake Out",
-                "Snarl"
+                "U-turn"
             ]
         }
     },
@@ -10502,16 +10522,43 @@ var SETDEX_TT2019 = {
               "sd": 0,
               "sp": 252
           },
+          "ivs": {
+            "at": 0,
+          }
           "nature": "Timid",
           "ability": "Shadow Shield",
           "item": "",
           "moves": [
               "Moongeist Beam",
               "Psyshock",
-              "Focus Blast",
-              "Menacing Moonraze Maelstrom"
+              "Menacing Moonraze Maelstrom",
+              "Focus Blast"
           ]
       },
+      "Trick Room Lunala": {
+        "level": 50,
+        "evs": {
+            "hp": 252,
+            "at": 0,
+            "df": 0,
+            "sa": 252,
+            "sd": 4,
+            "sp": 0
+        },
+        "ivs": {
+            "at": 0,
+            "sp": 0
+        }
+        "nature": "Quiet",
+        "ability": "Shadow Shield",
+        "item": "",
+        "moves": [
+            "Moongeist Beam",
+            "Psyshock",
+            "Menacing Moonraze Maelstrom",
+            "Focus Blast"
+        ]
+    },
       "Specs Lunala": {
           "level": 50,
           "evs": {
@@ -10522,6 +10569,9 @@ var SETDEX_TT2019 = {
               "sd": 0,
               "sp": 252
           },
+          "ivs": {
+            "at": 0,
+          }
           "nature": "Timid",
           "ability": "Shadow Shield",
           "item": "Choice Specs",
@@ -10596,7 +10646,7 @@ var SETDEX_TT2019 = {
               "Photon Geyser",
               "Earth Power",
               "Moongeist Beam",
-              "Power Gem"
+              "Light That Burns the Sky"
           ]
       },
     },
@@ -10644,7 +10694,7 @@ var SETDEX_TT2019 = {
             "Photon Geyser",
             "Earth Power",
             "Sunsteel Strike",
-            "Power Gem"
+            "Light That Burns the Sky"
         ]
       },
       "Pre-Ultra Burst: Physical": {
@@ -10664,7 +10714,7 @@ var SETDEX_TT2019 = {
             "Photon Geyser",
             "Sunsteel Strike",
             "Brick Break",
-            "Knock Off"
+            "Light That Burns the Sky"
         ]
       },
     },
@@ -10689,7 +10739,7 @@ var SETDEX_TT2019 = {
                 "Photon Geyser",
                 "Earth Power",
                 "Moongeist Beam",
-                "Power Gem"
+                "Light That Burns the Sky"
             ]
         },
         "Physical attacker": {
@@ -10708,7 +10758,7 @@ var SETDEX_TT2019 = {
                 "Photon Geyser",
                 "Sunsteel Strike",
                 "Brick Break",
-                "Knock Off"
+                "Light That Burns the Sky"
             ]
           },
       },
