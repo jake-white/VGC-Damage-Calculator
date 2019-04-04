@@ -10523,8 +10523,8 @@ var SETDEX_TT2019 = {
               "sp": 252
           },
           "ivs": {
-            "at": 0,
-          }
+            "at": 0
+          },
           "nature": "Timid",
           "ability": "Shadow Shield",
           "item": "",
@@ -10548,7 +10548,7 @@ var SETDEX_TT2019 = {
         "ivs": {
             "at": 0,
             "sp": 0
-        }
+        },
         "nature": "Quiet",
         "ability": "Shadow Shield",
         "item": "",
@@ -10570,8 +10570,8 @@ var SETDEX_TT2019 = {
               "sp": 252
           },
           "ivs": {
-            "at": 0,
-          }
+            "at": 0
+          },
           "nature": "Timid",
           "ability": "Shadow Shield",
           "item": "Choice Specs",
