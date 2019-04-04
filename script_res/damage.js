@@ -281,11 +281,7 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
             description.defenderAbility = defAbility;
     }
 
-    if(gen==6 && (isAerilate || isPixilate || isRefrigerate || isGalvanize))
-    {
-        bpMods.push(0x14CD);
-        description.attackerAbility = attacker.ability;
-    } else if (gen==7 && !move.isZ && (isAerilate || isPixilate || isRefrigerate || isGalvanize || isNormalize)) {
+    if (!move.isZ && (isAerilate || isPixilate || isRefrigerate || isGalvanize || isNormalize)) {
         bpMods.push(0x1333);
         description.attackerAbility = attacker.ability;
     } else if ((attacker.ability === "Reckless" && move.hasRecoil) || (attacker.ability === "Iron Fist" && move.isPunch)) {
@@ -446,7 +442,7 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
     var atMods = [];
 
     //Slow Start also halves damage with special Z-moves
-    if ((attacker.ability === "Slow Start" && (move.category === "Physical") || (move.category === "Special" && move.isZ)) ||
+    if ((attacker.ability === "Slow Start" && (move.category === "Physical" || (move.category === "Special" && move.isZ))) ||
         (attacker.ability === "Defeatist" && attacker.curHP <= attacker.maxHP / 2)) {
         atMods.push(0x800);
         description.attackerAbility = attacker.ability;
@@ -602,6 +598,7 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
     }
     if (attacker.ability === "Neuroforce" && typeEffectiveness > 1) {
         finalMods.push(0x1400);
+        description.attackerAbility = attacker.ability;
     }
     if (attacker.ability === "Sniper" && isCritical) {
         finalMods.push(0x1800);
