@@ -358,6 +358,9 @@ function getDamageResult(attacker, defender, move, field) {
     } else if (attacker.ability === "Tough Claws" && move.makesContact) { //boosts by 1.3x for contact moves, apparently
         bpMods.push(0x14CD);
         description.attackerAbility = attacker.ability;
+    } else if (attacker.ability === "Neuroforce" && typeEffectiveness > 1) {
+	bpMods.push(0x1400);
+	description.attackerAbility = attacker.ability;
     } else if(defender.ability === "Fluffy" && move.makesContact){
         bpMods.push(0x800);
     }
@@ -571,10 +574,10 @@ function getDamageResult(attacker, defender, move, field) {
     description.isBurned = applyBurn;
     var finalMods = [];
     if (field.isReflect && move.category === "Physical" && !isCritical) {
-        finalMods.push(field.format !== "Singles" ? 0xA8F : 0x800);
+        finalMods.push(field.format !== "Singles" ? gen >= 6 ? 0xAAC : 0xA8F : 0x800);
         description.isReflect = true;
     } else if (field.isLightScreen && move.category === "Special" && !isCritical) {
-        finalMods.push(field.format !== "Singles" ? 0xA8F : 0x800);
+        finalMods.push(field.format !== "Singles" ? gen >= 6 ? 0xAAC : 0xA8F : 0x800);
         description.isLightScreen = true;
     }
     if ((defAbility === "Multiscale" || defAbility == "Shadow Shield") && defender.curHP === defender.maxHP) {

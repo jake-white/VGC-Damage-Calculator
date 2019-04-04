@@ -122,7 +122,7 @@ var SETDEX_TT2019 = {
             },
             "nature": "Timid",
             "ability": "",
-            "item": "Sitrus Berry",
+            "item": "",
             "moves": [
                 "Hurricane",
                 "Air Slash",
@@ -614,12 +614,12 @@ var SETDEX_TT2019 = {
         "Default Set": {
             "level": 50,
             "evs": {
-                "hp": 248,
+                "hp": 252,
                 "at": 0,
-                "df": 4,
+                "df": 0,
                 "sa": 0,
-                "sd": 36,
-                "sp": 220
+                "sd": 4,
+                "sp": 252
             },
             "nature": "Jolly",
             "ability": "",
@@ -1518,15 +1518,15 @@ var SETDEX_TT2019 = {
         "Default Set": {
             "level": 50,
             "evs": {
-                "hp": 252,
+                "hp": 4,
                 "at": 0,
                 "df": 0,
                 "sa": 252,
-                "sd": 4,
-                "sp": 0
+                "sd": 0,
+                "sp": 252
             },
-            "nature": "Mild",
-            "ability": "",
+            "nature": "Timid",
+            "ability": "Dry Skin",
             "item": "",
             "moves": [
                 "Ice Beam",
@@ -2437,20 +2437,20 @@ var SETDEX_TT2019 = {
         "Default Set": {
             "level": 50,
             "evs": {
-                "hp": 252,
+                "hp": 4,
                 "at": 0,
-                "df": 124,
-                "sa": 76,
-                "sd": 52,
-                "sp": 4
+                "df": 0,
+                "sa": 252,
+                "sd": 0,
+                "sp": 252
             },
-            "nature": "Bold",
+            "nature": "Modest",
             "ability": "Chlorophyll",
             "item": "",
             "moves": [
                 "Sludge Bomb",
-                "Giga Drain",
-                "Hidden Power Ice",
+                "Grass Knot",
+                "Hidden Power Fire",
                 "Hidden Power Ground"
             ]
         }
@@ -3003,7 +3003,27 @@ var SETDEX_TT2019 = {
                 "Flash Cannon",
                 "Overheat"
             ]
-        }
+        },
+        "Shuca Berry": {
+            "level": 50,
+            "evs": {
+                "hp": 252,
+                "at": 0,
+                "df": 0,
+                "sa": 252,
+                "sd": 4,
+                "sp": 0
+            },
+            "nature": "Modest",
+            "ability": "Flash Fire",
+            "item": "Shuca Berry",
+            "moves": [
+                "Heat Wave",
+                "Earth Power",
+                "Flash Cannon",
+                "Overheat"
+            ]
+        }        
     },
     "Pangoro": {
         "Default Set": {
@@ -4355,13 +4375,16 @@ var SETDEX_TT2019 = {
             "level": 50,
             "evs": {
                 "hp": 252,
-                "at": 204,
+                "at": 220,
                 "df": 0,
                 "sa": 0,
-                "sd": 52,
+                "sd": 36,
                 "sp": 0
             },
-            "nature": "Brave",
+            "ivs": {
+                "sp": 0
+            },
+            "nature": "Sassy",
             "ability": "",
             "item": "",
             "moves": [
@@ -5135,6 +5158,26 @@ var SETDEX_TT2019 = {
         "Default Set": {
             "level": 50,
             "evs": {
+                "hp": 236,
+                "at": 0,
+                "df": 76,
+                "sa": 0,
+                "sd": 180,
+                "sp": 0
+            },
+            "nature": "Sassy",
+            "ability": "",
+            "item": "Figy Berry",
+            "moves": [
+                "Clear Smog",
+                "Grass Knot",
+                "Foul Play",
+                "Sludge Bomb"
+            ]
+        },
+        "Physically Defensive": {
+            "level": 50,
+            "evs": {
                 "hp": 252,
                 "at": 0,
                 "df": 252,
@@ -5144,14 +5187,14 @@ var SETDEX_TT2019 = {
             },
             "nature": "Relaxed",
             "ability": "",
-            "item": "",
+            "item": "Figy Berry",
             "moves": [
                 "Giga Drain",
                 "Sludge Bomb",
                 "Energy Ball",
                 "Clear Smog"
             ]
-        }
+        },        
     },
     "Jolteon": {
         "Default Set": {
@@ -5331,21 +5374,21 @@ var SETDEX_TT2019 = {
         "Default Set": {
             "level": 50,
             "evs": {
-                "hp": 0,
-                "at": 252,
-                "df": 0,
+                "hp": 148,
+                "at": 108,
+                "df": 4,
                 "sa": 0,
-                "sd": 4,
-                "sp": 252
+                "sd": 244,
+                "sp": 4
             },
-            "nature": "Jolly",
+            "nature": "Adamant",
             "ability": "Dry Skin",
-            "item": "Black Sludge",
+            "item": "Assault Vest",
             "moves": [
-                "Drain Punch",
+                "Poison Jab",
+                "Low Kick",
                 "Fake Out",
-                "Gunk Shot",
-                "Sucker Punch"
+                "Feint"
             ]
         }
     },
@@ -8215,12 +8258,32 @@ var SETDEX_TT2019 = {
             "ability": "Drizzle",
             "item": "",
             "moves": [
-                "Origin Pulse",
                 "Water Spout",
+                "Origin Pulse",
                 "Ice Beam",
                 "Thunder"
             ]
-        }
+        },
+        "Bulky Waterium Z": {
+            "level": 50,
+            "evs": {
+                "hp": 252,
+                "at": 0,
+                "df": 0,
+                "sa": 252,
+                "sd": 4,
+                "sp": 0
+            },
+            "nature": "Modest",
+            "ability": "Drizzle",
+            "item": "",
+            "moves": [
+                "Water Spout",
+                "Origin Pulse",
+                "Ice Beam",
+                "Thunder"
+            ]
+        }        
     },
 
     "Groudon": {
@@ -8316,23 +8379,43 @@ var SETDEX_TT2019 = {
         "Default Set": {
             "level": 50,
             "evs": {
-                "hp": 0,
-                "at": 0,
+                "hp": 4,
+                "at": 252,
                 "df": 0,
-                "sa": 252,
+                "sa": 0,
                 "sd": 4,
                 "sp": 252
             },
-            "nature": "Timid",
+            "nature": "Jolly",
             "ability": "Dark Aura",
-            "item": "Life Orb",
+            "item": "",
             "moves": [
-                "Oblivion Wing",
-                "Sucker Punch",
                 "Foul Play",
+                "Sucker Punch",
+                "Knock Off",
                 "Snarl"
             ]
-        }
+        },
+        "AV Yveltal": {
+            "level": 50,
+            "evs": {
+                "hp": 180,
+                "at": 0,
+                "df": 4,
+                "sa": 44,
+                "sd": 116,
+                "sp": 164
+            },
+            "nature": "Calm",
+            "ability": "Dark Aura",
+            "item": "Assault Vest",
+            "moves": [
+                "Foul Play",
+                "Sucker Punch",
+                "Oblivion Wing",
+                "Snarl"
+            ]
+        }      
     },
 
     "Dialga": {
@@ -8348,7 +8431,7 @@ var SETDEX_TT2019 = {
             },
             "nature": "Modest",
             "ability": "Pressure",
-            "item": "Adamant Orb",
+            "item": "Figy Berry",
             "moves": [
                 "Draco Meteor",
                 "Flash Cannon",
@@ -8371,12 +8454,12 @@ var SETDEX_TT2019 = {
             },
             "nature": "Modest",
             "ability": "Pressure",
-            "item": "Lustrous Orb",
+            "item": "",
             "moves": [
-                "Draco Meteor",
+                "Spacial Rend",
                 "Hydro Pump",
                 "Earth Power",
-                "Ice Beam"
+                "Draco Meteor"
             ]
         }
     },
@@ -8615,6 +8698,26 @@ var SETDEX_TT2019 = {
         "Default Set": {
             "level": 50,
             "evs": {
+                "hp": 236,
+                "at": 4,
+                "df": 4,
+                "sa": 0,
+                "sd": 236,
+                "sp": 28
+            },
+            "nature": "Careful",
+            "ability": "Intimidate",
+            "item": "",
+            "moves": [
+                "Flare Blitz",
+                "Knock Off",
+                "Fake Out",
+                "U-turn"
+            ]
+        },
+        "Offensive": {
+            "level": 50,
+            "evs": {
                 "hp": 4,
                 "at": 252,
                 "df": 4,
@@ -8631,7 +8734,7 @@ var SETDEX_TT2019 = {
                 "Fake Out",
                 "Malicious Moonsault"
             ]
-        },
+        },        
         "TT AV Incineroar": {
             "level": 50,
             "evs": {
@@ -9102,10 +9205,10 @@ var SETDEX_TT2019 = {
             "ability": "",
             "item": "",
             "moves": [
-                "Trop Kick",
+                "Power Whip",
                 "High Jump Kick",
-                "",
-                ""
+                "Feint",
+                "Trop Kick"
             ]
         }
     },
@@ -9456,7 +9559,7 @@ var SETDEX_TT2019 = {
     },
 
     "Tapu Koko": {
-        "Special Sweeper": {
+        "Electrium Z": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -9468,12 +9571,12 @@ var SETDEX_TT2019 = {
             },
             "nature": "Timid",
             "ability": "Electric Surge",
-            "item": "Life Orb",
+            "item": "",
             "moves": [
                 "Thunderbolt",
                 "Dazzling Gleam",
                 "Volt Switch",
-                "Discharge"
+                "Electroweb"
             ]
         },
         "Specs Koko": {
@@ -9496,7 +9599,7 @@ var SETDEX_TT2019 = {
                 "Discharge"
             ]
         },
-        "Mixed Attacker": {
+        "Mixed Choice Scarf": {
             "level": 50,
             "evs": {
                 "hp": 0,
@@ -9506,14 +9609,14 @@ var SETDEX_TT2019 = {
                 "sd": 0,
                 "sp": 252
             },
-            "nature": "Hasty",
+            "nature": "Naughty",
             "ability": "Electric Surge",
-            "item": "Life Orb",
+            "item": "Choice Scarf",
             "moves": [
                 "Wild Charge",
-                "Thunderbolt",
-                "Dazzling Gleam",
-                "Discharge"
+                "Brave Bird",
+                "Volt Switch",
+                "Hidden Power Fire"
             ]
         },
         "AV Koko": {
@@ -9550,7 +9653,7 @@ var SETDEX_TT2019 = {
                 "sd": 0,
                 "sp": 252
             },
-            "nature": "Modest",
+            "nature": "Timid",
             "ability": "Psychic Surge",
             "item": "",
             "moves": [
@@ -9653,19 +9756,19 @@ var SETDEX_TT2019 = {
           "evs": {
               "hp": 252,
               "at": 0,
-              "df": 4,
-              "sa": 252,
-              "sd": 0,
-              "sp": 0
+              "df": 60,
+              "sa": 4,
+              "sd": 76,
+              "sp": 116
           },
-          "nature": "Modest",
+          "nature": "Calm",
           "ability": "Misty Surge",
-          "item": "Choice Specs",
+          "item": "",
           "moves": [
               "Muddy Water",
               "Scald",
               "Moonblast",
-              "Dazzling Gleam"
+              "Icy Wind"
           ]
       },
         "Specs Fini": {
@@ -9673,18 +9776,18 @@ var SETDEX_TT2019 = {
             "evs": {
                 "hp": 252,
                 "at": 0,
-                "df": 20,
-                "sa": 164,
-                "sd": 44,
-                "sp": 28
+                "df": 4,
+                "sa": 252,
+                "sd": 0,
+                "sp": 0
             },
             "nature": "Modest",
             "ability": "Misty Surge",
             "item": "Choice Specs",
             "moves": [
-                "Hydro Pump",
-                "Moonblast",
                 "Muddy Water",
+                "Moonblast",
+                "Scald",
                 "Dazzling Gleam"
             ]
         },
@@ -9911,6 +10014,27 @@ var SETDEX_TT2019 = {
         "Default Set": {
             "level": 50,
             "evs": {
+                "hp": 68,
+                "at": 4,
+                "df": 4,
+                "sa": 0,
+                "sd": 252,
+                "sp": 180
+            },
+            "nature": "Jolly",
+            "ability": "",
+            "item": "Assault Vest",
+            "moves": [
+                "Leaf Blade",
+                "Sacred Sword",
+                "Smart Strike",
+                "Knock Off"
+            ]
+        },
+
+        "Grassium Z Kartana": {
+            "level": 50,
+            "evs": {
                 "hp": 4,
                 "at": 252,
                 "df": 0,
@@ -9922,31 +10046,10 @@ var SETDEX_TT2019 = {
             "ability": "",
             "item": "",
             "moves": [
-                "Smart Strike",
                 "Leaf Blade",
                 "Sacred Sword",
-                "Night Slash"
-            ]
-        },
-
-        "AV Kartana": {
-            "level": 50,
-            "evs": {
-                "hp": 84,
-                "at": 4,
-                "df": 4,
-                "sa": 0,
-                "sd": 164,
-                "sp": 252
-            },
-            "nature": "Jolly",
-            "ability": "",
-            "item": "Assault Vest",
-            "moves": [
                 "Smart Strike",
-                "Leaf Blade",
-                "Sacred Sword",
-                "Night Slash"
+                "Knock Off"
             ]
         },
 
@@ -10344,14 +10447,34 @@ var SETDEX_TT2019 = {
           "item": "",
           "moves": [
               "Moongeist Beam",
-              "",
-              "",
-              ""
+              "Psyshock",
+              "Focus Blast",
+              "Menacing Moonraze Maelstrom"
           ]
       },
+      "Specs Lunala": {
+          "level": 50,
+          "evs": {
+              "hp": 4,
+              "at": 0,
+              "df": 0,
+              "sa": 252,
+              "sd": 0,
+              "sp": 252
+          },
+          "nature": "Timid",
+          "ability": "Shadow Shield",
+          "item": "Choice Specs",
+          "moves": [
+              "Moongeist Beam",
+              "Psyshock",
+              "Focus Blast",
+              "Moonblast"
+          ]
+      },        
     },
     "Solgaleo" : {
-        "Default Set": {
+      "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
@@ -10366,11 +10489,31 @@ var SETDEX_TT2019 = {
           "item": "",
           "moves": [
               "Sunsteel Strike",
+              "Superpower",
               "Zen Headbutt",
-              "",
-              ""
+              "Wild Charge"
           ]
       },
+      "Life Orb Solgaleo": {
+            "level": 50,
+            "evs": {
+                "hp": 4,
+                "at": 252,
+                "df": 0,
+                "sa": 0,
+                "sd": 0,
+                "sp": 252
+            },
+          "nature": "Jolly",
+          "ability": "Full Metal Body",
+          "item": "Life Orb",
+          "moves": [
+              "Sunsteel Strike",
+              "Superpower",
+              "Zen Headbutt",
+              "Wild Charge"
+          ]
+      },        
     },
     "Dawn Wings Necrozma" : {
       "Default Set": {
@@ -10428,13 +10571,13 @@ var SETDEX_TT2019 = {
               "sp": 0
           },
           "nature": "Adamant",
-          "ability": "Aura Break",
+          "ability": "Power Construct",
           "item": "",
           "moves": [
               "Thousand Arrows",
               "Thousand Waves",
-              "",
-              ""
+              "Extreme Speed",
+              "Iron Tail"
           ]
       },
     },
