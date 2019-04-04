@@ -30,13 +30,13 @@ function CALCULATE_ALL_MOVES_SM(p1, p2, field) {
     checkInfiltrator(p2, side2);
     var results = [[],[]];
     for (var i = 0; i < 4; i++) {
-        results[0][i] = getDamageResult(p1, p2, p1.moves[i], side1);
-        results[1][i] = getDamageResult(p2, p1, p2.moves[i], side2);
+        results[0][i] = GET_DAMAGE_SM(p1, p2, p1.moves[i], side1);
+        results[1][i] = GET_DAMAGE_SM(p2, p1, p2.moves[i], side2);
     }
     return results;
 }
 
-function getDamageResult(attacker, defender, move, field) {
+function GET_DAMAGE_SM(attacker, defender, move, field) {
     var moveDescName = move.name;
     var isQuarteredByProtect = false;
     if(move.isSignatureZ){
@@ -401,7 +401,7 @@ function getDamageResult(attacker, defender, move, field) {
         }
     }
     if (field.isGravity || (defender.type1 !== "Flying" && defender.type2 !== "Flying" &&
-            defender.item !== "Air Balloon" && defender.ability !== "Levitate")) {
+            defender.item !== "Air Balloon" && defAbility !== "Levitate")) {
         if ((field.terrain === "Misty" && move.type === "Dragon") ||
            (field.terrain === "Grassy" && (move.name === "Earthquake" || move.name === "Bulldoze"))) {
             bpMods.push(0x800);
@@ -615,7 +615,7 @@ function getDamageResult(attacker, defender, move, field) {
         finalMods.push(0x800);
         description.defenderAbility = defAbility;
     }
-    if (defender.ability === "Fluffy" && move.makesContact) {
+    if (defAbility === "Fluffy" && move.makesContact) {
         finalMods.push(0x800);
         description.defenderAbility = defAbility;
     }
@@ -658,6 +658,7 @@ function getDamageResult(attacker, defender, move, field) {
         childDamage = getDamageResult(child, defender, move, field).damage;
         description.attackerAbility = attacker.ability;
     }
+
     for (var i = 0; i < 16; i++) {
         damage[i] = Math.floor(baseDamage * (85 + i) / 100);
         damage[i] = pokeRound(damage[i] * stabMod / 0x1000);

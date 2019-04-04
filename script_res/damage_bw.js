@@ -28,13 +28,13 @@ function CALCULATE_ALL_MOVES_BW(p1, p2, field) {
     checkInfiltrator(p2, side2);
     var results = [[],[]];
     for (var i = 0; i < 4; i++) {
-        results[0][i] = getDamageResult(p1, p2, p1.moves[i], side1);
-        results[1][i] = getDamageResult(p2, p1, p2.moves[i], side2);
+        results[0][i] = GET_DAMAGE_BW(p1, p2, p1.moves[i], side1);
+        results[1][i] = GET_DAMAGE_BW(p2, p1, p2.moves[i], side2);
     }
     return results;
 }
 
-function getDamageResult(attacker, defender, move, field) {
+function GET_DAMAGE_BW(attacker, defender, move, field) {
     var moveDescName = move.name;
     var description = {
         "attackerName": attacker.name,
