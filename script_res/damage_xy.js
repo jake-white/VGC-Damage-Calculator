@@ -577,7 +577,7 @@ function GET_DAMAGE_XY(attacker, defender, move, field) {
             child.boosts[AT]++;
             child.stats[AT] = getModifiedStat(child.rawStats[AT], child.boosts[AT]);
         }
-        childDamage = getDamageResult(child, defender, move, field).damage;
+        childDamage = GET_DAMAGE_XY(child, defender, move, field).damage;
         description.attackerAbility = attacker.ability;
     }
     for (var i = 0; i < 16; i++) {
