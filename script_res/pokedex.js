@@ -8977,12 +8977,12 @@ var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
 });
 
 var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
-  "Venusaur": { "formes": ["Venusaur", "Mega Venusaur"] },
-  "Charizard": { "formes": ["Charizard", "Mega Charizard X", "Mega Charizard Y"] },
+  "Venusaur": { "formes": ["Venusaur", " Mega Venusaur"] },
+  "Charizard": { "formes": ["Mega Charizard Y ", "Mega Charizard X", "Charizard"] },
   "Blastoise": { "formes": ["Blastoise", "Mega Blastoise"] },
   "Butterfree": { "bs": { "sa": 90 } },
-  "Beedrill": { "bs": { "at": 90 }, "formes": ["Beedrill", "Mega Beedrill"] },
-  "Pidgeot": { "bs": { "sp": 101 }, "formes": ["Pidgeot", "Mega Pidgeot"] },
+  "Beedrill": { "bs": { "at": 90 }, "formes": ["Mega Beedrill", "Beedrill"] },
+  "Pidgeot": { "bs": { "sp": 101 }, "formes": ["Mega Pidgeot", "Pidgeot"] },
   "Pikachu": { "bs": { "df": 40, "sd": 50 } },
   "Raichu": { "bs": { "sp": 110 } },
   "Nidoqueen": { "bs": { "at": 92 } },
@@ -8993,22 +8993,22 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
   "Wigglytuff": { "t2": "Fairy", "bs": { "sa": 85 } },
   "Vileplume": { "bs": { "sa": 110 } },
   "Poliwrath": { "bs": { "at": 95 } },
-  "Alakazam": { "bs": { "sd": 95 }, "formes": ["Alakazam", "Mega Alakazam"] },
+  "Alakazam": { "bs": { "sd": 95 }, "formes": ["Mega Alakazam", "Alakazam"] },
   "Victreebel": { "bs": { "sd": 70 } },
   "Golem": { "bs": { "at": 120 } },
-  "Slowbro": { "formes": ["Slowbro", "Mega Slowbro"] },
-  "Gengar": { "formes": ["Gengar", "Mega Gengar"] },
-  "Kangaskhan": { "formes": ["Kangaskhan", "Mega Kangaskhan"] },
+  "Slowbro": { "formes": ["Mega Slowbro", "Slowbro"] },
+  "Gengar": { "formes": ["Mega Gengar", "Gengar"] },
+  "Kangaskhan": { "formes": ["Mega Kangaskhan", "Kangaskhan"] },
   "Mr. Mime": { "t2": "Fairy" },
-  "Pinsir": { "formes": ["Pinsir", "Mega Pinsir"] },
-  "Gyarados": { "formes": ["Gyarados", "Mega Gyarados"] },
+  "Pinsir": { "formes": ["Mega Pinsir", "Pinsir"] },
+  "Gyarados": { "formes": ["Mega Gyarados", "Gyarados"] },
   "Aerodactyl": { "formes": ["Aerodactyl", "Mega Aerodactyl"] },
   "Mewtwo": { "formes": ["Mewtwo", "Mega Mewtwo X", "Mega Mewtwo Y"] },
   "Cleffa": { "t1": "Fairy" },
   "Igglybuff": { "t2": "Fairy" },
   "Togepi": { "t1": "Fairy" },
   "Togetic": { "t1": "Fairy" },
-  "Ampharos": { "bs": { "df": 85 }, "formes": ["Ampharos", "Mega Ampharos"] },
+  "Ampharos": { "bs": { "df": 85 }, "formes": ["Mega Ampharos", "Ampharos"] },
   "Bellossom": { "bs": { "df": 95 } },
   "Marill": { "t2": "Fairy" },
   "Azumarill": { "t2": "Fairy", "bs": { "sa": 60 } },
@@ -9026,30 +9026,30 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
   "Beautifly": { "bs": { "sa": 100 } },
   "Ralts": { "t2": "Fairy" },
   "Kirlia": { "t2": "Fairy" },
-  "Gardevoir": { "t2": "Fairy", "formes": ["Gardevoir", "Mega Gardevoir"] },
+  "Gardevoir": { "t2": "Fairy", "formes": ["Mega Gardevoir", "Gardevoir"] },
   "Exploud": { "bs": { "sd": 73 } },
   "Azurill": { "t2": "Fairy" },
   "Sableye": { "formes": ["Sableye", "Mega Sableye"] },
-  "Mawile": { "t2": "Fairy", "formes": ["Mawile", "Mega Mawile"] },
+  "Mawile": { "t2": "Fairy", "formes": ["Mega Mawile", "Mawile"] },
   "Aggron": { "formes": ["Aggron", "Mega Aggron"] },
-  "Medicham": { "formes": ["Medicham", "Mega Medicham"] },
-  "Manectric": { "formes": ["Manectric", "Mega Manectric"] },
+  "Medicham": { "formes": ["Mega Medicham", "Medicham"] },
+  "Manectric": { "formes": ["Mega Manectric", "Manectric"] },
   "Sharpedo": { "formes": ["Sharpedo", "Mega Sharpedo"] },
-  "Camerupt": { "formes": ["Camerupt", "Mega Camerupt"] },
+  "Camerupt": { "formes": ["Mega Camerupt", "Camerupt"] },
   "Altaria": { "formes": ["Altaria", "Mega Altaria"] },
   "Banette": { "formes": ["Banette", "Mega Banette"] },
   "Absol": { "formes": ["Absol", "Mega Absol"] },
   "Glalie": { "formes": ["Glalie", "Mega Glalie"] },
-  "Salamence": { "formes": ["Salamence", "Mega Salamence"] },
-  "Metagross": { "formes": ["Metagross", "Mega Metagross"] },
+  "Salamence": { "formes": ["Mega Salamence", "Salamence"] },
+  "Metagross": { "formes": ["Mega Metagross", "Metagross"] },
   "Latias": { "formes": ["Latias", "Mega Latias"] },
   "Latios": { "formes": ["Latios", "Mega Latios"] },
-  "Kyogre": { "formes": ["Kyogre", "Primal Kyogre"] },
-  "Groudon": { "formes": ["Groudon", "Primal Groudon"] },
+  "Kyogre": { "formes": ["Primal Kyogre", "Kyogre"] },
+  "Groudon": { "formes": ["Primal Groudon", "Groudon"] },
   "Rayquaza": { "formes": ["Rayquaza", "Mega Rayquaza"] },
   "Staraptor": { "bs": { "sd": 60 } },
   "Roserade": { "bs": { "df": 65 } },
-  "Lopunny": { "formes": ["Lopunny", "Mega Lopunny"] },
+  "Lopunny": { "formes": ["Mega Lopunny", "Lopunny"] },
   "Mime Jr.": { "t2": "Fairy" },
   "Garchomp": { "formes": ["Garchomp", "Mega Garchomp"] },
   "Lucario": { "formes": ["Lucario", "Mega Lucario"] },
@@ -10876,7 +10876,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
       "sp": 95
     },
     "w": 305.0,
-    "ab": "Aura Break",
+    "ab": "Power Construct",
     "formes": ["Zygarde 50%", "Zygarde 10%", "Zygarde Complete"]
   },
   "Zygarde 50%": {
@@ -10891,7 +10891,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
       "sp": 95
     },
     "w": 305.0,
-    "ab": "Aura Break",
+    "ab": "Power Construct",
     "isAlternateForme": true
   },
   "Zygarde 10%": {
@@ -12454,7 +12454,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     "w": 25.0,
     "ab": "Tough Claws",
   },
-  "Dawn Wings Necrozma": {
+  "Necrozma-Dawn-Wings": {
     "t1": "Psychic",
     "t2": "Ghost",
     "bs": {
@@ -12467,8 +12467,9 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     },
     "w": 350.0,
     "ab": "Prism Armor",
+    "formes": ["Necrozma-Dawn-Wings", "Ultra Necrozma"]
   },
-  "Dusk Mane Necrozma": {
+  "Necrozma-Dusk-Mane": {
     "t1": "Psychic",
     "t2": "Steel",
     "bs": {
@@ -12481,6 +12482,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     },
     "w": 460.0,
     "ab": "Prism Armor",
+    "formes": ["Necrozma-Dusk-Mane", "Ultra Necrozma"]
   },
   "Ultra Necrozma": {
     "t1": "Psychic",
@@ -12495,6 +12497,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     },
     "w": 230.0,
     "ab": "Neuroforce",
+    "isAlternateForme": true
   },
   "Zeraora": {
     "t1": "Electric",

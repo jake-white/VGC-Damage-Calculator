@@ -2057,10 +2057,10 @@ var SETDEX_TT2019 = {
             "ability": "Scrappy",
             "item": "",
             "moves": [
-                "Sucker Punch",
-                "Fake Out",
                 "Double-Edge",
-                "Low Kick"
+                "Fake Out",
+                "Crunch",
+                "Sucker Punch"
             ]
         }
     },
@@ -8197,18 +8197,38 @@ var SETDEX_TT2019 = {
                 "Ice Beam",
                 "Thunder"
             ]
+        },
+        "Physically defensive Kyogre": {
+            "level": 50,
+            "evs": {
+                "hp": 252,
+                "at": 0,
+                "df": 252,
+                "sa": 4,
+                "sd": 0,
+                "sp": 0
+            },
+            "nature": "Modest",
+            "ability": "Drizzle",
+            "item": "",
+            "moves": [
+                "Origin Pulse",
+                "Water Spout",
+                "Ice Beam",
+                "Thunder"
+            ]
         }
     },
 
     "Primal Groudon": {
-        "Common Physical Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
                 "at": 252,
-                "df": 4,
+                "df": 0,
                 "sa": 0,
-                "sd": 0,
+                "sd": 4,
                 "sp": 0
             },
             "nature": "Adamant",
@@ -8218,10 +8238,10 @@ var SETDEX_TT2019 = {
                 "Precipice Blades",
                 "Fire Punch",
                 "Rock Slide",
-                "Earthquake"
+                "Stomping Tantrum"
             ]
         },
-        "Common Mixed Showdown": {
+        "Special Attacking Groudon": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -8231,14 +8251,14 @@ var SETDEX_TT2019 = {
                 "sd": 0,
                 "sp": 252
             },
-            "nature": "Modest",
+            "nature": "Timid",
             "ability": "Drought",
             "item": "",
             "moves": [
                 "Eruption",
                 "Flamethrower",
                 "Earth Power",
-                "Precipice Blades"
+                "Hidden Power Ice"
             ]
         }
     },
@@ -8264,14 +8284,14 @@ var SETDEX_TT2019 = {
                 "Thunder"
             ]
         },
-        "Bulky Waterium Z": {
+        "Physically defensive Kyogre": {
             "level": 50,
             "evs": {
                 "hp": 252,
                 "at": 0,
-                "df": 0,
-                "sa": 252,
-                "sd": 4,
+                "df": 252,
+                "sa": 4,
+                "sd": 0,
                 "sp": 0
             },
             "nature": "Modest",
@@ -8287,14 +8307,14 @@ var SETDEX_TT2019 = {
     },
 
     "Groudon": {
-        "Common Physical Showdown": {
+        "Default Set": {
             "level": 50,
             "evs": {
                 "hp": 252,
                 "at": 252,
-                "df": 4,
+                "df": 0,
                 "sa": 0,
-                "sd": 0,
+                "sd": 4,
                 "sp": 0
             },
             "nature": "Adamant",
@@ -8304,10 +8324,10 @@ var SETDEX_TT2019 = {
                 "Precipice Blades",
                 "Fire Punch",
                 "Rock Slide",
-                "Earthquake"
+                "Stomping Tantrum"
             ]
         },
-        "Common Mixed Showdown": {
+        "Special Attacking Groudon": {
             "level": 50,
             "evs": {
                 "hp": 4,
@@ -8317,14 +8337,14 @@ var SETDEX_TT2019 = {
                 "sd": 0,
                 "sp": 252
             },
-            "nature": "Modest",
+            "nature": "Timid",
             "ability": "Drought",
             "item": "",
             "moves": [
                 "Eruption",
                 "Flamethrower",
                 "Earth Power",
-                "Precipice Blades"
+                "Hidden Power Ice"
             ]
         }
     },
@@ -8333,10 +8353,50 @@ var SETDEX_TT2019 = {
         "Default Set": {
             "level": 50,
             "evs": {
-                "hp": 0,
-                "at": 4,
+                "hp": 4,
+                "at": 252,
                 "df": 0,
-                "sa": 252,
+                "sa": 0,
+                "sd": 0,
+                "sp": 252
+            },
+            "nature": "Jolly",
+            "ability": "Air Lock",
+            "item": "Focus Sash",
+            "moves": [
+                "Dragon Ascent",
+                "Extreme Speed",
+                "Waterfall",
+                "Earthquake"
+            ]
+        },
+        "Choice Band": {
+            "level": 50,
+            "evs": {
+                "hp": 4,
+                "at": 252,
+                "df": 0,
+                "sa": 0,
+                "sd": 0,
+                "sp": 252
+            },
+            "nature": "Adamant",
+            "ability": "Air Lock",
+            "item": "Focus Sash",
+            "moves": [
+                "Dragon Ascent",
+                "Extreme Speed",
+                "Waterfall",
+                "Earthquake"
+            ]
+        },
+        "Mixed Attacker": {
+            "level": 50,
+            "evs": {
+                "hp": 0,
+                "at": 252,
+                "df": 0,
+                "sa": 4,
                 "sd": 0,
                 "sp": 252
             },
@@ -8344,10 +8404,10 @@ var SETDEX_TT2019 = {
             "ability": "Air Lock",
             "item": "Life Orb",
             "moves": [
-                "Earth Power",
-                "Draco Meteor",
+                "Dragon Ascent",
                 "Extreme Speed",
-                "Flamethrower"
+                "Draco Meteor",
+                "Earth Power"
             ]
         },
     },
@@ -8372,7 +8432,27 @@ var SETDEX_TT2019 = {
                 "Grass Knot",
                 "Hidden Power Ground"
             ]
-        }
+        },
+        "Bulky Xerneas": {
+            "level": 50,
+            "evs": {
+                "hp": 252,
+                "at": 0,
+                "df": 140,
+                "sa": 84,
+                "sd": 4,
+                "sp": 28
+            },
+            "nature": "Modest",
+            "ability": "Fairy Aura",
+            "item": "",
+            "moves": [
+                "Moonblast",
+                "Dazzling Gleam",
+                "Grass Knot",
+                "Hidden Power Ground"
+            ]
+        },
     },
 
     "Yveltal": {
@@ -8710,20 +8790,20 @@ var SETDEX_TT2019 = {
             "item": "",
             "moves": [
                 "Flare Blitz",
-                "Knock Off",
+                "Throat Chop",
                 "Fake Out",
                 "U-turn"
             ]
         },
-        "Offensive": {
+        "Z-move Incineroar": {
             "level": 50,
             "evs": {
-                "hp": 4,
-                "at": 252,
+                "hp": 252,
+                "at": 180,
                 "df": 4,
                 "sa": 0,
-                "sd": 0,
-                "sp": 252
+                "sd": 44,
+                "sp": 28
             },
             "nature": "Adamant",
             "ability": "Intimidate",
@@ -8735,24 +8815,24 @@ var SETDEX_TT2019 = {
                 "Malicious Moonsault"
             ]
         },        
-        "TT AV Incineroar": {
+        "2019 AV Incineroar": {
             "level": 50,
             "evs": {
-                "hp": 220,
-                "at": 252,
-                "df": 4,
+                "hp": 244,
+                "at": 4,
+                "df": 92,
                 "sa": 0,
-                "sd": 12,
-                "sp": 20
+                "sd": 140,
+                "sp": 28
             },
-            "nature": "Adamant",
+            "nature": "Careful",
             "ability": "Intimidate",
             "item": "Assault Vest",
             "moves": [
                 "Flare Blitz",
-                "Darkest Lariat",
+                "Snarl",
                 "Fake Out",
-                "Snarl"
+                "U-turn"
             ]
         }
     },
@@ -10442,16 +10522,43 @@ var SETDEX_TT2019 = {
               "sd": 0,
               "sp": 252
           },
+          "ivs": {
+            "at": 0
+          },
           "nature": "Timid",
           "ability": "Shadow Shield",
           "item": "",
           "moves": [
               "Moongeist Beam",
               "Psyshock",
-              "Focus Blast",
-              "Menacing Moonraze Maelstrom"
+              "Menacing Moonraze Maelstrom",
+              "Focus Blast"
           ]
       },
+      "Trick Room Lunala": {
+        "level": 50,
+        "evs": {
+            "hp": 252,
+            "at": 0,
+            "df": 0,
+            "sa": 252,
+            "sd": 4,
+            "sp": 0
+        },
+        "ivs": {
+            "at": 0,
+            "sp": 0
+        },
+        "nature": "Quiet",
+        "ability": "Shadow Shield",
+        "item": "",
+        "moves": [
+            "Moongeist Beam",
+            "Psyshock",
+            "Menacing Moonraze Maelstrom",
+            "Focus Blast"
+        ]
+    },
       "Specs Lunala": {
           "level": 50,
           "evs": {
@@ -10461,6 +10568,9 @@ var SETDEX_TT2019 = {
               "sa": 252,
               "sd": 0,
               "sp": 252
+          },
+          "ivs": {
+            "at": 0
           },
           "nature": "Timid",
           "ability": "Shadow Shield",
@@ -10515,7 +10625,7 @@ var SETDEX_TT2019 = {
           ]
       },        
     },
-    "Dawn Wings Necrozma" : {
+    "Necrozma-Dawn-Wings" : {
       "Default Set": {
           "level": 50,
           "evs": {
@@ -10526,18 +10636,21 @@ var SETDEX_TT2019 = {
               "sd": 0,
               "sp": 252
           },
+          "ivs": {
+              "at": 4,
+          },
           "nature": "Timid",
           "ability": "Prism Armor",
           "item": "",
           "moves": [
-              "Moongeist Beam",
               "Photon Geyser",
-              "",
-              ""
+              "Earth Power",
+              "Moongeist Beam",
+              "Light That Burns the Sky"
           ]
       },
     },
-    "Dusk Mane Necrozma" : {
+    "Necrozma-Dusk-Mane" : {
       "Default Set": {
           "level": 50,
           "evs": {
@@ -10548,17 +10661,107 @@ var SETDEX_TT2019 = {
               "sd": 4,
               "sp": 0
           },
-          "nature": "Adamant",
+          "ivs": {
+            "sp": 0
+          },
+          "nature": "Brave",
           "ability": "Prism Armor",
           "item": "",
           "moves": [
               "Sunsteel Strike",
               "Photon Geyser",
-              "",
-              ""
+              "Earthquake",
+              "Knock Off"
           ]
       },
+      "Pre-Ultra Burst: Special": {
+        "level": 50,
+        "evs": {
+            "hp": 4,
+            "at": 0,
+            "df": 0,
+            "sa": 252,
+            "sd": 0,
+            "sp": 252
+        },
+        "ivs": {
+            "at": 4
+        },
+        "nature": "Timid",
+        "ability": "Prism Armor",
+        "item": "",
+        "moves": [
+            "Photon Geyser",
+            "Earth Power",
+            "Sunsteel Strike",
+            "Light That Burns the Sky"
+        ]
+      },
+      "Pre-Ultra Burst: Physical": {
+        "level": 50,
+        "evs": {
+            "hp": 4,
+            "at": 0,
+            "df": 0,
+            "sa": 252,
+            "sd": 0,
+            "sp": 252
+        },
+        "nature": "Jolly",
+        "ability": "Prism Armor",
+        "item": "",
+        "moves": [
+            "Photon Geyser",
+            "Sunsteel Strike",
+            "Brick Break",
+            "Light That Burns the Sky"
+        ]
+      },
     },
+    "Ultra Necrozma" : {
+        "Default Set": {
+            "level": 50,
+            "evs": {
+                "hp": 4,
+                "at": 0,
+                "df": 0,
+                "sa": 252,
+                "sd": 0,
+                "sp": 252
+            },
+            "ivs": {
+               "at": 4,
+            },
+            "nature": "Timid",
+            "ability": "Neuroforce",
+            "item": "",
+            "moves": [
+                "Photon Geyser",
+                "Earth Power",
+                "Moongeist Beam",
+                "Light That Burns the Sky"
+            ]
+        },
+        "Physical attacker": {
+            "level": 50,
+            "evs": {
+                "hp": 4,
+                "at": 0,
+                "df": 0,
+                "sa": 252,
+                "sd": 0,
+                "sp": 252
+            },
+            "nature": "Jolly",
+            "item": "",
+            "moves": [
+                "Photon Geyser",
+                "Sunsteel Strike",
+                "Brick Break",
+                "Light That Burns the Sky"
+            ]
+          },
+      },
     "Zygarde" : {
       "Default Set": {
           "level": 50,

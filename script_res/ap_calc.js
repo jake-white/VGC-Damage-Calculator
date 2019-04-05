@@ -808,7 +808,7 @@ $(".gen").change(function () {
             items = ITEMS_XY;
             abilities = ABILITIES_XY;
             STATS = STATS_GSC;
-            calculateAllMoves = CALCULATE_ALL_MOVES_BW;
+            calculateAllMoves = CALCULATE_ALL_MOVES_XY;
             calcHP = CALC_HP_ADV;
             calcStat = CALC_STAT_ADV;
             break;
@@ -820,7 +820,7 @@ $(".gen").change(function () {
             items = ITEMS_SM;
             abilities = ABILITIES_SM;
             STATS = STATS_GSC;
-            calculateAllMoves = CALCULATE_ALL_MOVES_BW;
+            calculateAllMoves = CALCULATE_ALL_MOVES_SM;
             calcHP = CALC_HP_ADV;
             calcStat = CALC_STAT_ADV;
     }
