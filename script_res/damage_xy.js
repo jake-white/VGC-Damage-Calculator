@@ -10,10 +10,10 @@ function CALCULATE_ALL_MOVES_XY(p1, p2, field) {
     checkEvo(p1, p2);
     p1.stats[DF] = getModifiedStat(p1.rawStats[DF], p1.boosts[DF]);
     p1.stats[SD] = getModifiedStat(p1.rawStats[SD], p1.boosts[SD]);
-    p1.stats[SP] = getFinalSpeed(p1, field.getWeather(), field.getTerrain());
+    p1.stats[SP] = getFinalSpeedXY(p1, field.getWeather(), field.getTerrain());
     p2.stats[DF] = getModifiedStat(p2.rawStats[DF], p2.boosts[DF]);
     p2.stats[SD] = getModifiedStat(p2.rawStats[SD], p2.boosts[SD]);
-    p2.stats[SP] = getFinalSpeed(p2, field.getWeather(), field.getTerrain());
+    p2.stats[SP] = getFinalSpeedXY(p2, field.getWeather(), field.getTerrain());
     checkIntimidate(p1, p2);
     checkIntimidate(p2, p1);
     checkDownload(p1, p2);
@@ -577,7 +577,7 @@ function GET_DAMAGE_XY(attacker, defender, move, field) {
             child.boosts[AT]++;
             child.stats[AT] = getModifiedStat(child.rawStats[AT], child.boosts[AT]);
         }
-        childDamage = getDamageResult(child, defender, move, field).damage;
+        childDamage = GET_DAMAGE_XY(child, defender, move, field).damage;
         description.attackerAbility = attacker.ability;
     }
     for (var i = 0; i < 16; i++) {
@@ -607,125 +607,7 @@ function GET_DAMAGE_XY(attacker, defender, move, field) {
     return {"damage": pbDamage.length ? pbDamage.sort(numericSort) : damage, "description": buildDescription(description)};
 }
 
-function numericSort(a, b) {
-    return a - b;
-}
-
-function buildDescription(description) {
-    var output = "";
-    if (description.attackBoost) {
-        if (description.attackBoost > 0) {
-            output += "+";
-        }
-        output += description.attackBoost + " ";
-    }
-    output = appendIfSet(output, description.attackEVs);
-    output = appendIfSet(output, description.attackerItem);
-    output = appendIfSet(output, description.attackerAbility);
-
-    if (description.isBurned) {
-        output += "burned ";
-    }
-    output += description.attackerName + " ";
-    if (description.isHelpingHand) {
-        output += "Helping Hand ";
-    }
-    output += description.moveName + " ";
-    if (description.moveBP && description.moveType) {
-        output += "(" + description.moveBP + " BP " + description.moveType + ") ";
-    } else if (description.moveBP) {
-        output += "(" + description.moveBP + " BP) ";
-    } else if (description.moveType) {
-        output += "(" + description.moveType + ") ";
-    }
-    if (description.hits) {
-        output += "(" + description.hits + " hits) ";
-    }
-    output += "vs. ";
-    if (description.defenseBoost) {
-        if (description.defenseBoost > 0) {
-            output += "+";
-        }
-        output += description.defenseBoost + " ";
-    }
-    output = appendIfSet(output, description.HPEVs);
-    if (description.defenseEVs) {
-        output += " / " + description.defenseEVs + " ";
-    }
-    output = appendIfSet(output, description.defenderItem);
-    output = appendIfSet(output, description.defenderAbility);
-    output += description.defenderName;
-    if (description.weather) {
-        output += " in " + description.weather;
-    } else if (description.terrain) {
-        output += " in " + description.terrain + " Terrain";
-    }
-    if (description.isReflect) {
-        output += " through Reflect";
-    } else if (description.isLightScreen) {
-        output += " through Light Screen";
-    }
-    if (description.isCritical) {
-        output += " on a critical hit";
-    }
-    if (description.isFriendGuard) {
-        output += " with Friend Guard";
-    }
-
-    return output;
-}
-
-function appendIfSet(str, toAppend) {
-    if (toAppend) {
-        return str + toAppend + " ";
-    }
-    return str;
-}
-
-function toSmogonStat(stat) {
-    return stat === AT ? "Atk"
-            : stat === DF ? "Def"
-            : stat === SA ? "SpA"
-            : stat === SD ? "SpD"
-            : stat === SP ? "Spe"
-            : "wtf";
-}
-
-function chainMods(mods) {
-    var M = 0x1000;
-    for(var i = 0; i < mods.length; i++) {
-        if(mods[i] !== 0x1000) {
-            M = Math.round((M * mods[i]) / 0x1000);
-        }
-    }
-    return M;
-}
-
-function getMoveEffectiveness(move, type, otherType, isGhostRevealed, isGravity) {
-    if (isGhostRevealed && type === "Ghost" && (move.type === "Normal" || move.type === "Fighting")) {
-        return 1;
-    } else if (isGravity && type === "Flying" && move.type === "Ground") {
-        return 1;
-    } else if(!isGravity && type== "Flying" && move.type === "Ground" && move.name == "Thousand Arrows") {
-        return 1;
-    } else if(!isGravity && otherType == "Flying" && move.type === "Ground" && move.name == "Thousand Arrows") {
-        return 1;
-    } else if (move.name === "Freeze-Dry" && type === "Water") {
-        return 2;
-    } else if (move.name === "Flying Press") {
-        return typeChart["Fighting"][type] * typeChart["Flying"][type];
-    } else {
-        return typeChart[move.type][type];
-    }
-}
-
-function getModifiedStat(stat, mod) {
-    return mod > 0 ? Math.floor(stat * (2 + mod) / 2)
-            : mod < 0 ? Math.floor(stat * 2 / (2 - mod))
-            : stat;
-}
-
-function getFinalSpeed(pokemon, weather, terrain) {
+function getFinalSpeedXY(pokemon, weather, terrain) {
     var speed = getModifiedStat(pokemon.rawStats[SP], pokemon.boosts[SP]);
     var otherSpeedMods = 1;
     if (pokemon.item === "Choice Scarf") {
@@ -754,99 +636,6 @@ function getFinalSpeed(pokemon, weather, terrain) {
     }
     if (speed > 10000) {speed = 10000;}
     return speed;
-}
-
-function checkAirLock(pokemon, field) {
-    if (pokemon.ability === "Air Lock" || pokemon.ability === "Cloud Nine") {
-        field.clearWeather();
-    }
-}
-function checkForecast(pokemon, weather) {
-    if (pokemon.ability === "Forecast" && pokemon.name === "Castform") {
-        if (weather.indexOf("Sun") > -1) {
-            pokemon.type1 = "Fire";
-        } else if (weather.indexOf("Rain") > -1) {
-            pokemon.type1 = "Water";
-        } else if (weather === "Hail") {
-            pokemon.type1 = "Ice";
-        } else {
-            pokemon.type1 = "Normal";
-        }
-        pokemon.type2 = "";
-    }
-}
-function checkKlutz(pokemon) {
-    if (pokemon.ability === "Klutz") {
-        pokemon.item = "";
-    }
-}
-
-function checkIntimidate(source, target) {
-    if (source.ability === "Intimidate") {
-        if (target.ability === "Contrary" || target.ability === "Defiant") {
-            target.boosts[AT] = Math.min(6, target.boosts[AT] + 1);
-        } else if (["Clear Body", "White Smoke", "Hyper Cutter", "Full Metal Body"].indexOf(target.ability) !== -1) {
-            // no effect
-        } else if (target.ability === "Simple") {
-            target.boosts[AT] = Math.max(-6, target.boosts[AT] - 2);
-        } else {
-            target.boosts[AT] = Math.max(-6, target.boosts[AT] - 1);
-        }
-    }
-}
-function checkEvo(p1, p2){
-    if($('#evoL').prop("checked")){
-        p1.boosts[AT] = Math.min(6, p1.boosts[AT] + 2);
-        p1.boosts[DF] = Math.min(6, p1.boosts[DF] + 2);
-        p1.boosts[SA] = Math.min(6, p1.boosts[SA] + 2);
-        p1.boosts[SD] = Math.min(6, p1.boosts[SD] + 2);
-        p1.boosts[SP] = Math.min(6, p1.boosts[SP] + 2);
-    }
-    if($('#evoR').prop("checked")){
-        p2.boosts[AT] = Math.min(6, p2.boosts[AT] + 2);
-        p2.boosts[DF] = Math.min(6, p2.boosts[DF] + 2);
-        p2.boosts[SA] = Math.min(6, p2.boosts[SA] + 2);
-        p2.boosts[SD] = Math.min(6, p2.boosts[SD] + 2);
-        p2.boosts[SP] = Math.min(6, p2.boosts[SP] + 2);
-    }
-
-    if($('#clangL').prop("checked")){
-        p1.boosts[SA] = Math.min(6, p1.boosts[SA] + 2);
-        p1.boosts[SD] = Math.min(6, p1.boosts[SD] + 2);
-        p1.boosts[SP] = Math.min(6, p1.boosts[SP] + 2);
-    }
-    if($('#clangR').prop("checked")){
-        p2.boosts[SA] = Math.min(6, p2.boosts[SA] + 2);
-        p2.boosts[SD] = Math.min(6, p2.boosts[SD] + 2);
-        p2.boosts[SP] = Math.min(6, p2.boosts[SP] + 2);
-    }
-
-}
-
-function checkDownload(source, target) {
-    if (source.ability === "Download") {
-        if (target.stats[SD] <= target.stats[DF]) {
-            source.boosts[SA] = Math.min(6, source.boosts[SA] + 1);
-        } else {
-            source.boosts[AT] = Math.min(6, source.boosts[AT] + 1);
-        }
-    }
-}
-function checkInfiltrator(attacker, affectedSide) {
-    if (attacker.ability === "Infiltrator") {
-        affectedSide.isReflect = false;
-        affectedSide.isLightScreen = false;
-    }
-}
-
-function countBoosts(boosts) {
-    var sum = 0;
-    for (var i = 0; i < STATS.length; i++) {
-        if (boosts[STATS[i]] > 0) {
-            sum += boosts[STATS[i]];
-        }
-    }
-    return sum;
 }
 
 // GameFreak rounds DOWN on .5

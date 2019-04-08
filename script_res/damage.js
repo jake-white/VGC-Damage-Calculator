@@ -12,10 +12,10 @@ function CALCULATE_ALL_MOVES_SM(p1, p2, field) {
     checkSeeds(p2, field);
     p1.stats[DF] = getModifiedStat(p1.rawStats[DF], p1.boosts[DF]);
     p1.stats[SD] = getModifiedStat(p1.rawStats[SD], p1.boosts[SD]);
-    p1.stats[SP] = getFinalSpeed(p1, field.getWeather(), field.getTerrain());
+    p1.stats[SP] = getFinalSpeedSM(p1, field.getWeather(), field.getTerrain());
     p2.stats[DF] = getModifiedStat(p2.rawStats[DF], p2.boosts[DF]);
     p2.stats[SD] = getModifiedStat(p2.rawStats[SD], p2.boosts[SD]);
-    p2.stats[SP] = getFinalSpeed(p2, field.getWeather(), field.getTerrain());
+    p2.stats[SP] = getFinalSpeedSM(p2, field.getWeather(), field.getTerrain());
     checkIntimidate(p1, p2);
     checkIntimidate(p2, p1);
     checkDownload(p1, p2);
@@ -649,7 +649,7 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
             child.boosts[AT]++;
             child.stats[AT] = getModifiedStat(child.rawStats[AT], child.boosts[AT]);
         }
-        childDamage = getDamageResult(child, defender, move, field).damage;
+        childDamage = GET_DAMAGE_SM(child, defender, move, field).damage;
         description.attackerAbility = attacker.ability;
     }
 
@@ -808,7 +808,7 @@ function getModifiedStat(stat, mod) {
             : stat;
 }
 
-function getFinalSpeed(pokemon, weather, terrain) {
+function getFinalSpeedSM(pokemon, weather, terrain) {
     var speed = getModifiedStat(pokemon.rawStats[SP], pokemon.boosts[SP]);
     var otherSpeedMods = 1;
     if (pokemon.item === "Choice Scarf") {

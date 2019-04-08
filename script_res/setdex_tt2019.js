@@ -8382,7 +8382,7 @@ var SETDEX_TT2019 = {
             },
             "nature": "Adamant",
             "ability": "Air Lock",
-            "item": "Focus Sash",
+            "item": "Choice Band",
             "moves": [
                 "Dragon Ascent",
                 "Extreme Speed",
@@ -10701,9 +10701,9 @@ var SETDEX_TT2019 = {
         "level": 50,
         "evs": {
             "hp": 4,
-            "at": 0,
+            "at": 252,
             "df": 0,
-            "sa": 252,
+            "sa": 0,
             "sd": 0,
             "sp": 252
         },
