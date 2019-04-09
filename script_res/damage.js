@@ -83,7 +83,7 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
             defAbility = "";
             description.attackerAbility = attacker.ability;
         }
-        else if(move.name === "Moongeist Beam" || move.name === "Sunsteel Strike")
+        else if(["Moongeist Beam", "Sunsteel Strike", "Photon Geyser", "Searing Sunraze Smash", "Menacing Moonraze Maelstrom", "Light That Burns the Sky"].indexOf(move.name) !== -1)
             defAbility = ""; //works as a mold breaker
     }
 
