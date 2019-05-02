@@ -5,6 +5,12 @@ body, html {
     font-family: Open Sans;
 }
 
+#switchTheme{
+	margin-left : 90px;
+	width: 100px;
+}
+
+
 #wideguard {
     display: block;
     margin: 0 auto;
