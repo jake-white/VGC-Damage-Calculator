@@ -77,6 +77,10 @@ body.dark, html.dark {
     background-color: #323232;
 }
 
+.dark .poke-info .underLimit {
+    color: #d4d4d4;
+}
+
 /*normal page stuff now */
 
 body, html {
