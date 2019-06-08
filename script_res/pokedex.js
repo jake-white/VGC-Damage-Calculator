@@ -8977,8 +8977,8 @@ var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
 });
 
 var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
-  "Venusaur": { "formes": ["Venusaur", " Mega Venusaur"] },
-  "Charizard": { "formes": ["Mega Charizard Y ", "Mega Charizard X", "Charizard"] },
+  "Venusaur": { "formes": ["Venusaur", "Mega Venusaur"] },
+  "Charizard": { "formes": ["Mega Charizard Y", "Mega Charizard X", "Charizard"] },
   "Blastoise": { "formes": ["Blastoise", "Mega Blastoise"] },
   "Butterfree": { "bs": { "sa": 90 } },
   "Beedrill": { "bs": { "at": 90 }, "formes": ["Mega Beedrill", "Beedrill"] },

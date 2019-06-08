@@ -5162,7 +5162,7 @@ var SETDEX_TT2019 = {
                 "at": 0,
                 "df": 76,
                 "sa": 0,
-                "sd": 180,
+                "sd": 196,
                 "sp": 0
             },
             "nature": "Sassy",
