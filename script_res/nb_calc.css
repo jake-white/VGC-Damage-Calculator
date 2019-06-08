@@ -1,13 +1,89 @@
+/*here are the changes for dark mode */
+
+#switchTheme{
+	margin-left : 90px;
+	width: 100px;
+}
+
+body.dark, html.dark {
+    color: #d4d4d4;
+    background-color: #10171e;
+}
+
+.dark .panel, .dark .panel-heading {
+    background-color: #323232;
+    border-bottom: 5px solid #7e4645;
+}
+
+.dark .header {    
+    color: #ffffff !important;
+    background-color: #323232 !important;
+    border-bottom: 5px solid #7e4645 !important;
+}
+
+.dark .btn {
+    color: #d4d4d4;
+    background: #323232;
+}
+
+.dark .poke-info input[type="number"] {
+    background: #323232;
+    color: #d4d4d4;
+    border: #525252 solid 1px;
+}
+.dark .poke-info input:not([type]), .poke-info input[type="text"], .poke-info span :not(.select2-chosen) {
+    background: #323232;
+    color: #d4d4d4;
+    border: #525252 solid 1px;
+}
+
+.dark .select2-drop {    
+    background: #323232;
+    color: #d4d4d4;
+}
+
+.dark .btn-input:checked + .btn {
+    color: #fff;
+    background: #5d5d5d;
+}
+
+.dark .select2-search input {    
+    background: #323232
+}
+
+.dark select {
+    background: #323232 !important;
+    color: #d4d4d4 !important;
+    border: #525252 solid 1px !important;
+}
+
+.dark .select2-container .select2-choice {
+    color: #f1f1f1!important;
+    background: #292929 !important;
+}
+
+.dark textarea, .dark #spreadName {    
+    color: #d4d4d4;
+    border-color: rgb(169, 169, 169);
+    background-color: #323232;
+}
+
+
+.dark a:visited, .dark a:link {
+    color: #fff;
+}
+
+.dark .onoffswitch-inner:before {    
+    background-color: #323232;
+}
+
+/*normal page stuff now */
+
 body, html {
     margin:0;
     padding:0;
     background-color: #f3f3f3;
     font-family: Open Sans;
-}
-
-#switchTheme{
-	margin-left : 90px;
-	width: 100px;
 }
 
 
