@@ -3095,3 +3095,190 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
         isSignatureZ: true,
     },
 });
+
+var MOVES_SS = $.extend(true, {}, MOVES_SM, {
+    'Dynamax Cannon': {
+        bp: 100,
+        type: 'Dragon',
+        category: 'Special',
+    },
+    'Snipe Shot': {
+        bp: 80,
+        type: 'Water',
+        category: 'Special',
+    },
+    'Jaw Lock': {
+        bp: 80,
+        type: 'Dark',
+        category: 'Physical',
+    },
+    'Dragon Darts': {
+        bp: 50,
+        type: 'Dragon',
+        category: 'Physical',
+        isMultiHit: true
+    },
+    'Bolt Beak': {
+        bp: 85,
+        type: 'Electric',
+        category: 'Physical',
+    },
+    'Fishious Rend': {
+        bp: 85,
+        type: 'Water',
+        category: 'Physical',
+    },
+    'Body Press': {
+        bp: 80,
+        type: 'Fighting',
+        category: 'Physical',
+    },
+    'Drum Beating': {
+        bp: 80,
+        type: 'Grass',
+        category: 'Physical',
+    },
+    'Snap Trap': {
+        bp: 35,
+        type: 'Grass',
+        category: 'Physical',
+    },
+    'Pyro Ball': {
+        bp: 120,
+        type: 'Fire',
+        category: 'Physical',
+    },
+    'Behemoth Blade': {
+        bp: 100,
+        type: 'Steel',
+        category: 'Physical',
+    },
+    'Behemoth Bash': {
+        bp: 100,
+        type: 'Steel',
+        category: 'Physical',
+    },
+    'Aura Wheel': {
+        bp: 110,
+        type: 'Electric',
+        category: 'Physical',
+    },
+    'Breaking Swipe': {
+        bp: 60,
+        type: 'Dragon',
+        category: 'Physical',
+    },
+    'Branch Poke': {
+        bp: 40,
+        type: 'Grass',
+        category: 'Physical',
+    },
+    'Overdrive': {
+        bp: 80,
+        type: 'Electric',
+        category: 'Special',
+    },
+    'Apple Acid': {
+        bp: 80,
+        type: 'Grass',
+        category: 'Special',
+    },
+    'Grav Apple': {
+        bp: 80,
+        type: 'Grass',
+        category: 'Physical',
+    },
+    'Spirit Break': {
+        bp: 75,
+        type: 'Fairy',
+        category: 'Physical',
+    },
+    'Strange Stream': {
+        bp: 90,
+        type: 'Fairy',
+        category: 'Special',
+    },
+    'False Surrender': {
+        bp: 80,
+        type: 'Dark',
+        category: 'Physical',
+    },
+    'Meteor Assault': {
+        bp: 150,
+        type: 'Fighting',
+        category: 'Physical',
+    },
+    'Eternabeam': {
+        bp: 160,
+        type: 'Dragon',
+        category: 'Special',
+    },
+    'Steel Beam': {
+        bp: 140,
+        type: 'Steel',
+        category: 'Special',
+    },
+    'Max Strike': {
+        type: 'Normal'
+    },
+    'Max Flare': {
+        type: 'Fire'
+    },
+    'Max Hailstorm': {
+        type: 'Ice'
+    },
+    'Max Geyser': {
+        type: 'Water'
+    },
+    'Max Lightning': {
+        type: 'Electric'
+    },
+    'Max Knuckle': {
+        type: 'Fighting'
+    },
+    'Max Overgrowth': {
+        type: 'Grass'
+    },
+    'Max Mindstorm': {
+        type: 'Psychic'
+    },
+    'Max Flutterby': {
+        type: 'Bug'
+    },
+    'Max Ooze': {
+        type: 'Poison'
+    },
+    'Max Airstream': {
+        type: 'Flying'
+    },
+    'Max Wyrmwind': {
+        type: 'Dragon'
+    },
+    'Max Rockfall': {
+        type: 'Rock'
+    },
+    'Max Quake': {
+        type: 'Ground'
+    },
+    'Max Steelspike': {
+        type: 'Steel'
+    },
+    'Max Starfall': {
+        type: 'Fairy'
+    },
+    'Max Phantasm': {
+        type: 'Ghost'
+    },
+    'Max Darkness': {
+        type: 'Dark'
+    },
+});
+
+var MAXMOVES_LOOKUP = {
+    'Normal':'Max Strike','Fire':'Max Flare','Water':'Max Geyser',
+    'Electric':'Max Lightning','Grass':'Max Overgrowth','Ghost':'Max Phantasm',
+    'Dark':'Max Darkness','Psychic':'Max Mindstorm','Fighting':'Max Knuckle',
+    'Steel':'Max Steelspike','Ice':'Max Hailstorm','Ground':'Max Quake',
+    'Rock':'Max Rockfall','Bug':'Max Flutterby','Fairy':'Max Starfall',
+    'Flying':'Max Airstream','Dragon':'Max Wyrmwind','Poison':'Max Ooze'
+};

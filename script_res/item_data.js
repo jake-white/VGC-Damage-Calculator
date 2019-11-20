@@ -183,6 +183,10 @@ var ITEMS_SM = ITEMS_XY.concat([
     'Grassy Seed'
 ]);
 
+var ITEMS_SS = ITEMS_SM.concat([
+
+]);
+
 function getItemBoostType(item) {
     switch (item) {
         case 'Draco Plate':
