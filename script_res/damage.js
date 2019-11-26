@@ -97,11 +97,14 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
             else if(tempMove.bp >= 65 || exceptions_120.includes(move.name)) move.bp = 120;
             else if(tempMove.bp >= 55 || exceptions_100.includes(move.name)) move.bp = 110;
             else if(tempMove.bp >= 45) move.bp = 100;
-            else tempMove.bp = 90;
+            else move.bp = 90;
         }
         moveDescName = MAXMOVES_LOOKUP[move.type] + " (" + move.bp + " BP)";
         move.category = tempMove.category;
         move.isMax = true;
+        if(attacker.item == "Choice Band" || attacker.item == "Choice Specs" || attacker.item == "Choice Scarf") {
+            attacker.item = "";
+        }
     }
     var description = {
         "attackerName": attacker.name,
@@ -185,7 +188,7 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
             (move.type === "Grass" && defAbility === "Sap Sipper") ||
             (move.type === "Fire" && defAbility.indexOf("Flash Fire") !== -1) ||
             (move.type === "Water" && ["Dry Skin", "Storm Drain", "Water Absorb"].indexOf(defAbility) !== -1) ||
-            (move.type === "Electric" && ["Lightning Rod", "Lightning Rod", "Motor Drive", "Volt Absorb"].indexOf(defAbility) !== -1) ||
+            (move.type === "Electric" && ["Lightning Rod", "Motor Drive", "Volt Absorb"].indexOf(defAbility) !== -1) ||
             (move.type === "Ground" && !field.isGravity && defAbility === "Levitate") ||
             (move.isBullet && defAbility === "Bulletproof") ||
             (move.isSound && defAbility === "Soundproof")) {
@@ -532,6 +535,10 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
             (attacker.item === "Choice Specs" && move.category === "Special")) {
         atMods.push(0x1800);
         description.attackerItem = attacker.item;
+    }
+    if(attacker.ability === "Gorilla Tactics" && move.category === "Physical") {
+        atMods.push(0x1800);
+        description.attackerAbility = attacker.ability;
     }
 
     attack = Math.max(1, pokeRound(attack * chainMods(atMods) / 0x1000));

@@ -12678,6 +12678,7 @@ var POKEDEX_SS = $.extend(true, {}, POKEDEX_SM, {
       "sp": 95
     },
     "w": 120,
+    "ab": "Gorilla Tactics",
     "formes": [
       "Darmanitan-Galar",
       "Darmanitan-Z-Galar"
@@ -12695,6 +12696,7 @@ var POKEDEX_SS = $.extend(true, {}, POKEDEX_SM, {
       "sp": 135
     },
     "w": 120,
+    "ab": "Zen Mode",
     "isAlternateForme": true
   },
   "Yamask-Galar": {
@@ -13834,7 +13836,55 @@ var POKEDEX_SS = $.extend(true, {}, POKEDEX_SM, {
       "sp": 130
     },
     "w": 950,
-  },
+  },  
+  "Aegislash": { "bs": { "def": 140, "sd": 140 } },
+  "Aegislash-Blade": { "bs": { "atk": 140, "sa": 140 } },
+  
+  "Venusaur": { "formes": ["Venusaur"] },
+  "Charizard": { "formes": ["Charizard"] },
+  "Blastoise": { "formes": ["Blastoise"] },
+  "Beedrill": { "formes": ["Beedrill"] },
+  "Pidgeot": { "formes": ["Pidgeot"] },
+  "Alakazam": { "formes": ["Alakazam"] },
+  "Slowbro": { "formes": ["Slowbro"] },
+  "Gengar": { "formes": ["Gengar"] },
+  "Kangaskhan": { "formes": ["Kangaskhan"] },
+  "Pinsir": { "formes": ["Pinsir"] },
+  "Gyarados": { "formes": ["Gyarados"] },
+  "Aerodactyl": { "formes": ["Aerodactyl"] },
+  "Mewtwo": { "formes": ["Mewtwo"] },
+  "Ampharos": { "formes": ["Ampharos"] },
+  "Steelix": { "formes": ["Steelix"] },
+  "Scizor": { "formes": ["Scizor"] },
+  "Heracross": { "formes": ["Heracross"] },
+  "Houndoom": { "formes": ["Houndoom"] },
+  "Tyranitar": { "formes": ["Tyranitar"] },
+  "Sceptile": { "formes": ["Sceptile"] },
+  "Blaziken": { "formes": ["Blaziken"] },
+  "Swampert": { "formes": ["Swampert"] },
+  "Gardevoir": { "t2": "Fairy", "formes": ["Gardevoir"] },
+  "Sableye": { "formes": ["Sableye"] },
+  "Mawile": { "formes": ["Mawile"] },
+  "Aggron": { "formes": ["Aggron"] },
+  "Medicham": { "formes": ["Medicham"] },
+  "Manectric": { "formes": ["Manectric"] },
+  "Sharpedo": { "formes": ["Sharpedo"] },
+  "Camerupt": { "formes": ["Camerupt"] },
+  "Altaria": { "formes": ["Altaria"] },
+  "Banette": { "formes": ["Banette"] },
+  "Absol": { "formes": ["Absol"] },
+  "Glalie": { "formes": ["Glalie"] },
+  "Salamence": { "formes": ["Salamence"] },
+  "Metagross": { "formes": ["Metagross"] },
+  "Latias": { "formes": ["Latias"] },
+  "Latios": { "formes": ["Latios"] },
+  "Rayquaza": { "formes": ["Rayquaza"] },
+  "Lopunny": { "formes": ["Lopunny"] },
+  "Garchomp": { "formes": ["Garchomp"] },
+  "Lucario": { "formes": ["Lucario"] },
+  "Abomasnow": { "formes": ["Abomasnow"] },
+  "Gallade": { "formes": ["Gallade"] },
+  "Audino": { "formes": ["Audino"] },
 });
 
 delete POKEDEX_SM['Gengar'].ab;

@@ -2955,9 +2955,9 @@ var SETDEX_TT2020 = {
             "item": "",
             "moves": [
                 "Waterfall",
-                "Earthquake",
-                "Crunch",
-                "Ice Fang"
+                "Bounce",
+                "Power Whip",
+                "Stone Edge"
             ]
         }
     },
@@ -5712,13 +5712,13 @@ var SETDEX_TT2020 = {
                 "sp": 252
             },
             "nature": "Adamant",
-            "ability": "Mold Breaker",
-            "item": "Life Orb",
+            "ability": "Sand Rush",
+            "item": "Choice Band",
             "moves": [
                 "Rock Slide",
                 "Iron Head",
                 "Earthquake",
-                "Drill Run"
+                "High Horsepower"
             ]
         }
     },
@@ -10805,6 +10805,70 @@ var SETDEX_TT2020 = {
               ""
           ]
       },
+    },
+    "Dragapult": {
+        "Default Set": {
+            "level": 50,
+            "evs": {
+                "hp": 4,
+                "at": 252,
+                "df": 0,
+                "sa": 0,
+                "sd": 0,
+                "sp": 252
+            },
+            "nature": "Jolly",
+            "ability": "Clear Body",
+            "item": "",
+            "moves": [
+                "Phantom Force",
+                "Dragon Claw",
+                "Dragon Darts",
+                "U-turn"
+            ]
+        },        
+        "Choice Specs Set": {
+            "level": 50,
+            "evs": {
+                "hp": 4,
+                "at": 0,
+                "df": 0,
+                "sa": 252,
+                "sd": 0,
+                "sp": 252
+            },
+            "nature": "Timid",
+            "ability": "Clear Body",
+            "item": "Choice Specs",
+            "moves": [
+                "Shadow Ball",
+                "Draco Meteor",
+                "Flamethrower",
+                "Fire Blast"
+            ]
+        }
+    },
+    "Duraludon": {
+        "Default Set": {
+            "level": 50,
+            "evs": {
+                "hp": 252,
+                "at": 0,
+                "df": 0,
+                "sa": 252,
+                "sd": 0,
+                "sp": 4
+            },
+            "nature": "Modest",
+            "ability": "",
+            "item": "",
+            "moves": [
+                "Flash Cannon",
+                "Dragon Pulse",
+                "Draco Meteor",
+                "Snarl"
+            ]
+        },
     },
 
 };
