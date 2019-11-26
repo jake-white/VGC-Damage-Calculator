@@ -136,6 +136,11 @@ th {
 .locked-move:checked + .btn {
     background: #ffff99;
 }
+.dark .locked-move:checked + .btn {
+    background: #10171e !important;
+}
+
+
 
 /* header */
 .move-result-group {
