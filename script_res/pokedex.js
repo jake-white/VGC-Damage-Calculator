@@ -13689,7 +13689,7 @@ var POKEDEX_SS = $.extend(true, {}, POKEDEX_SM, {
       "sp": 75
     },
     "w": 215,
-    "ab": "Water Absorb",
+    "ab": "Strong Jaw",
   },
   "Arctovish": {
     "t1": "Water",
