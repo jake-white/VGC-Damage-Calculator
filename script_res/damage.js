@@ -627,7 +627,7 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
         } else {
             stabMod = 0x1800;
         }
-    } else if (attacker.ability === "Protean") {
+    } else if (attacker.ability === "Protean" || attacker.ability == "Libero") {
         stabMod = 0x1800;
         description.attackerAbility = attacker.ability;
     }
@@ -663,6 +663,14 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
     if (defAbility === "Fluffy" && move.makesContact) {
         finalMods.push(0x800);
         description.defenderAbility = defAbility;
+    }
+    if (defAbility === "Punk Rock" && move.isSound) {
+        finalMods.push(0x800);
+        description.defenderAbility = defAbility;
+    }
+    if(attacker.ability == "Punk Rock" && move.isSound) {
+        finalMods.push(0x14CC);
+        description.attackerAbility = attacker.ability;
     }
     if (field.isFriendGuard) {
         finalMods.push(0xC00);

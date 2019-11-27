@@ -10870,5 +10870,202 @@ var SETDEX_TT2020 = {
             ]
         },
     },
-
+    "Dracovish": {
+        "Default Set": {
+            "level": 50,
+            "evs": {
+                "hp": 4,
+                "at": 0,
+                "df": 0,
+                "sa": 252,
+                "sd": 0,
+                "sp": 252
+            },
+            "nature": "Jolly",
+            "ability": "Strong Jaw",
+            "item": "Choice Scarf",
+            "moves": [
+                "Fishious Rend",
+                "Fishious Rend (Doubled)",
+                "Rock Slide",
+                "Ice Fang"
+            ]
+        },
+    },
+    "Barraskewda": {
+        "Default Set": {
+            "level": 50,
+            "evs": {
+                "hp": 4,
+                "at": 252,
+                "df": 0,
+                "sa": 0,
+                "sd": 0,
+                "sp": 252
+            },
+            "nature": "Jolly",
+            "ability": "Swift Swim",
+            "item": "",
+            "moves": [
+                "Liquidation",
+                "Close Combat",
+                "Poison Jab",
+                "Ice Fang"
+            ]
+        },
+    },
+    "Indeedee-F": {
+        "Default Set": {
+            "level": 50,
+            "evs": {
+                "hp": 252,
+                "at": 0,
+                "df": 0,
+                "sa": 252,
+                "sd": 0,
+                "sp": 0
+            },
+            "nature": "Modest",
+            "ability": "Psychic Surge",
+            "item": "",
+            "moves": [
+                "Fake Out",
+                "Psyshock",
+                "Psychic",
+                ""
+            ]
+        },
+    },
+    "Darmanitan-Galar": {
+        "Default Set": {
+            "level": 50,
+            "evs": {
+                "hp": 4,
+                "at": 252,
+                "df": 0,
+                "sa": 0,
+                "sd": 0,
+                "sp": 252
+            },
+            "nature": "Adamant",
+            "ability": "Gorilla Tactics",
+            "item": "Choice Scarf",
+            "moves": [
+                "Icicle Crash",
+                "U-turn",
+                "Superpower",
+                "Flare Blitz"
+            ]
+        },
+    },
+    "Grimmsnarl": {
+        "Default Set": {
+            "level": 50,
+            "evs": {
+                "hp": 252,
+                "at": 252,
+                "df": 0,
+                "sa": 0,
+                "sd": 4,
+                "sp": 0
+            },
+            "nature": "Adamant",
+            "ability": "",
+            "item": "",
+            "moves": [
+                "Sucker Punch",
+                "Play Rough",
+                "Spirit Break",
+                ""
+            ]
+        },
+    },
+    "Toxtricity": {
+        "Default Set": {
+            "level": 50,
+            "evs": {
+                "hp": 4,
+                "at": 0,
+                "df": 0,
+                "sa": 252,
+                "sd": 0,
+                "sp": 252
+            },
+            "nature": "Modest",
+            "ability": "Punk Rock",
+            "item": "",
+            "moves": [
+                "Overdrive",
+                "Sludge Bomb",
+                "Discharge",
+                "Volt Switch"
+            ]
+        },
+    },
+    "Corviknight": {
+        "Default Set": {
+            "level": 50,
+            "evs": {
+                "hp": 252,
+                "at": 0,
+                "df": 4,
+                "sa": 0,
+                "sd": 252,
+                "sp": 0
+            },
+            "nature": "Careful",
+            "ability": "",
+            "item": "Figy Berry",
+            "moves": [
+                "Brave Bird",
+                "Iron Head",
+                "Body Press",
+                "U-turn"
+            ]
+        },
+    },
+    "Falinks": {
+        "Default Set": {
+            "level": 50,
+            "evs": {
+                "hp": 4,
+                "at": 252,
+                "df": 0,
+                "sa": 0,
+                "sd": 0,
+                "sp": 252
+            },
+            "nature": "Jolly",
+            "ability": "Defiant",
+            "item": "Figy Berry",
+            "moves": [
+                "Close Combat",
+                "Reversal",
+                "Iron Head",
+                "Rock Slide"
+            ]
+        },
+    },
+    "Hatterene": {
+        "Default Set": {
+            "level": 50,
+            "evs": {
+                "hp": 252,
+                "at": 0,
+                "df": 4,
+                "sa": 252,
+                "sd": 0,
+                "sp": 0
+            },
+            "nature": "Quiet",
+            "ability": "",
+            "item": "Life Orb",
+            "moves": [
+                "Psychic",
+                "Dazzling Gleam",
+                "Psyshock",
+                "Mystical Fire"
+            ]
+        },
+    },
 };

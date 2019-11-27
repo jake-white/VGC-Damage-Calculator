@@ -17,7 +17,7 @@ function getKOChanceText(damage, move, defender, field, isBadDreams) {
         return 'guaranteed OHKO';
     } else if (damage.length === 256 && hasSitrus && damage[0] >= defender.curHP + Math.floor(defender.maxHP / 4)) {
         return 'guaranteed OHKO';
-    } else if (damage.length === 256 && hasFigy && damage[0] >= defender.curHP + Math.floor(defender.maxHP / 2)) {
+    } else if (damage.length === 256 && hasFigy && damage[0] >= defender.curHP + Math.floor(defender.maxHP / 3)) {
         return 'guaranteed OHKO';
     }
 
@@ -198,7 +198,7 @@ function getKOChance(damage, multihit, hp, eot, hits, maxHP, toxicCounter, hasSi
                 return (n-i)/n;
             } else if (multihit && hasSitrus && damage[i] >= hp + Math.floor(maxHP / 4)) {
                 return (n-i)/n;
-            } else if (multihit && hasFigy && damage[i] >= hp + Math.floor(maxHP / 2)) {
+            } else if (multihit && hasFigy && damage[i] >= hp + Math.floor(maxHP / 3)) {
                 return (n-i)/n;
             }
         }
@@ -222,7 +222,7 @@ function getKOChance(damage, multihit, hp, eot, hits, maxHP, toxicCounter, hasSi
             hasSitrus = false;
         }
         else if (((hp - damage[i] <= maxHP / 4) && hasFigy && !gluttony) || ((hp - damage[i] <= maxHP / 2) && hasFigy && gluttony)) {
-            hp += Math.floor(maxHP / 2);
+            hp += Math.floor(maxHP / 3);
             hasFigy = false;
         }
         var c;
@@ -251,7 +251,7 @@ function predictTotal(damage, eot, hits, toxicCounter, hp, maxHP, hasSitrus, has
             hasSitrus = false;
         }
         else if (((hp - total <= maxHP / 4) && hasFigy && !gluttony) || ((hp - total <= maxHP / 2) && hasFigy && gluttony)) {
-            hp += Math.floor(maxHP / 2);
+            hp += Math.floor(maxHP / 3);
             hasFigy = false;
         }
         if (i < hits - 1) {

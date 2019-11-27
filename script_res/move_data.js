@@ -3123,10 +3123,22 @@ var MOVES_SS = $.extend(true, {}, MOVES_SM, {
         type: 'Electric',
         category: 'Physical',
     },
+    'Bolt Beak (Doubled)': {
+        bp: 170,
+        type: 'Electric',
+        category: 'Physical',
+    },
     'Fishious Rend': {
         bp: 85,
         type: 'Water',
         category: 'Physical',
+        isBite: true,
+    },
+    'Fishious Rend (Doubled)': {
+        bp: 170,
+        type: 'Water',
+        category: 'Physical',
+        isBite: true,
     },
     'Body Press': {
         bp: 80,
@@ -3177,6 +3189,7 @@ var MOVES_SS = $.extend(true, {}, MOVES_SM, {
         bp: 80,
         type: 'Electric',
         category: 'Special',
+        isSound: true,
     },
     'Apple Acid': {
         bp: 80,
@@ -3192,6 +3205,7 @@ var MOVES_SS = $.extend(true, {}, MOVES_SM, {
         bp: 75,
         type: 'Fairy',
         category: 'Physical',
+        hasSecondaryEffect: true,
     },
     'Strange Stream': {
         bp: 90,
