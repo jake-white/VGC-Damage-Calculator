@@ -966,11 +966,11 @@ var SETDEX_SHOWDOWN={
     "Common Showdown": {
       "level": 50,
       "evs": {
-        "hp": 248,
+        "hp": 252,
         "at": 0,
         "df": 0,
         "sa": 252,
-        "sd": 8,
+        "sd": 4,
         "sp": 0
       },
       "nature": "Quiet",
