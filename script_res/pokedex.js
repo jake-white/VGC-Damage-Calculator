@@ -13891,3 +13891,7 @@ delete POKEDEX_SM['Gengar'].ab;
 delete POKEDEX_SM['Raikou'].ab;
 delete POKEDEX_SM['Entei'].ab;
 delete POKEDEX_SM['Suicune'].ab;
+
+delete POKEDEX_SS['Raikou'];
+delete POKEDEX_SS['Entei'];
+delete POKEDEX_SS['Suicune'];
