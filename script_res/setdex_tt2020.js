@@ -1,26 +1,4 @@
 var SETDEX_TT2020 = {
-    "Swellow": {
-        "Default Set": {
-            "level": 50,
-            "evs": {
-                "hp": 0,
-                "at": 252,
-                "df": 0,
-                "sa": 0,
-                "sd": 4,
-                "sp": 252
-            },
-            "nature": "Jolly",
-            "ability": "Guts",
-            "item": "Flame Orb",
-            "moves": [
-                "Brave Bird",
-                "Facade",
-                "Quick Attack",
-                "U-turn"
-            ]
-        }
-    },
     "Eevee": {
         "Default Set": {
             "level": 50,
@@ -43,50 +21,6 @@ var SETDEX_TT2020 = {
             ]
         }
     },
-    "Poliwrath": {
-        "Default Set": {
-            "level": 50,
-            "evs": {
-                "hp": 252,
-                "at": 252,
-                "df": 0,
-                "sa": 0,
-                "sd": 0,
-                "sp": 4
-            },
-            "nature": "Adamant",
-            "ability": "Swift Swim",
-            "item": "Sitrus Berry",
-            "moves": [
-                "Waterfall",
-                "Ice Punch",
-                "Brick Break",
-                "Poison Jab"
-            ]
-        }
-    },
-    "Emolga": {
-        "Default Set": {
-            "level": 50,
-            "evs": {
-                "hp": 4,
-                "at": 0,
-                "df": 0,
-                "sa": 252,
-                "sd": 0,
-                "sp": 252
-            },
-            "nature": "Timid",
-            "ability": "Motor Drive",
-            "item": "Salac Berry",
-            "moves": [
-                "Electro Ball",
-                "Air Slash",
-                "Thunderbolt",
-                "Discharge"
-            ]
-        }
-    },
     "Butterfree": {
         "Default Set": {
             "level": 50,
@@ -106,28 +40,6 @@ var SETDEX_TT2020 = {
                 "Psychic",
                 "Giga Drain",
                 "Shadow Ball"
-            ]
-        }
-    },
-    "Tornadus": {
-        "Default Set": {
-            "level": 50,
-            "evs": {
-                "hp": 0,
-                "at": 0,
-                "df": 0,
-                "sa": 252,
-                "sd": 4,
-                "sp": 252
-            },
-            "nature": "Timid",
-            "ability": "",
-            "item": "",
-            "moves": [
-                "Hurricane",
-                "Air Slash",
-                "Heat Wave",
-                "Icy Wind"
             ]
         }
     },
