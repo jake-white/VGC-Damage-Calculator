@@ -14221,4 +14221,5 @@ var galar_only_pokemon = [
 "Eternatus",
 ];
 let to_remove = all_pokemon.filter(x => !galar_only_pokemon.includes(x));
+console.log(to_remove);
 to_remove.forEach(function(item){ delete POKEMON_SS[item] });
