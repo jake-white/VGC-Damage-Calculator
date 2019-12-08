@@ -13849,8 +13849,8 @@ var galar_only_pokemon = [
 "Unfezant",
 "Nickit",
 "Thievul",
-"Zigzagoon",
-"Linoone",
+"Zigzagoon-Galar",
+"Linoone-Galar",
 "Obstagoon",
 "Wooloo",
 "Dubwool",
@@ -14000,7 +14000,7 @@ var galar_only_pokemon = [
 "Steelix",
 "Arrokuda",
 "Barraskewda",
-"Meowth",
+"Meowth-Galar",
 "Perrserker",
 "Persian",
 "Milcery",
@@ -14036,7 +14036,7 @@ var galar_only_pokemon = [
 "Araquanid",
 "Wynaut",
 "Wobbuffet",
-"Farfetch'd",
+"Farfetch'd-Galar",
 "Sirfetch'd",
 "Chinchou",
 "Lanturn",
@@ -14054,7 +14054,7 @@ var galar_only_pokemon = [
 "Golisopod",
 "Binacle",
 "Barbaracle",
-"Corsola",
+"Corsola-Galar",
 "Cursola",
 "Impidimp",
 "Morgrem",
@@ -14183,10 +14183,10 @@ var galar_only_pokemon = [
 "Lunatone",
 "Solrock",
 "Mime Jr.",
-"Mr. Mime",
+"Mr. Mime-Galar",
 "Mr. Rime",
-"Darumaka",
-"Darmanitan",
+"Darumaka-Galar",
+"Darmanitan-Galar",
 "Stonjourner",
 "Eiscue",
 "Duraludon",
@@ -14222,4 +14222,4 @@ var galar_only_pokemon = [
 ];
 let to_remove = all_pokemon.filter(x => !galar_only_pokemon.includes(x));
 console.log(to_remove);
-to_remove.forEach(function(item){ delete POKEMON_SS[item] });
+to_remove.forEach(function(item){ delete POKEDEX_SS[item] });
