@@ -77,7 +77,7 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
     "Flail", "Return", "Frustration", "Endeavor", "Natural Gift", "Trump Card", "Stored Power", "Rock Blast", "Gear Grind", "Gyro Ball", "Heavy Slam"];
     var exceptions_120 = ["Double Hit", "Spike Cannon"];
     var exceptions_100 = ["Twineedle", "Beat Up", "Fling", "Dragon Rage", "Nature's Madness", "Night Shade", "Comet Punch", "Fury Swipes", "Sonic Boom", "Bide",
-    "Super Fang", "Present", "Sput Up", "Psywave", "Mirror Coat", "Metal Burst"];
+    "Super Fang", "Present", "Spit Up", "Psywave", "Mirror Coat", "Metal Burst"];
     if(move.isMax) {
         var tempMove = move;
         move = moves[MAXMOVES_LOOKUP[tempMove.type]];
