@@ -13663,6 +13663,20 @@ var POKEDEX_SS = $.extend(true, {}, POKEDEX_SM, {
     "w": 650,
     "ab": "Sheer Force",
   },
+  "Dracozolt": {
+    "t1": "Electric",
+    "t2": "Dragon",
+    "bs": {
+      "hp": 90,
+      "at": 100,
+      "df": 90,
+      "sa": 80,
+      "sd": 70,
+      "sp": 75
+    },
+    "w": 190,
+    "ab": "Volt Absorb",
+  },
   "Arctozolt": {
     "t1": "Electric",
     "t2": "Ice",
