@@ -676,6 +676,10 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
         finalMods.push(0xC00);
         description.isFriendGuard = true;
     }
+    if (field.isPowerSpot) {
+        finalMods.push(0x14CC)
+        description.isPowerSpot = true;
+    }
     if ((defAbility === "Solid Rock" || defAbility === "Filter" || defAbility === "Prism Armor") && typeEffectiveness > 1) {
         finalMods.push(0xC00);
         description.defenderAbility = defAbility;
@@ -765,6 +769,9 @@ function buildDescription(description) {
     output += description.attackerName + " ";
     if (description.isHelpingHand) {
         output += "Helping Hand ";
+    }
+    if (description.isPowerSpot) {
+        output += "Power Spot ";
     }
     if (description.isBattery) {
         output += "Battery ";
