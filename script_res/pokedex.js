@@ -12631,7 +12631,7 @@ var POKEDEX_SS = $.extend(true, {}, POKEDEX_SM, {
   },
   "Zigzagoon-Galar": {
     "t1": "Dark",
-    "t1": "Normal",
+    "t2": "Normal",
     "bs": {
       "hp": 38,
       "at": 30,
@@ -12644,7 +12644,7 @@ var POKEDEX_SS = $.extend(true, {}, POKEDEX_SM, {
   },
   "Linoone-Galar": {
     "t1": "Dark",
-    "t1": "Normal",
+    "t2": "Normal",
     "bs": {
       "hp": 78,
       "at": 70,
@@ -13273,7 +13273,7 @@ var POKEDEX_SS = $.extend(true, {}, POKEDEX_SM, {
     "w": 4,
     "ab": "Technician",
   },
-  "Clobbopus": {
+  "Grapploct": {
     "t1": "Fighting",
     "bs": {
       "hp": 80,
