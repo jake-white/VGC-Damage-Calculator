@@ -3122,23 +3122,27 @@ var MOVES_SS = $.extend(true, {}, MOVES_SM, {
         bp: 85,
         type: 'Electric',
         category: 'Physical',
+        makesContact: true,
     },
     'Bolt Beak (Doubled)': {
         bp: 170,
         type: 'Electric',
         category: 'Physical',
+        makesContact: true,
     },
     'Fishious Rend': {
         bp: 85,
         type: 'Water',
         category: 'Physical',
         isBite: true,
+        makesContact: true,
     },
     'Fishious Rend (Doubled)': {
         bp: 170,
         type: 'Water',
         category: 'Physical',
         isBite: true,
+        makesContact: true,
     },
     'Body Press': {
         bp: 80,
