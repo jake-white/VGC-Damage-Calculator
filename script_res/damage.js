@@ -338,6 +338,11 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
         description.isBattery = true;
     }
 
+    if (field.isPowerSpot) {
+        bpMods.push(0x14CD)
+        description.isPowerSpot = true;
+    }
+
     if (attacker.ability === "Sheer Force" && move.hasSecondaryEffect) {
         bpMods.push(0x14CD);
         description.attackerAbility = attacker.ability;
@@ -675,10 +680,6 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
     if (field.isFriendGuard) {
         finalMods.push(0xC00);
         description.isFriendGuard = true;
-    }
-    if (field.isPowerSpot) {
-        finalMods.push(0x14CC)
-        description.isPowerSpot = true;
     }
     if ((defAbility === "Solid Rock" || defAbility === "Filter" || defAbility === "Prism Armor") && typeEffectiveness > 1) {
         finalMods.push(0xC00);
