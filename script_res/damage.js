@@ -430,13 +430,13 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
     if (field.isGravity || (attacker.type1 !== "Flying" && attacker.type2 !== "Flying" &&
                 attacker.item !== "Air Balloon" && attacker.ability !== "Levitate")) {
         if (field.terrain === "Electric" && move.type === "Electric") {
-            bpMods.push(0x1800);
+            bpMods.push(0x14cc);
             description.terrain = field.terrain;
         } else if (field.terrain === "Grassy" && move.type == "Grass") {
-            bpMods.push(0x1800);
+            bpMods.push(0x14cc);
             description.terrain = field.terrain;
         }else if (field.terrain === "Psychic" && move.type == "Psychic") {
-            bpMods.push(0x1800);
+            bpMods.push(0x14cc);
             description.terrain = field.terrain;
         }
     }
