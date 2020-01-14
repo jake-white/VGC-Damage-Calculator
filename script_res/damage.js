@@ -102,6 +102,7 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
         moveDescName = MAXMOVES_LOOKUP[move.type] + " (" + move.bp + " BP)";
         move.category = tempMove.category;
         move.isMax = true;
+        move.isCrit = tempMove.isCrit;
         if(attacker.item == "Choice Band" || attacker.item == "Choice Specs" || attacker.item == "Choice Scarf") {
             attacker.item = "";
         }
