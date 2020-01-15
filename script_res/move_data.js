@@ -3194,6 +3194,7 @@ var MOVES_SS = $.extend(true, {}, MOVES_SM, {
         type: 'Electric',
         category: 'Special',
         isSound: true,
+        isSpread: true
     },
     'Apple Acid': {
         bp: 80,
