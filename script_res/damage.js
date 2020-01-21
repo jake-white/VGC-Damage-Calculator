@@ -338,6 +338,11 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
         description.isBattery = true;
     }
 
+    if (field.isPowerSpot) {
+        bpMods.push(0x14CD)
+        description.isPowerSpot = true;
+    }
+
     if (attacker.ability === "Sheer Force" && move.hasSecondaryEffect) {
         bpMods.push(0x14CD);
         description.attackerAbility = attacker.ability;
@@ -766,6 +771,9 @@ function buildDescription(description) {
     output += description.attackerName + " ";
     if (description.isHelpingHand) {
         output += "Helping Hand ";
+    }
+    if (description.isPowerSpot) {
+        output += "Power Spot ";
     }
     if (description.isBattery) {
         output += "Battery ";
