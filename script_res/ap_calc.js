@@ -713,6 +713,7 @@ function Field() {
     var isFriendGuard = [$("#friendGuardL").prop("checked"), $("#friendGuardR").prop("checked")];
     var isBattery = [$("#batteryR").prop("checked"), $("#batteryL").prop("checked")];
     var isPowerSpot = [$("#powerSpotR").prop("checked"), $("#powerSpotL").prop("checked")]; // affects attacks against opposite side
+    var isSteelySpirit = [$("#steelySpiritR").prop("checked"), $("#steelySpiritL").prop("checked")]; // affects attacks against opposite side
 
     this.getWeather = function() {
         return weather;
@@ -724,11 +725,11 @@ function Field() {
         weather = "";
     };
     this.getSide = function(i) {
-        return new Side(format, terrain, weather, isGravity, isSR[i], spikes[i], isReflect[i], isLightScreen[i], isForesight[i], isHelpingHand[i], isFriendGuard[i], isBattery[i], isProtect[i], isPowerSpot[i]);
+        return new Side(format, terrain, weather, isGravity, isSR[i], spikes[i], isReflect[i], isLightScreen[i], isForesight[i], isHelpingHand[i], isFriendGuard[i], isBattery[i], isProtect[i], isPowerSpot[i], isSteelySpirit[i]);
     };
 }
 
-function Side(format, terrain, weather, isGravity, isSR, spikes, isReflect, isLightScreen, isForesight, isHelpingHand, isFriendGuard, isBattery, isProtect, isPowerSpot) {
+function Side(format, terrain, weather, isGravity, isSR, spikes, isReflect, isLightScreen, isForesight, isHelpingHand, isFriendGuard, isBattery, isProtect, isPowerSpot, isSteelySpirit) {
     this.format = format;
     this.terrain = terrain;
     this.weather = weather;
@@ -743,6 +744,7 @@ function Side(format, terrain, weather, isGravity, isSR, spikes, isReflect, isLi
     this.isBattery = isBattery;
     this.isProtect = isProtect;
     this.isPowerSpot = isPowerSpot;
+    this.isSteelySpirit = isSteelySpirit;
 }
 
 var gen, pokedex, setdex, typeChart, moves, abilities, items, STATS, calculateAllMoves, calcHP, calcStat;
