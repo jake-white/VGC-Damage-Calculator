@@ -947,7 +947,7 @@ function checkIntimidate(source, target) {
     if (source.ability === "Intimidate") {
         if (target.ability === "Contrary" || target.ability === "Defiant") {
             target.boosts[AT] = Math.min(6, target.boosts[AT] + 1);
-        } else if (["Clear Body", "White Smoke", "Hyper Cutter", "Full Metal Body"].indexOf(target.ability) !== -1) {
+        } else if (["Clear Body", "White Smoke", "Hyper Cutter", "Full Metal Body", "Scrappy"].indexOf(target.ability) !== -1) {
             // no effect
         } else if (target.ability === "Simple") {
             target.boosts[AT] = Math.max(-6, target.boosts[AT] - 2);
