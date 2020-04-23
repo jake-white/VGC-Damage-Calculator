@@ -10,12 +10,14 @@ function CALCULATE_ALL_MOVES_SM(p1, p2, field) {
     checkEvo(p1, p2);
     checkSeeds(p1, field);
     checkSeeds(p2, field);
+    var side1 = field.getSide(1);
+    var side2 = field.getSide(0);
     p1.stats[DF] = getModifiedStat(p1.rawStats[DF], p1.boosts[DF]);
     p1.stats[SD] = getModifiedStat(p1.rawStats[SD], p1.boosts[SD]);
-    p1.stats[SP] = getFinalSpeedSM(p1, field.getWeather(), field.getTerrain());
+    p1.stats[SP] = getFinalSpeedSM(p1, field.getWeather(), field.getTerrain(), side1.isTailwind);
     p2.stats[DF] = getModifiedStat(p2.rawStats[DF], p2.boosts[DF]);
     p2.stats[SD] = getModifiedStat(p2.rawStats[SD], p2.boosts[SD]);
-    p2.stats[SP] = getFinalSpeedSM(p2, field.getWeather(), field.getTerrain());
+    p2.stats[SP] = getFinalSpeedSM(p2, field.getWeather(), field.getTerrain(), side2.isTailwind);
     checkIntimidate(p1, p2);
     checkIntimidate(p2, p1);
     checkDownload(p1, p2);
@@ -24,8 +26,6 @@ function CALCULATE_ALL_MOVES_SM(p1, p2, field) {
     p1.stats[SA] = getModifiedStat(p1.rawStats[SA], p1.boosts[SA]);
     p2.stats[AT] = getModifiedStat(p2.rawStats[AT], p2.boosts[AT]);
     p2.stats[SA] = getModifiedStat(p2.rawStats[SA], p2.boosts[SA]);
-    var side1 = field.getSide(1);
-    var side2 = field.getSide(0);
     checkInfiltrator(p1, side1);
     checkInfiltrator(p2, side2);
     var results = [[],[]];
@@ -877,7 +877,7 @@ function getModifiedStat(stat, mod) {
             : stat;
 }
 
-function getFinalSpeedSM(pokemon, weather, terrain) {
+function getFinalSpeedSM(pokemon, weather, terrain, tailwind) {
     var speed = getModifiedStat(pokemon.rawStats[SP], pokemon.boosts[SP]);
     var otherSpeedMods = 1;
     if (pokemon.item === "Choice Scarf") {
@@ -903,8 +903,12 @@ function getFinalSpeedSM(pokemon, weather, terrain) {
         otherSpeedMods *= 2;
     }
     speed = pokeRound(speed * otherSpeedMods);
+    console.log({tailwind, speed});
     if (pokemon.status === "Paralyzed" && pokemon.ability !== "Quick Feet") {
         speed = Math.floor(speed / 2);
+    }
+    if (tailwind) {
+      speed *= 2;
     }
     if (speed > 10000) {speed = 10000;}
     return speed;
