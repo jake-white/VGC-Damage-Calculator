@@ -713,6 +713,7 @@ function Field() {
     var isFriendGuard = [$("#friendGuardL").prop("checked"), $("#friendGuardR").prop("checked")];
     var isBattery = [$("#batteryR").prop("checked"), $("#batteryL").prop("checked")];
     var isPowerSpot = [$("#powerSpotR").prop("checked"), $("#powerSpotL").prop("checked")]; // affects attacks against opposite side
+    var isTailwind = [$("#tailwindR").prop("checked"), $("#tailwindL").prop("checked")];
 
     this.getWeather = function() {
         return weather;
@@ -724,11 +725,11 @@ function Field() {
         weather = "";
     };
     this.getSide = function(i) {
-        return new Side(format, terrain, weather, isGravity, isSR[i], spikes[i], isReflect[i], isLightScreen[i], isForesight[i], isHelpingHand[i], isFriendGuard[i], isBattery[i], isProtect[i], isPowerSpot[i]);
+        return new Side(format, terrain, weather, isGravity, isSR[i], spikes[i], isReflect[i], isLightScreen[i], isForesight[i], isHelpingHand[i], isFriendGuard[i], isBattery[i], isProtect[i], isPowerSpot[i], isTailwind[i]);
     };
 }
 
-function Side(format, terrain, weather, isGravity, isSR, spikes, isReflect, isLightScreen, isForesight, isHelpingHand, isFriendGuard, isBattery, isProtect, isPowerSpot) {
+function Side(format, terrain, weather, isGravity, isSR, spikes, isReflect, isLightScreen, isForesight, isHelpingHand, isFriendGuard, isBattery, isProtect, isPowerSpot, isTailwind) {
     this.format = format;
     this.terrain = terrain;
     this.weather = weather;
@@ -743,6 +744,7 @@ function Side(format, terrain, weather, isGravity, isSR, spikes, isReflect, isLi
     this.isBattery = isBattery;
     this.isProtect = isProtect;
     this.isPowerSpot = isPowerSpot;
+    this.isTailwind = isTailwind;
 }
 
 var gen, pokedex, setdex, typeChart, moves, abilities, items, STATS, calculateAllMoves, calcHP, calcStat;
@@ -885,6 +887,8 @@ function clearField() {
     $("#helpingHandR").prop("checked", false);
     $("#friendGuardL").prop("checked", false);
     $("#friendGuardR").prop("checked", false);
+    $("#tailwindR").prop("checked", false);
+    $("#tailwindL").prop("checked", false);
 }
 
 function getSetOptions() {
