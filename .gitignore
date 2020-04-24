@@ -48,3 +48,6 @@ Temporary Items
 
 #Webstorm project files
 .idea/
+*.config
+*.suo
+*.sqlite
