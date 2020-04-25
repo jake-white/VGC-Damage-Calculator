@@ -99,8 +99,10 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
             else if(tempMove.bp >= 45) move.bp = 100;
             else move.bp = 90;
         }
+    
         moveDescName = MAXMOVES_LOOKUP[move.type] + " (" + move.bp + " BP)";
         move.category = tempMove.category;
+        move.isCrit = tempMove.isCrit;
         move.isMax = true;
         if(attacker.item == "Choice Band" || attacker.item == "Choice Specs" || attacker.item == "Choice Scarf") {
             attacker.item = "";
@@ -341,6 +343,11 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
     if (field.isPowerSpot) {
         bpMods.push(0x14CD)
         description.isPowerSpot = true;
+    }
+
+    if (field.isSteelySpirit && move.type === "Steel") {
+        bpMods.push(0x1800)
+        description.isSteelySpirit = true;
     }
 
     if (attacker.ability === "Sheer Force" && move.hasSecondaryEffect) {
@@ -775,6 +782,9 @@ function buildDescription(description) {
     }
     if (description.isPowerSpot) {
         output += "Power Spot ";
+    }
+    if (description.isSteelySpirit) {
+        output += "Steely Spirit ";
     }
     if (description.isBattery) {
         output += "Battery ";

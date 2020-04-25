@@ -3237,6 +3237,32 @@ var MOVES_SS = $.extend(true, {}, MOVES_SM, {
         type: 'Steel',
         category: 'Special',
     },
+    'Mystical Fire': {
+        bp: 75,
+        type: 'Fire',
+        category: 'Special',
+        hasSecondaryEffect: true,
+    },
+    'Rock Wrecker': {
+        bp: 150,
+        type: 'Rock',
+        category: 'Physical',
+    },
+    'Blast Burn': {
+        bp: 150,
+        type: 'Fire',
+        category: 'Special',
+    },
+    'Hydro Cannon': {
+        bp: 150,
+        type: 'Water',
+        category: 'Special',
+    },
+    'Frenzy Plant': {
+        bp: 150,
+        type: 'Grass',
+        category: 'Special',
+    },
     'Max Strike': {
         type: 'Normal'
     },
