@@ -1,4 +1,5 @@
 var SETDEX_XY = {};
+var SETDEX_CUSTOM = {};
 
 var components = [
     SETDEX_SHOWDOWN,

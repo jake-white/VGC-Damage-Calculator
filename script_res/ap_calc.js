@@ -334,6 +334,11 @@ $(".set-selector").change(function() {
             stickyMoves.clearStickyMove();
         }
 
+        // Reset selections for Dynamax and Max Moves
+        pokeObj.find(".max").prop("checked", false);
+        pokeObj.find(".move-max").prop("checked", false);
+        pokeObj.find(".move-crit").prop("checked", false);
+
         pokeObj.find(".type1").val(pokemon.t1);
         pokeObj.find(".type2").val(pokemon.t2);
         pokeObj.find(".hp .base").val(pokemon.bs.hp);

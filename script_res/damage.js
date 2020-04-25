@@ -110,7 +110,8 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
     var description = {
         "attackerName": attacker.name,
         "moveName": moveDescName,
-        "defenderName": defender.name
+        "defenderName": defender.name,
+        "isDefenderDynamax": defender.isDynamax
     };
     if (move.bp === 0) {
         return {"damage":[0], "description":buildDescription(description)};
@@ -748,6 +749,7 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
             "description": buildDescription(description)
         };
     }
+
     return {"damage": pbDamage.length ? pbDamage.sort(numericSort) : damage, "description": buildDescription(description)};
 }
 
@@ -804,6 +806,9 @@ function buildDescription(description) {
     }
     output = appendIfSet(output, description.defenderItem);
     output = appendIfSet(output, description.defenderAbility);
+    if (description.isDefenderDynamax) {
+        output += "Dynamaxed ";
+    }
     output += description.defenderName;
     if (description.weather) {
         output += " in " + description.weather;
