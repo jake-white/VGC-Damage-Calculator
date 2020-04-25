@@ -128,7 +128,32 @@
                         <tr class="sa gen-specific g2 g3 g4 g5 g6 g7 g8"><td><label>Sp. Atk</label></td><td><input class="base calc-trigger" value="100" /></td><td class="gen-specific g3 g4 g5 g6 g7 g8"><input class="ivs calc-trigger" value="31" /></td><td class="gen-specific g3 g4 g5 g6 g7 g8"><input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" /></td><td class="gen-specific g1 g2 hide"><input class="dvs calc-trigger" value="15" /></td><td><span class="total">236</span></td><td><select class="boost calc-trigger"><option value="6">+6</option><option value="5">+5</option><option value="4">+4</option><option value="3">+3</option><option value="2">+2</option><option value="1">+1</option><option value="0" selected="selected">--</option><option value="-1">-1</option><option value="-2">-2</option><option value="-3">-3</option><option value="-4">-4</option><option value="-5">-5</option><option value="-6">-6</option></select></td></tr>
                         <tr class="sd gen-specific g2 g3 g4 g5 g6 g7 g8"><td><label>Sp. Def</label></td><td><input class="base calc-trigger" value="100" /></td><td class="gen-specific g3 g4 g5 g6 g7 g8"><input class="ivs calc-trigger" value="31" /></td><td class="gen-specific g3 g4 g5 g6 g7 g8"><input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" /></td><td class="gen-specific g1 g2 hide"><input class="dvs calc-trigger" value="15" disabled="disabled" /></td><td><span class="total">236</span></td><td><select class="boost calc-trigger"><option value="6">+6</option><option value="5">+5</option><option value="4">+4</option><option value="3">+3</option><option value="2">+2</option><option value="1">+1</option><option value="0" selected="selected">--</option><option value="-1">-1</option><option value="-2">-2</option><option value="-3">-3</option><option value="-4">-4</option><option value="-5">-5</option><option value="-6">-6</option></select></td></tr>
                         <tr class="sl gen-specific g1 hide"><td><label>Special</label></td><td><input class="base calc-trigger" value="100" /></td><td><input class="dvs calc-trigger" value="15" /></td><td><span class="total">236</span></td><td><select class="boost calc-trigger"><option value="6">+6</option><option value="5">+5</option><option value="4">+4</option><option value="3">+3</option><option value="2">+2</option><option value="1">+1</option><option value="0" selected="selected">--</option><option value="-1">-1</option><option value="-2">-2</option><option value="-3">-3</option><option value="-4">-4</option><option value="-5">-5</option><option value="-6">-6</option></select></td></tr>
-                        <tr class="sp"><td><label>Speed</label></td><td><input class="base calc-trigger" value="100" /></td><td class="gen-specific g3 g4 g5 g6 g7 g8"><input class="ivs calc-trigger" value="31" /></td><td class="gen-specific g3 g4 g5 g6 g7 g8"><input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" /></td><td class="gen-specific g1 g2 hide"><input class="dvs calc-trigger" value="15" /></td><td><span class="total">236</span></td><td><select class="boost calc-trigger"><option value="6">+6</option><option value="5">+5</option><option value="4">+4</option><option value="3">+3</option><option value="2">+2</option><option value="1">+1</option><option value="0" selected="selected">--</option><option value="-1">-1</option><option value="-2">-2</option><option value="-3">-3</option><option value="-4">-4</option><option value="-5">-5</option><option value="-6">-6</option></select></td></tr>
+                        <tr class="sp">
+                            <td><label>Speed</label></td>
+                            <td><input class="base calc-trigger" value="100" /></td>
+                            <td class="gen-specific g3 g4 g5 g6 g7 g8"><input class="ivs calc-trigger" value="31" /></td>
+                            <td class="gen-specific g3 g4 g5 g6 g7 g8"><input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" /></td>
+                            <td class="gen-specific g1 g2 hide"><input class="dvs calc-trigger" value="15" /></td>
+                            <td><span class="total">236</span></td>
+                            <td>
+                                <select class="boost calc-trigger">
+                                    <option value="6">+6</option>
+                                    <option value="5">+5</option>
+                                    <option value="4">+4</option>
+                                    <option value="3">+3</option>
+                                    <option value="2">+2</option>
+                                    <option value="1">+1</option>
+                                    <option value="0" selected="selected">--</option>
+                                    <option value="-1">-1</option>
+                                    <option value="-2">-2</option>
+                                    <option value="-3">-3</option>
+                                    <option value="-4">-4</option>
+                                    <option value="-5">-5</option>
+                                    <option value="-6">-6</option>
+                                </select>
+                            </td>
+                            <td><span class="p1-modified-speed">236</span></td>
+                        </tr>
                         <tr><td></td><td></td><td></td><td class='ev-total'>&nbsp;</td><td class='ev-left'>&nbsp;</td><td></td><td></td><td></td></tr>
                     </table>
                 </div>
@@ -371,7 +396,7 @@
                 <br>
                 <textarea rows="9" cols="36" id = "customMon"></textarea>
                 <br>
-                <script type="text/javascript" src="script_res/setdex_custom.js"></script>
+                
                 <button type = "button" onclick = "savecustom()">Save</button> <button type = "button" onclick = "deletecustom()">Delete Custom Sets</button>
                 <p>You may need to refresh the page after deleting your custom sets.  If you encounter a bug, please try deleting your cookies or reporting it!</p>
             </div>
@@ -408,7 +433,7 @@
                         <tr class="sa gen-specific g2 g3 g4 g5 g6 g7 g8"><td><label>Sp. Atk</label></td><td><input class="base calc-trigger" value="100" /></td><td class="gen-specific g3 g4 g5 g6 g7 g8"><input class="ivs calc-trigger" value="31" /></td><td class="gen-specific g3 g4 g5 g6 g7 g8"><input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" /></td><td class="gen-specific g1 g2 hide"><input class="dvs calc-trigger" value="15" /></td><td><span class="total">236</span></td><td><select class="boost calc-trigger"><option value="6">+6</option><option value="5">+5</option><option value="4">+4</option><option value="3">+3</option><option value="2">+2</option><option value="1">+1</option><option value="0" selected="selected">--</option><option value="-1">-1</option><option value="-2">-2</option><option value="-3">-3</option><option value="-4">-4</option><option value="-5">-5</option><option value="-6">-6</option></select></td></tr>
                         <tr class="sd gen-specific g2 g3 g4 g5 g6 g7 g8"><td><label>Sp. Def</label></td><td><input class="base calc-trigger" value="100" /></td><td class="gen-specific g3 g4 g5 g6 g7 g8"><input class="ivs calc-trigger" value="31" /></td><td class="gen-specific g3 g4 g5 g6 g7 g8"><input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" /></td><td class="gen-specific g1 g2 hide"><input class="dvs calc-trigger" value="15" disabled="disabled" /></td><td><span class="total">236</span></td><td><select class="boost calc-trigger"><option value="6">+6</option><option value="5">+5</option><option value="4">+4</option><option value="3">+3</option><option value="2">+2</option><option value="1">+1</option><option value="0" selected="selected">--</option><option value="-1">-1</option><option value="-2">-2</option><option value="-3">-3</option><option value="-4">-4</option><option value="-5">-5</option><option value="-6">-6</option></select></td></tr>
                         <tr class="sl gen-specific g1 hide"><td><label>Special</label></td><td><input class="base calc-trigger" value="100" /></td><td><input class="dvs calc-trigger" value="15" /></td><td><span class="total">236</span></td><td><select class="boost calc-trigger"><option value="6">+6</option><option value="5">+5</option><option value="4">+4</option><option value="3">+3</option><option value="2">+2</option><option value="1">+1</option><option value="0" selected="selected">--</option><option value="-1">-1</option><option value="-2">-2</option><option value="-3">-3</option><option value="-4">-4</option><option value="-5">-5</option><option value="-6">-6</option></select></td></tr>
-                        <tr class="sp"><td><label>Speed</label></td><td><input class="base calc-trigger" value="100" /></td><td class="gen-specific g3 g4 g5 g6 g7 g8"><input class="ivs calc-trigger" value="31" /></td><td class="gen-specific g3 g4 g5 g6 g7 g8"><input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" /></td><td class="gen-specific g1 g2 hide"><input class="dvs calc-trigger" value="15" /></td><td><span class="total">236</span></td><td><select class="boost calc-trigger"><option value="6">+6</option><option value="5">+5</option><option value="4">+4</option><option value="3">+3</option><option value="2">+2</option><option value="1">+1</option><option value="0" selected="selected">--</option><option value="-1">-1</option><option value="-2">-2</option><option value="-3">-3</option><option value="-4">-4</option><option value="-5">-5</option><option value="-6">-6</option></select></td></tr>
+                        <tr class="sp"><td><label>Speed</label></td><td><input class="base calc-trigger" value="100" /></td><td class="gen-specific g3 g4 g5 g6 g7 g8"><input class="ivs calc-trigger" value="31" /></td><td class="gen-specific g3 g4 g5 g6 g7 g8"><input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" /></td><td class="gen-specific g1 g2 hide"><input class="dvs calc-trigger" value="15" /></td><td><span class="total">236</span></td><td><select class="boost calc-trigger"><option value="6">+6</option><option value="5">+5</option><option value="4">+4</option><option value="3">+3</option><option value="2">+2</option><option value="1">+1</option><option value="0" selected="selected">--</option><option value="-1">-1</option><option value="-2">-2</option><option value="-3">-3</option><option value="-4">-4</option><option value="-5">-5</option><option value="-6">-6</option></select></td><td><span class="p2-modified-speed">236</span></td></tr>
                         <tr><td></td><td></td><td></td><td class='ev-total'>&nbsp;</td><td class='ev-left'>&nbsp;</td><td></td><td></td><td></td></tr>
                     </table>
                 </div>
@@ -504,6 +529,7 @@
     <script type="text/javascript" src="script_res/setdex_rse.js"></script>
     <script type="text/javascript" src="script_res/setdex_gsc.js"></script>
     <script type="text/javascript" src="script_res/setdex_rby.js"></script>
+    <script type="text/javascript" src="script_res/setdex_custom.js"></script>
     <script type="text/javascript" src="script_res/stat_data.js"></script>
     <script type="text/javascript" src="script_res/type_data.js"></script>
     <script type="text/javascript" src="script_res/nature_data.js"></script>

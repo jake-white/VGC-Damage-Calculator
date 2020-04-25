@@ -13,9 +13,11 @@ function CALCULATE_ALL_MOVES_SM(p1, p2, field) {
     p1.stats[DF] = getModifiedStat(p1.rawStats[DF], p1.boosts[DF]);
     p1.stats[SD] = getModifiedStat(p1.rawStats[SD], p1.boosts[SD]);
     p1.stats[SP] = getFinalSpeedSM(p1, field.getWeather(), field.getTerrain());
+    $(".p1-modified-speed").text(p1.stats[SP]);
     p2.stats[DF] = getModifiedStat(p2.rawStats[DF], p2.boosts[DF]);
     p2.stats[SD] = getModifiedStat(p2.rawStats[SD], p2.boosts[SD]);
     p2.stats[SP] = getFinalSpeedSM(p2, field.getWeather(), field.getTerrain());
+    $(".p2-modified-speed").text(p2.stats[SP]);
     checkIntimidate(p1, p2);
     checkIntimidate(p2, p1);
     checkDownload(p1, p2);
@@ -102,6 +104,7 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
         moveDescName = MAXMOVES_LOOKUP[move.type] + " (" + move.bp + " BP)";
         move.category = tempMove.category;
         move.isMax = true;
+        move.isCrit = tempMove.isCrit;
         if(attacker.item == "Choice Band" || attacker.item == "Choice Specs" || attacker.item == "Choice Scarf") {
             attacker.item = "";
         }
@@ -109,7 +112,8 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
     var description = {
         "attackerName": attacker.name,
         "moveName": moveDescName,
-        "defenderName": defender.name
+        "defenderName": defender.name,
+        "isDefenderDynamax": defender.isDynamax
     };
     if (move.bp === 0) {
         return {"damage":[0], "description":buildDescription(description)};
@@ -747,6 +751,7 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
             "description": buildDescription(description)
         };
     }
+
     return {"damage": pbDamage.length ? pbDamage.sort(numericSort) : damage, "description": buildDescription(description)};
 }
 
@@ -803,6 +808,9 @@ function buildDescription(description) {
     }
     output = appendIfSet(output, description.defenderItem);
     output = appendIfSet(output, description.defenderAbility);
+    if (description.isDefenderDynamax) {
+        output += "Dynamaxed ";
+    }
     output += description.defenderName;
     if (description.weather) {
         output += " in " + description.weather;
@@ -906,7 +914,8 @@ function getFinalSpeedSM(pokemon, weather, terrain) {
     if (pokemon.status === "Paralyzed" && pokemon.ability !== "Quick Feet") {
         speed = Math.floor(speed / 2);
     }
-    if (speed > 10000) {speed = 10000;}
+    if (speed > 10000) { speed = 10000; }
+
     return speed;
 }
 
