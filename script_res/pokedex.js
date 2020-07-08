@@ -10923,9 +10923,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "w": 610.0,
     "ab": "Power Construct",
     "isAlternateForme": true
-  },
-  "Milotic": { "ab": "Competitive" },
-  "Wigglytuff": { "ab": "Competitive" }
+  }
 });
 
 delete POKEDEX_XY['Duskull'].ab;
@@ -12605,7 +12603,6 @@ var POKEDEX_SS = $.extend(true, {}, POKEDEX_SM, {
       "sp": 60
     },
     "w": 16,
-    
   },
   "Mr. Mime-Galar": {
     "t1": "Ice",
@@ -12765,7 +12762,7 @@ var POKEDEX_SS = $.extend(true, {}, POKEDEX_SM, {
       "sp": 85
     },
     "w": 90,
-    "ab": "Grassy Surge",
+    "ab": "Overgrow",
   },
   "Scorbunny": {
     "t1": "Fire",
@@ -12804,7 +12801,7 @@ var POKEDEX_SS = $.extend(true, {}, POKEDEX_SM, {
       "sp": 119
     },
     "w": 33,
-    "ab": "Libero",
+    "ab": "Blaze",
   },
   "Sobble": {
     "t1": "Water",
@@ -12843,7 +12840,7 @@ var POKEDEX_SS = $.extend(true, {}, POKEDEX_SM, {
       "sp": 120
     },
     "w": 45.2,
-    "ab": "Sniper",
+    "ab": "Torrent",
   },
   "Blipbug": {
     "t1": "Bug",
@@ -12919,7 +12916,6 @@ var POKEDEX_SS = $.extend(true, {}, POKEDEX_SM, {
       "sp": 67
     },
     "w": 75,
-    "ab": "Mirror Armor",
   },
   "Skwovet": {
     "t1": "Normal",
@@ -13133,7 +13129,6 @@ var POKEDEX_SS = $.extend(true, {}, POKEDEX_SM, {
       "sp": 70
     },
     "w": 1,
-    "ab": "Hustle",
   },
   "Appletun": {
     "t1": "Grass",
@@ -13147,7 +13142,6 @@ var POKEDEX_SS = $.extend(true, {}, POKEDEX_SM, {
       "sp": 30
     },
     "w": 13,
-    "ab": "Thick Fat",
   },
   "Silicobra": {
     "t1": "Ground",
@@ -13237,7 +13231,6 @@ var POKEDEX_SS = $.extend(true, {}, POKEDEX_SM, {
       "sp": 75
     },
     "w": 40,
-    "ab": "Punk Rock",
   },
   "Sizzlipede": {
     "t1": "Fire",
@@ -13418,7 +13411,7 @@ var POKEDEX_SS = $.extend(true, {}, POKEDEX_SM, {
       "sp": 50
     },
     "w": 28,
-    "ab": "Steely Spirit",
+    "ab": "Tough Claws",
   },
   "Cursola": {
     "t1": "Ghost",
@@ -13519,7 +13512,7 @@ var POKEDEX_SS = $.extend(true, {}, POKEDEX_SM, {
       "sp": 15
     },
     "w": 1,
-    "ab": "Electric Surge",
+    "ab": "Lightning Rod",
   },
   "Snom": {
     "t1": "Ice",
@@ -13682,7 +13675,7 @@ var POKEDEX_SS = $.extend(true, {}, POKEDEX_SM, {
       "sp": 75
     },
     "w": 190,
-    "ab": "Hustle",
+    "ab": "Volt Absorb",
   },
   "Arctozolt": {
     "t1": "Electric",
@@ -13857,110 +13850,7 @@ var POKEDEX_SS = $.extend(true, {}, POKEDEX_SM, {
       "sp": 130
     },
     "w": 950,
-  },
-  "Kubfu": {
-      "t1": "Fighting",
-      "bs": {
-          "hp": 60,
-          "at": 90,
-          "df": 60,
-          "sa": 53,
-          "sd": 50,
-          "sp": 72
-      },
-      "w": 12,
-      "ab": "Inner Focus",
-  },
-  "Urishifu-Single Strike": {
-      "t1": "Fighting",
-      "t2": "Dark",
-      "bs": {
-          "hp": 100,
-          "at": 130,
-          "df": 100,
-          "sa": 63,
-          "sd": 60,
-          "sp": 97
-      },
-      "w": 105,
-  },
-  "Urshifu-Rapid Strike": {
-      "t1": "Fighting",
-      "t2": "Water",
-      "bs": {
-          "hp": 100,
-          "at": 130,
-          "df": 100,
-          "sa": 63,
-          "sd": 60,
-          "sp": 97
-      },
-      "w": 105,
-  },
-  "Rillaboom-Gmax": {
-      "t1": "Grass",
-      "bs": {
-          "hp": 100,
-          "at": 125,
-          "df": 90,
-          "sa": 60,
-          "sd": 70,
-          "sp": 85
-      },
-      "w": 90,
-      "ab": "Grassy Surge",
-  },
-  "Cinderace-Gmax": {
-      "t1": "Fire",
-      "bs": {
-          "hp": 80,
-          "at": 116,
-          "df": 75,
-          "sa": 65,
-          "sd": 75,
-          "sp": 119
-      },
-      "w": 33,
-      "ab": "Libero",
-  },
-  "Inteleon-Gmax": {
-      "t1": "Water",
-      "bs": {
-          "hp": 70,
-          "at": 85,
-          "df": 65,
-          "sa": 125,
-          "sd": 65,
-          "sp": 120
-      },
-      "w": 45.2,
-      "ab": "Sniper",
-  },
-  "Slowpoke-Galar":{
-    "t1": "Psychic",
-    "bs": {
-        "hp": 90,
-        "at": 65,
-        "df": 65,
-        "sa": 40,
-        "sd": 40,
-        "sp": 15
-    },
-    "w": 36.0
-  },
-  "Slowbro-Galar":{
-      "t1": "Poison",
-      "t2": "Psychic",
-      "bs": {
-          "hp": 95,
-          "at": 100,
-          "df": 95,
-          "sa": 100,
-          "sd": 70,
-          "sp": 30
-      },
-      "w": 70.5
-  },
+  },  
   "Aegislash": { "bs": { "df": 140, "sd": 140 } },
   "Aegislash-Blade": { "bs": { "at": 140, "sa": 140 } },
   "Aegislash-Shield": { "bs": { "df": 140, "sd": 140 } },
@@ -14010,14 +13900,6 @@ var POKEDEX_SS = $.extend(true, {}, POKEDEX_SM, {
   "Abomasnow": { "formes": ["Abomasnow"] },
   "Gallade": { "formes": ["Gallade"] },
   "Audino": { "formes": ["Audino"] },
-
-  "Sneasel": { "ab": "Inner Focus" },
-  "Snorunt": { "ab": "Inner Focus" },
-  "Glalie": { "ab": "Inner Focus" },
-  "Lucario": { "ab": "Inner Focus" },
-  "Mienfoo": { "ab": "Inner Focus" },
-  "Mienshao": { "ab": "Inner Focus" },
-  "Umbreon": { "ab": "Inner Focus" },
 });
 
 delete POKEDEX_SM['Gengar'].ab;

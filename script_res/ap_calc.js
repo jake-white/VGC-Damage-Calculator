@@ -687,9 +687,7 @@ function getMoveDetails(moveInfo) {
         isCrit: moveInfo.find(".move-crit").prop("checked"),
         isZ: moveInfo.find(".move-z").prop("checked"),
         isMax: moveInfo.find(".move-max").prop("checked"),
-        hits: (defaultDetails.isMultiHit && !moveInfo.find(".move-z").prop("checked") && !moveInfo.find(".move-max").prop("checked")) ? ~~moveInfo.find(".move-hits").val() :
-            (defaultDetails.isTwoHit && !moveInfo.find(".move-z").prop("checked") && !moveInfo.find(".move-max").prop("checked")) ? 2 :
-            (defaultDetails.isThreeHit && !moveInfo.find(".move-max").prop("checked")) ? 3 : 1
+        hits: (defaultDetails.isMultiHit && !moveInfo.find(".move-z").prop("checked")) ? ~~moveInfo.find(".move-hits").val() : (defaultDetails.isTwoHit && !moveInfo.find(".move-z").prop("checked")) ? 2 : 1
     });
 }
 

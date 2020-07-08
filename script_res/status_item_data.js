@@ -176,11 +176,7 @@ ITEMS_XY.splice(ITEMS_XY.indexOf('Soul Dew'), 1);
 
 
 var ITEMS_SM = ITEMS_XY.concat([
-    'Aguav Berry',
-    'Figy Berry',
-    'Iapapa Berry',
-    'Mago Berry',
-    'Wiki Berry'
+    'Figy Berry'
 ]);
 
 function getItemBoostType(item) {
