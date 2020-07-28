@@ -165,6 +165,7 @@
                     <input class="move-z calc-trigger btn-input" type="checkbox" id="zL1" /><label class="btn x-btn gen-specific g7" for="zL1" title="Use the corresponding Z-Move?">Z-Move</label>
                     <input class="move-max calc-trigger btn-input" type="checkbox" id="maxL1" /><label class="btn x-btn gen-specific g8" for="maxL1" title="Use the corresponding Max Move?">Max</label>
                     <select class="move-hits calc-trigger hide"><option value="2">2 hits</option><option value="3">3 hits</option><option value="4">4 hits</option><option value="5">5 hits</option></select>
+                    <select class="move-double calc-trigger hide"><option value="1">Normal BP</option><option value="2">Doubled</option></select>
                 </div>
                 <div class="move2">
                     <select class="move-selector calc-trigger small-select"></select>
@@ -175,6 +176,7 @@
                     <input class="move-z calc-trigger btn-input" type="checkbox" id="zL2" /><label class="btn x-btn gen-specific g7" for="zL2" title="Use the corresponding Z-Move?">Z-Move</label>
                     <input class="move-max calc-trigger btn-input" type="checkbox" id="maxL2" /><label class="btn x-btn gen-specific g8" for="maxL2" title="Use the corresponding Max Move?">Max</label>
                     <select class="move-hits calc-trigger hide"><option value="2">2 hits</option><option value="3">3 hits</option><option value="4">4 hits</option><option value="5">5 hits</option></select>
+                    <select class="move-double calc-trigger hide"><option value="1">Normal BP</option><option value="2">Doubled</option></select>
                 </div>
                 <div class="move3">
                     <select class="move-selector calc-trigger small-select"></select>
@@ -185,6 +187,7 @@
                     <input class="move-z calc-trigger btn-input" type="checkbox" id="zL3" /><label class="btn x-btn gen-specific g7" for="zL3" title="Use the corresponding Z-Move?">Z-Move</label>
                     <input class="move-max calc-trigger btn-input" type="checkbox" id="maxL3" /><label class="btn x-btn gen-specific g8" for="maxL3" title="Use the corresponding Max Move?">Max</label>
                     <select class="move-hits calc-trigger hide"><option value="2">2 hits</option><option value="3">3 hits</option><option value="4">4 hits</option><option value="5">5 hits</option></select>
+                    <select class="move-double calc-trigger hide"><option value="1">Normal BP</option><option value="2">Doubled</option></select>
                 </div>
                 <div class="move4">
                     <select class="move-selector calc-trigger small-select"></select>
@@ -195,6 +198,7 @@
                     <input class="move-z calc-trigger btn-input" type="checkbox" id="zL4" /><label class="btn x-btn gen-specific g7" for="zL4" title="Use the corresponding Z-Move?">Z-Move</label>
                     <input class="move-max calc-trigger btn-input" type="checkbox" id="maxL4" /><label class="btn x-btn gen-specific g8" for="maxL4" title="Use the corresponding Max Move?">Max</label>
                     <select class="move-hits calc-trigger hide"><option value="2">2 hits</option><option value="3">3 hits</option><option value="4">4 hits</option><option value="5">5 hits</option></select>
+                    <select class="move-double calc-trigger hide"><option value="1">Normal BP</option><option value="2">Doubled</option></select>
                 </div>
 
             </div>
@@ -215,7 +219,7 @@
                 </h4>
             </div>
             <div class="panel-body">
-                <img id="malie" align = "center" src="image_res/sandstream_laser.png" height = "200" alt="Fishious Rend, Colorized (2020)" style= "display: block;  margin: 0 auto;">
+                <img id="malie" align="center" src="image_res/sandstream_laser.png" height="200" alt="Fishious Rend, Colorized (2020)" style="display: block;  margin: 0 auto;">
                 <div class="gen-specific g3 g4 g5 g6 g7 g8" style="width: 11em; margin: 0 auto 5px;" title="Select the battle format.">
                     <input class="btn-input calc-trigger" type="radio" name="format" value="Singles" id="singles" checked="checked" /><label class="btn btn-left" for="singles">Singles</label>
                     <input class="btn-input calc-trigger" type="radio" name="format" value="Doubles" id="doubles" /><label class="btn btn-right" for="doubles">Doubles</label>
@@ -236,9 +240,9 @@
                     <input class="btn-input calc-trigger" type="radio" name="weather" value="Hail" id="hail" /><label class="btn btn-small btn-right" for="hail">Hail</label>
                 </div>
                 <div class="gen-specific g6 g7 g8" style="width: 23em; margin: 5px auto;" title="Select the current weather condition.">
-                    <input class="btn-input calc-trigger" type="radio" name="weather" value="Harsh Sun" id="harsh-sun"/><label class="btn btn-wide btn-left" for="harsh-sun">Harsh Sun</label>
-                    <input class="btn-input calc-trigger" type="radio" name="weather" value="Heavy Rain" id="heavy-rain"/><label class="btn btn-wide btn-mid" for="heavy-rain">Heavy Rain</label>
-                    <input class="btn-input calc-trigger" type="radio" name="weather" value="Strong Winds" id="strong-winds"/><label class="btn btn-xwide btn-right" for="strong-winds">Strong Winds</label>
+                    <input class="btn-input calc-trigger" type="radio" name="weather" value="Harsh Sun" id="harsh-sun" /><label class="btn btn-wide btn-left" for="harsh-sun">Harsh Sun</label>
+                    <input class="btn-input calc-trigger" type="radio" name="weather" value="Heavy Rain" id="heavy-rain" /><label class="btn btn-wide btn-mid" for="heavy-rain">Heavy Rain</label>
+                    <input class="btn-input calc-trigger" type="radio" name="weather" value="Strong Winds" id="strong-winds" /><label class="btn btn-xwide btn-right" for="strong-winds">Strong Winds</label>
                 </div>
                 <div class="gen-specific g2 hide" style="width: 23em; margin: 0 auto 5px;" title="Select the current weather condition.">
                     <input class="btn-input calc-trigger" type="radio" name="gscWeather" value="" id="gscClear" checked="checked" /><label class="btn btn-small btn-left" for="gscClear">None</label>
@@ -247,15 +251,17 @@
                     <input class="btn-input calc-trigger" type="radio" name="gscWeather" value="Sand" id="gscSand" /><label class="btn btn-small btn-right" for="gscSand">Sand</label>
                 </div>
                 <div class="gen-specific g6 g7 g8" style="width: 23em; margin: 5px auto;" title="Select the current radiating aura.">
-                <input class="btn-input calc-trigger" type="checkbox" name="aura" value="Aura Break" id="aura-break"/><label class="btn btn-wide btn-left" for="aura-break">Aura Break</label>
-                <input class="btn-input calc-trigger" type="checkbox" name="aura" value="Fairy Aura" id="fairy-aura"/><label class="btn btn-wide btn-mid" for="fairy-aura">Fairy Aura</label>
-                <input class="btn-input calc-trigger" type="checkbox" name="aura" value="Dark Aura" id="dark-aura"/><label class="btn btn-wide btn-right" for="dark-aura">Dark Aura</label>
+                    <input class="btn-input calc-trigger" type="checkbox" name="aura" value="Aura Break" id="aura-break" /><label class="btn btn-wide btn-left" for="aura-break">Aura Break</label>
+                    <input class="btn-input calc-trigger" type="checkbox" name="aura" value="Fairy Aura" id="fairy-aura" /><label class="btn btn-wide btn-mid" for="fairy-aura">Fairy Aura</label>
+                    <input class="btn-input calc-trigger" type="checkbox" name="aura" value="Dark Aura" id="dark-aura" /><label class="btn btn-wide btn-right" for="dark-aura">Dark Aura</label>
                 </div>
                 <div class="gen-specific g4 g5 g6 g7 g8" style="width: 5.3em; margin: 5px auto;" title="Is gravity in effect?">
                     <input class="btn-input calc-trigger" type="checkbox" id="gravity" /><label class="btn" for="gravity">Gravity</label>
                 </div>
+                <div class="gen-specific g8" style="width: 5.3em; margin: 5px auto;" title="Is neutralizing gas in effect?">
+                    <input class="btn-input calc-trigger" type="checkbox" id="neutralizingGas" /><label class="btn" for="neutralizingGas">Neutralizing Gas</label>
+                </div>
                 <hr class="gen-specific g2 g3 g4 g5 g6 g7 g8" />
-
                 <div class="btn-group gen-specific g7 g8">
                     <div class="left" title="Is this Pokemon protecting?">
                         <input class="btn-input calc-trigger" type="checkbox" id="protectL" /><label class="btn btn-xwide" for="protectL">Protect</label>
@@ -263,6 +269,12 @@
                     <div class="right" title="Is this Pokemon protecting?">
                         <input class="btn-input calc-trigger" type="checkbox" id="protectR" /><label class="btn btn-xwide" for="protectR">Protect</label>
                     </div>
+                </div>
+                <div class="gen-specific g8" style="width: 5.3em; margin: 5px auto;" title="Is G-Max Wildfire, Volcalith, Vine Lash, or Cannonade in effect?">
+                    <input class="btn-input calc-trigger" type="checkbox" id="gMaxFieldL" /><label class="btn btn-xwide" for="gMaxFieldL">G-Max Field</label>
+                </div>
+                <div class="gen-specific g8" style="width: 5.3em; margin: 5px auto;" title="Is G-Max Wildfire, Volcalith, Vine Lash, or Cannonade in effect?">
+                    <input class="btn-input calc-trigger" type="checkbox" id="gMaxFieldR" /><label class="btn btn-xwide" for="gMaxFieldR">G-Max Field</label>
                 </div>
                 <div class="btn-group gen-specific g4 g5 g6 g7 g8">
                     <div class="left" title="Is Stealth Rock affecting this side of the field?">
@@ -345,7 +357,24 @@
                     </div>
                 </div>
 
-                <div class="btn-group gen-specific g7 g8">
+                <div class="btn-group gen-specific g8">
+                    <div class="left" title="Does this Pokemon's ally have Steely Spirit?">
+                        <input class="btn-input calc-trigger" type="checkbox" id="steelySpiritL" /><label class="btn btn-xxwide" for="steelySpiritL">Steely Spirit</label>
+                    </div>
+                    <div class="right" title="Does this Pokemon's ally have Steely Spirit?">
+                        <input class="btn-input calc-trigger" type="checkbox" id="steelySpiritR" /><label class="btn btn-xxwide" for="steelySpiritR">Steely Spirit</label>
+                    </div>
+                </div>
+                <div class="btn-group gen-specific g8">
+                    <div class="left" title="Has this Pokemon's Weakness Policy been activated?">
+                        <input class="btn-input calc-trigger" type="checkbox" id="weakL" /><label class="btn btn-xwide" for="weakL"><img src="image_res/Weakness_Policy.png"><br>Weakness Policy</label>
+                    </div>
+                    <div class="right" title="Has this Pokemon's Weakness Policy been activated?">
+                        <input class="btn-input calc-trigger" type="checkbox" id="weakR" /><label class="btn btn-xwide" for="weakR"><img src="image_res/Weakness_Policy.png"><br>Weakness Policy</label>
+                    </div>
+                </div>
+
+                <div class="btn-group gen-specific g7">
                     <div class="left" title="Has this Pokemon used Geomancy?">
                         <input class="btn-input calc-trigger" type="checkbox" id="clangL" /><label class="btn btn-xwide" for="clangL"><img src="image_res/minisprites/716.png"><br>Geomancy</label>
                     </div>
@@ -353,7 +382,6 @@
                         <input class="btn-input calc-trigger" type="checkbox" id="clangR" /><label class="btn btn-xwide" for="clangR"><img src="image_res/minisprites/716.png"><br>Geomancy</label>
                     </div>
                 </div>
-
                 <div class="btn-group gen-specific g7">
                     <div class="left" title="Has this Pokemon used Extreme Evoboost?">
                         <input class="btn-input calc-trigger" type="checkbox" id="evoL" /><label class="btn btn-xwide" for="evoL"><img src="image_res/133.png"><br>Extreme Evoboost</label>
@@ -362,17 +390,15 @@
                         <input class="btn-input calc-trigger" type="checkbox" id="evoR" /><label class="btn btn-xwide" for="evoR"><img src="image_res/133.png"><br>Extreme Evoboost</label>
                     </div>
                 </div>
-
                 <!--squirrelboy1225's HTML additions are right here-->
-
                 <!--...two years later, my HTML additions are fucking everywhere. they spread like cancer-->
                 <p>Please enter your custom set here.</p>
-                Spread Name: <input type = "text" id = "spreadName" style = "width: 60%" value = "My Custom Set">
+                Spread Name: <input type="text" id="spreadName" style="width: 60%" value="My Custom Set">
                 <br>
-                <textarea rows="9" cols="36" id = "customMon"></textarea>
+                <textarea rows="9" cols="36" id="customMon"></textarea>
                 <br>
                 <script type="text/javascript" src="script_res/setdex_custom.js"></script>
-                <button type = "button" onclick = "savecustom()">Save</button> <button type = "button" onclick = "deletecustom()">Delete Custom Sets</button>
+                <button type="button" onclick="savecustom()">Save</button> <button type="button" onclick="deletecustom()">Delete Custom Sets</button>
                 <p>You may need to refresh the page after deleting your custom sets.  If you encounter a bug, please try deleting your cookies or reporting it!</p>
             </div>
         </div>
@@ -445,6 +471,7 @@
                     <input class="move-z calc-trigger btn-input" type="checkbox" id="zR1" /><label class="btn x-btn gen-specific g7" for="zR1" title="Use the corresponding Z-Move?">Z-Move</label>
                     <input class="move-max calc-trigger btn-input" type="checkbox" id="maxR1" /><label class="btn x-btn gen-specific g8" for="maxR1" title="Use the corresponding Max Move?">Max</label>
                     <select class="move-hits calc-trigger hide"><option value="2">2 hits</option><option value="3">3 hits</option><option value="4">4 hits</option><option value="5">5 hits</option></select>
+                    <select class="move-double calc-trigger hide"><option value="0">Normal BP</option><option value="1">Doubled</option></select>
                 </div>
                 <div class="move2">
                     <select class="move-selector calc-trigger small-select"></select>
@@ -455,6 +482,7 @@
                     <input class="move-z calc-trigger btn-input" type="checkbox" id="zR2" /><label class="btn x-btn gen-specific g7" for="zR2" title="Use the corresponding Z-Move?">Z-Move</label>
                     <input class="move-max calc-trigger btn-input" type="checkbox" id="maxR2" /><label class="btn x-btn gen-specific g8" for="maxR2" title="Use the corresponding Max Move?">Max</label>
                     <select class="move-hits calc-trigger hide"><option value="2">2 hits</option><option value="3">3 hits</option><option value="4">4 hits</option><option value="5">5 hits</option></select>
+                    <select class="move-double calc-trigger hide"><option value="1">Normal BP</option><option value="2">Doubled</option></select>
                 </div>
                 <div class="move3">
                     <select class="move-selector calc-trigger small-select"></select>
@@ -465,6 +493,7 @@
                     <input class="move-z calc-trigger btn-input" type="checkbox" id="zR3" /><label class="btn x-btn gen-specific g7" for="zR3" title="Use the corresponding Z-Move?">Z-Move</label>
                     <input class="move-max calc-trigger btn-input" type="checkbox" id="maxR3" /><label class="btn x-btn gen-specific g8" for="maxR3" title="Use the corresponding Max Move?">Max</label>
                     <select class="move-hits calc-trigger hide"><option value="2">2 hits</option><option value="3">3 hits</option><option value="4">4 hits</option><option value="5">5 hits</option></select>
+                    <select class="move-double calc-trigger hide"><option value="1">Normal BP</option><option value="2">Doubled</option></select>
                 </div>
                 <div class="move4">
                     <select class="move-selector calc-trigger small-select"></select>
@@ -475,6 +504,7 @@
                     <input class="move-z calc-trigger btn-input" type="checkbox" id="zR4" /><label class="btn x-btn gen-specific g7" for="zR4" title="Use the corresponding Z-Move?">Z-Move</label>
                     <input class="move-max calc-trigger btn-input" type="checkbox" id="maxR4" /><label class="btn x-btn gen-specific g8" for="maxR4" title="Use the corresponding Max Move?">Max</label>
                     <select class="move-hits calc-trigger hide"><option value="2">2 hits</option><option value="3">3 hits</option><option value="4">4 hits</option><option value="5">5 hits</option></select>
+                    <select class="move-double calc-trigger hide"><option value="1">Normal BP</option><option value="2">Doubled</option></select>
                 </div>
             </div>
         </div>
