@@ -13871,7 +13871,7 @@ var POKEDEX_SS = $.extend(true, {}, POKEDEX_SM, {
       "w": 12,
       "ab": "Inner Focus",
   },
-  "Urishifu-Single Strike": {
+  "Urshifu-Single Strike": {
       "t1": "Fighting",
       "t2": "Dark",
       "bs": {

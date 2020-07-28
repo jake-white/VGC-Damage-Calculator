@@ -249,11 +249,6 @@ var MOVES_RBY = {
         bp: 15,
         type: 'Normal'
     },
-    'Sky Attack': {
-        bp: 140,
-        type: 'Flying',
-        category:'Physical'
-    }
 };
 
 var MOVES_GSC = $.extend(true, {}, MOVES_RBY, {
@@ -820,13 +815,8 @@ var MOVES_DPP = $.extend(true, {}, MOVES_ADV, {
         bp: 50,
         type: 'Dark',
         category: 'Physical',
-        makesContact: true
-    },
-    'Assurance (Doubled)': {
-        bp: 100,
-        type: 'Dark',
-        category: 'Physical',
-        makesContact: true
+        makesContact: true,
+        canDouble: true
     },
     'Aura Sphere': {
         bp: 90,
@@ -1750,7 +1740,6 @@ var MOVES_XY = $.extend(true, {}, MOVES_BW, {
         isMultiHit: true
     },
     'Assurance': { bp: 60 },
-    'Assurance (Doubled)': { bp: 120 },
     'Aura Sphere': { bp: 80 },
     'Blizzard': { bp: 110 },
     'Boomburst': {
@@ -1946,6 +1935,7 @@ var MOVES_XY = $.extend(true, {}, MOVES_BW, {
         bp: 75,
         type: 'Fire',
         category: 'Special',
+        hasSecondaryEffect: true,
     },
     'Parabolic Charge': {
         bp: 50,
@@ -2063,14 +2053,8 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
         type: 'Ground',
         makesContact: true,
         bp: 75,
-        zp: 140
-    },
-    'Stomping Tantrum (Doubled)': {
-        category: 'Physical',
-        type: 'Ground',
-        makesContact: true,
-        bp: 150,
-        zp: 140
+        zp: 140,
+        canDouble: true
     },
     'Psychic Fangs': {
         category: 'Physical',
@@ -2740,9 +2724,6 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
     'Assurance':{
         zp: 120
     },
-    'Assurance (Doubled)': {
-        zp: 120
-    },
     'Fling':{
         zp: 100
     },
@@ -3245,9 +3226,6 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
     'Rock Wrecker': {
         zp: 200,
     },
-    'Sky Attack': {
-        zp: 200,
-    },
 });
 
 var MOVES_SS = $.extend(true, {}, MOVES_SM, {
@@ -3282,12 +3260,7 @@ var MOVES_SS = $.extend(true, {}, MOVES_SM, {
         type: 'Electric',
         category: 'Physical',
         makesContact: true,
-    },
-    'Bolt Beak (Doubled)': {
-        bp: 170,
-        type: 'Electric',
-        category: 'Physical',
-        makesContact: true,
+        canDouble: true
     },
     'Fishious Rend': {
         bp: 85,
@@ -3295,13 +3268,7 @@ var MOVES_SS = $.extend(true, {}, MOVES_SM, {
         category: 'Physical',
         isBite: true,
         makesContact: true,
-    },
-    'Fishious Rend (Doubled)': {
-        bp: 170,
-        type: 'Water',
-        category: 'Physical',
-        isBite: true,
-        makesContact: true,
+        canDouble: true
     },
     'Body Press': {
         bp: 80,
@@ -3458,6 +3425,7 @@ var MOVES_SS = $.extend(true, {}, MOVES_SM, {
         type: 'Fire',
         category: 'Special',
         isSpread: true,
+        hasSecondaryEffect: true,
     },
     'Dual Wingbeat': {
         bp: 40,
@@ -3487,13 +3455,8 @@ var MOVES_SS = $.extend(true, {}, MOVES_SM, {
         bp: 75,
         type: 'Dark',
         category: 'Physical',
-        makesContact: true
-    },
-    'Lash Out (Doubled)': {
-        bp: 150,
-        type: 'Dark',
-        category: 'Physical',
-        makesContact: true
+        makesContact: true,
+        canDouble: true
     },
     'Meteor Beam': {
         bp: 120,
@@ -3519,18 +3482,21 @@ var MOVES_SS = $.extend(true, {}, MOVES_SM, {
     'Scorching Sands': {
         bp: 70,
         type: 'Ground',
-        category:'Special'
+        category: 'Special',
+        hasSecondaryEffect: true,
     },
     'Shell Side Arm': {
         bp: 90,
         type: 'Poison',
-        category: 'Special'
+        category: 'Special',
+        hasSecondaryEffect: true,
     },
     'Skitter Smack': {
         bp: 70,
         type: 'Bug',
         category: 'Physical',
-        makesContact: true
+        makesContact: true,
+        hasSecondaryEffect: true,
     },
     'Steel Roller': {
         bp: 130,

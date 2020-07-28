@@ -39,6 +39,10 @@ function CALCULATE_ALL_MOVES_SM(p1, p2, field) {
 function GET_DAMAGE_SM(attacker, defender, move, field) {
     var moveDescName = move.name;
     var isQuarteredByProtect = false;
+    if (field.isNeutralizingGas) {
+        attacker.ability = "";
+        defender.ability = "";
+    }
     if(move.isSignatureZ){
       move.isZ = true;
       if(field.isProtect){
@@ -75,10 +79,10 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
     var exceptions_130 = ["Pin Missile", "Power Trip", "Punishment", "Dragon Darts", "Dragon Darts (2 hits)", "Dual Chop", "Electro Ball", "Heat Crash", 
     "Bullet Seed", "Grass Knot", "Bonemerang", "Bone Rush", "Fissure", "Icicle Spear", "Sheer Cold", "Weather Ball", "Tail Slap", "Guillotine", "Horn Drill",
     "Flail", "Return", "Frustration", "Endeavor", "Natural Gift", "Trump Card", "Stored Power", "Rock Blast", "Gear Grind", "Gyro Ball", "Heavy Slam",
-    "Dual Wingbeat", "Terrain Pulse", "Surging Strikes", "Stomping Tantrum (Doubled)", "Bolt Beak (Doubled)", "Fisheous Rend (Doubled)", "Lash Out (Doubled)"];
+    "Dual Wingbeat", "Terrain Pulse", "Surging Strikes"];
     var exceptions_120 = ["Double Hit", "Spike Cannon"];
     var exceptions_100 = ["Twineedle", "Beat Up", "Fling", "Dragon Rage", "Nature's Madness", "Night Shade", "Comet Punch", "Fury Swipes", "Sonic Boom", "Bide",
-    "Super Fang", "Present", "Spit Up", "Psywave", "Mirror Coat", "Metal Burst", "Assurance (Doubled)"];
+    "Super Fang", "Present", "Spit Up", "Psywave", "Mirror Coat", "Metal Burst"];
     if(move.isMax) {
         var tempMove = move;
         move = moves[MAXMOVES_LOOKUP[tempMove.type]];
@@ -118,6 +122,7 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
         if(attacker.item == "Choice Band" || attacker.item == "Choice Specs" || attacker.item == "Choice Scarf") {
             attacker.item = "";
         }
+        if (attacker.ability == "Gorilla Tactics") attacker.ability = "";
     }
     var description = {
         "attackerName": attacker.name,
@@ -352,8 +357,12 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
             basePower = 40;
             description.moveBP = basePower;
             break;
-        default:
-            basePower = move.bp;
+        default: 
+            if (move.isDouble) {
+                basePower = 2 * move.bp;
+                description.moveBP = basePower;
+            }
+            else basePower = move.bp;
     }
 
     var bpMods = [];
@@ -383,8 +392,13 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
     }
 
     if (field.isPowerSpot) {
-        bpMods.push(0x14CD)
+        bpMods.push(0x14CD);
         description.isPowerSpot = true;
+    }
+
+    if (field.isSteelySpirit && move.type === "Steel") {
+        bpMods.push(0x1800);
+        description.isSteelySpirit = true;
     }
 
     if (attacker.ability === "Sheer Force" && move.hasSecondaryEffect) {
@@ -830,6 +844,9 @@ function buildDescription(description) {
     if (description.isBattery) {
         output += "Battery ";
     }
+    if (description.isSteelySpirit) {
+        output += "Ally Steely Spirit ";
+    }
     output += description.moveName + " ";
     if (description.moveBP && description.moveType) {
         output += "(" + description.moveBP + " BP " + description.moveType + ") ";
@@ -998,7 +1015,7 @@ function checkIntimidate(source, target) {
     if (source.ability === "Intimidate") {
         if (target.ability === "Contrary" || target.ability === "Defiant") {
             target.boosts[AT] = Math.min(6, target.boosts[AT] + 1);
-        } else if (["Clear Body", "White Smoke", "Hyper Cutter", "Full Metal Body", "Inner Focus", "Oblivious", "Own Tempo"].indexOf(target.ability) !== -1) {
+        } else if (["Clear Body", "White Smoke", "Hyper Cutter", "Full Metal Body", "Inner Focus", "Oblivious", "Own Tempo", "Scrappy"].indexOf(target.ability) !== -1) {
             // no effect
         } else if (target.ability === "Simple") {
             target.boosts[AT] = Math.max(-6, target.boosts[AT] - 2);
@@ -1037,6 +1054,14 @@ function checkEvo(p1, p2){
         p2.boosts[SA] = Math.min(6, p2.boosts[SA] + 2);
         p2.boosts[SD] = Math.min(6, p2.boosts[SD] + 2);
         p2.boosts[SP] = Math.min(6, p2.boosts[SP] + 2);
+    }
+    if ($('#weakL').prop("checked")) {
+        p1.boosts[AT] = Math.min(6, p1.boosts[AT] + 2);
+        p1.boosts[SA] = Math.min(6, p1.boosts[SA] + 2);
+    }
+    if ($('#weakR').prop("checked")) {
+        p2.boosts[AT] = Math.min(6, p2.boosts[AT] + 2);
+        p2.boosts[SA] = Math.min(6, p2.boosts[SA] + 2);
     }
 
 }

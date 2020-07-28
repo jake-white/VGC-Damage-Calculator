@@ -134,6 +134,11 @@ function getKOChanceText(damage, move, defender, field, isBadDreams) {
         eotText.push('Bad Dreams');
     }
 
+    if (field.isGMaxField && defender.ability !== 'Magic Guard') {
+        eot -= Math.floor(defender.maxHP / 6);
+        eotText.push('G-Max field damage');
+    }
+
     // multi-hit moves have too many possibilities for brute-forcing to work, so reduce it to an approximate distribution
     var qualifier = '';
     if (move.hits > 1) {
