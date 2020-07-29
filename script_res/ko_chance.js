@@ -147,7 +147,7 @@ function getKOChanceText(damage, move, defender, field, isBadDreams) {
     }
 
     var multihit = damage.length === 256 || move.hits > 1;
-    var c = getKOChance(damage, multihit, defender.curHP - hazards, 0, 1, defender.maxHP, toxicCounter, hasSitrus, hasFigy, gluttony);
+    var c = getKOChance(damage, multihit, defender.curHP - hazards, 0, 1, defender.maxHP, toxicCounter, hasSitrus, hasFigy, gluttony, ripen);
     var afterText = hazardText.length > 0 ? ' after ' + serializeText(hazardText) : '';
     if (c === 1) {
         return 'guaranteed OHKO' + afterText;

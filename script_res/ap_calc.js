@@ -718,7 +718,7 @@ function Field() {
     var isPowerSpot = [$("#powerSpotR").prop("checked"), $("#powerSpotL").prop("checked")]; // affects attacks against opposite side
     var isSteelySpirit = [$("#steelySpiritR").prop("checked"), $("#steelySpiritL").prop("checked")]; // affects attacks against opposite side
     var isNeutralizingGas = $("#neutralizingGas").prop("checked");
-    var isGMaxField = [$("#gMaxFieldR").prop("checked"), $("#gMaxFieldL").prop("checked")];
+    var isGMaxField = [$("#gMaxFieldL").prop("checked"), $("#gMaxFieldR").prop("checked")];
 
     this.getWeather = function() {
         return weather;
