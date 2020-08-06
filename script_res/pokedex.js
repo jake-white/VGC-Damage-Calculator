@@ -13897,6 +13897,19 @@ var POKEDEX_SS = $.extend(true, {}, POKEDEX_SM, {
       },
       "w": 105,
   },
+  "Zarude": {
+      "t1": "Dark",
+      "t2": "Grass",
+      "bs": {
+          "hp": 105,
+          "at": 120,
+          "df": 105,
+          "sa": 70,
+          "sd": 95,
+          "sp": 105
+      },
+      "w": 70,
+  },
   "Rillaboom-Gmax": {
       "t1": "Grass",
       "bs": {

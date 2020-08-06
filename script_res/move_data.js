@@ -3249,12 +3249,6 @@ var MOVES_SS = $.extend(true, {}, MOVES_SM, {
         type: 'Dragon',
         category: 'Physical',
     },
-    'Dragon Darts (2 hits)': {
-        bp: 50,
-        type: 'Dragon',
-        category: 'Physical',
-        isTwoHit: true,
-    },
     'Bolt Beak': {
         bp: 85,
         type: 'Electric',

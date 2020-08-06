@@ -317,6 +317,8 @@ $(".move-selector").change(function() {
     }
     if (move.canDouble) moveGroupObj.children(".move-double").show();
     else moveGroupObj.children(".move-double").hide();
+    if (moveName=="Dragon Darts") moveGroupObj.children(".move-hits2").show();
+    else moveGroupObj.children(".move-hits2").hide();
     moveGroupObj.children(".move-z").prop("checked", false);
 });
 
@@ -689,7 +691,11 @@ function getMoveDetails(moveInfo) {
         isCrit: moveInfo.find(".move-crit").prop("checked"),
         isZ: moveInfo.find(".move-z").prop("checked"),
         isMax: moveInfo.find(".move-max").prop("checked"),
-        hits: (defaultDetails.isMultiHit && !moveInfo.find(".move-z").prop("checked") && !moveInfo.find(".move-max").prop("checked")) ? ~~moveInfo.find(".move-hits").val() : (defaultDetails.isTwoHit) ? 2 : (defaultDetails.isThreeHit) ? 3 : 1,
+        hits: (defaultDetails.isMultiHit && !moveInfo.find(".move-z").prop("checked") && !moveInfo.find(".move-max").prop("checked")) ? ~~moveInfo.find(".move-hits").val()
+            : (moveName == "Dragon Darts" && !moveInfo.find(".move-z").prop("checked") && !moveInfo.find(".move-max").prop("checked")) ? ~~moveInfo.find(".move-hits2").val()
+            : (defaultDetails.isTwoHit && !moveInfo.find(".move-z").prop("checked") && !moveInfo.find(".move-max").prop("checked")) ? 2
+            : (defaultDetails.isThreeHit && !moveInfo.find(".move-z").prop("checked") && !moveInfo.find(".move-max").prop("checked")) ? 3
+            : 1,
         isDouble: (defaultDetails.canDouble && !moveInfo.find(".move-z").prop("checked") && !moveInfo.find(".move-max").prop("checked")) ? ~~moveInfo.find(".move-double").val() : 0
     });
 }

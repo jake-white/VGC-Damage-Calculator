@@ -197,7 +197,7 @@ th {
 select.toxic-counter {
     width: 4.5em;
 }
-.move-selector, .move-bp, .move-type, .move-cat, .move-hits {
+.move-selector, .move-bp, .move-type, .move-cat, .move-hits, .move-double, .move-hits2 {
     font-size: 0.9em;
 }
 .move-selector {

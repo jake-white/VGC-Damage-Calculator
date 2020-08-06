@@ -76,7 +76,7 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
     var exceptions_80_fight = ["Double Kick", "Triple Kick"];
     var exceptions_75_fight = ["Counter", "Seismic Toss"];
     var exceptions_140 = ["Crush Grip", "Wring Out", "Magnitude", "Double Iron Bash", "Rising Voltage", "Triple Axel"];
-    var exceptions_130 = ["Pin Missile", "Power Trip", "Punishment", "Dragon Darts", "Dragon Darts (2 hits)", "Dual Chop", "Electro Ball", "Heat Crash", 
+    var exceptions_130 = ["Pin Missile", "Power Trip", "Punishment", "Dragon Darts", "Dual Chop", "Electro Ball", "Heat Crash", 
     "Bullet Seed", "Grass Knot", "Bonemerang", "Bone Rush", "Fissure", "Icicle Spear", "Sheer Cold", "Weather Ball", "Tail Slap", "Guillotine", "Horn Drill",
     "Flail", "Return", "Frustration", "Endeavor", "Natural Gift", "Trump Card", "Stored Power", "Rock Blast", "Gear Grind", "Gyro Ball", "Heavy Slam",
     "Dual Wingbeat", "Terrain Pulse", "Surging Strikes"];
@@ -119,10 +119,9 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
         move.isMax = true;
         move.isCrit = tempMove.isCrit;
         move.hits = 1;
-        if(attacker.item == "Choice Band" || attacker.item == "Choice Specs" || attacker.item == "Choice Scarf") {
+        if((attacker.item == "Choice Band" || attacker.item == "Choice Specs" || attacker.item == "Choice Scarf") && move.isMax) {
             attacker.item = "";
         }
-        if (attacker.ability == "Gorilla Tactics") attacker.ability = "";
     }
     var description = {
         "attackerName": attacker.name,
@@ -357,7 +356,7 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
             basePower = 40;
             description.moveBP = basePower;
             break;
-        default: 
+        default:
             if (move.isDouble) {
                 basePower = 2 * move.bp;
                 description.moveBP = basePower;
@@ -602,7 +601,7 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
         atMods.push(0x1800);
         description.attackerItem = attacker.item;
     }
-    if(attacker.ability === "Gorilla Tactics" && move.category === "Physical") {
+    if(attacker.ability === "Gorilla Tactics" && move.category === "Physical" && !move.isMax) {
         atMods.push(0x1800);
         description.attackerAbility = attacker.ability;
     }
