@@ -119,9 +119,6 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
         move.isMax = true;
         move.isCrit = tempMove.isCrit;
         move.hits = 1;
-        if((attacker.item == "Choice Band" || attacker.item == "Choice Specs" || attacker.item == "Choice Scarf") && move.isMax) {
-            attacker.item = "";
-        }
     }
     var description = {
         "attackerName": attacker.name,
@@ -596,8 +593,8 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
             (attacker.item === "Light Ball" && attacker.name === "Pikachu")) {
         atMods.push(0x2000);
         description.attackerItem = attacker.item;
-    } else if ((attacker.item === "Choice Band" && move.category === "Physical") ||
-            (attacker.item === "Choice Specs" && move.category === "Special")) {
+    } else if ((attacker.item === "Choice Band" && move.category === "Physical" && !move.isMax) ||
+            (attacker.item === "Choice Specs" && move.category === "Special" && !move.isMax)) {
         atMods.push(0x1800);
         description.attackerItem = attacker.item;
     }
@@ -947,7 +944,7 @@ function getModifiedStat(stat, mod) {
 function getFinalSpeedSM(pokemon, weather, terrain) {
     var speed = getModifiedStat(pokemon.rawStats[SP], pokemon.boosts[SP]);
     var otherSpeedMods = 1;
-    if (pokemon.item === "Choice Scarf") {
+    if (pokemon.item === "Choice Scarf" && !pokemon.isDynamax) {
         otherSpeedMods *= 1.5;
     } else if (pokemon.item === "Macho Brace" || pokemon.item === "Iron Ball") {
         otherSpeedMods *= 0.5;
