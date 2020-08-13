@@ -331,7 +331,7 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
         case "Expanding Force":
             basePower = (field.terrain === "Psychic") ? 120 : 80;
             description.moveBP = basePower;
-            move.isSpread = true;
+            move.isSpread = (field.terrain === "Psychic") ? true : false;
             break;
         case "Misty Explosion":
             basePower = (field.terrain === "Misty") ? 150 : 100;
