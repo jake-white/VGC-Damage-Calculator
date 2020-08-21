@@ -11068,4 +11068,48 @@ var SETDEX_TT2020 = {
             ]
         },
     },
+	"Urshifu-Single-Strike": {
+		"Default Set": {
+			"level" : 50,
+			"evs" : {
+				"hp": 4,
+				"at": 252,
+				"df": 0,
+				"sa": 0,
+				"sd": 0,
+				"sp": 252
+			},
+			"nature": "Jolly",
+			"ability": "",
+			"item": "Choice Band",
+			"moves": [
+				"Wicked Blow",
+				"Sucker Punch",
+				"Close Combat",
+				"U-turn"
+			]
+		}
+	},
+	"Urshifu-Rapid-Strike":{
+		"Default Set": {
+			"level" : 50,
+			"evs" : {
+				"hp": 4,
+				"at": 252,
+				"df": 0,
+				"sa": 0,
+				"sd": 0,
+				"sp": 252
+			},
+			"nature": "Jolly",
+			"ability": "",
+			"item": "Life Orb",
+			"moves": [
+				"Surging Strikes",
+				"Close Combat",
+				"Aqua Jet",
+				"U-turn"
+			]
+		}
+	}
 };

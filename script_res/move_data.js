@@ -3237,6 +3237,130 @@ var MOVES_SS = $.extend(true, {}, MOVES_SM, {
         type: 'Steel',
         category: 'Special',
     },
+	'Surging Strikes': {
+		bp : 25,
+		type : 'Water',
+		category : 'Physical',
+		makesContact: true,
+		alwaysCrit: true,
+		isMultiHit: true
+	},
+	'Wicked Blow': {
+		bp : 80,
+		type : 'Dark',
+		category : 'Physical',
+		makesContact: true,
+		alwaysCrit: true
+	},
+	/*
+	// TODO: IMPLEMENT EXPANDING FORCE
+	'Expanding Force': {
+		bp : 80,
+		type: 'Psychic',
+		category : 'Special',
+		
+	}
+	*/
+	'Steel Roller': {
+		bp : 100,
+		type: 'Steel',
+		category: 'Physical',
+		makesContact: true
+	},
+	'Scale Shot': {
+		bp : 25,
+		type: 'Dragon',
+		category: 'Physical',
+	},
+	'Meteor Beam': {
+		bp : 120,
+		type : 'Rock',
+		category: 'Special'
+	}, 
+	/*
+	// TODO: DAMAGE INCREASE IN MISTY TERRAIN
+	'Misty Explosion': {
+		bp : 100,
+		type : 'Fairy',
+		category : 'Special',
+	},
+	*/
+	'Grassy Glide': {
+		bp : 70,
+		type : 'Grass',
+		category : 'Physical',
+		makesContact : true
+	},
+	/*
+	// TODO: DAMAGE INCREASE IN ELECTRIC TERRAIN
+	'Rising Voltage': {
+		bp : 70,
+		type : 'Electric',
+		category : 'Special',
+	},
+	*/
+	/*
+	// This is going to be a wierd one, but does
+	// anyone actually care about this move?
+	'Terrain Pulse': {
+		bp : 50,
+		type : Normal,
+		category : 'Special',
+	},
+	*/
+	'Skitter Smack': {
+		bp : 70,
+		type : 'Bug',
+		category: 'Physical',
+		makesContact: true
+	},
+	'Burning Jealousy': {
+		bp : 70,
+		type : 'Fire',
+		isSpread: true,
+		category: 'Special'
+	},
+	'Lash Out': {
+		bp : 75,
+		type : 'Dark',
+		category: 'Physical',
+		makesContact: true
+	},
+	'Poltergeist': {
+		bp : 110,
+		type : 'Ghost',
+		category: 'Physical',
+		makesContact: true
+	},
+	'Flip Turn': {
+		bp : 60,
+		type: 'Water',
+		category: 'Physical',
+		makesContact: true
+	},
+	/*
+	This one is kind of shit lol
+	'Triple Axel': {
+		bp : 20,
+		type : 'Ice',
+		category : 'Physical',
+		makesContact: true,
+		isMultiHit : true
+	},
+	*/
+	'Dual Wingbeat': {
+		bp : 40,
+		type : 'Flying',
+		category: 'Physical',
+		makesContact: true,
+		isTwoHit: true
+	},
+	'Scorching Sands': {
+		bp : 70,
+		type: 'Ground',
+		category: 'Special',
+		isSpread: true,
+	},
     'Max Strike': {
         type: 'Normal'
     },
