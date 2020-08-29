@@ -725,6 +725,8 @@ function Field() {
     var isSteelySpirit = [$("#steelySpiritR").prop("checked"), $("#steelySpiritL").prop("checked")]; // affects attacks against opposite side
     var isNeutralizingGas = $("#neutralizingGas").prop("checked");
     var isGMaxField = [$("#gMaxFieldL").prop("checked"), $("#gMaxFieldR").prop("checked")];
+    var isFlowerGiftSpD = [$("#flowerGiftL").prop("checked"), $("#flowerGiftR").prop("checked")];
+    var isFlowerGiftAtk = [$("#flowerGiftR").prop("checked"), $("#flowerGiftL").prop("checked")];
 
     this.getWeather = function() {
         return weather;
@@ -736,11 +738,11 @@ function Field() {
         weather = "";
     };
     this.getSide = function(i) {
-        return new Side(format, terrain, weather, isGravity, isSR[i], spikes[i], isReflect[i], isLightScreen[i], isForesight[i], isHelpingHand[i], isFriendGuard[i], isBattery[i], isProtect[i], isPowerSpot[i], isSteelySpirit[i], isNeutralizingGas, isGMaxField[i]);
+        return new Side(format, terrain, weather, isGravity, isSR[i], spikes[i], isReflect[i], isLightScreen[i], isForesight[i], isHelpingHand[i], isFriendGuard[i], isBattery[i], isProtect[i], isPowerSpot[i], isSteelySpirit[i], isNeutralizingGas, isGMaxField[i], isFlowerGiftSpD[i], isFlowerGiftAtk[i]);
     };
 }
 
-function Side(format, terrain, weather, isGravity, isSR, spikes, isReflect, isLightScreen, isForesight, isHelpingHand, isFriendGuard, isBattery, isProtect, isPowerSpot, isSteelySpirit, isNeutralizingGas, isGmaxField) {
+function Side(format, terrain, weather, isGravity, isSR, spikes, isReflect, isLightScreen, isForesight, isHelpingHand, isFriendGuard, isBattery, isProtect, isPowerSpot, isSteelySpirit, isNeutralizingGas, isGmaxField, isFlowerGiftSpD, isFlowerGiftAtk) {
     this.format = format;
     this.terrain = terrain;
     this.weather = weather;
@@ -758,6 +760,8 @@ function Side(format, terrain, weather, isGravity, isSR, spikes, isReflect, isLi
     this.isSteelySpirit = isSteelySpirit;
     this.isNeutralizingGas = isNeutralizingGas;
     this.isGMaxField = isGmaxField;
+    this.isFlowerGiftSpD = isFlowerGiftSpD;
+    this.isFlowerGiftAtk = isFlowerGiftAtk;
 }
 
 var gen, pokedex, setdex, typeChart, moves, abilities, items, STATS, calculateAllMoves, calcHP, calcStat;
@@ -905,6 +909,8 @@ function clearField() {
     $("#steelySpiritR").prop("checked", false);
     $("#gMaxHazardL").prop("checked", false);
     $("#gMaxHazardR").prop("checked", false);
+    $("#flowerGiftL").prop("checked", false);
+    $("#flowerGiftR").prop("checked", false);
 }
 
 function getSetOptions() {

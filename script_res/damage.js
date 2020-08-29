@@ -557,6 +557,11 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
         description.attackerAbility = attacker.ability;
         description.weather = field.weather;
     }
+    if (field.isFlowerGiftAtk && attacker.ability !== "Flower Gift" && field.weather.indexOf("Sun") > -1 && move.category === "Physical") {
+        atMods.push(0x1800);
+        description.isFlowerGiftAtk = true;
+        description.weather = field.weather;
+    }
     if ((attacker.ability === "Guts" && attacker.status !== "Healthy" && move.category === "Physical") ||
             (attacker.ability === "Overgrow" && attacker.curHP <= attacker.maxHP / 3 && move.type === "Grass") ||
             (attacker.ability === "Blaze" && attacker.curHP <= attacker.maxHP / 3 && move.type === "Fire") ||
@@ -636,6 +641,11 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
         description.defenderAbility = defAbility;
         description.weather = field.weather;
     }
+    if (field.isFlowerGiftSpD && defAbility !== "Flower Gift" && field.weather.indexOf("Sun") > -1 && !hitsPhysical) {
+        dfMods.push(0x1800);
+        description.isFlowerGiftSpD = true;
+        description.weather = field.weather;
+    }
     if ((defAbility === "Marvel Scale" && defender.status !== "Healthy" && hitsPhysical) ||
         (defAbility === "Grass Pelt" && terrain === "Grassy" && hitsPhysical)) {
         dfMods.push(0x1800);
@@ -703,6 +713,7 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
         finalMods.push(field.format !== "Singles" ? 0xAAC : 0x800);
         description.isLightScreen = true;
     }
+    if (defender.isDynamax) description.isDynamax = true;
     if (attacker.ability === "Neuroforce" && typeEffectiveness > 1) {
         finalMods.push(0x1400);
         description.attackerAbility = attacker.ability;
@@ -843,6 +854,9 @@ function buildDescription(description) {
     if (description.isSteelySpirit) {
         output += "Ally Steely Spirit ";
     }
+    if (description.isFlowerGiftAtk) {
+        output += "Flower Gift ";
+    }
     output += description.moveName + " ";
     if (description.moveBP && description.moveType) {
         output += "(" + description.moveBP + " BP " + description.moveType + ") ";
@@ -866,7 +880,11 @@ function buildDescription(description) {
         output += " / " + description.defenseEVs + " ";
     }
     output = appendIfSet(output, description.defenderItem);
+    if (description.isFlowerGiftSpD) {
+        output += " Flower Gift ";
+    }
     output = appendIfSet(output, description.defenderAbility);
+    if (description.isDynamax) output += " Dynamax ";
     output += description.defenderName;
     if (description.weather) {
         output += " in " + description.weather;
