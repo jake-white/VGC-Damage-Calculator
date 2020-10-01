@@ -180,7 +180,11 @@ var ITEMS_SM = ITEMS_XY.concat([
     'Psychic Seed',
     'Misty Seed',
     'Electric Seed',
-    'Grassy Seed'
+    'Grassy Seed',
+    'Aguav Berry',
+    'Iapapa Berry',
+    'Mago Berry',
+    'Wiki Berry'
 ]);
 
 var ITEMS_SS = ITEMS_SM.concat([

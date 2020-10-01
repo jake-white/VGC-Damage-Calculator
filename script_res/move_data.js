@@ -248,7 +248,7 @@ var MOVES_RBY = {
     'Wrap': {
         bp: 15,
         type: 'Normal'
-    }
+    },
 };
 
 var MOVES_GSC = $.extend(true, {}, MOVES_RBY, {
@@ -544,6 +544,11 @@ var MOVES_ADV = $.extend(true, {}, MOVES_GSC, {
         category: 'Special',
         isSpread: true
     },
+    'Blast Burn':{
+        bp: 150,
+        type: 'Fire',
+        category: 'Special',
+    },
     'Blaze Kick': {
         bp: 85,
         type: 'Fire',
@@ -765,7 +770,23 @@ var MOVES_ADV = $.extend(true, {}, MOVES_GSC, {
         type: 'Normal',
         category: 'Special',
         isBullet: true
-    }
+    },
+    'Dive': {
+        bp: 60,
+        type: 'Water',
+        category: 'Physical',
+        makesContact: true,
+    },
+    'Frenzy Plant': {
+        bp: 150,
+        type: 'Grass',
+        category: 'Special',
+    },
+    'Hydro Cannon': {
+        bp: 150,
+        type: 'Water',
+        category: 'Special',
+    },
 });
 
 delete MOVES_ADV['BubbleBeam'];
@@ -794,7 +815,8 @@ var MOVES_DPP = $.extend(true, {}, MOVES_ADV, {
         bp: 50,
         type: 'Dark',
         category: 'Physical',
-        makesContact: true
+        makesContact: true,
+        canDouble: true
     },
     'Aura Sphere': {
         bp: 90,
@@ -1269,7 +1291,14 @@ var MOVES_DPP = $.extend(true, {}, MOVES_ADV, {
         category: 'Physical',
         makesContact: true,
         hasSecondaryEffect: true
-    }
+    },
+    'Dive': { bp: 80 },
+    'Rock Wrecker': {
+        bp: 150,
+        type: 'Rock',
+        category: 'Physical',
+        isBullet: true,
+    },
 });
 
 delete MOVES_DPP['Razor Leaf'];
@@ -1657,7 +1686,48 @@ var MOVES_BW = $.extend(true, {}, MOVES_DPP, {
         category: 'Physical',
         makesContact: true,
         hasRecoil: true
-    }
+    },
+    'Fire Pledge': {
+        bp: 50,
+        type: 'Fire',
+        category: 'Special',
+    },
+    'Grass Pledge': {
+        bp: 50,
+        type: 'Grass',
+        category: 'Special',
+    },
+    'Water Pledge': {
+        bp: 50,
+        type: 'Water',
+        category: 'Special',
+    },
+    'Fire Pledge (Combined)': {
+        bp: 150,
+        type: 'Fire',
+        category: 'Special',
+    },
+    'Grass Pledge (Combined)': {
+        bp: 150,
+        type: 'Grass',
+        category: 'Special',
+    },
+    'Water Pledge (Combined)': {
+        bp: 150,
+        type: 'Water',
+        category: 'Special',
+    },
+    'Heat Crash': {
+        bp: 1,
+        type: 'Fire',
+        category: 'Physical',
+        makesContact: true
+    },
+    'Final Gambit': {
+        bp: 1,
+        type: 'Fighting',
+        category: 'Special',
+    },
 });
 
 var MOVES_XY = $.extend(true, {}, MOVES_BW, {
@@ -1850,6 +1920,34 @@ var MOVES_XY = $.extend(true, {}, MOVES_BW, {
         bp: 65,
         type: 'Ice',
         category: 'Special'
+    },
+    'Disarming Voice': {
+        bp: 40,
+        type: 'Fairy',
+        category: 'Special',
+        isSound: true,
+        isSpread: true,
+    },
+    'Fire Pledge': { bp: 80 },
+    'Grass Pledge': { bp: 80 },
+    'Water Pledge': { bp: 80 },
+    'Mystical Fire': {
+        bp: 75,
+        type: 'Fire',
+        category: 'Special',
+        hasSecondaryEffect: true,
+    },
+    'Parabolic Charge': {
+        bp: 50,
+        type: 'Electric',
+        category: 'Special',
+        isSpread: true,
+    },
+    'Petal Blizzard': {
+        bp: 90,
+        type: 'Grass',
+        category: 'Physical',
+        isSpread: true
     }
 });
 
@@ -1955,7 +2053,8 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
         type: 'Ground',
         makesContact: true,
         bp: 75,
-        zp: 140
+        zp: 140,
+        canDouble: true
     },
     'Psychic Fangs': {
         category: 'Physical',
@@ -3094,6 +3193,39 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
         isSpread: true,
         isSignatureZ: true,
     },
+    'Blast Burn': {
+        zp: 200,
+    },
+    'Disarming Voice': {
+        zp: 100,
+    },
+    'Dive': {
+        zp: 160,
+    },
+    'Final Gambit': {
+        zp: 180,
+    },
+    'Frenzy Plant': {
+        zp: 200,
+    },
+    'Heat Crash': {
+        zp: 160,
+    },
+    'Hydro Cannon': {
+        zp: 200,
+    },
+    'Mystical Fire': {
+        zp: 140,
+    },
+    'Parabolic Charge': {
+        zp: 100,
+    },
+    'Petal Blizzard': {
+        zp: 175,
+    },
+    'Rock Wrecker': {
+        zp: 200,
+    },
 });
 
 var MOVES_SS = $.extend(true, {}, MOVES_SM, {
@@ -3116,19 +3248,13 @@ var MOVES_SS = $.extend(true, {}, MOVES_SM, {
         bp: 50,
         type: 'Dragon',
         category: 'Physical',
-        isTwoHit: true
     },
     'Bolt Beak': {
         bp: 85,
         type: 'Electric',
         category: 'Physical',
         makesContact: true,
-    },
-    'Bolt Beak (Doubled)': {
-        bp: 170,
-        type: 'Electric',
-        category: 'Physical',
-        makesContact: true,
+        canDouble: true
     },
     'Fishious Rend': {
         bp: 85,
@@ -3136,13 +3262,7 @@ var MOVES_SS = $.extend(true, {}, MOVES_SM, {
         category: 'Physical',
         isBite: true,
         makesContact: true,
-    },
-    'Fishious Rend (Doubled)': {
-        bp: 170,
-        type: 'Water',
-        category: 'Physical',
-        isBite: true,
-        makesContact: true,
+        canDouble: true
     },
     'Body Press': {
         bp: 80,
@@ -3183,6 +3303,7 @@ var MOVES_SS = $.extend(true, {}, MOVES_SM, {
         bp: 60,
         type: 'Dragon',
         category: 'Physical',
+        isSpread: true,
     },
     'Branch Poke': {
         bp: 40,
@@ -3290,6 +3411,120 @@ var MOVES_SS = $.extend(true, {}, MOVES_SM, {
     },
     'Max Darkness': {
         type: 'Dark'
+    },
+    'Parabolic Charge': { bp: 65 },
+    'Multi-Attack': { bp: 120 },
+    'Burning Jealousy': {
+        bp: 70,
+        type: 'Fire',
+        category: 'Special',
+        isSpread: true,
+        hasSecondaryEffect: true,
+    },
+    'Dual Wingbeat': {
+        bp: 40,
+        type: 'Flying',
+        category: 'Physical',
+        makesContact: true,
+        isTwoHit: true,
+    },
+    'Expanding Force': {
+        bp: 80,
+        type: 'Psychic',
+        category: 'Special'
+    },
+    'Flip Turn': {
+        bp: 60,
+        type: 'Water',
+        category: 'Physical',
+        makesContact: true
+    },
+    'Grassy Glide': {
+        bp: 70,
+        type: 'Grass',
+        category: 'Physical',
+        makesContact: true
+    },
+    'Lash Out': {
+        bp: 75,
+        type: 'Dark',
+        category: 'Physical',
+        makesContact: true,
+        canDouble: true
+    },
+    'Meteor Beam': {
+        bp: 120,
+        type: 'Rock',
+        category: 'Special'
+    },
+    'Misty Explosion': {
+        bp: 100,
+        type: 'Fairy',
+        category: 'Special',
+        isSpread: true
+    },
+    'Poltergeist': {
+        bp: 110,
+        type: 'Ghost',
+        category:'Physical'
+    },
+    'Rising Voltage': {
+        bp: 70,
+        type: 'Electric',
+        category: 'Special'
+    },
+    'Scorching Sands': {
+        bp: 70,
+        type: 'Ground',
+        category: 'Special',
+        hasSecondaryEffect: true,
+    },
+    'Shell Side Arm': {
+        bp: 90,
+        type: 'Poison',
+        category: 'Special',
+        hasSecondaryEffect: true,
+    },
+    'Skitter Smack': {
+        bp: 70,
+        type: 'Bug',
+        category: 'Physical',
+        makesContact: true,
+        hasSecondaryEffect: true,
+    },
+    'Steel Roller': {
+        bp: 130,
+        type: 'Steel',
+        category: 'Physical',
+        makesContact: true
+    },
+    'Surging Strikes': {
+        bp: 25,
+        type: 'Water',
+        category: 'Physical',
+        makesContact: true,
+        alwaysCrit: true,
+        isThreeHit: true
+    },
+    'Terrain Pulse': {
+        bp: 50,
+        type: 'Normal',
+        category: 'Special',
+        isPulse: true
+    },
+    'Triple Axel': {
+        bp: 20,
+        type: 'Ice',
+        category: 'Physical',
+        makesContact: true,
+        isThreeHit: true
+    },
+    'Wicked Blow': {
+        bp: 80,
+        type: 'Dark',
+        category: 'Physical',
+        makesContact: true,
+        alwaysCrit: true
     },
 });
 
