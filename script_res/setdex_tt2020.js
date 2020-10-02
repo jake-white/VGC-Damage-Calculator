@@ -10784,6 +10784,28 @@ var SETDEX_TT2020 = {
           ]
       },
     },
+    "Coalossal" : {
+      "Default Set": {
+          "level": 50,
+          "evs": {
+              "hp": 4,
+              "at": 0,
+              "df": 0,
+              "sa": 252,
+              "sd": 0,
+              "sp": 252
+          },
+          "nature": "Timid",
+          "ability": "Torrent",
+          "item": "",
+          "moves": [
+              "Heat Wave",
+              "Meteor Beam",
+              "Solar Beam",
+              "Earth Power"
+          ]
+      },
+    },
     "Inteleon" : {
       "Default Set": {
           "level": 50,
@@ -10801,8 +10823,30 @@ var SETDEX_TT2020 = {
           "moves": [
               "Snipe Shot",
               "Ice Beam",
-              "Hydro Pump",
-              ""
+              "Blizzard",
+              "Air Slash"
+          ]
+      },
+    },
+    "Inteleon-Gmax" : {
+      "Default Set": {
+          "level": 50,
+          "evs": {
+              "hp": 4,
+              "at": 0,
+              "df": 0,
+              "sa": 252,
+              "sd": 0,
+              "sp": 252
+          },
+          "nature": "Timid",
+          "ability": "Torrent",
+          "item": "",
+          "moves": [
+              "Snipe Shot",
+              "Ice Beam",
+              "Blizzard",
+              "Air Slash"
           ]
       },
     },
@@ -11065,6 +11109,94 @@ var SETDEX_TT2020 = {
                 "Dazzling Gleam",
                 "Psyshock",
                 "Mystical Fire"
+            ]
+        },
+    },
+    "Rillaboom": {
+        "Default Set": {
+            "level": 50,
+            "evs": {
+                "hp": 172,
+                "at": 252,
+                "df": 4,
+                "sa": 0,
+                "sd": 4,
+                "sp": 76
+            },
+            "nature": "Adamant",
+            "ability": "Grassy Surge",
+            "item": "Assault Vest",
+            "moves": [
+                "Grassy Glide",
+                "Wood Hammer",
+                "High Horsepower",
+                "Knock Off"
+            ]
+        },
+    },
+    "Rillaboom-Gmax": {
+        "Default Set": {
+            "level": 50,
+            "evs": {
+                "hp": 172,
+                "at": 252,
+                "df": 4,
+                "sa": 0,
+                "sd": 4,
+                "sp": 76
+            },
+            "nature": "Adamant",
+            "ability": "Grassy Surge",
+            "item": "Assault Vest",
+            "moves": [
+                "Grassy Glide",
+                "Wood Hammer",
+                "High Horsepower",
+                "Knock Off"
+            ]
+        },
+    },
+    "Cinderace": {
+        "Default Set": {
+            "level": 50,
+            "evs": {
+                "hp": 4,
+                "at": 252,
+                "df": 0,
+                "sa": 0,
+                "sd": 0,
+                "sp": 252
+            },
+            "nature": "Jolly",
+            "ability": "Libero",
+            "item": "Life Orb",
+            "moves": [
+                "Pyro Ball",
+                "High Jump Kick",
+                "Bounce",
+                "Iron Head"
+            ]
+        },
+    },
+    "Cinderace-Gmax": {
+        "Default Set": {
+            "level": 50,
+            "evs": {
+                "hp": 4,
+                "at": 252,
+                "df": 0,
+                "sa": 0,
+                "sd": 0,
+                "sp": 252
+            },
+            "nature": "Jolly",
+            "ability": "Libero",
+            "item": "Life Orb",
+            "moves": [
+                "Pyro Ball",
+                "High Jump Kick",
+                "Bounce",
+                "Iron Head"
             ]
         },
     },

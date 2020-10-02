@@ -315,6 +315,10 @@ $(".move-selector").change(function() {
     } else {
         moveGroupObj.children(".move-hits").hide();
     }
+    if (move.canDouble) moveGroupObj.children(".move-double").show();
+    else moveGroupObj.children(".move-double").hide();
+    if (moveName=="Dragon Darts") moveGroupObj.children(".move-hits2").show();
+    else moveGroupObj.children(".move-hits2").hide();
     moveGroupObj.children(".move-z").prop("checked", false);
 });
 
@@ -687,7 +691,12 @@ function getMoveDetails(moveInfo) {
         isCrit: moveInfo.find(".move-crit").prop("checked"),
         isZ: moveInfo.find(".move-z").prop("checked"),
         isMax: moveInfo.find(".move-max").prop("checked"),
-        hits: (defaultDetails.isMultiHit && !moveInfo.find(".move-z").prop("checked")) ? ~~moveInfo.find(".move-hits").val() : (defaultDetails.isTwoHit && !moveInfo.find(".move-z").prop("checked")) ? 2 : 1
+        hits: (defaultDetails.isMultiHit && !moveInfo.find(".move-z").prop("checked") && !moveInfo.find(".move-max").prop("checked")) ? ~~moveInfo.find(".move-hits").val()
+            : (moveName == "Dragon Darts" && !moveInfo.find(".move-z").prop("checked") && !moveInfo.find(".move-max").prop("checked")) ? ~~moveInfo.find(".move-hits2").val()
+            : (defaultDetails.isTwoHit && !moveInfo.find(".move-z").prop("checked") && !moveInfo.find(".move-max").prop("checked")) ? 2
+            : (defaultDetails.isThreeHit && !moveInfo.find(".move-z").prop("checked") && !moveInfo.find(".move-max").prop("checked")) ? 3
+            : 1,
+        isDouble: (defaultDetails.canDouble && !moveInfo.find(".move-z").prop("checked") && !moveInfo.find(".move-max").prop("checked")) ? ~~moveInfo.find(".move-double").val() : 0
     });
 }
 
@@ -713,6 +722,11 @@ function Field() {
     var isFriendGuard = [$("#friendGuardL").prop("checked"), $("#friendGuardR").prop("checked")];
     var isBattery = [$("#batteryR").prop("checked"), $("#batteryL").prop("checked")];
     var isPowerSpot = [$("#powerSpotR").prop("checked"), $("#powerSpotL").prop("checked")]; // affects attacks against opposite side
+    var isSteelySpirit = [$("#steelySpiritR").prop("checked"), $("#steelySpiritL").prop("checked")]; // affects attacks against opposite side
+    var isNeutralizingGas = $("#neutralizingGas").prop("checked");
+    var isGMaxField = [$("#gMaxFieldL").prop("checked"), $("#gMaxFieldR").prop("checked")];
+    var isFlowerGiftSpD = [$("#flowerGiftL").prop("checked"), $("#flowerGiftR").prop("checked")];
+    var isFlowerGiftAtk = [$("#flowerGiftR").prop("checked"), $("#flowerGiftL").prop("checked")];
 
     this.getWeather = function() {
         return weather;
@@ -724,11 +738,11 @@ function Field() {
         weather = "";
     };
     this.getSide = function(i) {
-        return new Side(format, terrain, weather, isGravity, isSR[i], spikes[i], isReflect[i], isLightScreen[i], isForesight[i], isHelpingHand[i], isFriendGuard[i], isBattery[i], isProtect[i], isPowerSpot[i]);
+        return new Side(format, terrain, weather, isGravity, isSR[i], spikes[i], isReflect[i], isLightScreen[i], isForesight[i], isHelpingHand[i], isFriendGuard[i], isBattery[i], isProtect[i], isPowerSpot[i], isSteelySpirit[i], isNeutralizingGas, isGMaxField[i], isFlowerGiftSpD[i], isFlowerGiftAtk[i]);
     };
 }
 
-function Side(format, terrain, weather, isGravity, isSR, spikes, isReflect, isLightScreen, isForesight, isHelpingHand, isFriendGuard, isBattery, isProtect, isPowerSpot) {
+function Side(format, terrain, weather, isGravity, isSR, spikes, isReflect, isLightScreen, isForesight, isHelpingHand, isFriendGuard, isBattery, isProtect, isPowerSpot, isSteelySpirit, isNeutralizingGas, isGmaxField, isFlowerGiftSpD, isFlowerGiftAtk) {
     this.format = format;
     this.terrain = terrain;
     this.weather = weather;
@@ -743,6 +757,11 @@ function Side(format, terrain, weather, isGravity, isSR, spikes, isReflect, isLi
     this.isBattery = isBattery;
     this.isProtect = isProtect;
     this.isPowerSpot = isPowerSpot;
+    this.isSteelySpirit = isSteelySpirit;
+    this.isNeutralizingGas = isNeutralizingGas;
+    this.isGMaxField = isGmaxField;
+    this.isFlowerGiftSpD = isFlowerGiftSpD;
+    this.isFlowerGiftAtk = isFlowerGiftAtk;
 }
 
 var gen, pokedex, setdex, typeChart, moves, abilities, items, STATS, calculateAllMoves, calcHP, calcStat;
@@ -885,6 +904,13 @@ function clearField() {
     $("#helpingHandR").prop("checked", false);
     $("#friendGuardL").prop("checked", false);
     $("#friendGuardR").prop("checked", false);
+    $("#neutralizingGas").prop("checked", false);
+    $("#steelySpiritL").prop("checked", false);
+    $("#steelySpiritR").prop("checked", false);
+    $("#gMaxHazardL").prop("checked", false);
+    $("#gMaxHazardR").prop("checked", false);
+    $("#flowerGiftL").prop("checked", false);
+    $("#flowerGiftR").prop("checked", false);
 }
 
 function getSetOptions() {

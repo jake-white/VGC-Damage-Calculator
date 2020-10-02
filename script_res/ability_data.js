@@ -91,6 +91,7 @@ var ABILITIES_XY = ABILITIES_BW.concat([
     'Aerilate',
     'Aura Break',
     'Bulletproof',
+    'Competitive',
     'Dark Aura',
     'Delta Stream',
     'Desolate Land',
@@ -129,12 +130,19 @@ var ABILITIES_SM = ABILITIES_XY.concat([
 ]);
 
 var ABILITIES_SS = ABILITIES_SM.concat([
+    'Inner Focus',
+    'Oblivious',
+    'Own Tempo',
     'Libero',
     'Ice Scales',
     'Power Spot',
     'Intrepid Sword',
     "Gorilla Tactics",
-    "Punk Rock"
+    "Punk Rock",
+    'Mirror Armor',
+    
+    'Ripen',
+    'Steely Spirit'
 ]);
 
 ABILITIES_XY.splice(ABILITIES_XY.indexOf('Lightning Rod'), 1, 'Lightning Rod');
