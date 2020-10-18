@@ -7,6 +7,14 @@ var bounds = {
     "dvs":[0,15],
     "move-bp":[0,999]
 };
+isCrit = false;
+center_images = ["image_res/toge_normal.png", "image_res/toge_crit.png"]
+function checkCrit(crit) {
+    if(crit != isCrit) {
+        isCrit = crit;
+        $("#toge").attr("src", center_images[+isCrit])
+    }
+}
 for (var bounded in bounds) {
     if (bounds.hasOwnProperty(bounded)) {
         attachValidation(bounded, bounds[bounded][0], bounds[bounded][1]);
@@ -543,6 +551,7 @@ function calculate() {
         result.damageText = minDamage + "-" + maxDamage + " (" + minPercent + " - " + maxPercent + "%)";
           result.koChanceText = p1.moves[i].bp === 0 ? '<a href="https://www.youtube.com/watch?v=7u6kMjWt1Rk&feature=youtu.be">you wanna dance with me?!</a>'
                   : getKOChanceText(result.damage, p1.moves[i], p2, field.getSide(1), p1.ability === 'Bad Dreams');
+        result.crit = p1.moves[i].isCrit
         if(p1.moves[i].isMLG){
             result.koChanceText = "<a href = 'https://www.youtube.com/watch?v=iD92h-M474g'>it's a one-hit KO!</a>"; //dank memes
         }
@@ -561,6 +570,7 @@ function calculate() {
         result.damageText = minDamage + "-" + maxDamage + " (" + minPercent + " - " + maxPercent + "%)";
           result.koChanceText = p2.moves[i].bp === 0 ? '<a href="https://www.youtube.com/watch?v=7u6kMjWt1Rk&feature=youtu.be">you wanna dance with me?!</a>'
                 : getKOChanceText(result.damage, p2.moves[i], p1, field.getSide(0), p2.ability === 'Bad Dreams');
+        result.crit = p2.moves[i].isCrit
         if(p2.moves[i].isMLG){
             result.koChanceText = "<a href = 'https://www.youtube.com/watch?v=iD92h-M474g'>it's a one-hit KO!</a>";
         }
@@ -576,6 +586,7 @@ function calculate() {
     } else {
         stickyMoves.setSelectedMove(bestResult.prop("id"));
     }
+    temp_crit = bestResult.crit;
     bestResult.prop("checked", true);
     bestResult.change();
     $("#resultHeaderL").text(p1.name + "'s Moves (select one to show detailed results)");
@@ -593,6 +604,7 @@ $(".result-move").change(function() {
             } else {
                 $("#damageValues").text("(" + result.damage.join(", ") + ")");
             }
+            checkCrit(result.crit)
         }
     }
 });
