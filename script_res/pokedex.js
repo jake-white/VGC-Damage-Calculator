@@ -13974,55 +13974,203 @@ var POKEDEX_SS = $.extend(true, {}, POKEDEX_SM, {
       },
       "w": 70.5
   },
+  "Slowking-Galar": {
+      "t1": "Poison",
+      "t2": "Psychic",
+      "bs": {
+          "hp": 95,
+          "at": 65,
+          "df": 80,
+          "sa": 110,
+          "sd": 110,
+          "sp": 30
+      },
+      "w": 79.5
+  },
+  "Articuno-Galar": {
+      "t1": "Psychic",
+      "t2": "Flying",
+      "bs": {
+          "hp": 90,
+          "at": 85,
+          "df": 85,
+          "sa": 125,
+          "sd": 100,
+          "sp": 95
+      },
+      "w": 50.9,
+      "ab": "Competitive"
+  },
+  "Zapdos-Galar": {
+      "t1": "Fighting",
+      "t2": "Flying",
+      "bs": {
+          "hp": 90,
+          "at": 125,
+          "df": 90,
+          "sa": 85,
+          "sd": 90,
+          "sp": 100
+      },
+      "w": 58.2,
+      "ab": "Defiant"
+  },
+  "Moltres-Galar": {
+      "t1": "Dark",
+      "t2": "Flying",
+      "bs": {
+          "hp": 90,
+          "at": 85,
+          "df": 90,
+          "sa": 100,
+          "sd": 125,
+          "sp": 90
+      },
+      "w": 66.0
+  },
+  "Regieleki": {
+      "t1": "Electric",
+      "bs": {
+          "hp": 80,
+          "at": 100,
+          "df": 50,
+          "sa": 100,
+          "sd": 50,
+          "sp": 200
+      },
+      "w": 145.0,
+      "ab": "Transistor",
+  },
+  "Regidrago": {
+      "t1": "Dragon",
+      "bs": {
+          "hp": 200,
+          "at": 100,
+          "df": 50,
+          "sa": 100,
+          "sd": 50,
+          "sp": 80
+      },
+      "w": 200.0,
+      "ab": "Dragon\'s Maw",
+  },
+  "Glastrier": {
+      "t1": "Ice",
+      "bs": {
+          "hp": 100,
+          "at": 145,
+          "df": 130,
+          "sa": 65,
+          "sd": 110,
+          "sp": 30
+      },
+      "w": 800.0
+  },
+  "Spectrier": {
+      "t1": "Ghost",
+      "bs": {
+          "hp": 100,
+          "at": 65,
+          "df": 60,
+          "sa": 145,
+          "sd": 80,
+          "sp": 130
+      },
+      "w": 44.5
+  },
+  "Calyrex": {
+      "t1": "Psychic",
+      "t2": "Grass",
+      "bs": {
+          "hp": 100,
+          "at": 80,
+          "df": 80,
+          "sa": 80,
+          "sd": 80,
+          "sp": 80
+      },
+      "w": 7.7,
+      "ab": "Unnerve"
+  },
+  "Calyrex-Ice Rider": {
+      "t1": "Psychic",
+      "t2": "Ice",
+      "bs": {
+          "hp": 100,
+          "at": 165,
+          "df": 150,
+          "sa": 85,
+          "sd": 130,
+          "sp": 50
+      },
+      "w": 809.1,
+      "ab": "As One"
+  },
+  "Calyrex-Shadow Rider": {
+      "t1": "Psychic",
+      "t2": "Ghost",
+      "bs": {
+          "hp": 100,
+          "at": 85,
+          "df": 80,
+          "sa": 165,
+          "sd": 100,
+          "sp": 150
+      },
+      "w": 53.6,
+      "ab": "As One"
+  },
+
   "Aegislash": { "bs": { "df": 140, "sd": 140 } },
   "Aegislash-Blade": { "bs": { "at": 140, "sa": 140 } },
   "Aegislash-Shield": { "bs": { "df": 140, "sd": 140 } },
   
-  "Venusaur": { "formes": ["Venusaur"] },
-  "Charizard": { "formes": ["Charizard"] },
-  "Blastoise": { "formes": ["Blastoise"] },
-  "Beedrill": { "formes": ["Beedrill"] },
-  "Pidgeot": { "formes": ["Pidgeot"] },
-  "Alakazam": { "formes": ["Alakazam"] },
-  "Slowbro": { "formes": ["Slowbro"] },
-  "Gengar": { "formes": ["Gengar"] },
-  "Kangaskhan": { "formes": ["Kangaskhan"] },
-  "Pinsir": { "formes": ["Pinsir"] },
-  "Gyarados": { "formes": ["Gyarados"] },
-  "Aerodactyl": { "formes": ["Aerodactyl"] },
-  "Mewtwo": { "formes": ["Mewtwo"] },
-  "Ampharos": { "formes": ["Ampharos"] },
-  "Steelix": { "formes": ["Steelix"] },
-  "Scizor": { "formes": ["Scizor"] },
-  "Heracross": { "formes": ["Heracross"] },
-  "Houndoom": { "formes": ["Houndoom"] },
-  "Tyranitar": { "formes": ["Tyranitar"] },
-  "Sceptile": { "formes": ["Sceptile"] },
-  "Blaziken": { "formes": ["Blaziken"] },
-  "Swampert": { "formes": ["Swampert"] },
-  "Gardevoir": { "t2": "Fairy", "formes": ["Gardevoir"] },
-  "Sableye": { "formes": ["Sableye"] },
-  "Mawile": { "formes": ["Mawile"] },
-  "Aggron": { "formes": ["Aggron"] },
-  "Medicham": { "formes": ["Medicham"] },
-  "Manectric": { "formes": ["Manectric"] },
-  "Sharpedo": { "formes": ["Sharpedo"] },
-  "Camerupt": { "formes": ["Camerupt"] },
-  "Altaria": { "formes": ["Altaria"] },
-  "Banette": { "formes": ["Banette"] },
-  "Absol": { "formes": ["Absol"] },
-  "Glalie": { "formes": ["Glalie"] },
-  "Salamence": { "formes": ["Salamence"] },
-  "Metagross": { "formes": ["Metagross"] },
-  "Latias": { "formes": ["Latias"] },
-  "Latios": { "formes": ["Latios"] },
-  "Rayquaza": { "formes": ["Rayquaza"] },
-  "Lopunny": { "formes": ["Lopunny"] },
-  "Garchomp": { "formes": ["Garchomp"] },
-  "Lucario": { "formes": ["Lucario"] },
-  "Abomasnow": { "formes": ["Abomasnow"] },
-  "Gallade": { "formes": ["Gallade"] },
-  "Audino": { "formes": ["Audino"] },
+  "Venusaur": { "formes": null },
+  "Charizard": { "formes": null },
+  "Blastoise": { "formes": null },
+  "Beedrill": { "formes": null },
+  "Pidgeot": { "formes": null },
+  "Alakazam": { "formes": null },
+  "Slowbro": { "formes": null },
+  "Gengar": { "formes": null },
+  "Kangaskhan": { "formes": null },
+  "Pinsir": { "formes": null },
+  "Gyarados": { "formes": null },
+  "Aerodactyl": { "formes": null },
+  "Mewtwo": { "formes": null },
+  "Ampharos": { "formes": null },
+  "Steelix": { "formes": null },
+  "Scizor": { "formes": null },
+  "Heracross": { "formes": null },
+  "Houndoom": { "formes": null },
+  "Tyranitar": { "formes": null },
+  "Sceptile": { "formes": null },
+  "Blaziken": { "formes": null },
+  "Swampert": { "formes": null },
+  "Gardevoir": {"formes": null },
+  "Sableye": { "formes": null },
+  "Mawile": { "formes": null },
+  "Aggron": { "formes": null },
+  "Medicham": { "formes": null },
+  "Manectric": { "formes": null },
+  "Sharpedo": { "formes": null },
+  "Camerupt": { "formes": null },
+  "Altaria": { "formes": null },
+  "Banette": { "formes": null },
+  "Absol": { "formes": null },
+  "Glalie": { "formes": null },
+  "Salamence": { "formes": null },
+  "Metagross": { "formes": null },
+  "Latias": { "formes": null },
+  "Latios": { "formes": null },
+  "Rayquaza": { "formes": null },
+  "Lopunny": { "formes": null },
+  "Garchomp": { "formes": null },
+  "Lucario": { "formes": null },
+  "Abomasnow": { "formes": null },
+  "Gallade": { "formes": null },
+  "Audino": { "formes": null },
+  "Diancie": { "formes": null },
 
   "Sneasel": { "ab": "Inner Focus" },
   "Snorunt": { "ab": "Inner Focus" },
@@ -14031,9 +14179,9 @@ var POKEDEX_SS = $.extend(true, {}, POKEDEX_SM, {
   "Mienfoo": { "ab": "Inner Focus" },
   "Mienshao": { "ab": "Inner Focus" },
   "Umbreon": { "ab": "Inner Focus" },
+  "Raikou": { "ab": "Inner Focus" },
+  "Entei": { "ab": "Inner Focus" },
+  "Suicune": { "ab": "Inner Focus" },
 });
 
 delete POKEDEX_SM['Gengar'].ab;
-delete POKEDEX_SM['Raikou'].ab;
-delete POKEDEX_SM['Entei'].ab;
-delete POKEDEX_SM['Suicune'].ab;

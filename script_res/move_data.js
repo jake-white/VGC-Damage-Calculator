@@ -2280,6 +2280,11 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
         bp: 80,
         zp: 160
     },
+    'Nature\'s Madness':{
+        category: 'Special',
+        type: 'Fairy',
+        zp: 100
+    },
     'Catastropika': {
         category: 'Physical',
         type: 'Electric',
@@ -2474,7 +2479,8 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
     'Super Fang':{
         type: "Normal",
         category: "Physical",
-        zp: 100
+        zp: 100,
+        makesContact: true
     },
     'Thief':{
         zp: 120
@@ -3473,6 +3479,12 @@ var MOVES_SS = $.extend(true, {}, MOVES_SM, {
         type: 'Electric',
         category: 'Special'
     },
+    'Scale Shot': {
+        bp: 20,
+        type: 'Dragon',
+        category: 'Physical',
+        isMultiHit: true,
+    },
     'Scorching Sands': {
         bp: 70,
         type: 'Ground',
@@ -3525,6 +3537,51 @@ var MOVES_SS = $.extend(true, {}, MOVES_SM, {
         category: 'Physical',
         makesContact: true,
         alwaysCrit: true
+    },
+    'Astrial Barrage': {
+        bp: 120,
+        type: 'Ghost',
+        category: 'Special',
+        isSpread: true
+    },
+    'Dragon Energy': {
+        bp: 150,
+        type: 'Dragon',
+        category: 'Special',
+        isSpread: true
+    },
+    'Eerie Spell': {
+        bp: 80,
+        type: 'Psychic',
+        category: 'Special',
+    },
+    'Fiery Wrath': {
+        bp: 90,
+        type: 'Dark',
+        category: 'Special',
+        isSpread: true
+    },
+    'Freezing Glare': {
+        bp: 90,
+        type: 'Psychic',
+        category: 'Special'
+    },
+    'Glacial Lance': {
+        bp: 130,
+        type: 'Ice',
+        category: 'Physical',
+        isSpread: true
+    },
+    'Thunder Cage': {
+        bp: 80,
+        type: 'Electric',
+        category: 'Special',
+    },
+    'Thunderous Kick': {
+        bp: 90,
+        type: 'Fighting',
+        category: 'Physical',
+        makesContact: true
     },
 });
 

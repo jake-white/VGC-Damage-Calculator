@@ -142,7 +142,10 @@ var ABILITIES_SS = ABILITIES_SM.concat([
     'Mirror Armor',
     
     'Ripen',
-    'Steely Spirit'
+    'Steely Spirit',
+    'Transistor',
+    'Dragon\'s Maw',
+    'As One'
 ]);
 
 ABILITIES_XY.splice(ABILITIES_XY.indexOf('Lightning Rod'), 1, 'Lightning Rod');
