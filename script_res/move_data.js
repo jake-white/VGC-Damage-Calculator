@@ -3538,7 +3538,7 @@ var MOVES_SS = $.extend(true, {}, MOVES_SM, {
         makesContact: true,
         alwaysCrit: true
     },
-    'Astrial Barrage': {
+    'Astral Barrage': {
         bp: 120,
         type: 'Ghost',
         category: 'Special',
