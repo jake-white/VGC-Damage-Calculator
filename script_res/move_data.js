@@ -2281,6 +2281,7 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
         zp: 160
     },
     'Nature\'s Madness':{
+        bp: 1,
         category: 'Special',
         type: 'Fairy',
         zp: 100
@@ -2477,6 +2478,7 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
         zp: 160
     },
     'Super Fang':{
+        bp: 1,
         type: "Normal",
         category: "Physical",
         zp: 100,

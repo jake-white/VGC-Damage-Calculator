@@ -242,9 +242,9 @@ function GET_DAMAGE_SM(attacker, defender, move, field) {
     }
 
     if (move.name === "Super Fang" || move.name === "Nature\'s Madness") {
-        var def_curHP = defender.curHP * 0.5;
+        var def_curHP = Math.floor(defender.curHP * 0.5);
         if (attacker.ability === "Parental Bond") {
-            def_curHP *= 1.5;
+            def_curHP = Math.floor(def_curHP * 1.5);
         }
         return { "damage": [def_curHP], "description": buildDescription(description) };
     }
